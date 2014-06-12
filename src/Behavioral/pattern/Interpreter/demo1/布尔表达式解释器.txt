@@ -1,0 +1,16 @@
+本例模拟Java语言中对布尔表达式进行操作和求值。
+
+在这个语言中终结符是布尔变量，也就是常量true和false。
+非终结符表达式包含运算符AND、OR和NOT等。
+这个简单的文法如下(不考虑括号的运用)：
+
+Expression := Constant|Variable|AND|OR|NOT
+AND := Expression 'AND' Expression
+OR := Expression 'OR' Expression
+NOT := 'NOT' Expression
+Variable := 任何标识符
+Constant := 'true'|'false'
+
+抽象语法树(AST)的每一个节点都代表一个语句，而在每一个节点上都可以执行解释方法。
+这个解释方法的执行就代表这个语句被解释。
+由于每一个语句都代表一个常见的问题的实例，因此每一个节点上的解释操作都代表对一个问题实例的解答。
