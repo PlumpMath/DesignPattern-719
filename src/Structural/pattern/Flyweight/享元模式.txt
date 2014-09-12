@@ -52,3 +52,11 @@ JVM实际上只创建一个String对象提供给两个引用，从而实现String对象的共享。String的i
 享元模式的优点在于它大幅度的降低内存中对象的数量，但是做到这一点所付出的代价也很高：
 享元模式使得系统更加复杂，为了使对象可以共享，需要将一些状态外部化，这使得程序的逻辑复杂化；
 享元模式将享元对象的状态外部化，而读取外部状态使得运行时间稍微变长。
+
+
+JDK里的应用：
+
+java.lang.Integer#valueOf(int)
+java.lang.Boolean#valueOf(boolean)
+java.lang.Byte#valueOf(byte)
+java.lang.Character#valueOf(char)

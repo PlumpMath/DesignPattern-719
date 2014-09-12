@@ -34,4 +34,11 @@
 解释器模式适用于以下的情况：
 1，系统有一个简单的语言可供解释。
 2，一些重复发生的问题可以用这种简单的语言表达。
+
+
+JDK里的应用：
+
+java.util.Pattern
+java.text.Normalizer
+java.text.Format
 3，效率不是主要的考虑。

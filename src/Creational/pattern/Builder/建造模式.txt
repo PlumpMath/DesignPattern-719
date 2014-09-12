@@ -42,3 +42,11 @@
 1，建造模式的使用使得产品的内部表象可以独立的变化，可以使客户端不必知道产品内部组成的细节。
 2，每一个Builder都相对独立，而与其他的Builder无关。
 3，模式所建造的最终产品更易于控制。
+
+
+JDK里的应用：
+
+java.lang.StringBuilder#append()
+java.lang.StringBuffer#append()
+java.sql.PreparedStatement
+javax.swing.GroupLayout.Group#addComponent()

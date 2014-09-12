@@ -24,3 +24,11 @@
 3，如果对观察者的通知是通过另外的线程进行异步投递的话，系统必须保证投递是以自恰的方式进行的。
 4，虽然观察者模式可以随时使观察者知道所观察的对象发生了变化，
 但是观察者模式没有相应的机制使观察者知道所观察的对象是怎么发生变化的。
+
+
+JDK里的应用：
+
+java.util.EventListener
+javax.servlet.http.HttpSessionBindingListener
+javax.servlet.http.HttpSessionAttributeListener
+javax.faces.event.PhaseListener

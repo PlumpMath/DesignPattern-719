@@ -91,3 +91,11 @@
 上面的管理类则不同，因为它把一个数据对象的内部状态取出来，在运算后，再插入到另一个数据对象里面。
 这些数据对象根本没有包装任何的行为，是被动的行为接收者。显然，这与调停者模式根本不相干。
 正确的做法是让每一个类对自己的行为负责，纯数据类的划分是完全没有道理的。
+
+
+JDK里的应用：
+
+java.util.Timer
+java.util.concurrent.Executor#execute()
+java.util.concurrent.ExecutorService#submit()
+java.lang.reflect.Method#invoke()

@@ -14,4 +14,10 @@
 在一个系统要求一个类只有一个实例时才应当使用单例模式。
 反过来说，如果一个类可以有几个实例共存，那么就没有必要使用单例类。
 
-JDK中的单例类有Runtime、Introspector、Toolkit等。
+
+JDK里的应用：
+
+java.lang.Runtime#getRuntime()
+java.awt.Toolkit#getDefaultToolkit()
+java.awt.GraphicsEnvironment#getLocalGraphicsEnvironment()
+java.awt.Desktop#getDesktop()

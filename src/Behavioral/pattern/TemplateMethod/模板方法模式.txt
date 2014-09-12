@@ -66,3 +66,11 @@
 不要在抽象类中过早地声明属性变量，应将它们尽量地推迟到子类中去声明。
 在抽象超类中，如果需要状态属性的话，可以调用抽象的取值方法，而将抽象的取值方法的实现放到具体子类中。
 如果能够遵从这样的原则，那么就可以在等级结构中将接口与实现分隔开来，将抽象与具体分割开来，从而保证代码可以最大限度地被复用。
+
+
+JDK里的应用：
+
+java.util.Collections#sort()
+java.io.InputStream#skip()
+java.io.InputStream#read()
+java.util.AbstractList#indexOf()

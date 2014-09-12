@@ -22,3 +22,12 @@
 4，由于使用装饰模式可以比使用继承关系需要较少数目的类。使用较少的类，当然使设计比较易于进行。
 但是，另一方面，使用装饰模式会产生比使用继承关系更多的对象。
 更多的对象会使得差错变得困难，特别是这些对象看上去都很相像。
+
+
+JDK里的应用：
+
+java.io.BufferedInputStream(InputStream)
+java.io.DataInputStream(InputStream)
+java.io.BufferedOutputStream(OutputStream)
+java.util.zip.ZipOutputStream(OutputStream)
+java.util.Collections#checked[List|Map|Set|SortedSet|SortedMap]()

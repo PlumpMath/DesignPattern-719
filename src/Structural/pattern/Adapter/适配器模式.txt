@@ -34,3 +34,13 @@
 它可以使客户端不必实现不需要的方法。这一点将在缺省适配模式中做详尽的分析。
 2，适配器类可以是抽象类。这可以在缺省适配的情况下看到。
 3，带参数的适配器模式。使用这种方法，适配器类可以根据参数返还一个合适的实例给客户端。
+
+
+JDK里的应用：
+
+java.util.Arrays#asList()
+javax.swing.JTable(TableModel)
+java.io.InputStreamReader(InputStream)
+java.io.OutputStreamWriter(OutputStream)
+javax.xml.bind.annotation.adapters.XmlAdapter#marshal()
+javax.xml.bind.annotation.adapters.XmlAdapter#unmarshal()

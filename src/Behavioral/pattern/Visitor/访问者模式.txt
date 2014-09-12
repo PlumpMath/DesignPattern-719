@@ -65,34 +65,7 @@ c,将遍历行为放到访问者中是第三个可能的选择。
 如果非常肯定访问者只有一个，那么设置抽象访问者角色便没有太大意义，完全可以忽略。
 
 
+JDK里的应用：
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+javax.lang.model.element.Element 和javax.lang.model.element.ElementVisitor
+javax.lang.model.type.TypeMirror 和javax.lang.model.type.TypeVisitor

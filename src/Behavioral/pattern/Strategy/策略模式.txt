@@ -88,3 +88,10 @@ Swing中的Border
 环境(Context)角色：JContainer。
 抽象策略(Strategy)角色：Border。
 具体策略(ConcreteStrategy)角色：TitledBorder、LineBorder、EtchedBorder等等。
+
+
+JDK里的应用：
+
+java.util.Comparator#compare()
+javax.servlet.http.HttpServlet
+javax.servlet.Filter#doFilter()

@@ -52,3 +52,15 @@
 因此，对于产品等级结构的增加，抽象工厂模式是不支持开闭原则的。
 
 综合来说，抽象工厂模式以一种倾斜的方式支持增加新的产品，它为新产品族的增加提供方便，而不能为新的产品等级结构的增加提供方便。
+
+
+JDK里的应用：
+
+java.util.Calendar#getInstance()
+java.util.Arrays#asList()
+java.util.ResourceBundle#getBundle()
+java.sql.DriverManager#getConnection()
+java.sql.Connection#createStatement()
+java.sql.Statement#executeQuery()
+java.text.NumberFormat#getInstance()
+javax.xml.transform.TransformerFactory#newInstance()

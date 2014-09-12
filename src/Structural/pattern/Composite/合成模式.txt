@@ -71,3 +71,12 @@ CompositeÀàĞÍµÄ¶ÔÏóº¬ÓĞÆäËûµÄComponentÀàĞÍµÄ¶ÔÏó£¬»»ÑÔÖ®£¬CompositeÀàĞÍµÄ¶ÔÏó¿ÉÒ
 ºÏ³ÉÄ£Ê½µÄÈ±µã£º
 1£¬Ê¹ÓÃºÏ³ÉÄ£Ê½ºó£¬¿ØÖÆÊ÷Ö¦¹¹¼şµÄÀàĞÍ¾Í²»Ì«ÈİÒ×¡£
 2£¬ÓÃ¼Ì³ĞµÄ·½·¨À´Ôö¼ÓĞÂµÄĞĞÎªºÜÀ§ÄÑ¡£
+
+
+JDKÀïµÄÓ¦ÓÃ£º
+
+javax.swing.JComponent#add(Component)
+java.awt.Container#add(Component)
+java.util.Map#putAll(Map)
+java.util.List#addAll(Collection)
+java.util.Set#addAll(Collection)

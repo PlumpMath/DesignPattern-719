@@ -65,3 +65,9 @@
 2，迭代子给出的聚集元素没有类型特征。
 一般而言，迭代子给出的元素都是Object类型，因此，客户端必须具备这些元素类型的知识才能使用这些元素。
 Java的泛型应该可以克服这个缺点了。
+
+
+JDK里的应用：
+
+java.util.Iterator
+java.util.Enumeration
