@@ -32,10 +32,13 @@ public class Subscriber implements Observer {
 	 */
 	@Override
 	public void update(Observable o, Object arg) {
+		// 获取发送通知的被观察者对象，好让观察者知道是哪个被观察者通知它（考虑同一个观察者监听两个不同的被观察者）
 		RSSFeed feed = (RSSFeed) o;
+		// 获取被观察者传入的数据对象
+		String content = arg.toString();
 		System.out.println("Subscriber " + name
 				+ " receive a new message from " + feed.getName() + "("
 				+ feed.getUrl() + ")");
-		System.out.println(feed.getContent());
+		System.out.println(content);
 	}
 }

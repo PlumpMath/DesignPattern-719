@@ -9,7 +9,7 @@ import java.util.Observable;
  * RSSFeed类
  * <p>
  * Java提供了一个Observable类和Observer接口对观察者模式进行支持
- * 被观察者类都是Observable类的子类
+ * 被观察者类都是Observable类的子类。
  * 
  * @author 刘晨伟
  * 
@@ -46,16 +46,14 @@ public class RSSFeed extends Observable {
 		if (!content.equals(this.content)) {
 			this.content = content;
 			/*
-			 * Observable.setChanged()方法被调用之后会设置
-			 * 一个内部标记变量代表被观察者对象的状态发生了变化
+			 * Observable.setChanged()方法被调用之后会设置一个内部标记变量代表被观察者对象的状态发生了变化
 			 */
 			setChanged();
 			/*
-			 * Observable.notifyObservers()方法会通知所有的观察者
-			 * 调用它们的update()方法，使它们可以更新自己
-			 * 它默认按照观察者对象被登记的次序的相反次序通知它们
+			 * Observable.notifyObservers()方法会通知所有的观察者，调用它们的update()方法，
+			 * 使它们可以更新自己，它默认按照观察者对象被登记的次序的相反次序通知它们。
 			 */
-			notifyObservers();
+			notifyObservers(content);
 		}
 	}
 }
