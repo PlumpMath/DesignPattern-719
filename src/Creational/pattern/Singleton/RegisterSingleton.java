@@ -37,9 +37,9 @@ abstract class DBManager {
 	private static Map<String, DBManager> instanceMap = new HashMap<String, DBManager>();
 
 	/**
-	 * 父类的构造方法必须是公开的，也就是子类可以调用的
-	 * 这样一来就允许了可以直接使用子类构造方法创建实例而不在父类的登记中
-	 * 由于父类的实例必须存在才可能有子类的实例，这在有些情况下是一个浪费
+	 * 父类的构造方法必须是公开的，也就是子类可以调用的。
+	 * 这样一来就允许了可以直接使用子类构造方法创建实例而不在父类的登记中。
+	 * 由于父类的实例必须存在才可能有子类的实例，这在有些情况下是一个浪费。
 	 */
 	protected DBManager() {
 	}

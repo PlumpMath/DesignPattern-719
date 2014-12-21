@@ -21,8 +21,10 @@ public class User {
 		// 操作一个文本编辑器
 		TextEditor editor = new TextEditor();
 		System.out.println("【original】" + editor);
-		// 剪切操作
+		
 		EditAction action = new EditAction();
+		
+		// 剪切操作
 		Command cut = new CutCommand(editor);
 		action.setCommand(cut);
 		action.executeCommand();

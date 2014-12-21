@@ -20,8 +20,12 @@ public class ConcreteCommand implements Command {
 	public ConcreteCommand(Receiver receiver) {
 		this.receiver = receiver;
 	}
+	
+	public void setReceiver(Receiver receiver) {
+		this.receiver = receiver;
+	}
 
-	private Receiver getReceiver() {
+	public Receiver getReceiver() {
 		return receiver;
 	}
 
