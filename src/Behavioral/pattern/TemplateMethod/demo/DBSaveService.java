@@ -14,7 +14,7 @@ public class DBSaveService extends SaveService {
 
 	private String dbname;// Êý¾Ý¿âÃû³Æ
 	
-	public DBSaveService(String dbname,Object data) {
+	public DBSaveService(String dbname, Object data) {
 		super(data);
 		this.dbname = dbname;
 	}

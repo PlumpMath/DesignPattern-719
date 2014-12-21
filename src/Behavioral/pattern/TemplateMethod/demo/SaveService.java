@@ -45,7 +45,7 @@ public abstract class SaveService implements ISaveService {
 	 * 保存前的操作，这是一个钩子方法
 	 */
 	protected void doBeforeSave() throws Exception {
-
+		// do nothing
 	}
 
 	/**
@@ -57,6 +57,6 @@ public abstract class SaveService implements ISaveService {
 	 * 保存后的操作，这是一个钩子方法
 	 */
 	protected void doAfterSave() throws Exception {
-
+		// do nothing
 	}
 }
