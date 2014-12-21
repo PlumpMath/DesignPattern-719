@@ -6,14 +6,9 @@ package pattern.Adapter;
 /**
  * 适配器角色
  * <p>
- * 适配器类是类的适配器模式的核心
- * 适配器把源接口转换成目标接口
- * 这一角色不可以是接口，而必须是具体类
- * <p>
  * 与类的适配器模式一样，对象的适配器模式把被适配的类的API转换成为目标类的API。
- * 与其不同的是，本模式不是使用继承关系而是使用委派关系连接到Adaptee类。
- * Adaptee类并没有Target接口声明的那些方法，而客户端则期待这些方法。
- * 为使客户端能够使用Adaptee类，需要提供一个包装类ObjectAdapter。
+ * 与其不同的是，本模式不是使用继承关系而是使用组合连接到Adaptee类。
+ * Adaptee类并没有Target接口声明的那些方法，而客户端则期待这些方法。为使客户端能够使用Adaptee类，需要提供一个包装类ObjectAdapter。
  * 这个包装类包装了一个Adaptee的实例，从而此包装类能够把Adaptee的API与Target的API衔接起来。
  * Adapter与Adaptee是委派关系，这决定了这个适配器模式是对象的。
  * 
