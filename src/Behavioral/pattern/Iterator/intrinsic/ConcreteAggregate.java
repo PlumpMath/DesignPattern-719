@@ -47,10 +47,9 @@ public class ConcreteAggregate<T> implements Aggregate<T> {
      * 具体迭代子(ConcreteIterator)角色
      * 此角色实现了Iterator接口，并保持迭代过程中的游标位置。
      * <p>
-     * 这是内禀迭代子(Intrinsic Iterator)的实现
-     * 因为该迭代子类是在聚集的结构内定义的。
+     * 这是内禀迭代子(Intrinsic Iterator)的实现，因为该迭代子类是在聚集的结构内定义的。
 	 */
-	class ConcreteIterator implements Iterator<T> {
+	private class ConcreteIterator implements Iterator<T> {
 
 		private int cursor = 0;// 游标
 
