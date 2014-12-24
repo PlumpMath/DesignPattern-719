@@ -21,7 +21,7 @@ public class Leaf implements Component {
 		System.out.println("Leaf operation.");
 	}
 
-	/** 给出管理子类对象的方法的平庸实现 */
+	/** 给出管理子类对象的方法的平庸实现或者抛出异常 */
 	
 	@Override
 	public void add(Component component) {
@@ -35,6 +35,6 @@ public class Leaf implements Component {
 
 	@Override
 	public void remove(Component component) {
-		// do nothing
+		throw new UnsupportedOperationException();
 	}
 }
