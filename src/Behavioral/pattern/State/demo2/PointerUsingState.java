@@ -17,11 +17,11 @@ public class PointerUsingState {
 	 */
 	public static void main(String[] args) {
 		Pointer pointer = new Pointer();
-		pointer.turnLeft();
-		pointer.turnLeft();
-		pointer.turnLeft();
-		pointer.turnRight();
-		pointer.turnRight();
+		pointer.turnAntiClockwise();
+		pointer.turnAntiClockwise();
+		pointer.turnAntiClockwise();
+		pointer.turnClockwise();
+		pointer.turnClockwise();
 	}
 
 	/**
@@ -42,21 +42,21 @@ public class PointerUsingState {
 		}
 
 		/**
-		 * 向左转一个方向
+		 * 逆时针转一下
 		 */
-		public void turnLeft() {
-			System.out.println("turnLeft前指向：" + direction.getName());
-			direction.toLeft(this);
-			System.out.println("turnLeft后指向：" + direction.getName());
+		public void turnAntiClockwise() {
+			System.out.println("turnAntiClockwise前指向：" + direction.getName());
+			direction.antiClockwise(this);
+			System.out.println("turnAntiClockwise后指向：" + direction.getName());
 		}
 
 		/**
-		 * 向右转一个方向
+		 * 顺时针转一下
 		 */
-		public void turnRight() {
-			System.out.println("turnRight前指向：" + direction.getName());
-			direction.toRight(this);
-			System.out.println("turnRight后指向：" + direction.getName());
+		public void turnClockwise() {
+			System.out.println("turnClockwise前指向：" + direction.getName());
+			direction.clockwise(this);
+			System.out.println("turnClockwise后指向：" + direction.getName());
 		}
 	}
 
@@ -66,14 +66,14 @@ public class PointerUsingState {
 	private static interface Direction {
 
 		/**
-		 * 指针左转一个方向
+		 * 逆时针转
 		 */
-		public void toLeft(Pointer pointer);
+		public void antiClockwise(Pointer pointer);
 
 		/**
-		 * 指针右转一个方向
+		 * 顺时针转
 		 */
-		public void toRight(Pointer pointer);
+		public void clockwise(Pointer pointer);
 
 		/**
 		 * 方向状态名称
@@ -98,12 +98,12 @@ public class PointerUsingState {
 		}
 
 		@Override
-		public void toLeft(Pointer pointer) {
+		public void antiClockwise(Pointer pointer) {
 			pointer.setDirection(North.getInstance());
 		}
 
 		@Override
-		public void toRight(Pointer pointer) {
+		public void clockwise(Pointer pointer) {
 			pointer.setDirection(South.getInstance());
 		}
 
@@ -130,12 +130,12 @@ public class PointerUsingState {
 		}
 
 		@Override
-		public void toLeft(Pointer pointer) {
+		public void antiClockwise(Pointer pointer) {
 			pointer.setDirection(South.getInstance());
 		}
 
 		@Override
-		public void toRight(Pointer pointer) {
+		public void clockwise(Pointer pointer) {
 			pointer.setDirection(North.getInstance());
 		}
 
@@ -162,12 +162,12 @@ public class PointerUsingState {
 		}
 
 		@Override
-		public void toLeft(Pointer pointer) {
+		public void antiClockwise(Pointer pointer) {
 			pointer.setDirection(East.getInstance());
 		}
 
 		@Override
-		public void toRight(Pointer pointer) {
+		public void clockwise(Pointer pointer) {
 			pointer.setDirection(West.getInstance());
 		}
 
@@ -194,12 +194,12 @@ public class PointerUsingState {
 		}
 
 		@Override
-		public void toLeft(Pointer pointer) {
+		public void antiClockwise(Pointer pointer) {
 			pointer.setDirection(West.getInstance());
 		}
 
 		@Override
-		public void toRight(Pointer pointer) {
+		public void clockwise(Pointer pointer) {
 			pointer.setDirection(East.getInstance());
 		}
 

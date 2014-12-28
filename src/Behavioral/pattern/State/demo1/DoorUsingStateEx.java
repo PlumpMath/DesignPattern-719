@@ -23,8 +23,9 @@ public class DoorUsingStateEx {
 		door.open();
 		door.close();
 		door.open();
+		
 		Door door2 = new Door();
-		door2.setState(new FailureState());
+		door2.failed();
 		door2.open();
 		door2.close();
 	}
@@ -32,7 +33,7 @@ public class DoorUsingStateEx {
 	/**
 	 * 门
 	 * <p>
-	 * 现在除了有两个状态之外又有了第三个状态：故障
+	 * 现在除了有两个状态之外又有了第三个状态：故障。
 	 * 使用State模式进行这样的扩展不需要修改Door类源码，遵循OCP原则
 	 */
 	private static class Door {
@@ -54,6 +55,13 @@ public class DoorUsingStateEx {
 			this.state = state;
 		}
 
+		/**
+		 * 门发生故障
+		 */
+		public void failed(){
+			this.setState(new FailureState());
+		}
+		
 		/**
 		 * 开门
 		 */
@@ -134,7 +142,7 @@ public class DoorUsingStateEx {
 
 		@Override
 		public void closeTheDoor(Door door) {
-			System.out.println("door is failure,can not be opened.");
+			System.out.println("door is failure,can not be closed.");
 		}
 
 		@Override

@@ -28,8 +28,7 @@ public class DoorUsingState {
 	/**
 	 * 门
 	 * <p>
-	 * 门有两个状态：开着和关着。 
-	 * 这里使用State模式实现这个功能。
+	 * 门有两个状态：开着和关着。 这里使用State模式实现这个功能。
 	 */
 	private static class Door {
 
@@ -72,17 +71,11 @@ public class DoorUsingState {
 
 		/**
 		 * 开门
-		 * 
-		 * @param door
-		 *            门对象
 		 */
 		public void openTheDoor(Door door);
 
 		/**
 		 * 关门
-		 * 
-		 * @param door
-		 *            门对象
 		 */
 		public void closeTheDoor(Door door);
 	}

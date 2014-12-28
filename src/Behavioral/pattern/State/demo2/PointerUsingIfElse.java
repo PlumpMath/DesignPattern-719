@@ -17,11 +17,11 @@ public class PointerUsingIfElse {
 	 */
 	public static void main(String[] args) {
 		Pointer pointer = new Pointer();
-		pointer.turnLeft();
-		pointer.turnLeft();
-		pointer.turnLeft();
-		pointer.turnRight();
-		pointer.turnRight();
+		pointer.turnAntiClockwise();
+		pointer.turnAntiClockwise();
+		pointer.turnAntiClockwise();
+		pointer.turnClockwise();
+		pointer.turnClockwise();
 	}
 
 	/**
@@ -49,10 +49,10 @@ public class PointerUsingIfElse {
 		}
 
 		/**
-		 * 向左转一个方向
+		 * 逆时针转一下
 		 */
-		public void turnLeft() {
-			System.out.println("turnLeft前指向：" + direction.name());
+		public void turnAntiClockwise() {
+			System.out.println("turnAntiClockwise前指向：" + direction.name());
 			switch (direction) {
 			case EAST:
 				setDirection(Direction.NORTH);
@@ -67,14 +67,14 @@ public class PointerUsingIfElse {
 				setDirection(Direction.WEST);
 				break;
 			}
-			System.out.println("turnLeft后指向：" + direction.name());
+			System.out.println("turnAntiClockwise后指向：" + direction.name());
 		}
 
 		/**
-		 * 向右转一个方向
+		 * 顺时针转一下
 		 */
-		public void turnRight() {
-			System.out.println("turnRight前指向：" + direction.name());
+		public void turnClockwise() {
+			System.out.println("turnClockwise前指向：" + direction.name());
 			switch (direction) {
 			case EAST:
 				setDirection(Direction.SOUTH);
@@ -89,7 +89,7 @@ public class PointerUsingIfElse {
 				setDirection(Direction.EAST);
 				break;
 			}
-			System.out.println("turnRight后指向：" + direction.name());
+			System.out.println("turnClockwise后指向：" + direction.name());
 		}
 	}
 }

@@ -28,8 +28,7 @@ public class DoorUsingIfElse {
 	/**
 	 * 门
 	 * <p>
-	 * 门有两个状态：开着和关着。
-	 * 这里使用传统的if-else语句实现这个功能。
+	 * 门有两个状态：开着和关着。这里使用传统的if-else语句实现这个功能。
 	 */
 	private static class Door {
 		

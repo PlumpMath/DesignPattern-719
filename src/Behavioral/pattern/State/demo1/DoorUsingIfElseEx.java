@@ -32,7 +32,7 @@ public class DoorUsingIfElseEx {
 	/**
 	 * 门
 	 * <p>
-	 * 现在除了有两个状态之外又有了第三个状态：故障
+	 * 现在除了有两个状态之外又有了第三个状态：故障。
 	 * 使用if-else进行这样的扩展需要修改Door类源码，违反了OCP原则
 	 */
 	private static class Door {
