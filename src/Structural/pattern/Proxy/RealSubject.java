@@ -20,8 +20,6 @@ public class RealSubject implements Subject {
 	
 	/**
 	 * 真实主题中的request()方法
-	 *
-	 * @see pattern.Proxy.Subject#request()
 	 */
 	@Override
 	public void request() {

@@ -4,7 +4,7 @@
 package pattern.Proxy.more;
 
 /**
- * 保护(Protection Access)代理演示
+ * 访问保护(Protection Access)代理演示
  * <p>
  * 控制对一个对象的访问，如果需要，可以给不同的用户提供不同级别的使用权限。
  * 

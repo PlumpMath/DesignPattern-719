@@ -124,7 +124,7 @@ class WebPageServiceImpl implements WebPageService {
 /**
  * WebPageService的缓存代理
  * <p>
- * 这个类是被各个客户端使用的类，因为它有了缓存机制，提高了响应速度
+ * 这个类是被各个客户端使用的类，因为它有了缓存机制，提高了响应速度。
  */
 class WebPageCacheProxy implements WebPageService {
 

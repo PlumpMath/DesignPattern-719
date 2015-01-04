@@ -12,7 +12,7 @@ import java.lang.reflect.Proxy;
  * <p>
  * 可以根据需要打印出对象调用方法的细节和信息
  * <p>
- * Java提供了Proxy、InvocationHandler、Method三个类直接支持代理模式
+ * Java提供了Proxy、InvocationHandler、Method三个类直接支持代理模式。
  * 
  * @author 刘晨伟
  * 
