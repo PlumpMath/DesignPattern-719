@@ -6,7 +6,7 @@ package pattern.Builder;
 /**
  * 产品角色
  * <p>
- * 产品便是建造中的复杂对象。
+ * 产品是需要建造的复杂对象。
  * 
  * @author 刘晨伟
  * 

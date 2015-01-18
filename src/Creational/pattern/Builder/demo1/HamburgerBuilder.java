@@ -4,7 +4,7 @@
 package pattern.Builder.demo1;
 
 /**
- * 汉堡包建造器
+ * 汉堡包建造者
  * 
  * @author 刘晨伟
  * 

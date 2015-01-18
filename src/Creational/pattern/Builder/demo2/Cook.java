@@ -33,9 +33,6 @@ public class Cook {
 		builder.addVegetable();
 	}
 	
-	/**
-	 * ÉèÖÃHamburgerBuilder
-	 */
 	public void setBuilder(HamburgerBuilder builder) {
 		this.builder = builder;
 	}

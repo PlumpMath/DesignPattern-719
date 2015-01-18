@@ -9,8 +9,7 @@ import java.util.Date;
  * 省略抽象建造者角色
  * <p>
  * 如果设计师非常肯定系统只需要一个具体建造者角色的话，可以省略掉抽象建造者角色。
- * 抽象建造者角色存在的目的是规范具体建造者角色的行为，
- * 而系统如果只有一个具体建造者，那么这个规范者角色也就不需要了。
+ * 抽象建造者角色存在的目的是规范具体建造者角色的行为，而系统如果只有一个具体建造者，那么这个规范者角色也就不需要了。
  * 
  * @author 刘晨伟
  * 
@@ -34,10 +33,6 @@ class Director {
 
 	private Builder builder;// 建造器
 
-	/**
-	 * @param builder
-	 *            建造器
-	 */
 	public Director(Builder builder) {
 		this.builder = builder;
 	}

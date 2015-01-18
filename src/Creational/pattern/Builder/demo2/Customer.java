@@ -44,7 +44,7 @@ public class Customer {
 /**
  * 鱼肉汉堡包
  * <p>
- * 这是后来新出现的汉堡品种，表明建造模式支持可扩展性
+ * 这是后来新出现的汉堡品种，表明建造模式支持扩展
  */
 class FishHamburger extends AbstractHamburger {
 
@@ -57,7 +57,7 @@ class FishHamburger extends AbstractHamburger {
 /**
  * 鱼肉汉堡包建造器
  * <p>
- * 这是后来新出现的汉堡建造器，表明建造模式支持可扩展性
+ * 这是后来新出现的汉堡建造器，表明建造模式支持扩展
  */
 class FishHamburgerBuilder implements HamburgerBuilder {
 
