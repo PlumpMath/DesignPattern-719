@@ -16,6 +16,9 @@ public class SchoolInfo {
 
 	private String school;
 	private int grade;
+	
+	// 模拟占用内存多的属性
+	private byte[] data = new byte[1000];
 
 	SchoolInfo(String school, int grade) {
 		this.school = school;
@@ -28,5 +31,9 @@ public class SchoolInfo {
 
 	public int getGrade() {
 		return grade;
+	}
+
+	public byte[] getData() {
+		return data;
 	}
 }

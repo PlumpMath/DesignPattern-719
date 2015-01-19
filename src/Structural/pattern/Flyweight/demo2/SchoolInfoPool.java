@@ -22,7 +22,7 @@ public class SchoolInfoPool {
 	private Map<String, SchoolInfo> pool;
 
 	private SchoolInfoPool() {
-		pool = new HashMap<String, SchoolInfo>();
+		pool = new HashMap<String, SchoolInfo>(5);
 	}
 
 	/**

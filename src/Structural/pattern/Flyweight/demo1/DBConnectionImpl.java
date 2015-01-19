@@ -24,8 +24,7 @@ public class DBConnectionImpl implements DBConnection {
 
 	@Override
 	public void connect(String address) {
-		System.out
-				.println("connection " + no + " connects " + address + " ...");
+		System.out.println("connection " + no + " connects " + address + " ...");
 		this.isInUse = true;
 	}
 

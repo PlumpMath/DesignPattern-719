@@ -3,6 +3,8 @@
  */
 package pattern.Flyweight.demo2;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -19,25 +21,28 @@ public class Client {
 	 */
 	public static void main(String[] args) {
 		Runtime runtime = Runtime.getRuntime();
-		long start = runtime.totalMemory() - runtime.freeMemory();
-		Student student = new Student("tom");
+		
+		List<SchoolInfo> si = new ArrayList<SchoolInfo>();
 		Random random = new Random();
-		// 测试创建10000份学校信息所需要的内存总量
+		
+		// 测试创建10000份学校信息所需要的内存总量，享元模式明显更节省内存
+		
+		long start = runtime.freeMemory();
 		for (int i = 0; i < 10000; i++) {
-			student.setSchool(SchoolInfoPool.getInstance().create(
+			si.add(SchoolInfoPool.getInstance().create(
 					"School" + random.nextInt(3) + 1, random.nextInt(6) + 1));
 		}
-		long end = runtime.totalMemory() - runtime.freeMemory();
-		System.out.println("SchoolInfoPool memory=" + (end - start) / 1024
+		long end = runtime.freeMemory();
+		System.out.println("SchoolInfoPool memory=" + (start - end) / 1024
 				+ "KB");
 
-		start = runtime.totalMemory() - runtime.freeMemory();
+		start = runtime.freeMemory();
 		for (int i = 0; i < 10000; i++) {
-			student.setSchool(SchoolInfoFactory.create(
+			si.add(SchoolInfoFactory.create(
 					"School" + random.nextInt(3) + 1, random.nextInt(6) + 1));
 		}
-		end = runtime.totalMemory() - runtime.freeMemory();
-		System.out.println("SchoolInfoFactory memory=" + (end - start) / 1024
+		end = runtime.freeMemory();
+		System.out.println("SchoolInfoFactory memory=" + (start - end) / 1024
 				+ "KB");
 	}
 }

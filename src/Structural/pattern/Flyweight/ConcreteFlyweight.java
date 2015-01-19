@@ -28,7 +28,7 @@ public class ConcreteFlyweight extends Flyweight {
 	}
 
 	/**
-	 * 如果一个享元对象有外蕴状态的话，所有的外部状态都必须存储在客户端
+	 * 如果一个享元对象有外蕴状态的话，所有的外部状态都必须存储在客户端。
 	 * 在使用享元对象时，再由客户端传给享元对象。
 	 *
 	 * @see pattern.Flyweight.Flyweight#operation(java.lang.String)
