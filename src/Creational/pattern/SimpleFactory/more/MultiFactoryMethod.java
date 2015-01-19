@@ -7,7 +7,7 @@ package pattern.SimpleFactory.more;
  * 2.多个工厂方法
  * <p>
  * 工厂类可以有多于一个的工厂方法，分别负责创建不同的产品对象。
- * JDK中的java.text.DateFormat类就是这样的例子
+ * JDK中的java.text.DateFormat类就是这样的例子。
  * 
  * @author 刘晨伟
  * 

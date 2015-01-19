@@ -13,11 +13,11 @@ import java.util.Map;
  * <p>
  * 如果需要创建的原型对象数目较少而且比较固定的话，可以采取简单形式。
  * 在这种情况下，原型对象的引用可以由客户端自己保存。
+ * 
  * 如果要创建的原型对象数目不固定的话，可以采取登记形式。
  * 在这种情况下，客户端并不保存对原型对象的引用，这个任务被交给管理器对象。
  * 在复制一个原型对象之前，管理器会先查看是否已经有一个满足条件的原型对象登记在册。
- * 如果有，则直接使用这个原型对象进行克隆；
- * 如果没有，管理器需要自行创建一个原型对象，并将其登记在册，然后在使用它进行克隆。
+ * 如果有，则直接使用这个原型对象进行克隆；如果没有，管理器需要自行创建一个原型对象，并将其登记，然后使用它进行克隆。
  * 
  * @author 刘晨伟
  * 
@@ -27,7 +27,7 @@ public class PrototypeManager {
 
 	private static PrototypeManager manager;
 
-	private Map<String, Prototype> map;// 用来等级原型对象
+	private Map<String, Prototype> map;// 用来登记原型对象
 
 	private PrototypeManager() {
 		// singleton and do nothing
