@@ -7,8 +7,7 @@ package pattern.Interpreter.demo1;
  * 客户端(Client)角色
  * <p>
  * 代表模式的客户端，它有以下功能：
- * 建造一个抽象语法树(Abstract Syntax Tree)
- * 调用解释操作interpret()
+ * 建造一个抽象语法树(Abstract Syntax Tree)、调用解释操作interpret()。
  * 
  * @author 刘晨伟
  * 

@@ -17,10 +17,8 @@ public class Client {
 	 */
 	public static void main(String[] args) {
 		/*
-		 * 客户端创建了两个处理者对象，
-		 * 并指定第一个处理者对象的下家是第二个处理者对象 
-		 * 而第二个处理者对象没有下家，
-		 * 然后客户端将请求传递给第一个处理这对象。
+		 * 客户端创建了两个处理者对象，并指定第一个处理者对象的下家是第二个处理者对象。
+		 * 而第二个处理者对象没有下家，然后客户端将请求传递给第一个处理这对象。
 		 */
 		Handler handler1 = new ConcreteHandlerA();
 		Handler handler2 = new ConcreteHandlerB();

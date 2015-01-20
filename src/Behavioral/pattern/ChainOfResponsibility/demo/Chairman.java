@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.ChainOfResponsibility.demo1;
+package pattern.ChainOfResponsibility.demo;
 
 /**
  * 董事长
@@ -21,7 +21,7 @@ public class Chairman extends Handler {
 	/**
 	 * 董事长能处理所有事务
 	 * 
-	 * @see pattern.ChainOfResponsibility.demo1.Handler#handleRequest(pattern.ChainOfResponsibility.demo1.Request)
+	 * @see pattern.ChainOfResponsibility.demo.Handler#handleRequest(pattern.ChainOfResponsibility.demo.Request)
 	 */
 	@Override
 	public void handleRequest(Request request) {

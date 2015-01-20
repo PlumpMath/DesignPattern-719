@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.ChainOfResponsibility.demo1;
+package pattern.ChainOfResponsibility.demo;
 
 /**
  * CEO
@@ -21,7 +21,7 @@ public class CEO extends Handler {
 	/**
 	 * CEO只能处理晋升事务，其他的事务交给下家(上级领导)处理
 	 * 
-	 * @see pattern.ChainOfResponsibility.demo1.Handler#handleRequest(pattern.ChainOfResponsibility.demo1.Request)
+	 * @see pattern.ChainOfResponsibility.demo.Handler#handleRequest(pattern.ChainOfResponsibility.demo.Request)
 	 */
 	@Override
 	public void handleRequest(Request request) {

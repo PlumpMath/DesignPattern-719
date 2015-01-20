@@ -9,8 +9,7 @@ package pattern.Interpreter.demo1;
  * 非终结符表达式(Nonterminal Expression)角色
  * <p>
  * 这是一个具体角色。文法中的每一条规则R=R1R2R3……Rn都需要一个具体的非终结符表达式类；
- * 对每一个R1R2R3……Rn中的符号都持有一个静态类型为Expression的实例变量；
- * 实现解释操作，即interpret()方法。
+ * 对每一个R1R2R3……Rn中的符号都持有一个静态类型为Expression的实例变量；实现解释操作，即interpret()方法。
  * 解释操作以递归方式调用上面提到的代表R1R2R3……Rn中的各个符号的实例变量。
  * 
  * @author 刘晨伟

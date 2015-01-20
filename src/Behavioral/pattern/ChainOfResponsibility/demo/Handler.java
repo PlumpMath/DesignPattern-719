@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.ChainOfResponsibility.demo1;
+package pattern.ChainOfResponsibility.demo;
 
 /**
  * 处理者基类

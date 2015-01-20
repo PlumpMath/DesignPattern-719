@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.ChainOfResponsibility.demo1;
+package pattern.ChainOfResponsibility.demo;
 
 /**
  * 客户端类
@@ -16,7 +16,7 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// 客户端定义一条责任链
+		// 客户端定义一条责任链，可以灵活设定Handler顺序
 		Handler chain = new DeptManager(new GeneralManager(new CEO(new Chairman())));
 		// 员工向领导发送请求
 		Employee tom = new Employee("tom");

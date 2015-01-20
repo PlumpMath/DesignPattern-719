@@ -1,6 +1,0 @@
-                                                                                          双重接口在Java中的实现
-
-双重接口，就是对某一个对象提供宽接口(wide interface)，而对另一些对象提供窄接口(narrow interface)。
-
-本例中，User类可以访问ConcreteClass的宽接口，而Other类只能访问ConcreteClass的窄接口INarrow。
-也就是说，对于Other类它只知道传入的对象时INarrow，并不知道具体类型。
