@@ -19,8 +19,7 @@ public class Iterator2VisitorDemo {
 /**
  * 使用Iterator模式打印对象信息
  * <p>
- * 如果聚集中存放的是相同类型的对象，那么使用Iterator模式对
- * 聚集进行遍历操作时对其内对象的处理没有什么问题。
+ * 如果聚集中存放的是相同类型的对象，那么使用Iterator模式对聚集进行遍历操作时对其内对象的处理没有什么问题。
  */
 class PrintUsingIterator {
 
@@ -41,9 +40,8 @@ class PrintUsingIterator {
 /**
  * 使用Iterator模式根据对象类型打印其信息
  * <p>
- * 如果聚集内部保存的是一些类型不同的对象，它们紧紧有一个相同的高层接口
- * 这时候使用Iterator模式对聚集进行遍历操作时对其内对象的处理就需要进行类型判断。
- * 换言之，如果需要针对一个包含不同类型元素的聚集采取某种操作，
+ * 如果聚集内部保存的是一些类型不同的对象，它们紧紧有一个相同的高层接口，这时候使用Iterator模式
+ * 对聚集进行遍历操作时对其内对象的处理就需要进行类型判断。换言之，如果需要针对一个包含不同类型元素的聚集采取某种操作，
  * 而操作的细节根据元素的类型不同而有所不同时，就会出现必须对元素类型做类型判断的条件转移语句。
  */
 class PrintUsingIterator2 {
@@ -85,8 +83,7 @@ class PrintUsingIterator2 {
 }
 
 /**
- * 使用Visitor模式根据对象类型打印其信息
- * 功能和PrintUsingIterator2是一样的，但是使用了Visitor模式实现
+ * 使用Visitor模式根据对象类型打印其信息，功能和PrintUsingIterator2是一样的，但是使用了Visitor模式实现。
  */
 class PrintUsingVisitor {
 
