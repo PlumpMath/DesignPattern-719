@@ -3,66 +3,92 @@
  */
 package pattern.Mediator.demo2.after;
 
-import javax.swing.JButton;
-import javax.swing.JLabel;
-
 /**
- * 调停器
+ * 调停者
  * 
  * @author 刘晨伟
  * 
- * 创建日期：2010-6-9
+ * 创建日期：2010-6-8
  */
-public class Mediator {
+public class Mediator implements IMediator {
 
-	private JLabel displayLabel;
-	private JButton playButton;
-	private JButton stopButton;
-	private JButton rewindButton;
+	private Purchase purchase;// 采购组
+	private Sale sale;// 销售组
+	private Stock stock;// 库存组
 
-	public void setDisplayLabel(JLabel displayLabel) {
-		this.displayLabel = displayLabel;
+	private Purchase getPurchase() {
+		return purchase;
 	}
 
-	public void setPlayButton(JButton playButton) {
-		this.playButton = playButton;
+	public void setPurchase(Purchase purchase) {
+		this.purchase = purchase;
 	}
 
-	public void setStopButton(JButton stopButton) {
-		this.stopButton = stopButton;
+	private Sale getSale() {
+		return sale;
 	}
 
-	public void setRewindButton(JButton rewindButton) {
-		this.rewindButton = rewindButton;
+	public void setSale(Sale sale) {
+		this.sale = sale;
+	}
+
+	private Stock getStock() {
+		return stock;
+	}
+
+	public void setStock(Stock stock) {
+		this.stock = stock;
+	}
+	
+	/**
+	 * 采购指定数量的电脑
+	 * 
+	 * @param number
+	 *            数量
+	 */
+	public void buyComputer(int number) {
+		// 会根据销售信息分析决定真正的采购数量
+		int saleStatus = getSale().getSaleStatus();// 电脑的销售情况
+		if (saleStatus > 80) {
+			getSale().log("销售情况良好，采购电脑 " + number + " 台");
+			getStock().increase(number);// 增加库存
+		} else {
+			getSale().log("销售情况不好，采购电脑(折半采购) " + number / 2 + " 台");
+			getStock().increase(number / 2);// 增加库存
+		}
 	}
 
 	/**
-	 * 播放
+	 * 销售指定数量的电脑
+	 * 
+	 * @param number
+	 *            数量
 	 */
-	public void play() {
-		playButton.setEnabled(false);
-		stopButton.setEnabled(true);
-		rewindButton.setEnabled(true);
-		displayLabel.setText("Play......");
+	public void sellComputer(int number) {
+		// 库存数量不够销售则让采购组去采购
+		if (getStock().getStockNumber() < number) {
+			getPurchase().buyComputer(number);
+		}
+		getSale().log("销售电脑 " + number + " 台");
+		getStock().decrease(number);
 	}
 
 	/**
-	 * 停止
+	 * 折价销售
 	 */
-	public void stop() {
-		playButton.setEnabled(true);
-		stopButton.setEnabled(false);
-		rewindButton.setEnabled(true);
-		displayLabel.setText("Stopped");
+	public void offSell() {
+		getSale().log("开始折价销售电脑 " + getStock().getStockNumber() + " 台");
 	}
 
 	/**
-	 * 倒带
+	 * 清理库存
+	 * <p>
+	 * <li>采购人员不再采购
+	 * <li>销售人员要尽快销售
 	 */
-	public void rewind() {
-		playButton.setEnabled(true);
-		stopButton.setEnabled(true);
-		rewindButton.setEnabled(false);
-		displayLabel.setText("Rewind......");
+	public void clearStock() {
+		getStock().log("清理库存数量为 " + getStock().getStockNumber());
+		getSale().offSale();// 折价销售
+		getPurchase().refuse2BuyComputer();// 不再采购
 	}
 }

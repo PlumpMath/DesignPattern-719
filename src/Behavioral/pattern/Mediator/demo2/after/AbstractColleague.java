@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.Mediator.demo3.after;
+package pattern.Mediator.demo2.after;
 
 /**
  * 抽象同事类

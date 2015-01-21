@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.Mediator.demo3;
+package pattern.Mediator.demo2;
 
 /**
  * 电脑商场(客户端类)

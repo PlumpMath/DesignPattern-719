@@ -6,9 +6,7 @@ package pattern.Mediator;
 /**
  * 抽象同事类角色
  * <p>
- * 定义出调停者到同事对象的接口。
  * 同事对象只知道调停者而不知道其余的同事对象。
- * 一般而言，这个角色由一个Java抽象类或者Java接口实现。
  * 
  * @author 刘晨伟
  * 
@@ -39,8 +37,7 @@ public abstract class Colleague {
 	public abstract void action();
 
 	/**
-	 * 自身状态改变，会和其他对象通信的动作
-	 * 应该委托给Mediator来实现和其他对象通信
+	 * 自身状态改变，会和其他对象通信的动作，应该委托给Mediator来实现和其他对象通信。
 	 */
 	public abstract void change();
 }

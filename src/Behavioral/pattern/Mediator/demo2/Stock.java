@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.Mediator.demo3.after;
+package pattern.Mediator.demo2;
 
 /**
  * 库存组
@@ -10,17 +10,22 @@ package pattern.Mediator.demo3.after;
  * 
  * 创建日期：2010-6-8
  */
-public class Stock extends AbstractColleague {
+public class Stock {
 
 	// 原始库存
 	private int computerNumber = 100;
 
-	public Stock(Mediator mediator) {
-		super(mediator);
-		// 将Stock对象注册到Mediator
-		mediator.setStock(this);
+	private Purchase purchase;// 采购组
+	private Sale sale;// 销售组
+
+	public void setPurchase(Purchase purchase) {
+		this.purchase = purchase;
 	}
 
+	public void setSale(Sale sale) {
+		this.sale = sale;
+	}
+	
 	/**
 	 * 增加库存电脑
 	 * 
@@ -28,11 +33,10 @@ public class Stock extends AbstractColleague {
 	 *            数量
 	 */
 	public void increase(int number) {
-		// 只涉及到自身对象的操作可以不通过Mediator完成
 		computerNumber += number;
 		log("库存数量为 " + computerNumber);
 	}
-
+	
 	/**
 	 * 减少库存电脑
 	 * 
@@ -40,7 +44,6 @@ public class Stock extends AbstractColleague {
 	 *            数量
 	 */
 	public void decrease(int number) {
-		// 只涉及到自身对象的操作可以不通过Mediator完成
 		computerNumber -= number;
 		log("库存数量为 " + computerNumber);
 	}
@@ -54,16 +57,17 @@ public class Stock extends AbstractColleague {
 
 	/**
 	 * 清理库存
+	 * <p>
+	 * <li>采购人员不再采购
+	 * <li>销售人员要尽快销售
 	 */
 	public void clearStock() {
-		// 涉及和其他对象通信的操作都交给Mediator完成
-		getMediator().execute("stock.clear", 0);
+		log("清理库存数量为 " + computerNumber);
+		sale.offSale();// 折价销售
+		purchase.refuse2BuyComputer();// 不再采购
 	}
-
-	/**
-	 * 打印日志信息
-	 */
-	public void log(String message) {
+	
+	private static void log(String message) {
 		System.out.println("【库存组】" + message);
 	}
 }

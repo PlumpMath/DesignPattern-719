@@ -1,4 +1,4 @@
-package pattern.Mediator.demo3.after;
+package pattern.Mediator.demo2.after;
 
 import java.util.Random;
 
@@ -25,7 +25,7 @@ public class Sale  extends AbstractColleague {
 	 */
 	public void sellComputer(int number) {
 		// 涉及和其他对象通信的操作都交给Mediator完成
-		getMediator().execute("sale.sell", number);
+		getMediator().sellComputer(number);
 	}
 
 	/**
@@ -43,7 +43,7 @@ public class Sale  extends AbstractColleague {
 	 */
 	public void offSale() {
 		// 涉及和其他对象通信的操作都交给Mediator完成
-		getMediator().execute("sale.offsell", 0);
+		getMediator().offSell();
 	}
 
 	/**

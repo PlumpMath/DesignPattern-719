@@ -8,7 +8,6 @@ package pattern.Mediator;
  * <p>
  * 所有的具体同事类均从抽象同事类继承而来。
  * 每一个具体同事类都很清楚它自己在小范围内的行为，而不知道它在大范围内的目的。
- * 一般而言，这个角色由一个具体Java类实现。
  * 
  * @author 刘晨伟
  * 
@@ -33,8 +32,7 @@ public class ConcreteColleague1 extends Colleague {
 	}
 
 	/**
-	 * 自身状态改变，会和其他对象通信的动作
-	 * 委托给Mediator来实现和其他对象通信
+	 * 自身状态改变，会和其他对象通信的动作，委托给Mediator来实现和其他对象通信。
 	 * 
 	 * @see pattern.Mediator.Colleague#change()
 	 */

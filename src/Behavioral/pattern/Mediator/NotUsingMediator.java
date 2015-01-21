@@ -6,7 +6,7 @@ package pattern.Mediator;
 /**
  * 不使用Mediator模式的示例
  * <p>
- * Colleague1和Colleague2相互关联，相互持有对方的引用
+ * Colleague1和Colleague2相互关联，相互持有对方的引用，形成环形依赖。
  * 
  * @author 刘晨伟
  * 

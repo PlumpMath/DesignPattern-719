@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.Mediator.demo3.after;
+package pattern.Mediator.demo2.after;
 
 /**
  * 采购组
@@ -26,7 +26,7 @@ public class Purchase extends AbstractColleague {
 	 */
 	public void buyComputer(int number) {
 		// 涉及和其他对象通信的操作都交给Mediator完成
-		getMediator().execute("purchase.buy", number);
+		getMediator().buyComputer(number);
 	}
 
 	/**

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package pattern.Mediator.demo3;
+package pattern.Mediator.demo2;
 
 import java.util.Random;
 

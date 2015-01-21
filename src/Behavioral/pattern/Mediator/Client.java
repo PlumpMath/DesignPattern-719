@@ -4,7 +4,7 @@
 package pattern.Mediator;
 
 /**
- * 
+ * ΏΝ»§¶Λΐΰ
  * 
  * @author Αυ³ΏΞ°
  * 
