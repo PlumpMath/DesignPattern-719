@@ -4,16 +4,16 @@
 package pattern.Mediator.demo2;
 
 /**
- * ²É¹º×é
+ * é‡‡è´­ç»„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Purchase {
 
-	private Stock stock;// ¿â´æ×é
-	private Sale sale;// ÏúÊÛ×é
+	private Stock stock;// åº“å­˜ç»„
+	private Sale sale;// é”€å”®ç»„
 	
 	public void setStock(Stock stock) {
 		this.stock = stock;
@@ -24,31 +24,31 @@ public class Purchase {
 	}
 
 	/**
-	 * ²É¹ºÖ¸¶¨ÊıÁ¿µÄµçÄÔ
+	 * é‡‡è´­æŒ‡å®šæ•°é‡çš„ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void buyComputer(int number) {
-		// »á¸ù¾İÏúÊÛĞÅÏ¢·ÖÎö¾ö¶¨ÕæÕıµÄ²É¹ºÊıÁ¿
-		int saleStatus = sale.getSaleStatus();// µçÄÔµÄÏúÊÛÇé¿ö
+		// ä¼šæ ¹æ®é”€å”®ä¿¡æ¯åˆ†æå†³å®šçœŸæ­£çš„é‡‡è´­æ•°é‡
+		int saleStatus = sale.getSaleStatus();// ç”µè„‘çš„é”€å”®æƒ…å†µ
 		if (saleStatus > 80) {
-			log("ÏúÊÛÇé¿öÁ¼ºÃ£¬²É¹ºµçÄÔ " + number + " Ì¨");
-			stock.increase(number);// Ôö¼Ó¿â´æ
+			log("é”€å”®æƒ…å†µè‰¯å¥½ï¼Œé‡‡è´­ç”µè„‘ " + number + " å°");
+			stock.increase(number);// å¢åŠ åº“å­˜
 		} else {
-			log("ÏúÊÛÇé¿ö²»ºÃ£¬²É¹ºµçÄÔ(ÕÛ°ë²É¹º) " + number / 2 + " Ì¨");
-			stock.increase(number / 2);// Ôö¼Ó¿â´æ
+			log("é”€å”®æƒ…å†µä¸å¥½ï¼Œé‡‡è´­ç”µè„‘(æŠ˜åŠé‡‡è´­) " + number / 2 + " å°");
+			stock.increase(number / 2);// å¢åŠ åº“å­˜
 		}
 	}
 
 	/**
-	 * ¾Ü¾ø²É¹ºµçÄÔ
+	 * æ‹’ç»é‡‡è´­ç”µè„‘
 	 */
 	public void refuse2BuyComputer() {
-		log("²»ÔÙ²É¹ºµçÄÔ");
+		log("ä¸å†é‡‡è´­ç”µè„‘");
 	}
 
 	private static void log(String message) {
-		System.out.println("¡¾²É¹º×é¡¿" + message);
+		System.out.println("ã€é‡‡è´­ç»„ã€‘" + message);
 	}
 }

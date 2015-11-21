@@ -4,11 +4,11 @@
 package pattern.Iterator.intrinsic;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-17
  */
 public class Client {
 
@@ -16,20 +16,20 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ´´½¨¾Û¼¯¶ÔÏó²¢¶ÔÆä½øĞĞ²Ù×÷
+		// åˆ›å»ºèšé›†å¯¹è±¡å¹¶å¯¹å…¶è¿›è¡Œæ“ä½œ
 		Aggregate<String> agg = new ConcreteAggregate<String>();
 		agg.add("0");
 		agg.add("1");
 		agg.add("2");
 		agg.add("3");
 		agg.add("4");
-		// ºÚºĞ¾Û¼¯¾ÍÎŞ·¨Ê¹ÓÃÏÂÃæµÄ·½Ê½½øĞĞ±éÀúÁË
-//		// Ê¹ÓÃforÑ­»··½Ê½±éÀú¾Û¼¯
+		// é»‘ç›’èšé›†å°±æ— æ³•ä½¿ç”¨ä¸‹é¢çš„æ–¹å¼è¿›è¡Œéå†äº†
+//		// ä½¿ç”¨forå¾ªç¯æ–¹å¼éå†èšé›†
 //		System.out.println("iterate by for style");
 //		for (int i = 0; i < agg.size(); i++) {
 //			System.out.print(agg.get(i) + ",");
 //		}
-		// Ê¹ÓÃµü´ú×Ó·½Ê½±éÀú¾Û¼¯
+		// ä½¿ç”¨è¿­ä»£å­æ–¹å¼éå†èšé›†
 		System.out.println("iterate by Iterator style");
 		Iterator<String> it = agg.iterator();
 		while (it.hasNext()) {

@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ��Ʒ�����ѭ��ʹ�ú͵Ǽ�ʽ�Ĺ�������
+ * 产品对象的循环使用和登记式的工厂方法
  * <p>
- * ����������������������൱���ӣ������ĸ����߼���ѭ��ʹ�ò�Ʒ����
+ * 工厂方法所做的事情可以相当复杂，常见的复杂逻辑是循环使用产品对象。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-2-26
+ * 创建日期：2010-2-26
  */
 public class ProductRegister {
 
@@ -41,19 +41,19 @@ interface WCFactory {
 	public WC factory();
 }
 /**
- * �����Ʒ����������ڲ�״̬�����Ļ�����ô����ÿһ�����ܵ��ڲ�״̬����������Ҫһ����Ʒʵ����
- * ��ʱ�򹤳��������Ҫ���Ѿ��������Ĳ�Ʒ����Ǽǵ�һ���ۼ����棬
- * Ȼ����ݿͻ���������Ĳ�Ʒ״̬����ۼ����в�ѯ��
- * ����ۼ����������Ĳ�Ʒ������ô��ֱ�ӽ������Ʒ���󷵻����ͻ��ˣ�
- * ����ۼ���û�������Ĳ�Ʒ������ô�ʹ���һ���µ�����Ҫ��Ĳ�Ʒ����
- * Ȼ���������Ǽǵ��ۼ��У��ٷ������ͻ��ˡ�
+ * 如果产品对象可以由内部状态表征的话，那么对于每一个可能的内部状态，往往仅需要一个产品实例。
+ * 这时候工厂对象就需要将已经创建过的产品对象登记到一个聚集里面，
+ * 然后根据客户端所请求的产品状态，向聚集进行查询。
+ * 如果聚集中有这样的产品对象，那么就直接将这个产品对象返还给客户端；
+ * 如果聚集中没有这样的产品对象，那么就创建一个新的满足要求的产品对象，
+ * 然后将这个对象登记到聚集中，再返还给客户端。
  * */
 class MaleWCFactory implements WCFactory {
 
 	private static List<WC> MALE_WC_LIST = new ArrayList<WC>();
 
 	static {
-		// ֻ�ṩ5���в���
+		// 只提供5个男厕所
 		for (int i = 0; i < 5; i++) {
 			MALE_WC_LIST.add(new MaleWC());
 		}
@@ -74,7 +74,7 @@ class FemaleWCFactory implements WCFactory {
 	private static List<WC> FEMALE_WC = new ArrayList<WC>();
 
 	static {
-		//ֻ�ṩ10��Ů����
+		//只提供10个女厕所
 		for (int i = 0; i < 10; i++) {
 			FEMALE_WC.add(new FemaleWC());
 		}

@@ -6,13 +6,13 @@ package pattern.Observer.java;
 import java.util.Observer;
 
 /**
- * RSSReaderÀà
+ * RSSReaderç±»
  * <p>
- * ÓÃÀ´Ä£ÄâRSS¶©ÔÄ»úÖÆ£¬±¾ÀàÊÇ¿Í»§¶ËÀà
+ * ç”¨æ¥æ¨¡æ‹ŸRSSè®¢é˜…æœºåˆ¶ï¼Œæœ¬ç±»æ˜¯å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class RSSReader {
 
@@ -25,7 +25,7 @@ public class RSSReader {
 		Observer tom = new Subscriber("tom");
 		Observer mike = new Subscriber("mike");
 		Observer ann = new Subscriber("ann");
-		// Á½¸ö¹Û²ìÕß¶ÔÏóµÄequals()·½·¨·µ»ØtrueÊ±£¬²»»á±»ÖØĞÂ¼ÓÈë
+		// ä¸¤ä¸ªè§‚å¯Ÿè€…å¯¹è±¡çš„equals()æ–¹æ³•è¿”å›trueæ—¶ï¼Œä¸ä¼šè¢«é‡æ–°åŠ å…¥
 		baidu.addObserver(tom);
 		baidu.addObserver(mike);
 		google.addObserver(ann);

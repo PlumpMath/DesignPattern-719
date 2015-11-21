@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ¶ÓÁĞ
+ * é˜Ÿåˆ—
  * <p>
- * ¾ßÌå¾Û¼¯½ÇÉ«£¬²ÉÓÃÄÚÙ÷µü´ú×ÓÊµÏÖ
+ * å…·ä½“èšé›†è§’è‰²ï¼Œé‡‡ç”¨å†…ç¦€è¿­ä»£å­å®ç°
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-14
  */
 public class Queue<T> implements IQueue<T> {
 
@@ -45,7 +45,7 @@ public class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * Ïòºó±éÀúµü´ú×Ó
+	 * å‘åéå†è¿­ä»£å­
 	 */
 	private class QueueBackwardIterator implements BackwardIterator<T> {
 
@@ -64,7 +64,7 @@ public class Queue<T> implements IQueue<T> {
 	}
 
 	/**
-	 * ÏòÇ°±éÀúµü´ú×Ó
+	 * å‘å‰éå†è¿­ä»£å­
 	 */
 	private class QueueForwardIterator implements ForwardIterator<T> {
 

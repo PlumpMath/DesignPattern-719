@@ -8,11 +8,11 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-2
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-2
  */
 public class Client {
 
@@ -25,7 +25,7 @@ public class Client {
 		List<SchoolInfo> si = new ArrayList<SchoolInfo>();
 		Random random = new Random();
 		
-		// ²âÊÔ´´½¨10000·İÑ§Ğ£ĞÅÏ¢ËùĞèÒªµÄÄÚ´æ×ÜÁ¿£¬ÏíÔªÄ£Ê½Ã÷ÏÔ¸ü½ÚÊ¡ÄÚ´æ
+		// æµ‹è¯•åˆ›å»º10000ä»½å­¦æ ¡ä¿¡æ¯æ‰€éœ€è¦çš„å†…å­˜æ€»é‡ï¼Œäº«å…ƒæ¨¡å¼æ˜æ˜¾æ›´èŠ‚çœå†…å­˜
 		
 		long start = runtime.freeMemory();
 		for (int i = 0; i < 10000; i++) {

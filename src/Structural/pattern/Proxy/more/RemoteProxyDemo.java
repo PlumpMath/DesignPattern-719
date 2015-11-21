@@ -4,19 +4,19 @@
 package pattern.Proxy.more;
 
 /**
- * Զ��(Remote)������ʾ
+ * 远程(Remote)代理演示
  * <p>
- * Ϊһ��λ�ڲ�ͬ�ĵ�ַ�ռ�Ķ����ṩһ�����ش�������
- * �����ͬ�ĵ�ַ�ռ�������ڱ������У�Ҳ����������һ̨�����С�
+ * 为一个位于不同的地址空间的对象提供一个本地代表对象。
+ * 这个不同的地址空间可以是在本机器中，也可以是在另一台机器中。
  * <p>
- * ϵͳ���Խ������ϸ������������ʹ�ÿͻ��˲��ؿ�������Ĵ��ڡ�<br>
- * �ͻ���ȫ������Ϊ�������Ķ����Ǳ��صĶ�����Զ�̵ģ�����������е��˴󲿷ֵ�����ͨ�Ź�����<p>
+ * 系统可以将网络的细节隐藏起来，使得客户端不必考虑网络的存在。<br>
+ * 客户完全可以认为被代理的对象是本地的而不是远程的，而代理对象承担了大部分的网络通信工作。<p>
  * <p>
- * Զ�̴�����RMI��CORBA��Щ�ֲ�ʽ�������ĸ���
+ * 远程代理是RMI、CORBA这些分布式对象技术的根本
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-4-22
+ * 创建日期：2010-4-22
  */
 public class RemoteProxyDemo {
 
@@ -24,27 +24,27 @@ public class RemoteProxyDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// �ͻ��˳���ֱ��ʹ��WebServiceProxy�����������ķ������˵Ķ���
+		// 客户端程序直接使用WebServiceProxy，它并不关心服务器端的对象
 		WebService service = new WebServiceProxy();
 		System.out.println("message :" + service.getMessage());
 	}
 }
 
 /**
- * WebService�ӿ�
+ * WebService接口
  */
 interface WebService {
 
 	/**
-	 * ������Ϣ
+	 * 返回消息
 	 */
 	public String getMessage();
 }
 
 /**
- * WebService�ķ�������ʵ��
+ * WebService的服务器端实现
  * <p>
- * ������Լ����Ķ���Ӧ�ò����ڷ�������
+ * 这个类以及它的对象应该部署在服务器端
  */
 class WebServiceImpl implements WebService {
 
@@ -52,7 +52,7 @@ class WebServiceImpl implements WebService {
 	public String getMessage() {
 		for (int i = 0; i < 5; i++) {
 			try {
-				// ģ�����������ĳЩ����
+				// 模拟服务器进行某些操作
 				Thread.sleep(1000);
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -65,9 +65,9 @@ class WebServiceImpl implements WebService {
 }
 
 /**
- * WebService�Ŀͻ��˴���
+ * WebService的客户端代理
  * <p>
- * ������Լ����Ķ���Ӧ�÷ֲ��ڿͻ���
+ * 这个类以及它的对象应该分步在客户端
  */
 class WebServiceProxy implements WebService {
 
@@ -79,7 +79,7 @@ class WebServiceProxy implements WebService {
 
 	@Override
 	public String getMessage() {
-		// �����أ�ֻ�б�����ʱ�Ŵ��������ķ������
+		// 懒加载，只有被调用时才创建真正的服务对象
 		if (webService == null) {
 			webService = new WebServiceImpl();
 		}

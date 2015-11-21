@@ -4,18 +4,18 @@
 package pattern.Bridge.demo1;
 
 /**
- * Êı¾İ¿âÇı¶¯Æ÷½Ó¿Ú
+ * æ•°æ®åº“é©±åŠ¨å™¨æ¥å£
  * <p>
- * Implementor½ÇÉ«
+ * Implementorè§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public interface DatabaseDriver {
 
 	/**
-	 * Ö´ĞĞSQL
+	 * æ‰§è¡ŒSQL
 	 */
 	public Object runSQL(String sql);
 }

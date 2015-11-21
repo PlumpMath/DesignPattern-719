@@ -7,15 +7,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ËÑË÷Ê¹ÓÃÈÕÖ¾
+ * æœç´¢ä½¿ç”¨æ—¥å¿—
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-23
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-23
  */
 public class UsageLogger {
 
-	/** ÓÃ»§ID_ËÑË÷Ê¹ÓÃ´ÎÊı_Map(½ö½ö×÷ÎªÊ¾ÀıÊı¾İ¿âÊ¹ÓÃ) */
+	/** ç”¨æˆ·ID_æœç´¢ä½¿ç”¨æ¬¡æ•°_Map(ä»…ä»…ä½œä¸ºç¤ºä¾‹æ•°æ®åº“ä½¿ç”¨) */
 	private static Map<String,Integer> userid_usage_map = new HashMap<String,Integer>();
 	
 	private String userid;
@@ -25,7 +25,7 @@ public class UsageLogger {
 	}
 	
 	/**
-	 * ¼ÇÂ¼ÈÕÖ¾
+	 * è®°å½•æ—¥å¿—
 	 */
 	public void log() {
 		Integer counter = userid_usage_map.get(userid);

@@ -4,23 +4,23 @@
 package pattern.Flyweight.demo1;
 
 /**
- * Êı¾İ¿âÁ¬½Ó½Ó¿Ú
+ * æ•°æ®åº“è¿æ¥æ¥å£
  * <p>
- * ³éÏóÏíÔª½ÇÉ«
+ * æŠ½è±¡äº«å…ƒè§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-3
  */
 public interface DBConnection {
 
 	/**
-	 * Á¬½Óµ½Ö¸¶¨Êı¾İ¿â
+	 * è¿æ¥åˆ°æŒ‡å®šæ•°æ®åº“
 	 */
 	public void connect(String address);
 
 	/**
-	 * ÊÍ·ÅÁ¬½Ó
+	 * é‡Šæ”¾è¿æ¥
 	 */
 	public void release();
 }

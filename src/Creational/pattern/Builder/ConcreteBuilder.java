@@ -6,35 +6,35 @@ package pattern.Builder;
 import java.util.Date;
 
 /**
- * ¾ßÌå²úÆ·½¨ÔìÕß
+ * å…·ä½“äº§å“å»ºé€ è€…
  * <p>
- * ËüÊÇÄ£Ê½ÖĞÖ±½Ó´´½¨²úÆ·¶ÔÏóµÄ½ÇÉ«£¬ËüĞèÒªÍêÈ«ÊµÏÖ³éÏó½¨ÔìÕßËùÉùÃ÷µÄ½Ó¿Ú¡£
- * µ£ÈÎÕâ¸ö½ÇÉ«µÄÊÇÓëÓ¦ÓÃ³ÌĞò½ôÃÜÏà¹ØµÄÒ»Ğ©Àà£¬ËüÃÇÔÚÓ¦ÓÃ³ÌĞòµ÷ÓÃÏÂ´´½¨²úÆ·µÄÊµÀı¡£
+ * å®ƒæ˜¯æ¨¡å¼ä¸­ç›´æ¥åˆ›å»ºäº§å“å¯¹è±¡çš„è§’è‰²ï¼Œå®ƒéœ€è¦å®Œå…¨å®ç°æŠ½è±¡å»ºé€ è€…æ‰€å£°æ˜çš„æ¥å£ã€‚
+ * æ‹…ä»»è¿™ä¸ªè§’è‰²çš„æ˜¯ä¸åº”ç”¨ç¨‹åºç´§å¯†ç›¸å…³çš„ä¸€äº›ç±»ï¼Œå®ƒä»¬åœ¨åº”ç”¨ç¨‹åºè°ƒç”¨ä¸‹åˆ›å»ºäº§å“çš„å®ä¾‹ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-16
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-16
  */
 public class ConcreteBuilder implements Builder {
 
 	private ConcreteProduct product = new ConcreteProduct();
 
 	/**
-	 * ½¨ÔìÁã¼ş1
+	 * å»ºé€ é›¶ä»¶1
 	 */
 	public void buildPart1() {
 		product.setPart1((int) (Math.random() * 100));
 	}
 
 	/**
-	 * ½¨ÔìÁã¼ş2
+	 * å»ºé€ é›¶ä»¶2
 	 */
 	public void buildPart2() {
 		product.setPart2(new Date().toString());
 	}
 
 	/**
-	 * È¡»Ø×é×°ºÃµÄProduct¶ÔÏó
+	 * å–å›ç»„è£…å¥½çš„Productå¯¹è±¡
 	 */
 	public Product retrieve() {
 		return product;

@@ -4,32 +4,32 @@
 package pattern.TemplateMethod.demo;
 
 /**
- * ±£´æ·şÎñ»ùÀà(³éÏóÄ£°å½ÇÉ«)
+ * ä¿å­˜æœåŠ¡åŸºç±»(æŠ½è±¡æ¨¡æ¿è§’è‰²)
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-7
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-7
  */
 public abstract class SaveService implements ISaveService {
 
 	private Object data;
 
 	/**
-	 * ³éÏó»ùÀàµÄ¹¹Ôì×ÓÒ²ÌåÏÖÁËÄ£°å·½·¨µÄË¼Ïë
+	 * æŠ½è±¡åŸºç±»çš„æ„é€ å­ä¹Ÿä½“ç°äº†æ¨¡æ¿æ–¹æ³•çš„æ€æƒ³
 	 */
 	public SaveService(Object data) {
 		this.data = data;
 	}
 
 	/**
-	 * ÕâÊÇÒ»¸ö¾ßÌå·½·¨
+	 * è¿™æ˜¯ä¸€ä¸ªå…·ä½“æ–¹æ³•
 	 */
 	public Object getData() {
 		return data;
 	}
 
 	/**
-	 * ±£´æÊı¾İ£¬ÕâÊÇÒ»¸öÄ£°å·½·¨
+	 * ä¿å­˜æ•°æ®ï¼Œè¿™æ˜¯ä¸€ä¸ªæ¨¡æ¿æ–¹æ³•
 	 */
 	public final void saveData() {
 		try {
@@ -42,19 +42,19 @@ public abstract class SaveService implements ISaveService {
 	}
 
 	/**
-	 * ±£´æÇ°µÄ²Ù×÷£¬ÕâÊÇÒ»¸ö¹³×Ó·½·¨
+	 * ä¿å­˜å‰çš„æ“ä½œï¼Œè¿™æ˜¯ä¸€ä¸ªé’©å­æ–¹æ³•
 	 */
 	protected void doBeforeSave() throws Exception {
 		// do nothing
 	}
 
 	/**
-	 * ±£´æ²Ù×÷£¬ÕâÊÇÒ»¸ö³éÏó·½·¨
+	 * ä¿å­˜æ“ä½œï¼Œè¿™æ˜¯ä¸€ä¸ªæŠ½è±¡æ–¹æ³•
 	 */
 	protected abstract void save() throws Exception;
 
 	/**
-	 * ±£´æºóµÄ²Ù×÷£¬ÕâÊÇÒ»¸ö¹³×Ó·½·¨
+	 * ä¿å­˜åçš„æ“ä½œï¼Œè¿™æ˜¯ä¸€ä¸ªé’©å­æ–¹æ³•
 	 */
 	protected void doAfterSave() throws Exception {
 		// do nothing

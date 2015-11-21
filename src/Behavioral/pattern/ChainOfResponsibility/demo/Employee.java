@@ -4,30 +4,30 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * Ô±¹¤
+ * å‘˜å·¥
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class Employee {
 
-	private String name;// Ô±¹¤ĞÕÃû
+	private String name;// å‘˜å·¥å§“å
 
 	public Employee(String name) {
 		this.name = name;
 	}
 
 	/**
-	 * ÏòÁìµ¼·¢ËÍÇëÇó
+	 * å‘é¢†å¯¼å‘é€è¯·æ±‚
 	 * 
 	 * @param handler
-	 *            Áìµ¼
+	 *            é¢†å¯¼
 	 * @param request
-	 *            ÇëÇó
+	 *            è¯·æ±‚
 	 */
 	public void request(Handler handler, Request request) {
-		System.out.println("Ô±¹¤ " + name + " ÇëÇó " + request.getDescription());
+		System.out.println("å‘˜å·¥ " + name + " è¯·æ±‚ " + request.getDescription());
 		handler.handleRequest(request);
 		System.out.println();
 	}

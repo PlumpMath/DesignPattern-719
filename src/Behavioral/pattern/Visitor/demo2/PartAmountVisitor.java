@@ -4,67 +4,67 @@
 package pattern.Visitor.demo2;
 
 /**
- * Áã¼ş×ÜÁ¿·ÃÎÊÕß
+ * é›¶ä»¶æ€»é‡è®¿é—®è€…
  * <p>
- * ÓÃÓÚ¼ÆËã¶©µ¥ÖĞ¸÷¸öÁã¼ş×ÜÁ¿
+ * ç”¨äºè®¡ç®—è®¢å•ä¸­å„ä¸ªé›¶ä»¶æ€»é‡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class PartAmountVisitor implements Visitor {
 
-	private int cpus = 0;// CPU×ÜÁ¿
-	private int cases = 0;// »úÏä×ÜÁ¿
-	private int mainboards = 0;// Ö÷°å×ÜÁ¿
-	private int harddisks = 0;// Ó²ÅÌ×ÜÁ¿
-	private int integratedBoards = 0;// ¼¯³ÉÖ÷°å×ÜÁ¿
-	private int pcs = 0;// PC×ÜÁ¿
+	private int cpus = 0;// CPUæ€»é‡
+	private int cases = 0;// æœºç®±æ€»é‡
+	private int mainboards = 0;// ä¸»æ¿æ€»é‡
+	private int harddisks = 0;// ç¡¬ç›˜æ€»é‡
+	private int integratedBoards = 0;// é›†æˆä¸»æ¿æ€»é‡
+	private int pcs = 0;// PCæ€»é‡
 
 	/**
-	 * CPU×ÜÁ¿
+	 * CPUæ€»é‡
 	 */
 	public int getCpus() {
 		return cpus;
 	}
 
 	/**
-	 * »úÏä×ÜÁ¿
+	 * æœºç®±æ€»é‡
 	 */
 	public int getCases() {
 		return cases;
 	}
 
 	/**
-	 * Ö÷°å×ÜÁ¿
+	 * ä¸»æ¿æ€»é‡
 	 */
 	public int getMainboards() {
 		return mainboards;
 	}
 
 	/**
-	 * Ó²ÅÌ×ÜÁ¿
+	 * ç¡¬ç›˜æ€»é‡
 	 */
 	public int getHarddisks() {
 		return harddisks;
 	}
 
 	/**
-	 * ¼¯³ÉÖ÷°å×ÜÁ¿
+	 * é›†æˆä¸»æ¿æ€»é‡
 	 */
 	public int getIntegratedBoards() {
 		return integratedBoards;
 	}
 
 	/**
-	 * PC×ÜÁ¿
+	 * PCæ€»é‡
 	 */
 	public int getPcs() {
 		return pcs;
 	}
 
 	/**
-	 * ËùÓĞÁã¼ş×ÜÁ¿
+	 * æ‰€æœ‰é›¶ä»¶æ€»é‡
 	 */
 	public int getPartsAmount() {
 		return cpus + cases + mainboards + harddisks;

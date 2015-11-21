@@ -4,11 +4,11 @@
 package pattern.Decorator;
 
 /**
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-13
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-13
  */
 public class Client {
 
@@ -17,9 +17,9 @@ public class Client {
 	 */
 	public static void main(String[] args) {
 		/*
-		 * ×°ÊÎÄ£Ê½¶Ô¿Í»§¶ËµÄÍ¸Ã÷ĞÔÒªÇó³ÌĞò²»ÒªÉùÃ÷Ò»¸öConcreteDecorator
-		 * ÀàĞÍµÄ±äÁ¿£¬¶øÊÇÓ¦µ±ÉùÃ÷Ò»¸öComponentÀàĞÍµÄ±äÁ¿£¬
-		 * Õâ¾ÍÊÇ×°ÊÎÄ£Ê½¶Ô¿Í»§¶ËÊÇÍêÈ«Í¸Ã÷µÄº¬Òå¡£ÈçÏÂËùÊ¾£º
+		 * è£…é¥°æ¨¡å¼å¯¹å®¢æˆ·ç«¯çš„é€æ˜æ€§è¦æ±‚ç¨‹åºä¸è¦å£°æ˜ä¸€ä¸ªConcreteDecorator
+		 * ç±»å‹çš„å˜é‡ï¼Œè€Œæ˜¯åº”å½“å£°æ˜ä¸€ä¸ªComponentç±»å‹çš„å˜é‡ï¼Œ
+		 * è¿™å°±æ˜¯è£…é¥°æ¨¡å¼å¯¹å®¢æˆ·ç«¯æ˜¯å®Œå…¨é€æ˜çš„å«ä¹‰ã€‚å¦‚ä¸‹æ‰€ç¤ºï¼š
 		 */
 		Component component = new ConcreteComponent();
 		component.operation();
@@ -27,8 +27,8 @@ public class Client {
 		decorator.operation();
 		Component decorator2 = new ConcreteDecorator(decorator);
 		decorator2.operation();
-		// µäĞÍµÄ´´½¨¹ı³ÌÈçÏÂËùÊ¾£º
+		// å…¸å‹çš„åˆ›å»ºè¿‡ç¨‹å¦‚ä¸‹æ‰€ç¤ºï¼š
 		new ConcreteDecorator(new ConcreteDecorator(new ConcreteComponent()));
-		// Ã¿Ò»²ã°ü¹ü¶¼Ìá¹©ÁËÒ»Ğ©ĞÂµÄ¹¦ÄÜ
+		// æ¯ä¸€å±‚åŒ…è£¹éƒ½æä¾›äº†ä¸€äº›æ–°çš„åŠŸèƒ½
 	}
 }

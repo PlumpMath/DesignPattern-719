@@ -4,21 +4,21 @@
 package pattern.Proxy.demo;
 
 /**
- * ËÑË÷Æ÷½Ó¿Ú
+ * æœç´¢å™¨æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-23
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-23
  */
 public interface Searcher {
 
 	/**
-	 * ·µ»ØÎªÖ¸¶¨ÓÃ»§ËÑË÷¹Ø¼ü×ÖËùÆ¥ÅäµÄÄÚÈİ
+	 * è¿”å›ä¸ºæŒ‡å®šç”¨æˆ·æœç´¢å…³é”®å­—æ‰€åŒ¹é…çš„å†…å®¹
 	 * 
 	 * @param userid
-	 *            ÓÃ»§id
+	 *            ç”¨æˆ·id
 	 * @param keyword
-	 *            ¹Ø¼ü×Ö
+	 *            å…³é”®å­—
 	 * @throws Exception
 	 */
 	public String doSearch(String userid, String keyword) throws Exception;

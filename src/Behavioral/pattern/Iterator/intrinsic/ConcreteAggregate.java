@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ¾ßÌå¾Û¼¯
+ * å…·ä½“èšé›†
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-17
  */
 public class ConcreteAggregate<T> implements Aggregate<T> {
 
-	private List<T> list;// ÄÚ²¿ÊµÏÖÓÃList
+	private List<T> list;// å†…éƒ¨å®ç°ç”¨List
 
 	public ConcreteAggregate() {
 		list = new ArrayList<T>();
@@ -42,16 +42,16 @@ public class ConcreteAggregate<T> implements Aggregate<T> {
 	}
 	
 	/**
-	 * ¾ßÌåµü´ú×Ó
+	 * å…·ä½“è¿­ä»£å­
 	 * <p>
-     * ¾ßÌåµü´ú×Ó(ConcreteIterator)½ÇÉ«
-     * ´Ë½ÇÉ«ÊµÏÖÁËIterator½Ó¿Ú£¬²¢±£³Öµü´ú¹ı³ÌÖĞµÄÓÎ±êÎ»ÖÃ¡£
+     * å…·ä½“è¿­ä»£å­(ConcreteIterator)è§’è‰²
+     * æ­¤è§’è‰²å®ç°äº†Iteratoræ¥å£ï¼Œå¹¶ä¿æŒè¿­ä»£è¿‡ç¨‹ä¸­çš„æ¸¸æ ‡ä½ç½®ã€‚
      * <p>
-     * ÕâÊÇÄÚÙ÷µü´ú×Ó(Intrinsic Iterator)µÄÊµÏÖ£¬ÒòÎª¸Ãµü´ú×ÓÀàÊÇÔÚ¾Û¼¯µÄ½á¹¹ÄÚ¶¨ÒåµÄ¡£
+     * è¿™æ˜¯å†…ç¦€è¿­ä»£å­(Intrinsic Iterator)çš„å®ç°ï¼Œå› ä¸ºè¯¥è¿­ä»£å­ç±»æ˜¯åœ¨èšé›†çš„ç»“æ„å†…å®šä¹‰çš„ã€‚
 	 */
 	private class ConcreteIterator implements Iterator<T> {
 
-		private int cursor = 0;// ÓÎ±ê
+		private int cursor = 0;// æ¸¸æ ‡
 
 		@Override
 		public boolean hasNext() {

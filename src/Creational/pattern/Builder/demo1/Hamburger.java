@@ -4,17 +4,17 @@
 package pattern.Builder.demo1;
 
 /**
- * ºº±¤°ü
+ * æ±‰å ¡åŒ…
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public class Hamburger {
 
-	private String bread;// Ãæ°ü
-	private String meat;// Èâ
-	private String vegetable;// Êß²Ë
+	private String bread;// é¢åŒ…
+	private String meat;// è‚‰
+	private String vegetable;// è”¬èœ
 
 	Hamburger() {
 	}

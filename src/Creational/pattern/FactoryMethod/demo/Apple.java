@@ -4,15 +4,15 @@
 package pattern.FactoryMethod.demo;
 
 /**
- * Æ»¹û
+ * è‹¹æžœ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class Apple implements Fruit {
 
-	private int treeAge;// Ê÷Áä
+	private int treeAge;// æ ‘é¾„
 	
 	@Override
 	public void grow() {
@@ -30,7 +30,7 @@ public class Apple implements Fruit {
 	}
 
 	/**
-	 * ·µ»ØÊ÷Áä
+	 * è¿”å›žæ ‘é¾„
 	 */
 	public int getTreeAge() {
 		return treeAge;
@@ -38,7 +38,7 @@ public class Apple implements Fruit {
 
 	/**
 	 * @param treeAge
-	 *            Ê÷Áä
+	 *            æ ‘é¾„
 	 */
 	public void setTreeAge(int treeAge) {
 		this.treeAge = treeAge;

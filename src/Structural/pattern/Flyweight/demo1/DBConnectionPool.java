@@ -7,20 +7,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ���ݿ����ӳ�
+ * 数据库连接池
  * <p>
- * ��Ԫ������ɫ
+ * 享元工厂角色
  * <p>
- * ��Ϊ���ݿ����ӵĴ��۱Ƚϸߣ�����ϵͳֻ����ͬʱ����3�����ӡ�
- * ���е�Ӧ�ó�����ʹ�����������ӣ�������Ч�������ݿ�ѹ����
+ * 因为数据库连接的代价比较高，所以系统只允许同时存在3个连接。
+ * 所有的应用程序共享使用这三个连接，可以有效减轻数据库压力。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-8-3
+ * 创建日期：2010-8-3
  */
 public class DBConnectionPool {
 
-	// ����ģʽ
+	// 单例模式
 	private static DBConnectionPool instance = new DBConnectionPool();
 
 	private List<DBConnectionImpl> pool;
@@ -31,7 +31,7 @@ public class DBConnectionPool {
 	}
 
 	/**
-	 * ��ʼ�����ӳأ�ֻ����3������
+	 * 初始化连接池，只允许3个连接
 	 */
 	private void initPool() {
 		for (int i = 0; i < 3; i++) {
@@ -40,7 +40,7 @@ public class DBConnectionPool {
 	}
 
 	/**
-	 * �ⲿӦ�ó���ʹ�ô˽ӿڴ�������
+	 * 外部应用程序使用此接口创建连接
 	 */
 	public synchronized DBConnection createConnection() {
 		for (DBConnectionImpl connection : pool) {

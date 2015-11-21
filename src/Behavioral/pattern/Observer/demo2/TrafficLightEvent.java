@@ -4,22 +4,22 @@
 package pattern.Observer.demo2;
 
 /**
- * ºìÂÌµÆÊÂ¼ş
+ * çº¢ç»¿ç¯äº‹ä»¶
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-11
  */
 public class TrafficLightEvent implements Event {
 
-	private EventType eventType;// ÊÂ¼şÀàĞÍ
-	private Source source;// Ô´
+	private EventType eventType;// äº‹ä»¶ç±»å‹
+	private Source source;// æº
 
 	/**
 	 * @param eventType
-	 *            ÊÂ¼şÀàĞÍ
+	 *            äº‹ä»¶ç±»å‹
 	 * @param source
-	 *            Ô´
+	 *            æº
 	 */
 	public TrafficLightEvent(EventType eventType, Source source) {
 		this.eventType = eventType;
@@ -27,14 +27,14 @@ public class TrafficLightEvent implements Event {
 	}
 
 	/**
-	 * ·µ»ØÊÂ¼şÀàĞÍ
+	 * è¿”å›äº‹ä»¶ç±»å‹
 	 */
 	public EventType getEventType() {
 		return eventType;
 	}
 
 	/**
-	 * ·µ»ØÔ´¶ÔÏó
+	 * è¿”å›æºå¯¹è±¡
 	 */
 	public Source getSource() {
 		return source;

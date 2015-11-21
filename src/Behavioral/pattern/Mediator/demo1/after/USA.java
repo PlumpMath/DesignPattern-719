@@ -4,104 +4,104 @@
 package pattern.Mediator.demo1.after;
 
 /**
- * ÃÀ¹ú
+ * ç¾å›½
  * <p>
- * ¾ßÌåÍ¬ÊÂÀà½ÇÉ«
+ * å…·ä½“åŒäº‹ç±»è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class USA extends Country {
 
-	private double imports = 0;// ½ø¿Ú×Ü¶î
-	private double exports = 0;// ³ö¿Ú×Ü¶î
+	private double imports = 0;// è¿›å£æ€»é¢
+	private double exports = 0;// å‡ºå£æ€»é¢
 
 	public USA(WTO wto) {
 		super(wto);
-		// ×¢²áµ½WTOÖĞ
+		// æ³¨å†Œåˆ°WTOä¸­
 		wto.setUSA(this);
 	}
 
 	/**
-	 * ´ÓÖĞ¹ú½ø¿ÚÖ¸¶¨½ğ¶îµÄ»õÎï
+	 * ä»ä¸­å›½è¿›å£æŒ‡å®šé‡‘é¢çš„è´§ç‰©
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void importsFromChina(double amount) {
-		log("ÏòÖĞ¹ú½ø¿Ú " + amount + " ÃÀÔªµÄ»õÎï.");
+		log("å‘ä¸­å›½è¿›å£ " + amount + " ç¾å…ƒçš„è´§ç‰©.");
 		getWTO().trade("usa.import", amount);
-		log("ÖĞ¹ú¿Ï¶¨Í¬Òâ.");
+		log("ä¸­å›½è‚¯å®šåŒæ„.");
 		System.out.println();
 	}
 
 	/**
-	 * ÏòÖĞ¹ú³ö¿ÚÖ¸¶¨½ğ¶îµÄ»õÎï
+	 * å‘ä¸­å›½å‡ºå£æŒ‡å®šé‡‘é¢çš„è´§ç‰©
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void exports2China(double amount) {
-		log("ÏòÖĞ¹ú³ö¿Ú " + amount + " ÃÀÔªµÄ»õÎï.");
+		log("å‘ä¸­å›½å‡ºå£ " + amount + " ç¾å…ƒçš„è´§ç‰©.");
 		getWTO().trade("usa.export", amount);
-		log("ÖĞ¹ú¿Ï¶¨Í¬Òâ.");
+		log("ä¸­å›½è‚¯å®šåŒæ„.");
 		System.out.println();
 	}
 
 	/**
-	 * Ôö¼Ó½ø¿Ú×Ü¶î
+	 * å¢åŠ è¿›å£æ€»é¢
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void increaseImports(double amount) {
 		imports += amount;
 	}
 
 	/**
-	 * Ôö¼Ó³ö¿Ú×Ü¶î
+	 * å¢åŠ å‡ºå£æ€»é¢
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void increaseExports(double amount) {
 		exports += amount;
 	}
 
 	/**
-	 * ÊÇ·ñ½ÓÊÜ½ø¿Ú×Ü¶î
+	 * æ˜¯å¦æ¥å—è¿›å£æ€»é¢
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public boolean acceptImports(double amount) {
 		boolean accepted = amount < 1000 && imports < 5000;
-		log("ÃÀ¹ú" + (accepted ? "Í¬Òâ" : "¾Ü¾ø") + "½ø¿Ú " + amount + " ÃÀÔªµÄ»õÎï.");
+		log("ç¾å›½" + (accepted ? "åŒæ„" : "æ‹’ç»") + "è¿›å£ " + amount + " ç¾å…ƒçš„è´§ç‰©.");
 		return accepted;
 	}
 
 	/**
-	 * ÊÇ·ñ½ÓÊÜ³ö¿Ú×Ü¶î
+	 * æ˜¯å¦æ¥å—å‡ºå£æ€»é¢
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public boolean acceptExports(double amount) {
 		boolean accepted = amount > 1000 && exports < 10000;
-		log("ÃÀ¹ú" + (accepted ? "Í¬Òâ" : "¾Ü¾ø") + "³ö¿Ú " + amount + " ÃÀÔªµÄ»õÎï.");
+		log("ç¾å›½" + (accepted ? "åŒæ„" : "æ‹’ç»") + "å‡ºå£ " + amount + " ç¾å…ƒçš„è´§ç‰©.");
 		return accepted;
 	}
 
 	private static void log(String message) {
-		System.out.println("¡¾ÃÀ¹ú¡¿" + message);
+		System.out.println("ã€ç¾å›½ã€‘" + message);
 	}
 
 	/**
-	 * ´òÓ¡Í³¼ÆĞÅÏ¢
+	 * æ‰“å°ç»Ÿè®¡ä¿¡æ¯
 	 */
 	public void statistics() {
-		log("³ö¿Ú×Ü¼Æ " + exports + " ÃÀÔª");
-		log("½ø¿Ú×Ü¼Æ " + imports + " ÃÀÔª");
+		log("å‡ºå£æ€»è®¡ " + exports + " ç¾å…ƒ");
+		log("è¿›å£æ€»è®¡ " + imports + " ç¾å…ƒ");
 	}
 }

@@ -4,15 +4,15 @@
 package pattern.Decorator.demo1;
 
 /**
- * Window×°ÊÎÆ÷»ùÀà
+ * Windowè£…é¥°å™¨åŸºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public abstract class WindowDecorator implements Window {
 	
-	// ±»×°ÊÎµÄWindow
+	// è¢«è£…é¥°çš„Window
     protected Window decoratedWindow; 
  
     public WindowDecorator (Window decoratedWindow) {

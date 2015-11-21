@@ -4,17 +4,17 @@
 package pattern.Command;
 
 /**
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²
  * <p>
- * ¶¨ÒåÒ»¸ö½ÓÊÕÕßºÍĞĞÎªÖ®¼äµÄÈõñîºÏ£¬ÊµÏÖ³éÏóÃüÁî½Ó¿Ú£¬¸ºÔğµ÷ÓÃ½ÓÊÕÕßµÄÏàÓ¦²Ù×÷¡£
+ * å®šä¹‰ä¸€ä¸ªæ¥æ”¶è€…å’Œè¡Œä¸ºä¹‹é—´çš„å¼±è€¦åˆï¼Œå®ç°æŠ½è±¡å‘½ä»¤æ¥å£ï¼Œè´Ÿè´£è°ƒç”¨æ¥æ”¶è€…çš„ç›¸åº”æ“ä½œã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class ConcreteCommand implements Command {
 
-	// ÃüÁî½ÓÊÕÕß
+	// å‘½ä»¤æ¥æ”¶è€…
 	private Receiver receiver;
 
 	public ConcreteCommand(Receiver receiver) {
@@ -31,7 +31,7 @@ public class ConcreteCommand implements Command {
 
 	@Override
 	public void execute() {
-		// ¸ºÔğµ÷ÓÃ½ÓÊÕÕßµÄÏàÓ¦²Ù×÷
+		// è´Ÿè´£è°ƒç”¨æ¥æ”¶è€…çš„ç›¸åº”æ“ä½œ
 		getReceiver().action();
 	}
 }

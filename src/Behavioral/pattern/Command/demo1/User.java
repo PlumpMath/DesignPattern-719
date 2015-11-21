@@ -4,13 +4,13 @@
 package pattern.Command.demo1;
 
 /**
- * ÓÃ»§Àà
+ * ç”¨æˆ·ç±»
  * <p>
- * ¿Í»§(Client)½ÇÉ«£¬Ä£ÄâÓÃ»§ÓÃÒ£¿ØÆ÷¿ª¹ØµçÊÓºÍµçµÆ
+ * å®¢æˆ·(Client)è§’è‰²ï¼Œæ¨¡æ‹Ÿç”¨æˆ·ç”¨é¥æ§å™¨å¼€å…³ç”µè§†å’Œç”µç¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-3
  */
 public class User {
 
@@ -18,23 +18,23 @@ public class User {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// »ñµÃÒ»¸öÒ£¿ØÆ÷
+		// è·å¾—ä¸€ä¸ªé¥æ§å™¨
 		RemoteControlUnit rcunit = new RemoteControlUnit();
 		Television tv = new Television();
 		Light light = new Light();
-		// ´ò¿ªµçÊÓ
+		// æ‰“å¼€ç”µè§†
 		Command turnOn = new TurnOnCommand(tv);
 		rcunit.setCommand(turnOn);
 		rcunit.executeCommand();
-		// ¹Ø±ÕµçÊÓ
+		// å…³é—­ç”µè§†
 		Command turnoff = new TurnOffCommand(tv);
 		rcunit.setCommand(turnoff);
 		rcunit.executeCommand();
-		// ´ò¿ªµçµÆ
+		// æ‰“å¼€ç”µç¯
 		turnOn = new TurnOnCommand(light);
 		rcunit.setCommand(turnOn);
 		rcunit.executeCommand();
-		// ¹Ø±ÕµçµÆ
+		// å…³é—­ç”µç¯
 		turnoff = new TurnOffCommand(light);
 		rcunit.setCommand(turnoff);
 		rcunit.executeCommand();

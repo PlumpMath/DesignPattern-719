@@ -4,13 +4,13 @@
 package pattern.Command;
 
 /**
- * ¿Í»§(Client)½ÇÉ«
+ * å®¢æˆ·(Client)è§’è‰²
  * <p>
- * ´´½¨¾ßÌåÃüÁî(ConcreteCommand)¶ÔÏó²¢È·¶¨Æä½ÓÊÕÕß¡£
+ * åˆ›å»ºå…·ä½“å‘½ä»¤(ConcreteCommand)å¯¹è±¡å¹¶ç¡®å®šå…¶æ¥æ”¶è€…ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class Client {
 

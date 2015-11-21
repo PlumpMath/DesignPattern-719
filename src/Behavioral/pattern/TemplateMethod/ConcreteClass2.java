@@ -4,16 +4,16 @@
 package pattern.TemplateMethod;
 
 /**
- * ¾ßÌåÄ£°å(Concrete Template)½ÇÉ«
+ * å…·ä½“æ¨¡æ¿(Concrete Template)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-7
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-7
  */
 public class ConcreteClass2 extends AbstractClass {
 	
 	/**
-	 * ÊµÏÖ³éÏóÄ£°å½ÇÉ«ÖĞ»ù±¾·½·¨(³éÏó²Ù×÷)
+	 * å®ç°æŠ½è±¡æ¨¡æ¿è§’è‰²ä¸­åŸºæœ¬æ–¹æ³•(æŠ½è±¡æ“ä½œ)
 	 *
 	 * @see pattern.TemplateMethod.AbstractClass#operationStepMiddle1()
 	 */
@@ -22,7 +22,7 @@ public class ConcreteClass2 extends AbstractClass {
 	}
 	
 	/**
-	 * ÊµÏÖ³éÏóÄ£°å½ÇÉ«ÖĞ»ù±¾·½·¨(³éÏó²Ù×÷)
+	 * å®ç°æŠ½è±¡æ¨¡æ¿è§’è‰²ä¸­åŸºæœ¬æ–¹æ³•(æŠ½è±¡æ“ä½œ)
 	 *
 	 * @see pattern.TemplateMethod.AbstractClass#operationStepMiddle2()
 	 */

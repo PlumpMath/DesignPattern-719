@@ -7,17 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ºÏ³ÉÉè±¸»ùÀà
+ * åˆæˆè®¾å¤‡åŸºç±»
  * <p>
- * ÓÉ¶à¸öÉè±¸×é³ÉµÄÉè±¸£¬ÓÃºÏ³ÉÄ£Ê½ÊµÏÖ¡£
+ * ç”±å¤šä¸ªè®¾å¤‡ç»„æˆçš„è®¾å¤‡ï¼Œç”¨åˆæˆæ¨¡å¼å®ç°ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public abstract class CompositeEquipment implements Equipment {
 
-	// °üº¬µÄÉè±¸
+	// åŒ…å«çš„è®¾å¤‡
 	private List<Equipment> equipments;
 
 	protected List<Equipment> getEquipments() {
@@ -32,7 +32,7 @@ public abstract class CompositeEquipment implements Equipment {
 	}
 
 	/**
-	 * ½ÓÊÜ·½·¨£¬¶Ô°üº¬µÄÃ¿¸öÉè±¸¶¼µ÷ÓÃÆä½ÓÊÜ·½·¨
+	 * æ¥å—æ–¹æ³•ï¼Œå¯¹åŒ…å«çš„æ¯ä¸ªè®¾å¤‡éƒ½è°ƒç”¨å…¶æ¥å—æ–¹æ³•
 	 *
 	 * @see pattern.Visitor.demo2.Equipment#accept(pattern.Visitor.demo2.Visitor)
 	 */

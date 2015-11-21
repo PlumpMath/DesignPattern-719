@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ºêÃüÁîµÄÁĞ±íÊµÏÖ
+ * å®å‘½ä»¤çš„åˆ—è¡¨å®ç°
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class MacroCommandListImpl implements MacroCommand {
 
-	private List<Command> commands;// ÃüÁî¼¯
+	private List<Command> commands;// å‘½ä»¤é›†
 
 	public MacroCommandListImpl() {
 		this.commands = new ArrayList<Command>();
@@ -32,7 +32,7 @@ public class MacroCommandListImpl implements MacroCommand {
 	}
 
 	/**
-	 * °´ÕÕÃüÁîµÄ¼ÓÈëË³ĞòÒÀ´ÎÖ´ĞĞ
+	 * æŒ‰ç…§å‘½ä»¤çš„åŠ å…¥é¡ºåºä¾æ¬¡æ‰§è¡Œ
 	 *
 	 * @see pattern.Command.demo3.Command#execute()
 	 */

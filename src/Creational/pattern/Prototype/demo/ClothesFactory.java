@@ -7,21 +7,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ÖÆÒÂ³§
+ * åˆ¶è¡£å‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public class ClothesFactory {
 
 	/**
-	 * ÅúÁ¿Éú²úÒÂ·ş
+	 * æ‰¹é‡ç”Ÿäº§è¡£æœ
 	 * 
 	 * @param clothes
-	 *            ÒÂ·şÔ­ĞÍ
+	 *            è¡£æœåŸå‹
 	 * @param n
-	 *            ÅúÁ¿×ÜÊı
+	 *            æ‰¹é‡æ€»æ•°
 	 */
 	public static List<Clothes> patchCreate(Clothes clothes, int n) {
 		List<Clothes> list = new ArrayList<Clothes>();

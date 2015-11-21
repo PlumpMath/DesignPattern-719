@@ -4,17 +4,17 @@
 package pattern.Bridge;
 
 /**
- * ���󻯽�ɫ
+ * 抽象化角色
  * <p>
- * �����˳��󻯶��壬������һ����ʵ�ֻ���������á�
+ * 给出了抽象化定义，并保存一个对实现化对象的引用。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-4-26
+ * 创建日期：2010-4-26
  */
 public abstract class Abstraction {
 	
-	// ʵ�ֻ�����
+	// 实现化对象
 	private Implementor implementor;
 
 	public Abstraction(Implementor implementor) {
@@ -30,18 +30,18 @@ public abstract class Abstraction {
 	}
 
 	/**
-	 * ĳ��ҵ�񷽷�����Ҫί�ɸ�ʵ�ֻ�����
+	 * 某个业务方法，需要委派给实现化对象
 	 */
 	public void operation() {
 		getImplementor().operationImpl();
 	}
 	
 	/**
-	 * ĳ��ҵ�񷽷�������ʵ�֣�����Ҫʵ�ֻ�����Ĳ���
+	 * 某个业务方法，独立实现，不需要实现化对象的参与
 	 * <p>
-	 * һ����ԣ�ʵ�ֻ���ɫ�е�ÿһ��������Ӧ����һ�����󻯽�ɫ�е�ĳһ��������֮���Ӧ��
-	 * ���ǣ���������һ��������֮�����󻯽�ɫ�Ľӿڱ�ʵ�ֻ���ɫ�Ľӿڿ���
-	 * ���󻯽�ɫ�����ṩ��ʵ�ֻ���ɫ��صķ���֮�⣬���п����ṩ��������ҵ��������ʵ�ֻ���ɫ��������Ϊʵ�ֳ����ɫ�������Ϊ�����ڡ�
+	 * 一般而言，实现化角色中的每一个方法都应当有一个抽象化角色中的某一个方法与之相对应，
+	 * 但是，反过来则不一定。换言之，抽象化角色的接口比实现化角色的接口宽。
+	 * 抽象化角色除了提供与实现化角色相关的方法之外，还有可能提供其他的商业方法；而实现化角色则往往仅为实现抽象角色的相关行为而存在。
 	 */
 	public void printOperation(){
 		System.out.println("Abstraction.printOperation()");

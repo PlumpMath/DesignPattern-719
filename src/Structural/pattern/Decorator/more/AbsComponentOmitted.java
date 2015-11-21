@@ -4,15 +4,15 @@
 package pattern.Decorator.more;
 
 /**
- * Ê¡ÂÔ³éÏó¹¹¼ş½ÇÉ«
+ * çœç•¥æŠ½è±¡æ„ä»¶è§’è‰²
  * <p>
- * Èç¹ûÖ»ÓĞÒ»¸öConcreteComponentÀà¶øÃ»ÓĞ³éÏóµÄComponentÀà(½Ó¿Ú)
- * ÄÇÃ´DecoratorÀà¾­³£¿ÉÒÔÊÇConcreteComponentµÄÒ»¸ö×ÓÀà
- * ´ËÊ±ConcreteComponent¾Í°çÑİÁËË«ÖØ½ÇÉ«
+ * å¦‚æœåªæœ‰ä¸€ä¸ªConcreteComponentç±»è€Œæ²¡æœ‰æŠ½è±¡çš„Componentç±»(æ¥å£)
+ * é‚£ä¹ˆDecoratorç±»ç»å¸¸å¯ä»¥æ˜¯ConcreteComponentçš„ä¸€ä¸ªå­ç±»
+ * æ­¤æ—¶ConcreteComponentå°±æ‰®æ¼”äº†åŒé‡è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-13
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-13
  */
 public class AbsComponentOmitted {
 
@@ -28,7 +28,7 @@ public class AbsComponentOmitted {
 	static class ConcreteComponent {
 
 		/**
-		 * ÒµÎñ·½·¨
+		 * ä¸šåŠ¡æ–¹æ³•
 		 */
 		public void operation() {
 			System.out.println("operation in ConcreteComponent.");
@@ -51,7 +51,7 @@ public class AbsComponentOmitted {
 		}
 
 		/**
-		 * ×°ÊÎÀàÖĞ´Ë·½·¨±»Ìí¼ÓÁË¶îÍâµÄ¹¦ÄÜ
+		 * è£…é¥°ç±»ä¸­æ­¤æ–¹æ³•è¢«æ·»åŠ äº†é¢å¤–çš„åŠŸèƒ½
 		 *
 		 * @see pattern.Decorator.more.ConcreteComponent#operation()
 		 */

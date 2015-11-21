@@ -4,20 +4,20 @@
 package pattern.Interpreter.demo1;
 
 /**
- * NOT±í´ïÊ½
+ * NOTè¡¨è¾¾å¼
  * <p>
- * ·ÇÖÕ½á·û±í´ïÊ½(Nonterminal Expression)½ÇÉ«
+ * éç»ˆç»“ç¬¦è¡¨è¾¾å¼(Nonterminal Expression)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-20
  */
 public class Not extends Expression {
 
 	private Expression exp;
 
 	/**
-	 * ´ú±í NOT exp
+	 * ä»£è¡¨ NOT exp
 	 */
 	public Not(Expression exp) {
 		this.exp = exp;

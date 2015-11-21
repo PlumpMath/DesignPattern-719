@@ -4,15 +4,15 @@
 package pattern.Visitor.demo1.after;
 
 /**
- * ²¿ÃÅ¾­Àí
+ * éƒ¨é—¨ç»ç†
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class DeptManager extends AbstractEmployee {
 
-	private double attendanceBonus;// ¼Ó°à½±½ğ
+	private double attendanceBonus;// åŠ ç­å¥–é‡‘
 
 	public DeptManager(String name, double salary) {
 		super(name, salary);

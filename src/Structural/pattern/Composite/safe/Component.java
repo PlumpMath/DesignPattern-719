@@ -4,20 +4,20 @@
 package pattern.Composite.safe;
 
 /**
- * ³éÏó¹¹¼þ(Component)½ÇÉ«
+ * æŠ½è±¡æž„ä»¶(Component)è§’è‰²
  * <p>
- * ÕâÊÇÒ»¸ö³éÏó½ÇÉ«£¬Ëü¸ø²Î¼Ó×éºÏµÄ¶ÔÏó¶¨Òå³ö¹«¹²µÄ½Ó¿Ú¼°ÆäÄ¬ÈÏÐÐÎª£¬¿ÉÒÔÓÃÀ´¹ÜÀíËùÓÐµÄ×Ó¶ÔÏó¡£
- * ×éºÏ¶ÔÏóÍ¨³£°ÑËüËù°üº¬µÄ×Ó¶ÔÏóµ±×÷ÀàÐÍÎªComponentµÄ¶ÔÏó¡£
- * ÔÚ°²È«Ê½µÄ×éºÏÄ£Ê½Àï£¬³éÏó¹¹¼þ½ÇÉ«²¢²»¶¨Òå³ö¹ÜÀí×Ó¶ÔÏóµÄ·½·¨£¬ÕâÒ»¶¨ÒåÓÉÊ÷Ö¦¶ÔÏó¸ø³ö¡£
+ * è¿™æ˜¯ä¸€ä¸ªæŠ½è±¡è§’è‰²ï¼Œå®ƒç»™å‚åŠ ç»„åˆçš„å¯¹è±¡å®šä¹‰å‡ºå…¬å…±çš„æŽ¥å£åŠå…¶é»˜è®¤è¡Œä¸ºï¼Œå¯ä»¥ç”¨æ¥ç®¡ç†æ‰€æœ‰çš„å­å¯¹è±¡ã€‚
+ * ç»„åˆå¯¹è±¡é€šå¸¸æŠŠå®ƒæ‰€åŒ…å«çš„å­å¯¹è±¡å½“ä½œç±»åž‹ä¸ºComponentçš„å¯¹è±¡ã€‚
+ * åœ¨å®‰å…¨å¼çš„ç»„åˆæ¨¡å¼é‡Œï¼ŒæŠ½è±¡æž„ä»¶è§’è‰²å¹¶ä¸å®šä¹‰å‡ºç®¡ç†å­å¯¹è±¡çš„æ–¹æ³•ï¼Œè¿™ä¸€å®šä¹‰ç”±æ ‘æžå¯¹è±¡ç»™å‡ºã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public interface Component {
 
 	/**
-	 * Ê¾Àý·½·¨
+	 * ç¤ºä¾‹æ–¹æ³•
 	 */
 	public void operation();
 }

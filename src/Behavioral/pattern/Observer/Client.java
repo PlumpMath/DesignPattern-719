@@ -4,11 +4,11 @@
 package pattern.Observer;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class Client {
 
@@ -16,7 +16,7 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¿Í»§¶Ë³ÌĞò¸ºÔğ´´½¨¸÷ÖÖ¶ÔÏó²¢×é×°ÆğÀ´
+		// å®¢æˆ·ç«¯ç¨‹åºè´Ÿè´£åˆ›å»ºå„ç§å¯¹è±¡å¹¶ç»„è£…èµ·æ¥
 		ConcreteSubject subject = new ConcreteSubject();
 		subject.addObserver(new ConcreteObserver());
 		subject.addObserver(new ConcreteObserver());

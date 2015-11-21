@@ -4,21 +4,21 @@
 package pattern.FactoryMethod.more;
 
 /**
- * Ê¹ÓÃ¶à¸ö¹¤³§·½·¨
+ * ä½¿ç”¨å¤šä¸ªå·¥å‚æ–¹æ³•
  * <p>
- * ³éÏó¹¤³§½ÇÉ«¿ÉÒÔÓĞ¶àÓÚÒ»¸öµÄ¹¤³§·½·¨£¬´Ó¶øÊ¹¾ßÌå¹¤³§½ÇÉ«ÊµÏÖÕâĞ©²»Í¬µÄ¹¤³§·½·¨
- * ÕâĞ©·½·¨¿ÉÒÔÌá¹©²»Í¬µÄÉÌÒµÂß¼­£¬ÒÔÂú×ãÌá¹©²»Í¬µÄ²úÆ·¶ÔÏóµÄÈÎÎñ
+ * æŠ½è±¡å·¥å‚è§’è‰²å¯ä»¥æœ‰å¤šäºä¸€ä¸ªçš„å·¥å‚æ–¹æ³•ï¼Œä»è€Œä½¿å…·ä½“å·¥å‚è§’è‰²å®ç°è¿™äº›ä¸åŒçš„å·¥å‚æ–¹æ³•
+ * è¿™äº›æ–¹æ³•å¯ä»¥æä¾›ä¸åŒçš„å•†ä¸šé€»è¾‘ï¼Œä»¥æ»¡è¶³æä¾›ä¸åŒçš„äº§å“å¯¹è±¡çš„ä»»åŠ¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-4
  */
 public class MultiFactoryMethod {
 
 }
 
 /**
- * Ê¹ÓÃClothesµÄ¿Í»§¶ËÀà
+ * ä½¿ç”¨Clothesçš„å®¢æˆ·ç«¯ç±»
  */
 class ClothesClient {
 
@@ -36,23 +36,23 @@ class ClothesClient {
 }
 
 /**
- * Clothes¹¤³§½Ó¿Ú
+ * Clotheså·¥å‚æ¥å£
  */
 interface ClothesFactory {
 	
 	/**
-	 * Éú²úÒÂ·ş
+	 * ç”Ÿäº§è¡£æœ
 	 */
 	public Clothes create();
 	
 	/**
-	 * Éú²úÖ¸¶¨ÑÕÉ«µÄÒÂ·ş
+	 * ç”Ÿäº§æŒ‡å®šé¢œè‰²çš„è¡£æœ
 	 */
 	public Clothes create(String color);
 }
 
 /**
- * Shirt¹¤³§
+ * Shirtå·¥å‚
  */
 class ShirtFactory implements ClothesFactory {
 
@@ -66,7 +66,7 @@ class ShirtFactory implements ClothesFactory {
 }
 
 /**
- * Jacket¹¤³§
+ * Jacketå·¥å‚
  */
 class JacketFactory implements ClothesFactory {
 
@@ -80,14 +80,14 @@ class JacketFactory implements ClothesFactory {
 }
 
 /**
- * ÒÂ·ş»ùÀà
+ * è¡£æœåŸºç±»
  */
 abstract class Clothes {
 
-	private String color;// ÑÕÉ«
+	private String color;// é¢œè‰²
 
 	public Clothes() {
-		this.color = "black";// Ä¬ÈÏºÚÉ«
+		this.color = "black";// é»˜è®¤é»‘è‰²
 	}
 
 	public Clothes(String color) {
@@ -104,7 +104,7 @@ abstract class Clothes {
 }
 
 /**
- * ³ÄÉÀÀà
+ * è¡¬è¡«ç±»
  */
 class Shirt extends Clothes {
 
@@ -118,7 +118,7 @@ class Shirt extends Clothes {
 }
 
 /**
- * ¼Ğ¿ËÀà
+ * å¤¹å…‹ç±»
  */
 class Jacket extends Clothes {
 

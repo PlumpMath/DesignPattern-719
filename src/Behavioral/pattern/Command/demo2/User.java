@@ -4,13 +4,13 @@
 package pattern.Command.demo2;
 
 /**
- * ÓÃ»§Àà
+ * ç”¨æˆ·ç±»
  * <p>
- * ¿Í»§(Client)½ÇÉ«£¬Ä£ÄâÓÃ»§Ê¹ÓÃÎÄ±¾±à¼­Æ÷½øĞĞ±à¼­²Ù×÷
+ * å®¢æˆ·(Client)è§’è‰²ï¼Œæ¨¡æ‹Ÿç”¨æˆ·ä½¿ç”¨æ–‡æœ¬ç¼–è¾‘å™¨è¿›è¡Œç¼–è¾‘æ“ä½œ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class User {
 
@@ -18,58 +18,58 @@ public class User {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ²Ù×÷Ò»¸öÎÄ±¾±à¼­Æ÷
+		// æ“ä½œä¸€ä¸ªæ–‡æœ¬ç¼–è¾‘å™¨
 		TextEditor editor = new TextEditor();
-		System.out.println("¡¾original¡¿" + editor);
+		System.out.println("ã€originalã€‘" + editor);
 		
 		EditAction action = new EditAction();
 		
-		// ¼ôÇĞ²Ù×÷
+		// å‰ªåˆ‡æ“ä½œ
 		Command cut = new CutCommand(editor);
 		action.setCommand(cut);
 		action.executeCommand();
-		System.out.println("¡¾after cut¡¿" + editor);
-		action.rollbackCommand();// »Ø¹ö¼ôÇĞ²Ù×÷£¬¼´undo
-		System.out.println("¡¾undo cut¡¿" + editor);
-		// ¼ôÇĞ²Ù×÷
+		System.out.println("ã€after cutã€‘" + editor);
+		action.rollbackCommand();// å›æ»šå‰ªåˆ‡æ“ä½œï¼Œå³undo
+		System.out.println("ã€undo cutã€‘" + editor);
+		// å‰ªåˆ‡æ“ä½œ
 		cut = new CutCommand(editor);
 		action.setCommand(cut);
 		action.executeCommand();
-		System.out.println("¡¾after cut¡¿" + editor);
-		// ¼ôÇĞ²Ù×÷
+		System.out.println("ã€after cutã€‘" + editor);
+		// å‰ªåˆ‡æ“ä½œ
 		cut = new CutCommand(editor);
 		action.setCommand(cut);
 		action.executeCommand();
-		System.out.println("¡¾after cut¡¿" + editor);
-		// ¸´ÖÆ²Ù×÷
+		System.out.println("ã€after cutã€‘" + editor);
+		// å¤åˆ¶æ“ä½œ
 		Command copy = new CopyCommand(editor);
 		action.setCommand(copy);
 		action.executeCommand();
-		System.out.println("¡¾after copy¡¿" + editor);
-		// Õ³Ìù²Ù×÷
+		System.out.println("ã€after copyã€‘" + editor);
+		// ç²˜è´´æ“ä½œ
 		Command paste = new PasteCommand(editor, "paste");
 		action.setCommand(paste);
 		action.executeCommand();
-		System.out.println("¡¾after paste¡¿" + editor);
-		// É¾³ı²Ù×÷
+		System.out.println("ã€after pasteã€‘" + editor);
+		// åˆ é™¤æ“ä½œ
 		Command delete = new DeleteCommand(editor);
 		action.setCommand(delete);
 		action.executeCommand();
-		System.out.println("¡¾after delete¡¿" + editor);
-		// »Ø¹öÉÏÒ»¸ö²Ù×÷
+		System.out.println("ã€after deleteã€‘" + editor);
+		// å›æ»šä¸Šä¸€ä¸ªæ“ä½œ
 		action.rollbackCommand();
-		System.out.println("¡¾undo¡¿" + editor);
-		// »Ø¹öÉÏÒ»¸ö²Ù×÷
+		System.out.println("ã€undoã€‘" + editor);
+		// å›æ»šä¸Šä¸€ä¸ªæ“ä½œ
 		action.rollbackCommand();
-		System.out.println("¡¾undo¡¿" + editor);
-		// »Ø¹öÉÏÒ»¸ö²Ù×÷
+		System.out.println("ã€undoã€‘" + editor);
+		// å›æ»šä¸Šä¸€ä¸ªæ“ä½œ
 		action.rollbackCommand();
-		System.out.println("¡¾undo¡¿" + editor);
-		// »Ø¹öÉÏÒ»¸ö²Ù×÷
+		System.out.println("ã€undoã€‘" + editor);
+		// å›æ»šä¸Šä¸€ä¸ªæ“ä½œ
 		action.rollbackCommand();
-		System.out.println("¡¾undo¡¿" + editor);
-		// »Ø¹öÉÏÒ»¸ö²Ù×÷
+		System.out.println("ã€undoã€‘" + editor);
+		// å›æ»šä¸Šä¸€ä¸ªæ“ä½œ
 		action.rollbackCommand();
-		System.out.println("¡¾undo¡¿" + editor);
+		System.out.println("ã€undoã€‘" + editor);
 	}
 }

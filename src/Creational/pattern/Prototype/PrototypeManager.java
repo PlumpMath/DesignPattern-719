@@ -7,27 +7,27 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ԭ�͹�����(Prototype Manager)��ɫ
+ * 原型管理器(Prototype Manager)角色
  * <p>
- * ��������ԭ����Ķ��󣬲���¼ÿһ���������Ķ���
+ * 创建具体原型类的对象，并记录每一个被创建的对象。
  * <p>
- * �����Ҫ������ԭ�Ͷ�����Ŀ���ٶ��ұȽϹ̶��Ļ������Բ�ȡ����ʽ��
- * ����������£�ԭ�Ͷ�������ÿ����ɿͻ����Լ����档
+ * 如果需要创建的原型对象数目较少而且比较固定的话，可以采取简单形式。
+ * 在这种情况下，原型对象的引用可以由客户端自己保存。
  * 
- * ���Ҫ������ԭ�Ͷ�����Ŀ���̶��Ļ������Բ�ȡ�Ǽ���ʽ��
- * ����������£��ͻ��˲��������ԭ�Ͷ�������ã�������񱻽�������������
- * �ڸ���һ��ԭ�Ͷ���֮ǰ�����������Ȳ鿴�Ƿ��Ѿ���һ������������ԭ�Ͷ���Ǽ��ڲᡣ
- * ����У���ֱ��ʹ�����ԭ�Ͷ�����п�¡�����û�У���������Ҫ���д���һ��ԭ�Ͷ��󣬲�����Ǽǣ�Ȼ��ʹ�������п�¡��
+ * 如果要创建的原型对象数目不固定的话，可以采取登记形式。
+ * 在这种情况下，客户端并不保存对原型对象的引用，这个任务被交给管理器对象。
+ * 在复制一个原型对象之前，管理器会先查看是否已经有一个满足条件的原型对象登记在册。
+ * 如果有，则直接使用这个原型对象进行克隆；如果没有，管理器需要自行创建一个原型对象，并将其登记，然后使用它进行克隆。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-3-28
+ * 创建日期：2010-3-28
  */
 public class PrototypeManager {
 
 	private static PrototypeManager manager;
 
-	private Map<String, Prototype> map;// �����Ǽ�ԭ�Ͷ���
+	private Map<String, Prototype> map;// 用来登记原型对象
 
 	private PrototypeManager() {
 		// singleton and do nothing
@@ -41,10 +41,10 @@ public class PrototypeManager {
 	}
 
 	/**
-	 * ����ָ���������ͷ�����ʵ��
+	 * 根据指定对象类型返回其实例
 	 * 
 	 * @param which
-	 *            "A"��"B"��"C"
+	 *            "A"、"B"、"C"
 	 */
 	public Prototype getPrototype(String which) {
 		Prototype prototype = getMap().get(which);

@@ -4,25 +4,25 @@
 package pattern.Memento.boxwhite;
 
 /**
- * ����¼(Memento)��ɫ
+ * 备忘录(Memento)角色
  * <p>
- * ���ڱ�����¼��ɫ���κζ����ṩһ�����ӿڣ������������洢��״̬�Ͷ����ж��󹫿���
- * ��˽����׺�ʵ�֡��׺�ʵ�ֽ������˽�ɫ��״̬�洢��һ���κζ����ܷ��ʵĵط��������ƻ��˷�װ�ԡ�
+ * 由于本备忘录角色对任何对象都提供一个宽接口，它的内容所存储的状态就对所有对象公开，
+ * 因此叫做白盒实现。白盒实现将发起人角色的状态存储在一个任何对象都能访问的地方，所以破坏了封装性。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-7-14
+ * 创建日期：2010-7-14
  */
 public class Memento {
 
-	private String state;// ������״̬
+	private String state;// 发起人状态
 
 	public Memento(String state) {
 		this.state = state;
 	}
 
 	/**
-	 * public���η��ʷ���ʹ���κζ��󶼿��Զ�ȡ������
+	 * public修饰访问方法使得任何对象都可以读取其内容
 	 */
 	public String getState() {
 		return state;

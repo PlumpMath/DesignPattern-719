@@ -1,23 +1,23 @@
 package pattern.Strategy.demo2;
 
 /**
- * ÏŞ¶îÕÛ¿Û²ßÂÔ
+ * é™é¢æŠ˜æ‰£ç­–ç•¥
  * <p>
- * ÕâÊÇÒ»¸ö×°ÊÎÀà£¬ÓÃÓÚ×°ÊÎ¾ßÌåÕÛ¿Û²ßÂÔ¡£
+ * è¿™æ˜¯ä¸€ä¸ªè£…é¥°ç±»ï¼Œç”¨äºè£…é¥°å…·ä½“æŠ˜æ‰£ç­–ç•¥ã€‚
  * <p>
- * Ò»°ã¶øÑÔ£¬ËüÖ»ÊÊÓÃÓÚ¿Í»§¶ËÔÚÕâ¼¸ÖÖËã·¨ÖĞÑ¡ÔñÒ»ÖÖµÄÇéĞÎ£¬¶ø²»ÊÊÓÃÓÚÍ¬Ê±ĞèÒª¼¸ÖÖËã·¨µÄÇéĞÎ¡£
- * ±ÈÈç£º
- * ²»¹ÜÓÃÄÇÖÖÕÛ¿Û²ßÂÔ£¬×ÜµÄÕÛ¿Û²»ÄÜ³¬¹ıÄ³¸öÏŞ¶î¡£ÕâÊ±µ¥´¿µÄ²ßÂÔÄ£Ê½¾Í²»ĞĞÁË£¬ĞèÒª½øÒ»²½Ê¹ÓÃ×°ÊÎÄ£Ê½¡£
+ * ä¸€èˆ¬è€Œè¨€ï¼Œå®ƒåªé€‚ç”¨äºå®¢æˆ·ç«¯åœ¨è¿™å‡ ç§ç®—æ³•ä¸­é€‰æ‹©ä¸€ç§çš„æƒ…å½¢ï¼Œè€Œä¸é€‚ç”¨äºåŒæ—¶éœ€è¦å‡ ç§ç®—æ³•çš„æƒ…å½¢ã€‚
+ * æ¯”å¦‚ï¼š
+ * ä¸ç®¡ç”¨é‚£ç§æŠ˜æ‰£ç­–ç•¥ï¼Œæ€»çš„æŠ˜æ‰£ä¸èƒ½è¶…è¿‡æŸä¸ªé™é¢ã€‚è¿™æ—¶å•çº¯çš„ç­–ç•¥æ¨¡å¼å°±ä¸è¡Œäº†ï¼Œéœ€è¦è¿›ä¸€æ­¥ä½¿ç”¨è£…é¥°æ¨¡å¼ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class LimitedDiscountStrategy implements DiscountStrategy {
 	
-	private double limited;// ÏŞ¶î
+	private double limited;// é™é¢
 
-	private DiscountStrategy strategy;// ¾ßÌåÕÛ¿Û²ßÂÔ
+	private DiscountStrategy strategy;// å…·ä½“æŠ˜æ‰£ç­–ç•¥
 
 	public LimitedDiscountStrategy(double limited, DiscountStrategy strategy) {
 		this.limited = limited;
@@ -25,7 +25,7 @@ public class LimitedDiscountStrategy implements DiscountStrategy {
 	}
 
 	/**
-	 * ÕÛ¿Û×Ü½ğ¶î×î¶àÎªÏŞ¶î
+	 * æŠ˜æ‰£æ€»é‡‘é¢æœ€å¤šä¸ºé™é¢
 	 * 
 	 * @see pattern.Strategy.demo2.DiscountStrategy#discount(double, int)
 	 */

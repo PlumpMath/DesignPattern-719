@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ê÷Ö¦¹¹¼ş(Composite)½ÇÉ«
+ * æ ‘ææ„ä»¶(Composite)è§’è‰²
  * <p>
- * ´ú±í²Î¼Ó×éºÏµÄÓĞÏÂ¼¶×Ó¶ÔÏóµÄ¶ÔÏó£¬¶¨Òå³öÕâÑùµÄ¶ÔÏóµÄĞĞÎª¡£
+ * ä»£è¡¨å‚åŠ ç»„åˆçš„æœ‰ä¸‹çº§å­å¯¹è±¡çš„å¯¹è±¡ï¼Œå®šä¹‰å‡ºè¿™æ ·çš„å¯¹è±¡çš„è¡Œä¸ºã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Composite implements Component {
 
@@ -21,7 +21,7 @@ public class Composite implements Component {
 
 	@Override
 	public void operation() {
-		// ±éÀúËùÓĞµÄ¹¹¼ş£¬¶¼Ö´ĞĞoperation()·½·¨
+		// éå†æ‰€æœ‰çš„æ„ä»¶ï¼Œéƒ½æ‰§è¡Œoperation()æ–¹æ³•
 		for (Component component : getComponents()) {
 			component.operation();
 		}

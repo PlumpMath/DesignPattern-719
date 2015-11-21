@@ -4,13 +4,13 @@
 package pattern.Command.demo1;
 
 /**
- * µçµÆ
+ * ç”µç¯
  * <p>
- * (¾ßÌå)½ÓÊÕÕß(Receiver)½ÇÉ«
+ * (å…·ä½“)æ¥æ”¶è€…(Receiver)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class Light implements Switchable {
 

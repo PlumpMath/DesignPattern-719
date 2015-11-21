@@ -4,13 +4,13 @@
 package pattern.Facade.demo2;
 
 /**
- * ÓÃ»§Àà
+ * ç”¨æˆ·ç±»
  * <p>
- * ¿Í»§¶Ë½ÇÉ«
+ * å®¢æˆ·ç«¯è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-25
  */
 public class User {
 
@@ -18,7 +18,7 @@ public class User {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¿Í»§¶ËÖ±½ÓÊ¹ÓÃFacadeÀà£¬±ÜÃâÁËºÍCPUµÈÖ±½Ó´ò½»µÀ
+		// å®¢æˆ·ç«¯ç›´æ¥ä½¿ç”¨Facadeç±»ï¼Œé¿å…äº†å’ŒCPUç­‰ç›´æ¥æ‰“äº¤é“
 		Computer computer = new Computer();
 		computer.start();
 	}

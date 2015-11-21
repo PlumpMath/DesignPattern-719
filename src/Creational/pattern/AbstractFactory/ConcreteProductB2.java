@@ -4,13 +4,13 @@
 package pattern.AbstractFactory;
 
 /**
- * ¾ßÌå²úÆ·ÀàB2
+ * å…·ä½“äº§å“ç±»B2
  * <p>
- * ProductB²úÆ·µÈ¼¶½á¹¹µÄÒ»Ô±
+ * ProductBäº§å“ç­‰çº§ç»“æ„çš„ä¸€å‘˜
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class ConcreteProductB2 implements ProductB {
 

@@ -8,13 +8,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Cache´úÀíÑİÊ¾
+ * Cacheä»£ç†æ¼”ç¤º
  * <p>
- * ÎªÄ³Ò»¸öÄ¿±ê²Ù×÷µÄ½á¹ûÌá¹©ÁÙÊ±µÄ´æ´¢¿Õ¼ä£¬ÒÔ±ã¶à¸ö¿Í»§¶Ë¿ÉÒÔ¹²ÏíÕâĞ©½á¹û¡£
+ * ä¸ºæŸä¸€ä¸ªç›®æ ‡æ“ä½œçš„ç»“æœæä¾›ä¸´æ—¶çš„å­˜å‚¨ç©ºé—´ï¼Œä»¥ä¾¿å¤šä¸ªå®¢æˆ·ç«¯å¯ä»¥å…±äº«è¿™äº›ç»“æœã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-22
  */
 public class CacheProxyDemo {
 
@@ -27,7 +27,7 @@ public class CacheProxyDemo {
 		System.out.println(service.fetchWebPage("1"));
 		System.out.println(service.fetchWebPage("2"));
 		try {
-			Thread.sleep(6000);// ÔİÍ£6ÃëÒÔ±ã»º´æÖĞµÄÍøÒ³¹ıÆÚ
+			Thread.sleep(6000);// æš‚åœ6ç§’ä»¥ä¾¿ç¼“å­˜ä¸­çš„ç½‘é¡µè¿‡æœŸ
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -39,13 +39,13 @@ public class CacheProxyDemo {
 }
 
 /**
- * ÍøÒ³
+ * ç½‘é¡µ
  */
 class WebPage {
 	
-	private String id;// ±êÊ¶·û
-	private String content;// ÄÚÈİ
-	private Date timestamp;// Ê±¼ä´Á
+	private String id;// æ ‡è¯†ç¬¦
+	private String content;// å†…å®¹
+	private Date timestamp;// æ—¶é—´æˆ³
 
 	public WebPage(String id, String content) {
 		this.id = id;
@@ -76,36 +76,36 @@ class WebPage {
 }
 
 /**
- * WebPageService½Ó¿Ú
+ * WebPageServiceæ¥å£
  */
 interface WebPageService {
 
 	/**
-	 * ¸ù¾İ±êÊ¶·û·µ»ØÍøÒ³
+	 * æ ¹æ®æ ‡è¯†ç¬¦è¿”å›ç½‘é¡µ
 	 */
 	public WebPage fetchWebPage(String id);
 
 	/**
-	 * ¸ù¾İ±êÊ¶·ûºÍÊ±¼ä´ÁÅĞ¶Ï¸ÃÍøÒ³ÊÇ·ñ¹ıÆÚ
+	 * æ ¹æ®æ ‡è¯†ç¬¦å’Œæ—¶é—´æˆ³åˆ¤æ–­è¯¥ç½‘é¡µæ˜¯å¦è¿‡æœŸ
 	 * 
 	 * @param id
-	 *            ÍøÒ³±êÊ¶·û
+	 *            ç½‘é¡µæ ‡è¯†ç¬¦
 	 * @param timestamp
-	 *            Ê±¼ä´Á
+	 *            æ—¶é—´æˆ³
 	 */
 	public boolean isOutOfDate(String id, Date timestamp);
 }
 
 /**
- * WebPageServiceImplµÄ·şÎñÆ÷¶ËÊµÏÖ
+ * WebPageServiceImplçš„æœåŠ¡å™¨ç«¯å®ç°
  */
 class WebPageServiceImpl implements WebPageService {
 
-	/** ÍøÒ³Ä¬ÈÏÓĞĞ§ÆÚÎª5Ãë(Óëµ±Ç°Ê±¼ä±È) */
+	/** ç½‘é¡µé»˜è®¤æœ‰æ•ˆæœŸä¸º5ç§’(ä¸å½“å‰æ—¶é—´æ¯”) */
 	private static final long INTERVAL = 5*1000;
 	
 	/**
-	 * ¸ù¾İ±êÊ¶·û·µ»Ø·şÎñÆ÷µ±Ç°µÄÍøÒ³
+	 * æ ¹æ®æ ‡è¯†ç¬¦è¿”å›æœåŠ¡å™¨å½“å‰çš„ç½‘é¡µ
 	 */
 	@Override
 	public WebPage fetchWebPage(String id) {
@@ -113,7 +113,7 @@ class WebPageServiceImpl implements WebPageService {
 	}
 
 	/**
-	 * ¸ù¾İ±êÊ¶·ûºÍÊ±¼ä´ÁÅĞ¶Ï¸ÃÍøÒ³ÊÇ·ñ¹ıÆÚ(ÓĞĞ§ÆÚÎª5Ãë)
+	 * æ ¹æ®æ ‡è¯†ç¬¦å’Œæ—¶é—´æˆ³åˆ¤æ–­è¯¥ç½‘é¡µæ˜¯å¦è¿‡æœŸ(æœ‰æ•ˆæœŸä¸º5ç§’)
 	 */
 	@Override
 	public boolean isOutOfDate(String id, Date timestamp) {
@@ -122,17 +122,17 @@ class WebPageServiceImpl implements WebPageService {
 }
 
 /**
- * WebPageServiceµÄ»º´æ´úÀí
+ * WebPageServiceçš„ç¼“å­˜ä»£ç†
  * <p>
- * Õâ¸öÀàÊÇ±»¸÷¸ö¿Í»§¶ËÊ¹ÓÃµÄÀà£¬ÒòÎªËüÓĞÁË»º´æ»úÖÆ£¬Ìá¸ßÁËÏìÓ¦ËÙ¶È¡£
+ * è¿™ä¸ªç±»æ˜¯è¢«å„ä¸ªå®¢æˆ·ç«¯ä½¿ç”¨çš„ç±»ï¼Œå› ä¸ºå®ƒæœ‰äº†ç¼“å­˜æœºåˆ¶ï¼Œæé«˜äº†å“åº”é€Ÿåº¦ã€‚
  */
 class WebPageCacheProxy implements WebPageService {
 
-	// µ¥Àı
+	// å•ä¾‹
 	public static WebPageCacheProxy proxy = new WebPageCacheProxy();
-	// »º´æMap
+	// ç¼“å­˜Map
 	private static Map<String, WebPage> id_webpage_map = new HashMap<String, WebPage>();
-	// ÕæÕıµÄWebPageService¶ÔÏó
+	// çœŸæ­£çš„WebPageServiceå¯¹è±¡
 	private WebPageService webPageService;
 
 	private WebPageCacheProxy() {
@@ -147,34 +147,34 @@ class WebPageCacheProxy implements WebPageService {
 	}
 
 	/**
-	 * ·µ»ØWebPageServiceµÄ»º´æ´úÀí¶ÔÏó
+	 * è¿”å›WebPageServiceçš„ç¼“å­˜ä»£ç†å¯¹è±¡
 	 */
 	public static WebPageService getInstance() {
 		return proxy;
 	}
 
 	/**
-	 * ¸ù¾İ±êÊ¶·û·µ»ØÍøÒ³(Ê¹ÓÃÁË»º´æ»úÖÆ)
+	 * æ ¹æ®æ ‡è¯†ç¬¦è¿”å›ç½‘é¡µ(ä½¿ç”¨äº†ç¼“å­˜æœºåˆ¶)
 	 */
 	@Override
 	public WebPage fetchWebPage(String id) {
 		WebPage webpage = id_webpage_map.get(id);
 		if (webpage != null) {
-			// »º´æÖĞÓĞÖ¸¶¨ÍøÒ³²¢ÇÒÃ»ÓĞ¹ıÆÚÔòÖ±½Ó·µ»Ø»º´æÖĞµÄ¶ÔÏó
+			// ç¼“å­˜ä¸­æœ‰æŒ‡å®šç½‘é¡µå¹¶ä¸”æ²¡æœ‰è¿‡æœŸåˆ™ç›´æ¥è¿”å›ç¼“å­˜ä¸­çš„å¯¹è±¡
 			if (!isOutOfDate(id, webpage.getTimestamp())) {
 				System.out.println("webpage from cache.");
 				return webpage;
 			}
 			System.out.println("webpage is out of date.");
 		}
-		// »º´æÖĞÃ»ÓĞÖ¸¶¨ÍøÒ³»òÕßÒÑ¾­¹ıÆÚÔòÈ¥·şÎñÆ÷È¡×îĞÂµÄÍøÒ³²¢¼ÓÈë»º´æ
+		// ç¼“å­˜ä¸­æ²¡æœ‰æŒ‡å®šç½‘é¡µæˆ–è€…å·²ç»è¿‡æœŸåˆ™å»æœåŠ¡å™¨å–æœ€æ–°çš„ç½‘é¡µå¹¶åŠ å…¥ç¼“å­˜
 		webpage = getWebPageService().fetchWebPage(id);
 		id_webpage_map.put(id, webpage);
 		return webpage;
 	}
 
 	/**
-	 * Î¯ÍĞ¸øÕæÕıµÄWebPageService¶ÔÏóÈ¥ÊµÏÖ
+	 * å§”æ‰˜ç»™çœŸæ­£çš„WebPageServiceå¯¹è±¡å»å®ç°
 	 */
 	@Override
 	public boolean isOutOfDate(String id, Date timestamp) {

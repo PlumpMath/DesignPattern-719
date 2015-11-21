@@ -4,21 +4,21 @@
 package pattern.Decorator.demo2;
 
 /**
- * ¿§·È½Ó¿Ú
+ * å’–å•¡æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public interface Coffee {
 
 	/**
-	 * Ãû³Æ
+	 * åç§°
 	 */
 	public String getName();
 
 	/**
-	 * ¼Û¸ñ
+	 * ä»·æ ¼
 	 */
 	public double getPrice();
 }

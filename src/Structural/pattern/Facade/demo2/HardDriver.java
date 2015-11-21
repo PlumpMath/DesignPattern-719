@@ -4,23 +4,23 @@
 package pattern.Facade.demo2;
 
 /**
- * Ó²ÅÌÇı¶¯
+ * ç¡¬ç›˜é©±åŠ¨
  * <p>
- * ¼ÆËã»ú×ÓÏµÍ³Ö®Ò»
+ * è®¡ç®—æœºå­ç³»ç»Ÿä¹‹ä¸€
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-25
  */
 public class HardDriver {
 	
-	/** Ó²ÅÌÆô¶¯Çø */
+	/** ç¡¬ç›˜å¯åŠ¨åŒº */
 	public static final long BOOT_SECTOR = 0;
-	/** Æô¶¯Çø´óĞ¡ */
+	/** å¯åŠ¨åŒºå¤§å° */
 	public static final int SECTOR_SIZE = 1024;
 
 	/**
-	 * Ó²ÅÌÇı¶¯¶ÁÈ¡Êı¾İ
+	 * ç¡¬ç›˜é©±åŠ¨è¯»å–æ•°æ®
 	 */
 	public byte[] read(long lba, int size) {
 		System.out.println("HardDriver.read " + lba);

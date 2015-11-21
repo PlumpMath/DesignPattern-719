@@ -4,13 +4,13 @@
 package pattern.Builder.demo1;
 
 /**
- * ¹Ë¿ÍÀà
+ * é¡¾å®¢ç±»
  * <p>
- * ¿Í»§¶Ë½ÇÉ«
+ * å®¢æˆ·ç«¯è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public class Customer {
 
@@ -20,8 +20,8 @@ public class Customer {
 	public static void main(String[] args) {
 		HamburgerBuilder builder = new BeefHamburgerBuilder();
 		Cook cook = new Cook(builder);
-		cook.construct();// ¿ªÊ¼ÖÆ×÷ºº±¤
-		Hamburger ham = builder.getHamburger();// È¡»ØÖÆ×÷ºÃµÄºº±¤
+		cook.construct();// å¼€å§‹åˆ¶ä½œæ±‰å ¡
+		Hamburger ham = builder.getHamburger();// å–å›åˆ¶ä½œå¥½çš„æ±‰å ¡
 		System.out.println("This is beef hamburger\n" + ham);
 		System.out.println();
 		
@@ -31,7 +31,7 @@ public class Customer {
 		ham = builder.getHamburger();
 		System.out.println("This is chicken hamburger\n" + ham);
 		System.out.println();
-		// ÕâÊÇºóÀ´ĞÂ³öÏÖµÄÓãÈâºº±¤½¨ÔìÆ÷£¬½¨ÔìÄ£Ê½¶ÔÀ©Õ¹ĞÔµÄÖ§³Ö¡£
+		// è¿™æ˜¯åæ¥æ–°å‡ºç°çš„é±¼è‚‰æ±‰å ¡å»ºé€ å™¨ï¼Œå»ºé€ æ¨¡å¼å¯¹æ‰©å±•æ€§çš„æ”¯æŒã€‚
 		builder = new FishHamburgerBuilder();
 		cook.setBuilder(builder);
 		cook.construct();
@@ -41,28 +41,28 @@ public class Customer {
 }
 
 /**
- * ÓãÈâºº±¤°ü½¨ÔìÆ÷
+ * é±¼è‚‰æ±‰å ¡åŒ…å»ºé€ å™¨
  * <p>
- * ÕâÊÇºóÀ´ĞÂ³öÏÖµÄºº±¤½¨ÔìÆ÷£¬±íÃ÷½¨ÔìÄ£Ê½Ö§³ÖÀ©Õ¹
+ * è¿™æ˜¯åæ¥æ–°å‡ºç°çš„æ±‰å ¡å»ºé€ å™¨ï¼Œè¡¨æ˜å»ºé€ æ¨¡å¼æ”¯æŒæ‰©å±•
  */
 class FishHamburgerBuilder extends AbstractHamburgerBuilder {
 
 	/**
-	 * Á½Æ¬Ãæ°ü
+	 * ä¸¤ç‰‡é¢åŒ…
 	 */
 	public void buildBread() {
 		getHamburger().setBread("two bread");
 	}
 
 	/**
-	 * ÓãÈâ
+	 * é±¼è‚‰
 	 */
 	public void buildMeat() {
 		getHamburger().setMeat("fish");
 	}
 
 	/**
-	 * ×Ï²Ë
+	 * ç´«èœ
 	 */
 	public void buildVegetable() {
 		getHamburger().setVegetable("laver");

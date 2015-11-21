@@ -6,52 +6,52 @@ package pattern.Visitor.demo2;
 import java.util.List;
 
 /**
- * µçÄÔÉÌ³Ç
+ * ç”µè„‘å•†åŸ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-22
  */
 public class ComputerMall {
 
 	/**
-	 * ½ÓÊÜ¶©µ¥£¬²¢´òÓ¡±¨±í
+	 * æ¥å—è®¢å•ï¼Œå¹¶æ‰“å°æŠ¥è¡¨
 	 */
 	public void order(List<Equipment> equipments) {
-		// ·ÖÎö¶©µ¥ÊıÁ¿ĞÅÏ¢
+		// åˆ†æè®¢å•æ•°é‡ä¿¡æ¯
 		PartAmountVisitor invVisitor = new PartAmountVisitor();
 		for (Equipment equipment : equipments) {
 			equipment.accept(invVisitor);
 		}
-		System.out.println("ËùÓĞÁã¼ş×ÜÁ¿=" + invVisitor.getPartsAmount());
-		System.out.println("CPU×ÜÁ¿=" + invVisitor.getCpus());
-		System.out.println("Case×ÜÁ¿=" + invVisitor.getCases());
-		System.out.println("Mainboard×ÜÁ¿=" + invVisitor.getMainboards());
-		System.out.println("HardDisk×ÜÁ¿=" + invVisitor.getHarddisks());
-		System.out.println("IntegratedBoard×ÜÁ¿=" + invVisitor.getIntegratedBoards());
-		System.out.println("PC×ÜÁ¿=" + invVisitor.getPcs());
+		System.out.println("æ‰€æœ‰é›¶ä»¶æ€»é‡=" + invVisitor.getPartsAmount());
+		System.out.println("CPUæ€»é‡=" + invVisitor.getCpus());
+		System.out.println("Caseæ€»é‡=" + invVisitor.getCases());
+		System.out.println("Mainboardæ€»é‡=" + invVisitor.getMainboards());
+		System.out.println("HardDiskæ€»é‡=" + invVisitor.getHarddisks());
+		System.out.println("IntegratedBoardæ€»é‡=" + invVisitor.getIntegratedBoards());
+		System.out.println("PCæ€»é‡=" + invVisitor.getPcs());
 		System.out.println();
-		// ·ÖÎö¶©µ¥Ô­Ê¼¼Û¸ñĞÅÏ¢
+		// åˆ†æè®¢å•åŸå§‹ä»·æ ¼ä¿¡æ¯
 		DefaultPriceVisitor prcVisitor = new DefaultPriceVisitor();
 		for (Equipment equipment : equipments) {
 			equipment.accept(prcVisitor);
 		}
-		System.out.println("ËùÓĞÉÌÆ·Ô­¼Û¹²¼Æ=" + prcVisitor.getTotalPrice());
+		System.out.println("æ‰€æœ‰å•†å“åŸä»·å…±è®¡=" + prcVisitor.getTotalPrice());
 		System.out.println();
-		// ·ÖÎö¶©µ¥VIP¼Û¸ñĞÅÏ¢
+		// åˆ†æè®¢å•VIPä»·æ ¼ä¿¡æ¯
 		VipPriceVisitor vipVisitor = new VipPriceVisitor();
 		for (Equipment equipment : equipments) {
 			equipment.accept(vipVisitor);
 		}
-		System.out.println("ËùÓĞÉÌÆ·VIPÓÅ»İ¼Û¹²¼Æ=" + vipVisitor.getVipTotalPrice());
+		System.out.println("æ‰€æœ‰å•†å“VIPä¼˜æƒ ä»·å…±è®¡=" + vipVisitor.getVipTotalPrice());
 		System.out.println();
-		// ·ÖÎö¶©µ¥ÕÛ¿Û¼Û¸ñĞÅÏ¢
+		// åˆ†æè®¢å•æŠ˜æ‰£ä»·æ ¼ä¿¡æ¯
 		DiscountPriceVisitor disVisitor = new DiscountPriceVisitor();
 		for (Equipment equipment : equipments) {
 			equipment.accept(disVisitor);
 		}
-		System.out.println("ËùÓĞÉÌÆ·Ô­¼Û¹²¼Æ=" + disVisitor.getTotalPrice());
-		System.out.println("ËùÓĞÉÌÆ·ÕÛ¿Û¼Û¹²¼Æ=" + disVisitor.getDiscountPrice());
+		System.out.println("æ‰€æœ‰å•†å“åŸä»·å…±è®¡=" + disVisitor.getTotalPrice());
+		System.out.println("æ‰€æœ‰å•†å“æŠ˜æ‰£ä»·å…±è®¡=" + disVisitor.getDiscountPrice());
 		System.out.println();
 	}
 }

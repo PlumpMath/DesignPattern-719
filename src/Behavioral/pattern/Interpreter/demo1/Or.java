@@ -4,13 +4,13 @@
 package pattern.Interpreter.demo1;
 
 /**
- * OR±í´ïÊ½
+ * ORè¡¨è¾¾å¼
  * <p>
- * ·ÇÖÕ½á·û±í´ïÊ½(Nonterminal Expression)½ÇÉ«
+ * éç»ˆç»“ç¬¦è¡¨è¾¾å¼(Nonterminal Expression)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-20
  */
 public class Or extends Expression {
 
@@ -18,7 +18,7 @@ public class Or extends Expression {
 	private Expression rightExp;
 
 	/**
-	 * ´ú±í leftExp OR rightExp
+	 * ä»£è¡¨ leftExp OR rightExp
 	 */
 	public Or(Expression leftExp, Expression rightExp) {
 		this.leftExp = leftExp;

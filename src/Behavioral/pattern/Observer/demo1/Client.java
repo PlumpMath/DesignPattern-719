@@ -4,11 +4,11 @@
 package pattern.Observer.demo1;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class Client {
 

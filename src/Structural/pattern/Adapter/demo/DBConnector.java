@@ -4,11 +4,11 @@
 package pattern.Adapter.demo;
 
 /**
- * Êı¾İ¿âÁ¬½ÓÆ÷½Ó¿Ú
+ * æ•°æ®åº“è¿æ¥å™¨æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-4
  */
 public interface DBConnector {
 

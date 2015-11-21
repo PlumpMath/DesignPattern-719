@@ -4,11 +4,11 @@
 package pattern.Decorator.demo2;
 
 /**
- * ¿§·ÈÊÛÂô»ú(Coffee¿Í»§¶ËÀà)
+ * å’–å•¡å”®å–æœº(Coffeeå®¢æˆ·ç«¯ç±»)
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public class CoffeeMachine {
 
@@ -19,23 +19,23 @@ public class CoffeeMachine {
 		Coffee pureCoffee = new VietnameseCoffee();
 		Coffee cappuccino = new MilkDecorator(
 				new ChocolateDecorator(pureCoffee));
-		System.out.println("¿¨²¼ÆæÅµ£º");
+		System.out.println("å¡å¸ƒå¥‡è¯ºï¼š");
 		printOrder(cappuccino);
 
 		Coffee pureCoffee2 = new MexicanCoffee();
 		Coffee black = new SugarDecorator(pureCoffee2);
-		System.out.println("ºÚ¿§·È£º");
+		System.out.println("é»‘å’–å•¡ï¼š");
 		printOrder(black);
 
 		Coffee pureCoffee3 = new VietnameseCoffee();
 		Coffee mocha = new MilkDecorator(new ChocolateDecorator(
 				new SugarDecorator(pureCoffee3)));
-		System.out.println("Ä¦¿¨£º");
+		System.out.println("æ‘©å¡ï¼š");
 		printOrder(mocha);
 	}
 
 	private static void printOrder(Coffee coffee) {
-		System.out.println("³É·Ö£º" + coffee.getName());
-		System.out.println("¼Û¸ñ£º" + coffee.getPrice());
+		System.out.println("æˆåˆ†ï¼š" + coffee.getName());
+		System.out.println("ä»·æ ¼ï¼š" + coffee.getPrice());
 	}
 }

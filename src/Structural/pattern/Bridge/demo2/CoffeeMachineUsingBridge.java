@@ -7,18 +7,18 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Ê¹ÓÃÇÅÁºÄ£Ê½ÊµÏÖµÄ¿§·È»ú
+ * ä½¿ç”¨æ¡¥æ¢æ¨¡å¼å®ç°çš„å’–å•¡æœº
  * <p>
- * ÕâÖÖÊµÏÖ·½Ê½²»½ö¾ßÓĞ×°ÊÎÄ£Ê½µÄÓÅµã£º¼õÉÙÁË×ÓÀàÊıÁ¿£¬²¢ÇÒÒ×ÓÚÀ©Õ¹¡£
- * ±ÈÈçÒÔºóĞÂÔö¼ÓÒ»¸ö¿§·ÈÆ·ÖÖ£¬Ö»ĞèÒªÔö¼ÓÒ»¸öĞÂµÄĞŞÕı³éÏó½ÇÉ«¼´¿É£»ĞÂÔö¼ÓÒ»¸ö¿§·ÈÌí¼ÓÎï£¬Ö»ĞèÒªÔö¼ÓÒ»¸öĞÂµÄ¾ßÌåÊµÏÖ»¯½ÇÉ«¼´¿É¡£
- * »¹¿Ë·şÁËËüµÄµÄÈ±µã£º3£¬²»Ò×ĞŞ¸ÄºÍÎ¬»¤£º±ÈÈçCoffee½Ó¿ÚÖĞÒªÔö¼ÓÒ»¸öĞÂµÄ·½·¨£¬²»»áµ¼ÖÂÖÚ¶à×ÓÀà¶¼±ØĞë½øĞĞĞŞ¸Ä¡£
- * Ö»ĞèÒªĞŞ¸ÄCoffee¼Ì³ĞÌåÏµÖĞµÄÏà¹Ø×ÓÀà¼´¿É£¬¶øCoffeeAccretion¼Ì³ĞÌåÏµÔòÎŞĞèÈÎºÎ±ä¶¯£»
- * Í¬ÑùµÄ£¬Èç¹ûCoffeeAccretion¼Ì³ĞÌåÏµĞèÒªĞŞ¸Ä(ĞÂÔöÄ³¸ö·½·¨)£¬Coffee¼Ì³ĞÌåÏµÒ²ÎŞĞè±ä¶¯¡£
- * ÕâÁ½¸ö¼Ì³ĞÌåÏµµÄ±ä¶¯¶¼ÊÇÏà»¥¶ÀÁ¢µÄ£¬²»»áÓ°Ïìµ½ÁíÒ»¶Ë¡£
+ * è¿™ç§å®ç°æ–¹å¼ä¸ä»…å…·æœ‰è£…é¥°æ¨¡å¼çš„ä¼˜ç‚¹ï¼šå‡å°‘äº†å­ç±»æ•°é‡ï¼Œå¹¶ä¸”æ˜“äºæ‰©å±•ã€‚
+ * æ¯”å¦‚ä»¥åæ–°å¢åŠ ä¸€ä¸ªå’–å•¡å“ç§ï¼Œåªéœ€è¦å¢åŠ ä¸€ä¸ªæ–°çš„ä¿®æ­£æŠ½è±¡è§’è‰²å³å¯ï¼›æ–°å¢åŠ ä¸€ä¸ªå’–å•¡æ·»åŠ ç‰©ï¼Œåªéœ€è¦å¢åŠ ä¸€ä¸ªæ–°çš„å…·ä½“å®ç°åŒ–è§’è‰²å³å¯ã€‚
+ * è¿˜å…‹æœäº†å®ƒçš„çš„ç¼ºç‚¹ï¼š3ï¼Œä¸æ˜“ä¿®æ”¹å’Œç»´æŠ¤ï¼šæ¯”å¦‚Coffeeæ¥å£ä¸­è¦å¢åŠ ä¸€ä¸ªæ–°çš„æ–¹æ³•ï¼Œä¸ä¼šå¯¼è‡´ä¼—å¤šå­ç±»éƒ½å¿…é¡»è¿›è¡Œä¿®æ”¹ã€‚
+ * åªéœ€è¦ä¿®æ”¹Coffeeç»§æ‰¿ä½“ç³»ä¸­çš„ç›¸å…³å­ç±»å³å¯ï¼Œè€ŒCoffeeAccretionç»§æ‰¿ä½“ç³»åˆ™æ— éœ€ä»»ä½•å˜åŠ¨ï¼›
+ * åŒæ ·çš„ï¼Œå¦‚æœCoffeeAccretionç»§æ‰¿ä½“ç³»éœ€è¦ä¿®æ”¹(æ–°å¢æŸä¸ªæ–¹æ³•)ï¼ŒCoffeeç»§æ‰¿ä½“ç³»ä¹Ÿæ— éœ€å˜åŠ¨ã€‚
+ * è¿™ä¸¤ä¸ªç»§æ‰¿ä½“ç³»çš„å˜åŠ¨éƒ½æ˜¯ç›¸äº’ç‹¬ç«‹çš„ï¼Œä¸ä¼šå½±å“åˆ°å¦ä¸€ç«¯ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public class CoffeeMachineUsingBridge {
 
@@ -26,7 +26,7 @@ public class CoffeeMachineUsingBridge {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¹Ë¿Í¶¨ÖÆ¸÷ÖÖ¸÷ÑùµÄ¿§·È£¬Ö»ĞèÒªÊÖ¹¤Ìí¼Ó¸÷ÖÖÌí¼ÓÎï¼´¿É
+		// é¡¾å®¢å®šåˆ¶å„ç§å„æ ·çš„å’–å•¡ï¼Œåªéœ€è¦æ‰‹å·¥æ·»åŠ å„ç§æ·»åŠ ç‰©å³å¯
 		new MexicanCoffee().printOrder();
 		new VietnameseCoffee().printOrder();
 		new MexicanCoffee(new Milk()).printOrder();
@@ -42,27 +42,27 @@ public class CoffeeMachineUsingBridge {
 	static interface Coffee {
 
 		/**
-		 * Ãû³Æ
+		 * åç§°
 		 */
 		public String getName();
 
 		/**
-		 * ¼Û¸ñ
+		 * ä»·æ ¼
 		 */
 		public double getPrice();
 
 		/**
-		 * ´òÓ¡³ö¶©µ¥ĞÅÏ¢
+		 * æ‰“å°å‡ºè®¢å•ä¿¡æ¯
 		 */
 		public void printOrder();
 	}
 
 	/**
-	 * Abstraction½ÇÉ«
+	 * Abstractionè§’è‰²
 	 */
 	static abstract class AbstractCoffee implements Coffee {
 
-		// ¿§·ÈÌí¼ÓÎïÁĞ±í
+		// å’–å•¡æ·»åŠ ç‰©åˆ—è¡¨
 		private List<CoffeeAccretion> accretions;
 
 		public AbstractCoffee(CoffeeAccretion... accretions) {
@@ -81,9 +81,9 @@ public class CoffeeMachineUsingBridge {
 		public String getName() {
 			if (getAccretions() == null) return "";
 			StringBuilder sb = new StringBuilder();
-			// Î¯ÅÉµ½¸÷¸öCoffeeAccretion¶ÔÏóÖĞ
+			// å§”æ´¾åˆ°å„ä¸ªCoffeeAccretionå¯¹è±¡ä¸­
 			for (CoffeeAccretion accretion : getAccretions()) {
-				sb.append("¼Ó");
+				sb.append("åŠ ");
 				sb.append(accretion.name());
 			}
 			return sb.toString();
@@ -93,7 +93,7 @@ public class CoffeeMachineUsingBridge {
 		public double getPrice() {
 			if (getAccretions() == null) return 0;
 			double price = 0;
-			// Î¯ÅÉµ½¸÷¸öCoffeeAccretion¶ÔÏóÖĞ
+			// å§”æ´¾åˆ°å„ä¸ªCoffeeAccretionå¯¹è±¡ä¸­
 			for (CoffeeAccretion accretion : getAccretions()) {
 				price += accretion.price();
 			}
@@ -101,16 +101,16 @@ public class CoffeeMachineUsingBridge {
 		}
 
 		/**
-		 * ±È½Ï¶ÀÁ¢µÄÉÌÒµ·½·¨(ÎŞĞèImplementor¹Ø×¢ºÍÊµÏÖ)
+		 * æ¯”è¾ƒç‹¬ç«‹çš„å•†ä¸šæ–¹æ³•(æ— éœ€Implementorå…³æ³¨å’Œå®ç°)
 		 */
 		public void printOrder() {
-			System.out.print("*Ãû³Æ*£º" + getName());
-			System.out.println("  *¼Û¸ñ*£º" + getPrice());
+			System.out.print("*åç§°*ï¼š" + getName());
+			System.out.println("  *ä»·æ ¼*ï¼š" + getPrice());
 		}
 	}
 
 	/**
-	 * RefinedAbstraction½ÇÉ«
+	 * RefinedAbstractionè§’è‰²
 	 */
 	static class MexicanCoffee extends AbstractCoffee {
 
@@ -119,15 +119,15 @@ public class CoffeeMachineUsingBridge {
 		}
 
 		/**
-		 * ĞŞÕı¸¸ÀàAbstractionµÄĞĞÎª
+		 * ä¿®æ­£çˆ¶ç±»Abstractionçš„è¡Œä¸º
 		 */
 		@Override
 		public String getName() {
-			return "Ä«Î÷¸ç¿§·È" + super.getName();
+			return "å¢¨è¥¿å“¥å’–å•¡" + super.getName();
 		}
 
 		/**
-		 * ĞŞÕı¸¸ÀàAbstractionµÄĞĞÎª
+		 * ä¿®æ­£çˆ¶ç±»Abstractionçš„è¡Œä¸º
 		 */
 		@Override
 		public double getPrice() {
@@ -136,7 +136,7 @@ public class CoffeeMachineUsingBridge {
 	}
 
 	/**
-	 * RefinedAbstraction½ÇÉ«
+	 * RefinedAbstractionè§’è‰²
 	 */
 	static class VietnameseCoffee extends AbstractCoffee {
 
@@ -146,7 +146,7 @@ public class CoffeeMachineUsingBridge {
 
 		@Override
 		public String getName() {
-			return "Ô½ÄÏ¿§·È" + super.getName();
+			return "è¶Šå—å’–å•¡" + super.getName();
 		}
 
 		@Override
@@ -156,29 +156,29 @@ public class CoffeeMachineUsingBridge {
 	}
 
 	/**
-	 * Implementor½ÇÉ«
+	 * Implementorè§’è‰²
 	 */
 	static interface CoffeeAccretion {
 
 		/**
-		 * Ãû³Æ
+		 * åç§°
 		 */
 		public String name();
 
 		/**
-		 * ¼Û¸ñ
+		 * ä»·æ ¼
 		 */
 		public double price();
 	}
 
 	/**
-	 * ConcreteImplementor½ÇÉ«
+	 * ConcreteImplementorè§’è‰²
 	 */
 	static class Milk implements CoffeeAccretion {
 
 		@Override
 		public String name() {
-			return "Å£ÄÌ";
+			return "ç‰›å¥¶";
 		}
 
 		@Override
@@ -191,7 +191,7 @@ public class CoffeeMachineUsingBridge {
 
 		@Override
 		public String name() {
-			return "ÌÇ";
+			return "ç³–";
 		}
 
 		@Override

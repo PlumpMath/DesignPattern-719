@@ -4,18 +4,18 @@
 package pattern.Visitor.demo2;
 
 /**
- * ¹ı½ÚÕÛ¿Û¼Û¸ñ·ÃÎÊÕß
+ * è¿‡èŠ‚æŠ˜æ‰£ä»·æ ¼è®¿é—®è€…
  * <p>
- * ÓÃÓÚ¹ı½Ú´òÕÛÊ±¼ÆËã¶©µ¥¼Û¸ñ
+ * ç”¨äºè¿‡èŠ‚æ‰“æŠ˜æ—¶è®¡ç®—è®¢å•ä»·æ ¼
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class DiscountPriceVisitor implements Visitor {
 
-	private int number = 0;// Áã¼şÊıÁ¿
-	private double totalPrice = 0;// ×Ü¼Û
+	private int number = 0;// é›¶ä»¶æ•°é‡
+	private double totalPrice = 0;// æ€»ä»·
 
 	@Override
 	public void visitCPU(CPU cpu) {
@@ -37,7 +37,7 @@ public class DiscountPriceVisitor implements Visitor {
 
 	@Override
 	public void visitIntegratedBoard(IntegratedBoard integratedboard) {
-		// ¼Û¸ñºÍÊıÁ¿¶¼ËãÔÚÁã¼şÀïÃæÁË£¬ËùÒÔ×ÜÌå²»ÔÙ¼ÆËã
+		// ä»·æ ¼å’Œæ•°é‡éƒ½ç®—åœ¨é›¶ä»¶é‡Œé¢äº†ï¼Œæ‰€ä»¥æ€»ä½“ä¸å†è®¡ç®—
 		// do nothing
 	}
 
@@ -49,30 +49,30 @@ public class DiscountPriceVisitor implements Visitor {
 
 	@Override
 	public void visitPC(PC pc) {
-		// ¼Û¸ñºÍÊıÁ¿¶¼ËãÔÚÁã¼şÀïÃæÁË£¬ËùÒÔ×ÜÌå²»ÔÙ¼ÆËã
+		// ä»·æ ¼å’Œæ•°é‡éƒ½ç®—åœ¨é›¶ä»¶é‡Œé¢äº†ï¼Œæ‰€ä»¥æ€»ä½“ä¸å†è®¡ç®—
 		// do nothing
 	}
 
 	/**
-	 * ×Ü¼Û
+	 * æ€»ä»·
 	 */
 	public double getTotalPrice() {
 		return totalPrice;
 	}
 
 	/**
-	 * ÕÛ¿Û¼Û¸ñ
+	 * æŠ˜æ‰£ä»·æ ¼
 	 */
 	public double getDiscountPrice() {
-		// 5¸öÖ®ÄÚ´ò95ÕÛ£¬20Ö®ÄÚ´ò9ÕÛ£¬¶àÓÚ20´ò85ÕÛ
+		// 5ä¸ªä¹‹å†…æ‰“95æŠ˜ï¼Œ20ä¹‹å†…æ‰“9æŠ˜ï¼Œå¤šäº20æ‰“85æŠ˜
 		if (number < 5) {
-			System.out.println("¹ºÂòÁã¼ş×ÜÁ¿£º" + number + "¡¾95ÕÛ¡¿");
+			System.out.println("è´­ä¹°é›¶ä»¶æ€»é‡ï¼š" + number + "ã€95æŠ˜ã€‘");
 			return totalPrice * 0.95;
 		} else if (number < 20) {
-			System.out.println("¹ºÂòÁã¼ş×ÜÁ¿£º" + number + "¡¾9ÕÛ¡¿");
+			System.out.println("è´­ä¹°é›¶ä»¶æ€»é‡ï¼š" + number + "ã€9æŠ˜ã€‘");
 			return totalPrice * 0.9;
 		} else {
-			System.out.println("¹ºÂòÁã¼ş×ÜÁ¿£º" + number + "¡¾85ÕÛ¡¿");
+			System.out.println("è´­ä¹°é›¶ä»¶æ€»é‡ï¼š" + number + "ã€85æŠ˜ã€‘");
 			return totalPrice * 0.85;
 		}
 	}

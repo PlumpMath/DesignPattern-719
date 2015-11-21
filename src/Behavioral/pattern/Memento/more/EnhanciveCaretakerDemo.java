@@ -7,11 +7,11 @@ import pattern.Memento.boxblack.IMemento;
 import pattern.Memento.boxblack.Originator;
 
 /**
- * ÔöÇ¿¸ºÔğÈËÊ¾Àı
+ * å¢å¼ºè´Ÿè´£äººç¤ºä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-15
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-15
  */
 public class EnhanciveCaretakerDemo {
 
@@ -22,44 +22,44 @@ public class EnhanciveCaretakerDemo {
 		Originator originator = new Originator();
 		EnhanciveCaretaker caretaker = new EnhanciveCaretaker(originator);
 		originator.setState("ON");
-		// ÔöÇ¿¸ºÔğÈËÎª·¢ÆğÈË´´½¨Ò»¸öµ±Ç°×´Ì¬µÄ±¸ÍüÂ¼ 
+		// å¢å¼ºè´Ÿè´£äººä¸ºå‘èµ·äººåˆ›å»ºä¸€ä¸ªå½“å‰çŠ¶æ€çš„å¤‡å¿˜å½• 
 		caretaker.createMemento();
 		originator.setState("OFF");
-		// ÔöÇ¿¸ºÔğÈËÊ¹ÓÃ±¸ÍüÂ¼¶ÔÏó»Ö¸´·¢ÆğÈË×´Ì¬
+		// å¢å¼ºè´Ÿè´£äººä½¿ç”¨å¤‡å¿˜å½•å¯¹è±¡æ¢å¤å‘èµ·äººçŠ¶æ€
 		caretaker.restoreMemento();
 	}
 }
 
 /**
- * ÔöÇ¿¸ºÔğÈË½ÇÉ«
+ * å¢å¼ºè´Ÿè´£äººè§’è‰²
  * <p>
- * ÈÃ¸ºÔğÈË½ÇÉ«µ÷ÓÃ±¸ÍüÂ¼½ÇÉ«ºÍ·¢ÆğÈË½ÇÉ«£¬½øĞĞ±¸ÍüÂ¼´´½¨ºÍ¸ù¾İ±¸ÍüÂ¼»Ö¸´·¢ÆğÈË×´Ì¬£¬
- * ÄÇÃ´¿Í»§¶Ë±ã²»ÔÙĞèÒªĞ­µ÷±¸ÍüÂ¼½ÇÉ«ºÍ·¢ÆğÈË½ÇÉ«£¬¶øÖ»ĞèÒªµ÷ÓÃ¸ºÔğÈË½ÇÉ«¼´¿É¡£
- * Òª×öµ½ÕâÒ»µã£¬¸ºÔğÈË½ÇÉ«¾Í±ØĞë³ÖÓĞÒ»¸ö¶Ô·¢ÆğÈË½ÇÉ«µÄÒıÓÃ¡£
+ * è®©è´Ÿè´£äººè§’è‰²è°ƒç”¨å¤‡å¿˜å½•è§’è‰²å’Œå‘èµ·äººè§’è‰²ï¼Œè¿›è¡Œå¤‡å¿˜å½•åˆ›å»ºå’Œæ ¹æ®å¤‡å¿˜å½•æ¢å¤å‘èµ·äººçŠ¶æ€ï¼Œ
+ * é‚£ä¹ˆå®¢æˆ·ç«¯ä¾¿ä¸å†éœ€è¦åè°ƒå¤‡å¿˜å½•è§’è‰²å’Œå‘èµ·äººè§’è‰²ï¼Œè€Œåªéœ€è¦è°ƒç”¨è´Ÿè´£äººè§’è‰²å³å¯ã€‚
+ * è¦åšåˆ°è¿™ä¸€ç‚¹ï¼Œè´Ÿè´£äººè§’è‰²å°±å¿…é¡»æŒæœ‰ä¸€ä¸ªå¯¹å‘èµ·äººè§’è‰²çš„å¼•ç”¨ã€‚
  */
 class EnhanciveCaretaker {
 
-	private Originator originator;// ·¢ÆğÈË
+	private Originator originator;// å‘èµ·äºº
 
-	private IMemento memento;// ±¸ÍüÂ¼
+	private IMemento memento;// å¤‡å¿˜å½•
 
 	/**
 	 * @param originator
-	 *            ·¢ÆğÈË
+	 *            å‘èµ·äºº
 	 */
 	public EnhanciveCaretaker(Originator originator) {
 		this.originator = originator;
 	}
 
 	/**
-	 * ´´½¨Ò»¸öOriginator¶ÔÏóµ±Ç°×´Ì¬µÄ±¸ÍüÂ¼
+	 * åˆ›å»ºä¸€ä¸ªOriginatorå¯¹è±¡å½“å‰çŠ¶æ€çš„å¤‡å¿˜å½•
 	 */
 	public void createMemento() {
 		this.memento = originator.createMemento();
 	}
 
 	/**
-	 * ¸ù¾İ±¸ÍüÂ¼»Ö¸´Originator¶ÔÏóµÄ×´Ì¬
+	 * æ ¹æ®å¤‡å¿˜å½•æ¢å¤Originatorå¯¹è±¡çš„çŠ¶æ€
 	 */
 	public void restoreMemento() {
 		originator.restoreMemento(memento);

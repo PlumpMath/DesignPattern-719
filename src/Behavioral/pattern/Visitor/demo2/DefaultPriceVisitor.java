@@ -4,57 +4,57 @@
 package pattern.Visitor.demo2;
 
 /**
- * Ä¬ÈÏ¼Û¸ñ·ÃÎÊÕß
+ * é»˜è®¤ä»·æ ¼è®¿é—®è€…
  * <p>
- * ÓÃÓÚÎªÆÕÍ¨ÓÃ»§¼ÆËã¶©µ¥¼Û¸ñ(Ô­¼Û£¬ÎŞÕÛ¿Û)
+ * ç”¨äºä¸ºæ™®é€šç”¨æˆ·è®¡ç®—è®¢å•ä»·æ ¼(åŸä»·ï¼Œæ— æŠ˜æ‰£)
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class DefaultPriceVisitor implements Visitor {
 
-	// ×Ü¼Û
+	// æ€»ä»·
 	private double totalPrice = 0;
 
 	@Override
 	public void visitCPU(CPU cpu) {
-		System.out.println("CPU Ô­¼Û£º" + cpu.getPrice());
+		System.out.println("CPU åŸä»·ï¼š" + cpu.getPrice());
 		totalPrice += cpu.getPrice();
 	}
 
 	@Override
 	public void visitCase(Case e) {
-		System.out.println("Case Ô­¼Û£º" + e.getPrice());
+		System.out.println("Case åŸä»·ï¼š" + e.getPrice());
 		totalPrice += e.getPrice();
 	}
 
 	@Override
 	public void visitHardDisk(HardDisk hardDisk) {
-		System.out.println("HardDisk Ô­¼Û£º" + hardDisk.getPrice());
+		System.out.println("HardDisk åŸä»·ï¼š" + hardDisk.getPrice());
 		totalPrice += hardDisk.getPrice();
 	}
 
 	@Override
 	public void visitIntegratedBoard(IntegratedBoard integratedboard) {
-		// ¼Û¸ñ¶¼ËãÔÚÁã¼şÀïÃæÁË£¬ËùÒÔ×ÜÌå²»ÔÙ¼ÆËã
+		// ä»·æ ¼éƒ½ç®—åœ¨é›¶ä»¶é‡Œé¢äº†ï¼Œæ‰€ä»¥æ€»ä½“ä¸å†è®¡ç®—
 		// do nothing
 	}
 
 	@Override
 	public void visitMainboard(Mainboard mainboard) {
-		System.out.println("Mainboard Ô­¼Û£º" + mainboard.getPrice());
+		System.out.println("Mainboard åŸä»·ï¼š" + mainboard.getPrice());
 		totalPrice += mainboard.getPrice();
 	}
 
 	@Override
 	public void visitPC(PC pc) {
-		// ¼Û¸ñ¶¼ËãÔÚÁã¼şÀïÃæÁË£¬ËùÒÔ×ÜÌå²»ÔÙ¼ÆËã
+		// ä»·æ ¼éƒ½ç®—åœ¨é›¶ä»¶é‡Œé¢äº†ï¼Œæ‰€ä»¥æ€»ä½“ä¸å†è®¡ç®—
 		// do nothing
 	}
 
 	/**
-	 * ×Ü¼Û
+	 * æ€»ä»·
 	 */
 	public double getTotalPrice() {
 		return totalPrice;

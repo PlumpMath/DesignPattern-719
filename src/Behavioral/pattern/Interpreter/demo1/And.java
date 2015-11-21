@@ -4,17 +4,17 @@
 package pattern.Interpreter.demo1;
 
 /**
- * AND����ʽ
+ * AND表达式
  * <p>
- * ���ս������ʽ(Nonterminal Expression)��ɫ
+ * 非终结符表达式(Nonterminal Expression)角色
  * <p>
- * ����һ�������ɫ���ķ��е�ÿһ������R=R1R2R3����Rn����Ҫһ������ķ��ս������ʽ�ࣻ
- * ��ÿһ��R1R2R3����Rn�еķ��Ŷ�����һ����̬����ΪExpression��ʵ��������ʵ�ֽ��Ͳ�������interpret()������
- * ���Ͳ����Եݹ鷽ʽ���������ᵽ�Ĵ���R1R2R3����Rn�еĸ������ŵ�ʵ��������
+ * 这是一个具体角色。文法中的每一条规则R=R1R2R3……Rn都需要一个具体的非终结符表达式类；
+ * 对每一个R1R2R3……Rn中的符号都持有一个静态类型为Expression的实例变量；实现解释操作，即interpret()方法。
+ * 解释操作以递归方式调用上面提到的代表R1R2R3……Rn中的各个符号的实例变量。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-7-20
+ * 创建日期：2010-7-20
  */
 public class And extends Expression {
 
@@ -22,7 +22,7 @@ public class And extends Expression {
 	private Expression rightExp;
 
 	/**
-	 * ���� leftExp AND rightExp
+	 * 代表 leftExp AND rightExp
 	 */
 	public And(Expression leftExp, Expression rightExp) {
 		this.leftExp = leftExp;

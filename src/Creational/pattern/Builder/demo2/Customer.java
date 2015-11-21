@@ -4,13 +4,13 @@
 package pattern.Builder.demo2;
 
 /**
- * ¹Ë¿ÍÀà
+ * é¡¾å®¢ç±»
  * <p>
- * ¿Í»§¶Ë½ÇÉ«
+ * å®¢æˆ·ç«¯è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public class Customer {
 
@@ -20,8 +20,8 @@ public class Customer {
 	public static void main(String[] args) {
 		HamburgerBuilder builder = new BeefHamburgerBuilder();
 		Cook cook = new Cook(builder);
-		cook.construct();// ¿ªÊ¼ÖÆ×÷ºº±¤
-		IHamburger ham = builder.getHamburger();// È¡»ØÖÆ×÷ºÃµÄºº±¤
+		cook.construct();// å¼€å§‹åˆ¶ä½œæ±‰å ¡
+		IHamburger ham = builder.getHamburger();// å–å›åˆ¶ä½œå¥½çš„æ±‰å ¡
 		System.out.println(ham);
 		System.out.println();
 		
@@ -42,9 +42,9 @@ public class Customer {
 }
 
 /**
- * ÓãÈâºº±¤°ü
+ * é±¼è‚‰æ±‰å ¡åŒ…
  * <p>
- * ÕâÊÇºóÀ´ĞÂ³öÏÖµÄºº±¤Æ·ÖÖ£¬±íÃ÷½¨ÔìÄ£Ê½Ö§³ÖÀ©Õ¹
+ * è¿™æ˜¯åæ¥æ–°å‡ºç°çš„æ±‰å ¡å“ç§ï¼Œè¡¨æ˜å»ºé€ æ¨¡å¼æ”¯æŒæ‰©å±•
  */
 class FishHamburger extends AbstractHamburger {
 
@@ -55,9 +55,9 @@ class FishHamburger extends AbstractHamburger {
 }
 
 /**
- * ÓãÈâºº±¤°ü½¨ÔìÆ÷
+ * é±¼è‚‰æ±‰å ¡åŒ…å»ºé€ å™¨
  * <p>
- * ÕâÊÇºóÀ´ĞÂ³öÏÖµÄºº±¤½¨ÔìÆ÷£¬±íÃ÷½¨ÔìÄ£Ê½Ö§³ÖÀ©Õ¹
+ * è¿™æ˜¯åæ¥æ–°å‡ºç°çš„æ±‰å ¡å»ºé€ å™¨ï¼Œè¡¨æ˜å»ºé€ æ¨¡å¼æ”¯æŒæ‰©å±•
  */
 class FishHamburgerBuilder implements HamburgerBuilder {
 

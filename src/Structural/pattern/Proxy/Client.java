@@ -4,11 +4,11 @@
 package pattern.Proxy;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-20
  */
 public class Client {
 
@@ -16,7 +16,7 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Ö±½ÓÊ¹ÓÃ´úÀí¶ÔÏó
+		// ç›´æ¥ä½¿ç”¨ä»£ç†å¯¹è±¡
 		Subject subject = new ProxySubject();
 		subject.request();
 	}

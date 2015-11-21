@@ -4,21 +4,21 @@
 package pattern.SimpleFactory.demo;
 
 /**
- * Ô°¶¡Àà
+ * å›­ä¸ç±»
  * <p>
- * Êµ¼ÊÉÏÊÇË®¹ûµÄ´´½¨¹¤³§Àà
+ * å®é™…ä¸Šæ˜¯æ°´æœçš„åˆ›å»ºå·¥å‚ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class FruitGardener {
 
 	/**
-	 * ¸ù¾İ¿Í»§¶ËÒªÇóÉú²úÖ¸¶¨Ë®¹û
+	 * æ ¹æ®å®¢æˆ·ç«¯è¦æ±‚ç”Ÿäº§æŒ‡å®šæ°´æœ
 	 * 
 	 * @param which
-	 *            Ë®¹ûÃû
+	 *            æ°´æœå
 	 * @throws BadFruitException
 	 */
 	public static Fruit factory(String which) throws BadFruitException {

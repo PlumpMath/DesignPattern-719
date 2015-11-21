@@ -4,19 +4,19 @@
 package pattern.Observer.demo1;
 
 /**
- * Ó¢ÎÄÊÓÍ¼
+ * è‹±æ–‡è§†å›¾
  * <p>
- * ¾ßÌå¹Û²ìÕß½ÇÉ«
+ * å…·ä½“è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class EnglishView implements View {
 
 	@Override
 	public void update(Model model) {
 		StringModel smodel = (StringModel) model;
-		System.out.println("English£º" + smodel.getContent());
+		System.out.println("Englishï¼š" + smodel.getContent());
 	}
 }

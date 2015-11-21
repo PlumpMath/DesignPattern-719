@@ -7,17 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ô´µÄ³éÏó»ùÀà
+ * æºçš„æŠ½è±¡åŸºç±»
  * <p>
- * ³éÏó±»¹Û²ìÕß½ÇÉ«
+ * æŠ½è±¡è¢«è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public abstract class AbstractSource implements Source{
 	
-	private List<Listener> listeners;// ¼àÌıÆ÷ÁĞ±í
+	private List<Listener> listeners;// ç›‘å¬å™¨åˆ—è¡¨
 
 	protected List<Listener> getListeners() {
 		if (listeners == null) {
@@ -35,7 +35,7 @@ public abstract class AbstractSource implements Source{
 	}
 
 	/**
-	 * ·¢ÊÂ¼şÍ¨ÖªËùÓĞµÄ¼àÌıÆ÷£¬ÈÃËüÃÇÖ´ĞĞÏà¹Ø¶¯×÷
+	 * å‘äº‹ä»¶é€šçŸ¥æ‰€æœ‰çš„ç›‘å¬å™¨ï¼Œè®©å®ƒä»¬æ‰§è¡Œç›¸å…³åŠ¨ä½œ
 	 *
 	 * @see pattern.Observer.demo2.Source#fireEvent(pattern.Observer.demo2.Event)
 	 */

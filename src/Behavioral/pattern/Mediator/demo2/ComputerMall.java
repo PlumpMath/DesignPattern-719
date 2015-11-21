@@ -4,11 +4,11 @@
 package pattern.Mediator.demo2;
 
 /**
- * µçÄÔÉÌ³¡(¿Í»§¶ËÀà)
+ * ç”µè„‘å•†åœº(å®¢æˆ·ç«¯ç±»)
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class ComputerMall {
 
@@ -29,14 +29,14 @@ public class ComputerMall {
 		stock.setPurchase(purchase);
 		stock.setSale(sale);
 
-		// ²É¹ºÈËÔ±²É¹ºµçÄÔ
-		System.out.println("------²É¹ºÈËÔ±²É¹ºµçÄÔ--------");
+		// é‡‡è´­äººå‘˜é‡‡è´­ç”µè„‘
+		System.out.println("------é‡‡è´­äººå‘˜é‡‡è´­ç”µè„‘--------");
 		purchase.buyComputer(100);
-		// ÏúÊÛÈËÔ±ÏúÊÛµçÄÔ
-		System.out.println("\n------ÏúÊÛÈËÔ±ÏúÊÛµçÄÔ--------");
+		// é”€å”®äººå‘˜é”€å”®ç”µè„‘
+		System.out.println("\n------é”€å”®äººå‘˜é”€å”®ç”µè„‘--------");
 		sale.sellComputer(5);
-		// ¿â·¿¹ÜÀíÈËÔ±¹ÜÀí¿â´æ
-		System.out.println("\n------¿â·¿¹ÜÀíÈËÔ±Çå¿â´¦Àí--------");
+		// åº“æˆ¿ç®¡ç†äººå‘˜ç®¡ç†åº“å­˜
+		System.out.println("\n------åº“æˆ¿ç®¡ç†äººå‘˜æ¸…åº“å¤„ç†--------");
 		stock.clearStock();
 	}
 }

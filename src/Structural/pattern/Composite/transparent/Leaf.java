@@ -6,13 +6,13 @@ package pattern.Composite.transparent;
 import java.util.List;
 
 /**
- * Ê÷Ò¶¹¹¼ş(Leaf)½ÇÉ«
+ * æ ‘å¶æ„ä»¶(Leaf)è§’è‰²
  * <p>
- * ´ú±í²Î¼Ó×éºÏµÄÊ÷Ò¶¶ÔÏó£¬¶¨Òå³ö²Î¼Ó×éºÏµÄÔ­Ê¼¶ÔÏóµÄĞĞÎª¡£
+ * ä»£è¡¨å‚åŠ ç»„åˆçš„æ ‘å¶å¯¹è±¡ï¼Œå®šä¹‰å‡ºå‚åŠ ç»„åˆçš„åŸå§‹å¯¹è±¡çš„è¡Œä¸ºã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Leaf implements Component {
 
@@ -21,7 +21,7 @@ public class Leaf implements Component {
 		System.out.println("Leaf operation.");
 	}
 
-	/** ¸ø³ö¹ÜÀí×ÓÀà¶ÔÏóµÄ·½·¨µÄÆ½Ó¹ÊµÏÖ»òÕßÅ×³öÒì³£ */
+	/** ç»™å‡ºç®¡ç†å­ç±»å¯¹è±¡çš„æ–¹æ³•çš„å¹³åº¸å®ç°æˆ–è€…æŠ›å‡ºå¼‚å¸¸ */
 	
 	@Override
 	public void add(Component component) {

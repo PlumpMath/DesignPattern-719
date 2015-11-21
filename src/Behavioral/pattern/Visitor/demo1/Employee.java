@@ -4,11 +4,11 @@
 package pattern.Visitor.demo1;
 
 /**
- * ÆÕÍ¨¹ÍÔ±
+ * æ™®é€šé›‡å‘˜
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class Employee extends AbstractEmployee {
 

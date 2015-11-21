@@ -4,19 +4,19 @@
 package pattern.Interpreter.demo1;
 
 /**
- * boolean±äÁ¿Àà
+ * booleanå˜é‡ç±»
  * <p>
- * ÖÕ½á·û±í´ïÊ½(Terminal Expression)½ÇÉ«
+ * ç»ˆç»“ç¬¦è¡¨è¾¾å¼(Terminal Expression)è§’è‰²
  * <p>
- * Ã¿¸ö¶ÔÏó¶¼ÓĞÒ»¸ö±äÁ¿Ãû£¬¶ÔÓ¦µÄbooleanÖµ±£´æÔÚ»·¾³¶ÔÏó(Context)Àï
+ * æ¯ä¸ªå¯¹è±¡éƒ½æœ‰ä¸€ä¸ªå˜é‡åï¼Œå¯¹åº”çš„booleanå€¼ä¿å­˜åœ¨ç¯å¢ƒå¯¹è±¡(Context)é‡Œ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-20
  */
 public class Variable extends Expression {
 
-	private String name;// ±äÁ¿Ãû
+	private String name;// å˜é‡å
 	
 	public Variable(String name) {
 		this.name = name;

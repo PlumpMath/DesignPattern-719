@@ -4,28 +4,28 @@
 package pattern.Prototype;
 
 /**
- * ³éÏóÔ­ÐÍ(Prototype)½ÇÉ«
+ * æŠ½è±¡åŽŸåž‹(Prototype)è§’è‰²
  * <p>
- * ÕâÊÇÒ»¸ö³éÏó½ÇÉ«£¬Í¨³£ÓÉÒ»¸öJava½Ó¿Ú»ò³éÏóÀàÊµÏÖ¡£
- * ´Ë½ÇÉ«¸ø³öÁËËùÓÐµÄ¾ßÌåÔ­ÐÍÀàËùÐèµÄ½Ó¿Ú¡£
+ * è¿™æ˜¯ä¸€ä¸ªæŠ½è±¡è§’è‰²ï¼Œé€šå¸¸ç”±ä¸€ä¸ªJavaæŽ¥å£æˆ–æŠ½è±¡ç±»å®žçŽ°ã€‚
+ * æ­¤è§’è‰²ç»™å‡ºäº†æ‰€æœ‰çš„å…·ä½“åŽŸåž‹ç±»æ‰€éœ€çš„æŽ¥å£ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public interface Prototype extends Cloneable {
 
 	/**
-	 * ·µ»Ø¿ËÂ¡µÄ¶ÔÏóÊµÀý
+	 * è¿”å›žå…‹éš†çš„å¯¹è±¡å®žä¾‹
 	 * <p>
-	 * clone()µÄ¾ßÌåÊµÏÖÒ»°ãÓÐÈýÖÖ·½Ê½£¬Ïê¼ûÈý¸öÊµÏÖÀà
+	 * clone()çš„å…·ä½“å®žçŽ°ä¸€èˆ¬æœ‰ä¸‰ç§æ–¹å¼ï¼Œè¯¦è§ä¸‰ä¸ªå®žçŽ°ç±»
 	 * <p>
-	 * clone()·½·¨Âú×ãÒÔÏÂµÄÃèÊö£º
-	 * 1£¬¶ÔÈÎºÎ¶ÔÏóx£¬¶¼ÓÐ£ºx.clone() != x¡£
-	 * »»ÑÔÖ®£¬¿ËÂ¡¶ÔÏóÓëÔ­¶ÔÏó²»ÊÇÍ¬Ò»¸ö¶ÔÏó¡£
-	 * 2£¬¶ÔÈÎºÎ¶ÔÏóx£¬¶¼ÓÐ£ºx.clone().getClass() == x.getClass()¡£
-	 * »»ÑÔÖ®£¬¿ËÂ¡¶ÔÏóÓëÔ­¶ÔÏóµÄÀàÐÍÒ»Ñù¡£
-	 * 3£¬Èç¹û¶ÔÏóxµÄequals()·½·¨¶¨ÒåÇ¡µ±µÄ»°£¬ÄÇÃ´x.clone().equals(x)Ó¦µ±ÊÇ³ÉÁ¢µÄ¡£
+	 * clone()æ–¹æ³•æ»¡è¶³ä»¥ä¸‹çš„æè¿°ï¼š
+	 * 1ï¼Œå¯¹ä»»ä½•å¯¹è±¡xï¼Œéƒ½æœ‰ï¼šx.clone() != xã€‚
+	 * æ¢è¨€ä¹‹ï¼Œå…‹éš†å¯¹è±¡ä¸ŽåŽŸå¯¹è±¡ä¸æ˜¯åŒä¸€ä¸ªå¯¹è±¡ã€‚
+	 * 2ï¼Œå¯¹ä»»ä½•å¯¹è±¡xï¼Œéƒ½æœ‰ï¼šx.clone().getClass() == x.getClass()ã€‚
+	 * æ¢è¨€ä¹‹ï¼Œå…‹éš†å¯¹è±¡ä¸ŽåŽŸå¯¹è±¡çš„ç±»åž‹ä¸€æ ·ã€‚
+	 * 3ï¼Œå¦‚æžœå¯¹è±¡xçš„equals()æ–¹æ³•å®šä¹‰æ°å½“çš„è¯ï¼Œé‚£ä¹ˆx.clone().equals(x)åº”å½“æ˜¯æˆç«‹çš„ã€‚
 	 */
 	public Object clone();
 }

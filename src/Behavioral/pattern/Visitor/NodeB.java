@@ -4,16 +4,16 @@
 package pattern.Visitor;
 
 /**
- * ¾ßÌå½Úµã(ConcreteNode)½ÇÉ«
+ * å…·ä½“èŠ‚ç‚¹(ConcreteNode)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-17
  */
 public class NodeB extends Node {
 
 	/**
-	 * ½ÓÊÜ²Ù×÷
+	 * æ¥å—æ“ä½œ
 	 */
 	@Override
 	public void accept(Visitor visitor) {
@@ -21,14 +21,14 @@ public class NodeB extends Node {
 	}
 
 	/**
-	 * ÒµÎñ·½·¨
+	 * ä¸šåŠ¡æ–¹æ³•
 	 */
 	public void operationB1() {
 		System.out.println("NodeB.operationB1()");
 	}
 
 	/**
-	 * ÒµÎñ·½·¨
+	 * ä¸šåŠ¡æ–¹æ³•
 	 */
 	public void operationB2() {
 		System.out.println("NodeB.operationB2()");

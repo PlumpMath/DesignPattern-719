@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ¹«Ë¾
+ * å…¬å¸
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class Company {
 
@@ -47,7 +47,7 @@ public class Company {
 	}
 
 	/**
-	 * ·µ»ØËùÓĞÔ±¹¤ÁĞ±í
+	 * è¿”å›æ‰€æœ‰å‘˜å·¥åˆ—è¡¨
 	 */
 	public List<AbstractEmployee> getEmployees() {
 		if(employees == null){

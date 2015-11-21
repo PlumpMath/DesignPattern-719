@@ -6,13 +6,13 @@ package pattern.Visitor.demo1.after;
 import java.util.List;
 
 /**
- * ÊÕÈë±¨±íÉú³ÉÆ÷
+ * æ”¶å…¥æŠ¥è¡¨ç”Ÿæˆå™¨
  * <p>
- * ÓÃÓÚ¸ù¾İ¹«Ë¾Éú³É¸÷ÖÖ±¨±í£¬ÈçÄÚ²¿±¨±í¡¢Ë°Îñ±¨±íµÈ
+ * ç”¨äºæ ¹æ®å…¬å¸ç”Ÿæˆå„ç§æŠ¥è¡¨ï¼Œå¦‚å†…éƒ¨æŠ¥è¡¨ã€ç¨åŠ¡æŠ¥è¡¨ç­‰
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class IncomeReportGenerator {
 
@@ -23,30 +23,30 @@ public class IncomeReportGenerator {
 	}
 
 	/**
-	 * Éú³É¶­ÊÂ³¤¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í
+	 * ç”Ÿæˆè‘£äº‹é•¿çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨
 	 */
 	public void generate4Chairman() {
-		System.out.println("*******¶­ÊÂ³¤¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í*******");
-		// Ê¹ÓÃÁË·ÃÎÊÕßÄ£Ê½¾Í²»ÓÃ½øĞĞÀàĞÍÅĞ¶ÏÁË
+		System.out.println("*******è‘£äº‹é•¿çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨*******");
+		// ä½¿ç”¨äº†è®¿é—®è€…æ¨¡å¼å°±ä¸ç”¨è¿›è¡Œç±»å‹åˆ¤æ–­äº†
 		IncomeVisitor visitor = new ChairmanVisitor();
 		for (AbstractEmployee emploee : employees) {
 			emploee.accept(visitor);
 		}
-		System.out.println("Ğ½×Ê×Ü¶î  " + visitor.getTotal());
+		System.out.println("è–ªèµ„æ€»é¢  " + visitor.getTotal());
 		System.out.println();
 	}
 
 	/**
-	 * Éú³ÉË°Îñ¾Ö¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í
+	 * ç”Ÿæˆç¨åŠ¡å±€çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨
 	 */
 	public void generate4Revenue() {
-		System.out.println("*******Ë°Îñ¾Ö¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í*******");
-		// Ê¹ÓÃÁË·ÃÎÊÕßÄ£Ê½¾Í²»ÓÃ½øĞĞÀàĞÍÅĞ¶ÏÁË
+		System.out.println("*******ç¨åŠ¡å±€çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨*******");
+		// ä½¿ç”¨äº†è®¿é—®è€…æ¨¡å¼å°±ä¸ç”¨è¿›è¡Œç±»å‹åˆ¤æ–­äº†
 		IncomeVisitor visitor = new RevenueVisitor();
 		for (AbstractEmployee emploee : employees) {
 			emploee.accept(visitor);
 		}
-		System.out.println("Ğ½×Ê×Ü¶î  " + visitor.getTotal());
+		System.out.println("è–ªèµ„æ€»é¢  " + visitor.getTotal());
 		System.out.println();
 	}
 }

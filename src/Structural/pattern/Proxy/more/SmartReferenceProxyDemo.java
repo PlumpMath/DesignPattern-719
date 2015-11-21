@@ -4,13 +4,13 @@
 package pattern.Proxy.more;
 
 /**
- * ÖÇÄÜÒıÓÃ(Smart Reference)´úÀíÑİÊ¾
+ * æ™ºèƒ½å¼•ç”¨(Smart Reference)ä»£ç†æ¼”ç¤º
  * <p>
- * µ±Ò»¸ö¶ÔÏó±»ÒıÓÃÊ±£¬Ìá¹©Ò»Ğ©¶îÍâµÄ²Ù×÷£¬±ÈÈç½«¶Ô´Ë¶ÔÏóµ÷ÓÃµÄ´ÎÊı¼ÇÂ¼ÏÂÀ´¡£
+ * å½“ä¸€ä¸ªå¯¹è±¡è¢«å¼•ç”¨æ—¶ï¼Œæä¾›ä¸€äº›é¢å¤–çš„æ“ä½œï¼Œæ¯”å¦‚å°†å¯¹æ­¤å¯¹è±¡è°ƒç”¨çš„æ¬¡æ•°è®°å½•ä¸‹æ¥ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-22
  */
 public class SmartReferenceProxyDemo {
 
@@ -26,18 +26,18 @@ public class SmartReferenceProxyDemo {
 }
 
 /**
- * Êı¾İ¿âÁ¬½ÓÆ÷
+ * æ•°æ®åº“è¿æ¥å™¨
  */
 interface DBConnector {
 
 	/**
-	 * Á¬½ÓÊı¾İ¿â
+	 * è¿æ¥æ•°æ®åº“
 	 */
 	public void connnect();
 }
 
 /**
- * OracleÊı¾İ¿âÁ¬½ÓÆ÷
+ * Oracleæ•°æ®åº“è¿æ¥å™¨
  */
 class OracleConnector implements DBConnector {
 
@@ -47,13 +47,13 @@ class OracleConnector implements DBConnector {
 }
 
 /**
- * OracleÊı¾İ¿âÁ¬½ÓÆ÷¼ÆÊı´úÀí
+ * Oracleæ•°æ®åº“è¿æ¥å™¨è®¡æ•°ä»£ç†
  */
 class OracleConnectorCounterProxy implements DBConnector {
 
-	private OracleConnector connector;// ÕæÕıµÄÁ¬½ÓÆ÷
+	private OracleConnector connector;// çœŸæ­£çš„è¿æ¥å™¨
 
-	private int counter = 0;// ¼ÆÊıÆ÷
+	private int counter = 0;// è®¡æ•°å™¨
 
 	public OracleConnectorCounterProxy() {
 		// do nothing
@@ -63,7 +63,7 @@ class OracleConnectorCounterProxy implements DBConnector {
 		if (connector == null) {
 			connector = new OracleConnector();
 		}
-		// ¿ØÖÆÁ¬½ÓÆ÷µÄÁ¬½ÓÊı£¬Èç¹û³¬¹ı3´Î£¬Ôò´´½¨ĞÂµÄÁ¬½ÓÆ÷£¬Í¬Ê±ÖØÖÃ¼ÆÊıÆ÷
+		// æ§åˆ¶è¿æ¥å™¨çš„è¿æ¥æ•°ï¼Œå¦‚æœè¶…è¿‡3æ¬¡ï¼Œåˆ™åˆ›å»ºæ–°çš„è¿æ¥å™¨ï¼ŒåŒæ—¶é‡ç½®è®¡æ•°å™¨
 		if (counter >= 3) {
 			System.out.println("over 3 times,so connector changed.");
 			connector = new OracleConnector();
@@ -73,11 +73,11 @@ class OracleConnectorCounterProxy implements DBConnector {
 	}
 
 	/**
-	 * Á¬½ÓÊı¾İ¿â
+	 * è¿æ¥æ•°æ®åº“
 	 */
 	public void connnect() {
 		getConnector().connnect();
-		// Ã¿´ÎÁ¬½Ó¶¼»á½«¼ÆÊıÆ÷+1
+		// æ¯æ¬¡è¿æ¥éƒ½ä¼šå°†è®¡æ•°å™¨+1
 		counter++;
 	}
 }

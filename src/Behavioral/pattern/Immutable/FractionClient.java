@@ -4,11 +4,11 @@
 package pattern.Immutable;
 
 /**
- * ·ÖÊý¿Í»§¶Ë
+ * åˆ†æ•°å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-29
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-29
  */
 public class FractionClient {
 

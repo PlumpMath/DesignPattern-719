@@ -7,36 +7,36 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * »·¾³Àà
+ * ç¯å¢ƒç±»
  * <p>
- * »·¾³(Context)½ÇÉ«
+ * ç¯å¢ƒ(Context)è§’è‰²
  * <p>
- * Ìá¹©½âÊÍÆ÷Ö®ÍâµÄÒ»Ğ©È«¾ÖĞÅÏ¢£¬±ÈÈç±äÁ¿µÄÕæÊµÖµµÈ¡£
+ * æä¾›è§£é‡Šå™¨ä¹‹å¤–çš„ä¸€äº›å…¨å±€ä¿¡æ¯ï¼Œæ¯”å¦‚å˜é‡çš„çœŸå®å€¼ç­‰ã€‚
  * <p>
- * ¶¨Òå³ö´Ó±äÁ¿µ½²¼¶ûÖµ(trueºÍfalse)µÄÒ»¸öÓ³Éä¡£
+ * å®šä¹‰å‡ºä»å˜é‡åˆ°å¸ƒå°”å€¼(trueå’Œfalse)çš„ä¸€ä¸ªæ˜ å°„ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-20
  */
 public class Context {
 
 	private Map<Variable, Boolean> variable_value_map;
 
 	/**
-	 * ¸ø±äÁ¿¸³Öµ
+	 * ç»™å˜é‡èµ‹å€¼
 	 * 
 	 * @param variable
-	 *            ±äÁ¿
+	 *            å˜é‡
 	 * @param value
-	 *            Öµ
+	 *            å€¼
 	 */
 	public void assign(Variable variable, boolean value) {
 		getMap().put(variable, value);
 	}
 
 	/**
-	 * ²éÕÒ±äÁ¿¶ÔÓ¦µÄbooleanÖµ
+	 * æŸ¥æ‰¾å˜é‡å¯¹åº”çš„booleanå€¼
 	 * 
 	 * @param variable
 	 */

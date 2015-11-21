@@ -4,13 +4,13 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * ²¿ÃÅ¾­Àí
+ * éƒ¨é—¨ç»ç†
  * <p>
- * ¾ßÌå´¦ÀíÕß½ÇÉ«
+ * å…·ä½“å¤„ç†è€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class DeptManager extends Handler {
 
@@ -19,14 +19,14 @@ public class DeptManager extends Handler {
 	}
 
 	/**
-	 * ²¿ÃÅ¾­ÀíÖ»ÄÜ´¦ÀíÇë¼ÙÊÂÎñ£¬ÆäËûµÄÊÂÎñ½»¸øÏÂ¼Ò(ÉÏ¼¶Áìµ¼)´¦Àí
+	 * éƒ¨é—¨ç»ç†åªèƒ½å¤„ç†è¯·å‡äº‹åŠ¡ï¼Œå…¶ä»–çš„äº‹åŠ¡äº¤ç»™ä¸‹å®¶(ä¸Šçº§é¢†å¯¼)å¤„ç†
 	 * 
 	 * @see pattern.ChainOfResponsibility.demo.Handler#handleRequest(pattern.ChainOfResponsibility.demo.Request)
 	 */
 	@Override
 	public void handleRequest(Request request) {
 		if (request == Request.LEAVE) {
-			System.out.println("²¿ÃÅ¾­Àí Åú×¼ " + request.getDescription());
+			System.out.println("éƒ¨é—¨ç»ç† æ‰¹å‡† " + request.getDescription());
 		} else {
 			getNextHandler().handleRequest(request);
 		}

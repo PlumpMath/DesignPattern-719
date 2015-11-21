@@ -4,11 +4,11 @@
 package pattern.State.demo1;
 
 /**
- * Ê¹ÓÃif-elseÓï¾äÊµÏÖ´ø×´Ì¬µÄÃÅµÄÀ©Õ¹ÑİÊ¾
+ * ä½¿ç”¨if-elseè¯­å¥å®ç°å¸¦çŠ¶æ€çš„é—¨çš„æ‰©å±•æ¼”ç¤º
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-25
  */
 public class DoorUsingIfElseEx {
 
@@ -30,35 +30,35 @@ public class DoorUsingIfElseEx {
 	}
 	
 	/**
-	 * ÃÅ
+	 * é—¨
 	 * <p>
-	 * ÏÖÔÚ³ıÁËÓĞÁ½¸ö×´Ì¬Ö®ÍâÓÖÓĞÁËµÚÈı¸ö×´Ì¬£º¹ÊÕÏ¡£
-	 * Ê¹ÓÃif-else½øĞĞÕâÑùµÄÀ©Õ¹ĞèÒªĞŞ¸ÄDoorÀàÔ´Âë£¬Î¥·´ÁËOCPÔ­Ôò
+	 * ç°åœ¨é™¤äº†æœ‰ä¸¤ä¸ªçŠ¶æ€ä¹‹å¤–åˆæœ‰äº†ç¬¬ä¸‰ä¸ªçŠ¶æ€ï¼šæ•…éšœã€‚
+	 * ä½¿ç”¨if-elseè¿›è¡Œè¿™æ ·çš„æ‰©å±•éœ€è¦ä¿®æ”¹Doorç±»æºç ï¼Œè¿åäº†OCPåŸåˆ™
 	 */
 	private static class Door {
 		
-		/** ¿ª×Å */
+		/** å¼€ç€ */
 		private static final int OPEN = 0;
-		/** ¹Ø×Å */
+		/** å…³ç€ */
 		private static final int CLOSED = 1;
-		/** ¹ÊÕÏ */
+		/** æ•…éšœ */
 		private static final int FAILURE = 2;
 
-		private int state;// µ±Ç°×´Ì¬
+		private int state;// å½“å‰çŠ¶æ€
 
 		public Door() {
 			this.state = OPEN;
 		}
 
 		/**
-		 * ³öÏÖ¹ÊÕÏ
+		 * å‡ºç°æ•…éšœ
 		 */
 		public void failed(){
 			this.state = FAILURE;
 		}
 		
 		/**
-		 * ¿ªÃÅ
+		 * å¼€é—¨
 		 */
 		public void open() {
 			if (state == FAILURE) {
@@ -72,7 +72,7 @@ public class DoorUsingIfElseEx {
 		}
 
 		/**
-		 * ¹ØÃÅ
+		 * å…³é—¨
 		 */
 		public void close() {
 			if (state == FAILURE) {

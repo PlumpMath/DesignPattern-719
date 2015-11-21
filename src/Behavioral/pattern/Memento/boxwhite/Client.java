@@ -4,11 +4,11 @@
 package pattern.Memento.boxwhite;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-14
  */
 public class Client {
 
@@ -18,10 +18,10 @@ public class Client {
 	public static void main(String[] args) {
 		Caretaker caretaker = new Caretaker();
 		Originator originator = new Originator();
-		// ·¢ÆğÈË´´½¨Ò»¸öµ±Ç°×´Ì¬µÄ±¸ÍüÂ¼½»¸ø¸ºÔğÈË±£´æ
+		// å‘èµ·äººåˆ›å»ºä¸€ä¸ªå½“å‰çŠ¶æ€çš„å¤‡å¿˜å½•äº¤ç»™è´Ÿè´£äººä¿å­˜
 		caretaker.saveMemento(originator.createMemento());
 		originator.setState("OFF");
-		// ·¢ÆğÈË´Ó¸ºÔğÈËÄÇÀïÈ¡»Ø±¸ÍüÂ¼¶ÔÏó²¢¾İ´Ë»Ö¸´×´Ì¬
+		// å‘èµ·äººä»è´Ÿè´£äººé‚£é‡Œå–å›å¤‡å¿˜å½•å¯¹è±¡å¹¶æ®æ­¤æ¢å¤çŠ¶æ€
 		originator.restoreMemento(caretaker.retrieveMemento());
 	}
 }

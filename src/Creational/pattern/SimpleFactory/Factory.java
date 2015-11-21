@@ -4,21 +4,21 @@
 package pattern.SimpleFactory;
 
 /**
- * ¹¤³§Àà
+ * å·¥åŽ‚ç±»
  * <p>
- * µ£ÈÎÕâ¸ö½ÇÉ«µÄÊÇ¹¤³§·½·¨Ä£Ê½µÄºËÐÄ£¬º¬ÓÐÓëÓ¦ÓÃ½ôÃÜÏà¹ØµÄÉÌÒµÂß¼­¡£
- * ¹¤³§ÀàÔÚ¿Í»§¶ËµÄÖ±½Óµ÷ÓÃÏÂ´´½¨²úÆ·¶ÔÏó£¬ËüÍùÍùÓÉÒ»¸ö¾ßÌåJavaÀàÊµÏÖ¡£
+ * æ‹…ä»»è¿™ä¸ªè§’è‰²çš„æ˜¯å·¥åŽ‚æ–¹æ³•æ¨¡å¼çš„æ ¸å¿ƒï¼Œå«æœ‰ä¸Žåº”ç”¨ç´§å¯†ç›¸å…³çš„å•†ä¸šé€»è¾‘ã€‚
+ * å·¥åŽ‚ç±»åœ¨å®¢æˆ·ç«¯çš„ç›´æŽ¥è°ƒç”¨ä¸‹åˆ›å»ºäº§å“å¯¹è±¡ï¼Œå®ƒå¾€å¾€ç”±ä¸€ä¸ªå…·ä½“Javaç±»å®žçŽ°ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class Factory {
 
 	/**
-	 * ´´½¨Ò»¸öÐÂµÄ¾ßÌå²úÆ·µÄÊµÀý²¢·µ»¹¸øµ÷ÓÃÕß
+	 * åˆ›å»ºä¸€ä¸ªæ–°çš„å…·ä½“äº§å“çš„å®žä¾‹å¹¶è¿”è¿˜ç»™è°ƒç”¨è€…
 	 * <p>
-	 * Õâ¸ö¹¤³§·½·¨Ò»°ã¶¼ÊÇ¾²Ì¬µÄ£¬µ±È»Ò²¿ÉÒÔ²»ÊÇ¡£
+	 * è¿™ä¸ªå·¥åŽ‚æ–¹æ³•ä¸€èˆ¬éƒ½æ˜¯é™æ€çš„ï¼Œå½“ç„¶ä¹Ÿå¯ä»¥ä¸æ˜¯ã€‚
 	 */
 	public static Product create() {
 		return new ConcreteProduct();

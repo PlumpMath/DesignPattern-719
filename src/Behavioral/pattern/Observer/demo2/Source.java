@@ -4,31 +4,31 @@
 package pattern.Observer.demo2;
 
 /**
- * ÊÂ¼şÔ´
+ * äº‹ä»¶æº
  * <p>
- * ±»¹Û²ìÕß½ÇÉ«
+ * è¢«è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public interface Source {
 
 	/**
-	 * Ìí¼Ó¼àÌıÆ÷
+	 * æ·»åŠ ç›‘å¬å™¨
 	 */
 	public void addListener(Listener l);
 
 	/**
-	 * É¾³ı¼àÌıÆ÷
+	 * åˆ é™¤ç›‘å¬å™¨
 	 */
 	public void removeListener(Listener l);
 
 	/**
-	 * ·¢ÊÂ¼şÍ¨Öª¼àÌıÆ÷
+	 * å‘äº‹ä»¶é€šçŸ¥ç›‘å¬å™¨
 	 * 
 	 * @param event
-	 *            ÊÂ¼ş
+	 *            äº‹ä»¶
 	 */
 	public void fireEvent(Event event);
 }

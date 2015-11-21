@@ -1,19 +1,19 @@
 package pattern.Proxy.demo;
 
 /**
- * ·ÃÎÊ¿ØÖÆĞ£ÑéÆ÷
+ * è®¿é—®æ§åˆ¶æ ¡éªŒå™¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-23
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-23
  */
 public class AccessValidator {
 
     /**
-	 * Ğ£ÑéÓÃ»§ÊÇ·ñÓĞÈ¨ÏŞ
+	 * æ ¡éªŒç”¨æˆ·æ˜¯å¦æœ‰æƒé™
 	 * 
 	 * @param userid
-	 *            ÓÃ»§id
+	 *            ç”¨æˆ·id
 	 */
 	public boolean validateUser(String userid) {
 		return userid != null && userid.toLowerCase().startsWith("admin");

@@ -1,11 +1,11 @@
 package pattern.Strategy.demo2;
 
 /**
- * °Ù·Ö±ÈÕÛ¿Û²ßÂÔ
+ * ç™¾åˆ†æ¯”æŠ˜æ‰£ç­–ç•¥
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class PercentageStrategy implements DiscountStrategy {
 
@@ -13,14 +13,14 @@ public class PercentageStrategy implements DiscountStrategy {
 
 	/**
 	 * @param percent
-	 *            ÕÛ¿Û°Ù·Ö±È(0-1)
+	 *            æŠ˜æ‰£ç™¾åˆ†æ¯”(0-1)
 	 */
 	public PercentageStrategy(double percent) {
 		this.percent = percent;
 	}
 
 	/**
-	 * Ã¿¼şÉÌÆ·¶¼°´°Ù·Ö±È´òÕÛ
+	 * æ¯ä»¶å•†å“éƒ½æŒ‰ç™¾åˆ†æ¯”æ‰“æŠ˜
 	 * 
 	 * @see pattern.Strategy.demo2.DiscountStrategy#discount(double, int)
 	 */

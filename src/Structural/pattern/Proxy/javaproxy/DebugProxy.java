@@ -8,32 +8,32 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * debugÄ£Ê½´úÀíÀà
+ * debugæ¨¡å¼ä»£ç†ç±»
  * <p>
- * ¿ÉÒÔ¸ù¾İĞèÒª´òÓ¡³ö¶ÔÏóµ÷ÓÃ·½·¨µÄÏ¸½ÚºÍĞÅÏ¢
+ * å¯ä»¥æ ¹æ®éœ€è¦æ‰“å°å‡ºå¯¹è±¡è°ƒç”¨æ–¹æ³•çš„ç»†èŠ‚å’Œä¿¡æ¯
  * <p>
- * JavaÌá¹©ÁËProxy¡¢InvocationHandler¡¢MethodÈı¸öÀàÖ±½ÓÖ§³Ö´úÀíÄ£Ê½¡£
+ * Javaæä¾›äº†Proxyã€InvocationHandlerã€Methodä¸‰ä¸ªç±»ç›´æ¥æ”¯æŒä»£ç†æ¨¡å¼ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-22
  */
 public class DebugProxy implements InvocationHandler {
 
 	private Object object;
 
 	/**
-	 * ÎªÖ¸¶¨¶ÔÏó´´½¨Ò»¸ö¶¯Ì¬´úÀí¶ÔÏó
+	 * ä¸ºæŒ‡å®šå¯¹è±¡åˆ›å»ºä¸€ä¸ªåŠ¨æ€ä»£ç†å¯¹è±¡
 	 */
 	public static Object newInstance(Object obj) {
-		// ¿ÉÒÔ°´ÕÕÏÂÃæµÄ²½Öè´´½¨¶¯Ì¬´úÀí¶ÔÏó£º
+		// å¯ä»¥æŒ‰ç…§ä¸‹é¢çš„æ­¥éª¤åˆ›å»ºåŠ¨æ€ä»£ç†å¯¹è±¡ï¼š
 		ClassLoader classLoader = obj.getClass().getClassLoader();
-		// 1.Ö¸Ã÷Ò»ÏµÁĞµÄ½Ó¿ÚÀ´´´½¨Ò»¸ö´úÀí¶ÔÏó
+		// 1.æŒ‡æ˜ä¸€ç³»åˆ—çš„æ¥å£æ¥åˆ›å»ºä¸€ä¸ªä»£ç†å¯¹è±¡
 		Class<?>[] interfaces = obj.getClass().getInterfaces();
-		// 2.´´½¨Ò»¸öµ÷ÓÃ´¦ÀíÆ÷(InvocationHandler)¶ÔÏó
+		// 2.åˆ›å»ºä¸€ä¸ªè°ƒç”¨å¤„ç†å™¨(InvocationHandler)å¯¹è±¡
 		DebugProxy handler = new DebugProxy(obj);
-		// 3.½«Õâ¸ö´úÀí(handler)Ö¸¶¨ÎªÄ³¸öÆäËû¶ÔÏóµÄ´úÀí¶ÔÏó
-		// ProxyÀàÄÜ¹»ÔÚÔËĞĞÊ±¼ä´´½¨´úÀí¶ÔÏó(¼´¶¯Ì¬´úÀí)
+		// 3.å°†è¿™ä¸ªä»£ç†(handler)æŒ‡å®šä¸ºæŸä¸ªå…¶ä»–å¯¹è±¡çš„ä»£ç†å¯¹è±¡
+		// Proxyç±»èƒ½å¤Ÿåœ¨è¿è¡Œæ—¶é—´åˆ›å»ºä»£ç†å¯¹è±¡(å³åŠ¨æ€ä»£ç†)
 		return Proxy.newProxyInstance(classLoader, interfaces, handler);
 	}
 
@@ -43,7 +43,7 @@ public class DebugProxy implements InvocationHandler {
 
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
-		// 4.ÔÚµ÷ÓÃ´¦ÀíÆ÷µÄinvoke()·½·¨ÖĞ²ÉÈ¡´úÀí£¬Ò»·½Ãæ½«µ÷ÓÃ´«µİ¸øÕæÊµ¶ÔÏó£¬ÁíÒ»·½ÃæÖ´ĞĞ¸÷ÖÖĞèÒª×öµÄ²Ù×÷
+		// 4.åœ¨è°ƒç”¨å¤„ç†å™¨çš„invoke()æ–¹æ³•ä¸­é‡‡å–ä»£ç†ï¼Œä¸€æ–¹é¢å°†è°ƒç”¨ä¼ é€’ç»™çœŸå®å¯¹è±¡ï¼Œå¦ä¸€æ–¹é¢æ‰§è¡Œå„ç§éœ€è¦åšçš„æ“ä½œ
 		System.out.println("***before calling***\n" + method);
 		if(args != null) {
 			for (int i = 0; i < args.length; i++) {

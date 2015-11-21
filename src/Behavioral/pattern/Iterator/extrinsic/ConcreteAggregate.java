@@ -7,18 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ¾ßÌå¾Û¼¯
+ * å…·ä½“èšé›†
  * <p>
- * ¾ßÌå¾Û¼¯(ConcreteAggregate)½ÇÉ«
- * ÊµÏÖÁË´´½¨µü´ú×Ó¶ÔÏóµÄ½Ó¿Ú£¬·µ»ØÒ»¸öºÏÊÊµÄ¾ßÌåµü´ú×ÓÊµÀı¡£
+ * å…·ä½“èšé›†(ConcreteAggregate)è§’è‰²
+ * å®ç°äº†åˆ›å»ºè¿­ä»£å­å¯¹è±¡çš„æ¥å£ï¼Œè¿”å›ä¸€ä¸ªåˆé€‚çš„å…·ä½“è¿­ä»£å­å®ä¾‹ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-17
  */
 public class ConcreteAggregate<T> implements Aggregate<T> {
 
-	private List<T> list;// ÄÚ²¿ÊµÏÖÓÃList
+	private List<T> list;// å†…éƒ¨å®ç°ç”¨List
 
 	public ConcreteAggregate() {
 		list = new ArrayList<T>();

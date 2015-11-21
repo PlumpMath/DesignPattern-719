@@ -4,24 +4,24 @@
 package pattern.Observer.demo1;
 
 /**
- * ×Ö·û´®Ä£ĞÍ
+ * å­—ç¬¦ä¸²æ¨¡å‹
  * <p>
- * ¾ßÌå±»¹Û²ìÕß½ÇÉ«
+ * å…·ä½“è¢«è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class StringModel extends Model {
 
-	private String content;// ÄÚÈİ
+	private String content;// å†…å®¹
 
 	public String getContent() {
 		return content;
 	}
 
 	/**
-	 * ÄÚÈİ·¢Éú±ä»¯Ê±Í¨ÖªËùÓĞ¹Û²ìÕß
+	 * å†…å®¹å‘ç”Ÿå˜åŒ–æ—¶é€šçŸ¥æ‰€æœ‰è§‚å¯Ÿè€…
 	 */
 	public void setContent(String content) {
 		this.content = content;

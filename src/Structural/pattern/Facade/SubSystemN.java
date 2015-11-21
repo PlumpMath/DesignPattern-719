@@ -4,13 +4,13 @@
 package pattern.Facade;
 
 /**
- * ×ÓÏµÍ³N
+ * å­ç³»ç»ŸN
  * <p>
- * ×ÓÏµÍ³(Subsystem)½ÇÉ«
+ * å­ç³»ç»Ÿ(Subsystem)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-25
  */
 public class SubSystemN {
 

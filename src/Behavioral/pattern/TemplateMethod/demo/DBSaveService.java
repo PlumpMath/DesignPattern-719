@@ -4,15 +4,15 @@
 package pattern.TemplateMethod.demo;
 
 /**
- * Êı¾İ¿â±£´æ·şÎñ
+ * æ•°æ®åº“ä¿å­˜æœåŠ¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-7
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-7
  */
 public class DBSaveService extends SaveService {
 
-	private String dbname;// Êı¾İ¿âÃû³Æ
+	private String dbname;// æ•°æ®åº“åç§°
 	
 	public DBSaveService(String dbname, Object data) {
 		super(data);
@@ -20,7 +20,7 @@ public class DBSaveService extends SaveService {
 	}
 
 	/**
-	 * ±ØĞëÒªÊµÏÖµÄÊÇ³éÏó·½·¨
+	 * å¿…é¡»è¦å®ç°çš„æ˜¯æŠ½è±¡æ–¹æ³•
 	 *
 	 * @see pattern.TemplateMethod.demo.SaveService#save()
 	 */
@@ -29,7 +29,7 @@ public class DBSaveService extends SaveService {
 	}
 
 	/**
-	 * Ñ¡ÔñÊµÏÖÁËÕâ¸ö¹³×Ó·½·¨
+	 * é€‰æ‹©å®ç°äº†è¿™ä¸ªé’©å­æ–¹æ³•
 	 *
 	 * @see pattern.TemplateMethod.demo.SaveService#doAfterSave()
 	 */

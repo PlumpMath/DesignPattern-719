@@ -4,19 +4,19 @@
 package pattern.Strategy.demo1;
 
 /**
- * ÅÅĞò²ßÂÔ½Ó¿Ú
+ * æ’åºç­–ç•¥æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public interface SortStrategy {
 
 	/**
-	 * ¶Ô²ÎÊıÊı×é½øĞĞÅÅĞò
+	 * å¯¹å‚æ•°æ•°ç»„è¿›è¡Œæ’åº
 	 * 
 	 * @param array
-	 *            ÕûÊıÊı×é
+	 *            æ•´æ•°æ•°ç»„
 	 */
 	public void sort(int[] array);
 }

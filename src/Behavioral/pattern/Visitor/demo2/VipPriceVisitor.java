@@ -4,61 +4,61 @@
 package pattern.Visitor.demo2;
 
 /**
- * VIP¼Û¸ñ·ÃÎÊÕß
+ * VIPä»·æ ¼è®¿é—®è€…
  * <p>
- * ÓÃÓÚÎªVIPÓÃ»§¼ÆËã¶©µ¥¼Û¸ñ(ÓĞÏàÓ¦ÕÛ¿Û)
+ * ç”¨äºä¸ºVIPç”¨æˆ·è®¡ç®—è®¢å•ä»·æ ¼(æœ‰ç›¸åº”æŠ˜æ‰£)
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class VipPriceVisitor implements Visitor {
 
-	// ×Ü¼Û
+	// æ€»ä»·
 	private double vipTotalPrice = 0;
 
 	@Override
 	public void visitCPU(CPU cpu) {
-		double p = cpu.getPrice() * 0.9;// CPU´ò9ÕÛ
-		System.out.println("CPU VIPÓÅ»İ¼Û£º" + p);
+		double p = cpu.getPrice() * 0.9;// CPUæ‰“9æŠ˜
+		System.out.println("CPU VIPä¼˜æƒ ä»·ï¼š" + p);
 		vipTotalPrice += p;
 	}
 
 	@Override
 	public void visitCase(Case e) {
-		double p = e.getPrice() * 0.9;// »úÏä´ò9ÕÛ
-		System.out.println("Case VIPÓÅ»İ¼Û£º" + p);
+		double p = e.getPrice() * 0.9;// æœºç®±æ‰“9æŠ˜
+		System.out.println("Case VIPä¼˜æƒ ä»·ï¼š" + p);
 		vipTotalPrice += p;
 	}
 
 	@Override
 	public void visitHardDisk(HardDisk hardDisk) {
-		double p = hardDisk.getPrice() * 0.85;// Ó²ÅÌ´ò85ÕÛ
-		System.out.println("HardDisk VIPÓÅ»İ¼Û£º" + p);
+		double p = hardDisk.getPrice() * 0.85;// ç¡¬ç›˜æ‰“85æŠ˜
+		System.out.println("HardDisk VIPä¼˜æƒ ä»·ï¼š" + p);
 		vipTotalPrice += p;
 	}
 
 	@Override
 	public void visitIntegratedBoard(IntegratedBoard integratedboard) {
-		// ÕÛ¿Û¶¼ËãÔÚÁã¼şÀïÃæÁË£¬ËùÒÔ×ÜÌå²»ÔÙÁíÍâ´òÕÛ
+		// æŠ˜æ‰£éƒ½ç®—åœ¨é›¶ä»¶é‡Œé¢äº†ï¼Œæ‰€ä»¥æ€»ä½“ä¸å†å¦å¤–æ‰“æŠ˜
 		// do nothing
 	}
 
 	@Override
 	public void visitMainboard(Mainboard mainboard) {
-		double p = mainboard.getPrice() * 0.8;// Ö÷°å´ò8ÕÛ
-		System.out.println("Mainboard VIPÓÅ»İ¼Û£º" + p);
+		double p = mainboard.getPrice() * 0.8;// ä¸»æ¿æ‰“8æŠ˜
+		System.out.println("Mainboard VIPä¼˜æƒ ä»·ï¼š" + p);
 		vipTotalPrice += p;
 	}
 
 	@Override
 	public void visitPC(PC pc) {
-		// ÕÛ¿Û¶¼ËãÔÚÁã¼şÀïÃæÁË£¬ËùÒÔ×ÜÌå²»ÔÙÁíÍâ´òÕÛ
+		// æŠ˜æ‰£éƒ½ç®—åœ¨é›¶ä»¶é‡Œé¢äº†ï¼Œæ‰€ä»¥æ€»ä½“ä¸å†å¦å¤–æ‰“æŠ˜
 		// do nothing
 	}
 
 	/**
-	 * ×Ü¼Û
+	 * æ€»ä»·
 	 */
 	public double getVipTotalPrice() {
 		return vipTotalPrice;

@@ -4,31 +4,31 @@
 package pattern.Bridge.demo1;
 
 /**
- * Ó¦ÓÃ³ÌĞòÊ¹ÓÃµÄÊı¾İ¿âAPI½Ó¿Ú
+ * åº”ç”¨ç¨‹åºä½¿ç”¨çš„æ•°æ®åº“APIæ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public interface JdbcAPI {
 
 	/**
-	 * Ö´ĞĞ²åÈëSQL
+	 * æ‰§è¡Œæ’å…¥SQL
 	 */
 	public void insert(String sql);
 
 	/**
-	 * Ö´ĞĞ¸üĞÂSQL
+	 * æ‰§è¡Œæ›´æ–°SQL
 	 */
 	public void update(String sql);
 
 	/**
-	 * Ö´ĞĞÉ¾³ıSQL
+	 * æ‰§è¡Œåˆ é™¤SQL
 	 */
 	public void delete(String sql);
 
 	/**
-	 * Ö´ĞĞ²éÑ¯SQL
+	 * æ‰§è¡ŒæŸ¥è¯¢SQL
 	 */
 	public Object query(String sql);
 }

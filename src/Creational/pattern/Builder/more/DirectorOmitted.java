@@ -6,13 +6,13 @@ package pattern.Builder.more;
 import java.util.Date;
 
 /**
- * Ê¡ÂÔµ¼ÑİÕß½ÇÉ«
+ * çœç•¥å¯¼æ¼”è€…è§’è‰²
  * <p>
- * ÔÚ¾ßÌå½¨ÔìÕßÖ»ÓĞÒ»¸öµÄÇé¿öÏÂ£¬Èç¹û³éÏó½¨ÔìÕß½ÇÉ«ÒÑ¾­±»Ê¡ÂÔµô£¬ÄÇÃ´»¹¿ÉÒÔ½øÒ»²½Ê¡ÂÔµôµ¼ÑİÕß½ÇÉ«¡£
+ * åœ¨å…·ä½“å»ºé€ è€…åªæœ‰ä¸€ä¸ªçš„æƒ…å†µä¸‹ï¼Œå¦‚æœæŠ½è±¡å»ºé€ è€…è§’è‰²å·²ç»è¢«çœç•¥æ‰ï¼Œé‚£ä¹ˆè¿˜å¯ä»¥è¿›ä¸€æ­¥çœç•¥æ‰å¯¼æ¼”è€…è§’è‰²ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-21
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-21
  */
 public class DirectorOmitted {
 
@@ -32,28 +32,28 @@ class DirectorBuilder {
 	private Product product = new Product();
 
 	/**
-	 * ½¨ÔìÁã¼ş1
+	 * å»ºé€ é›¶ä»¶1
 	 */
 	public void buildPart1() {
 		product.setPart1((int) (Math.random() * 100));
 	}
 
 	/**
-	 * ½¨ÔìÁã¼ş2
+	 * å»ºé€ é›¶ä»¶2
 	 */
 	public void buildPart2() {
 		product.setPart2(new Date().toString());
 	}
 
 	/**
-	 * È¡»Ø×é×°ºÃµÄProduct¶ÔÏó
+	 * å–å›ç»„è£…å¥½çš„Productå¯¹è±¡
 	 */
 	public Product retrieve() {
 		return product;
 	}
 
 	/**
-	 * ½¨Ôì¶ÔÏó
+	 * å»ºé€ å¯¹è±¡
 	 */
 	public void construct() {
 		buildPart1();

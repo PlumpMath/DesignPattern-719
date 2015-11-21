@@ -3,11 +3,11 @@ package pattern.Prototype.demo;
 import java.util.List;
 
 /**
- * ¹Ë¿ÍÀà(¿Í»§¶Ë)
+ * é¡¾å®¢ç±»(å®¢æˆ·ç«¯)
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public class Customer {
 
@@ -15,9 +15,9 @@ public class Customer {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Éè¼ÆÔ­ĞÍ¼Ğ¿Ë
+		// è®¾è®¡åŸå‹å¤¹å…‹
 		Clothes jacket = new Jacket("black", 26);
-		// ÏòÖÆÒÂ³§ÏÂ¶©µ¥Éú²ú5Ì×Ò»ÑùµÄ
+		// å‘åˆ¶è¡£å‚ä¸‹è®¢å•ç”Ÿäº§5å¥—ä¸€æ ·çš„
 		List<Clothes> jackets = ClothesFactory.patchCreate(jacket, 5);
 		for (Clothes clothes : jackets) {
 			System.out.println(clothes);

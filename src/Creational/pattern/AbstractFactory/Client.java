@@ -4,13 +4,13 @@
 package pattern.AbstractFactory;
 
 /**
- * ¿Í»§¶Ë³ÌÐòÀà
+ * å®¢æˆ·ç«¯ç¨‹åºç±»
  * <p>
- * Õâ¸öÀà´´½¨¾ßÌå¹¤³§¶ÔÏó£¬È»ºóµ÷ÓÃ¹¤³§¶ÔÏóµÄ¹¤³§·½·¨´´½¨ÏàÓ¦µÄ²úÆ·¶ÔÏó
+ * è¿™ä¸ªç±»åˆ›å»ºå…·ä½“å·¥åŽ‚å¯¹è±¡ï¼Œç„¶åŽè°ƒç”¨å·¥åŽ‚å¯¹è±¡çš„å·¥åŽ‚æ–¹æ³•åˆ›å»ºç›¸åº”çš„äº§å“å¯¹è±¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class Client {
 

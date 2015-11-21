@@ -3,53 +3,53 @@ package pattern.Mediator.demo2.after;
 import java.util.Random;
 
 /**
- * ÏúÊÛ×é
+ * é”€å”®ç»„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Sale  extends AbstractColleague { 
 	
 	public Sale(Mediator mediator) {
 		super(mediator);
-		// ½«Sale¶ÔÏó×¢²áµ½Mediator
+		// å°†Saleå¯¹è±¡æ³¨å†Œåˆ°Mediator
 		mediator.setSale(this);
 	}
 
 	/**
-	 * ÏúÊÛÖ¸¶¨ÊıÁ¿µÄµçÄÔ
+	 * é”€å”®æŒ‡å®šæ•°é‡çš„ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void sellComputer(int number) {
-		// Éæ¼°ºÍÆäËû¶ÔÏóÍ¨ĞÅµÄ²Ù×÷¶¼½»¸øMediatorÍê³É
+		// æ¶‰åŠå’Œå…¶ä»–å¯¹è±¡é€šä¿¡çš„æ“ä½œéƒ½äº¤ç»™Mediatorå®Œæˆ
 		getMediator().sellComputer(number);
 	}
 
 	/**
-	 * ÏúÊÛ×´¿ö£º0¡ª100Ö®¼ä±ä»¯£¬0´ú±í¸ù±¾¾ÍÃ»ÈËÂô£¬100´ú±í·Ç³£³©Ïú
+	 * é”€å”®çŠ¶å†µï¼š0â€”100ä¹‹é—´å˜åŒ–ï¼Œ0ä»£è¡¨æ ¹æœ¬å°±æ²¡äººå–ï¼Œ100ä»£è¡¨éå¸¸ç•…é”€
 	 */
 	public int getSaleStatus() {
-		// Ö»Éæ¼°µ½×ÔÉí¶ÔÏóµÄ²Ù×÷¿ÉÒÔ²»Í¨¹ıMediatorÍê³É
+		// åªæ¶‰åŠåˆ°è‡ªèº«å¯¹è±¡çš„æ“ä½œå¯ä»¥ä¸é€šè¿‡Mediatorå®Œæˆ
 		int saleStatus = new Random().nextInt(100);
-		log("µçÄÔÏúÊÛÇé¿öÎª " + saleStatus);
+		log("ç”µè„‘é”€å”®æƒ…å†µä¸º " + saleStatus);
 		return saleStatus;
 	}
 
 	/**
-	 * ÕÛ¼ÛÏúÊÛ
+	 * æŠ˜ä»·é”€å”®
 	 */
 	public void offSale() {
-		// Éæ¼°ºÍÆäËû¶ÔÏóÍ¨ĞÅµÄ²Ù×÷¶¼½»¸øMediatorÍê³É
+		// æ¶‰åŠå’Œå…¶ä»–å¯¹è±¡é€šä¿¡çš„æ“ä½œéƒ½äº¤ç»™Mediatorå®Œæˆ
 		getMediator().offSell();
 	}
 
 	/**
-	 * ´òÓ¡ÈÕÖ¾ĞÅÏ¢
+	 * æ‰“å°æ—¥å¿—ä¿¡æ¯
 	 */
 	public void log(String message) {
-		System.out.println("¡¾ÏúÊÛ×é¡¿" + message);
+		System.out.println("ã€é”€å”®ç»„ã€‘" + message);
 	}
 }

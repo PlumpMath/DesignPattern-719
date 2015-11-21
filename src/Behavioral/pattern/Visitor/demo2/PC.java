@@ -6,11 +6,11 @@ package pattern.Visitor.demo2;
 /**
  * PC
  * <p>
- * °üÀ¨Ò»¸ö¼¯³ÉÖ÷°å£¬Ò»¸ö»úÏä£¬Ò»¸öÓ²ÅÌ
+ * åŒ…æ‹¬ä¸€ä¸ªé›†æˆä¸»æ¿ï¼Œä¸€ä¸ªæœºç®±ï¼Œä¸€ä¸ªç¡¬ç›˜
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class PC extends CompositeEquipment {
 
@@ -26,9 +26,9 @@ public class PC extends CompositeEquipment {
 	}
 
 	/**
-	 * ½ÓÊÜ·½·¨
+	 * æ¥å—æ–¹æ³•
 	 * <p>
-	 * ÏÈÈÃ·ÃÎÊÆ÷·ÃÎÊ×Ô¼º£¬È»ºóÔÙ·ÃÎÊ×Ô¼º°üº¬µÄÃ¿¸öÉè±¸
+	 * å…ˆè®©è®¿é—®å™¨è®¿é—®è‡ªå·±ï¼Œç„¶åå†è®¿é—®è‡ªå·±åŒ…å«çš„æ¯ä¸ªè®¾å¤‡
 	 * 
 	 * @see pattern.Visitor.demo2.CompositeEquipment#accept(pattern.Visitor.demo2.Visitor)
 	 */

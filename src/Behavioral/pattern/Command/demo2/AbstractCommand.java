@@ -4,27 +4,27 @@
 package pattern.Command.demo2;
 
 /**
- * ³éÏó±à¼­ÃüÁî»ùÀà
+ * æŠ½è±¡ç¼–è¾‘å‘½ä»¤åŸºç±»
  * <p>
- * ×÷Îª±à¼­ÃüÁîµÄ»ùÀà£¬³éÏóÁËËüÃÇ¹²ÓĞµÄÒ»Ğ©ÌØÕ÷¡£
- * ±ÈÈç·Ö±ğ¼ÇÂ¼ÁËÃüÁîÖ´ĞĞÇ°ºÍÖ´ĞĞºóµÄÎÄ±¾ÄÚÈİ£¬ÒÔ±ãÓÚundo²Ù×÷µÄÊµÏÖ¡£
+ * ä½œä¸ºç¼–è¾‘å‘½ä»¤çš„åŸºç±»ï¼ŒæŠ½è±¡äº†å®ƒä»¬å…±æœ‰çš„ä¸€äº›ç‰¹å¾ã€‚
+ * æ¯”å¦‚åˆ†åˆ«è®°å½•äº†å‘½ä»¤æ‰§è¡Œå‰å’Œæ‰§è¡Œåçš„æ–‡æœ¬å†…å®¹ï¼Œä»¥ä¾¿äºundoæ“ä½œçš„å®ç°ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public abstract class AbstractCommand implements Command {
 
-	// ÎÄ±¾±à¼­Æ÷£¬¼´ÃüÁî½ÓÊÕÕß
+	// æ–‡æœ¬ç¼–è¾‘å™¨ï¼Œå³å‘½ä»¤æ¥æ”¶è€…
 	private TextEditor editor;
-	// ÃüÁîÖ´ĞĞÇ°µÄÎÄ±¾
+	// å‘½ä»¤æ‰§è¡Œå‰çš„æ–‡æœ¬
 	private String textBeforeAction;
-	// ÃüÁîÖ´ĞĞºóµÄÎÄ±¾
+	// å‘½ä»¤æ‰§è¡Œåçš„æ–‡æœ¬
 	private String textAfterAction;
 
 	/**
 	 * @param editor
-	 *            ÎÄ±¾±à¼­Æ÷
+	 *            æ–‡æœ¬ç¼–è¾‘å™¨
 	 */
 	public AbstractCommand(TextEditor editor) {
 		this.editor = editor;
@@ -36,21 +36,21 @@ public abstract class AbstractCommand implements Command {
 	}
 
 	/**
-	 * ·µ»ØÃüÁîÖ´ĞĞÇ°µÄÎÄ±¾
+	 * è¿”å›å‘½ä»¤æ‰§è¡Œå‰çš„æ–‡æœ¬
 	 */
 	public String getTextBeforeAction() {
 		return textBeforeAction;
 	}
 	
 	/**
-	 * ·µ»ØÃüÁîÖ´ĞĞºóµÄÎÄ±¾
+	 * è¿”å›å‘½ä»¤æ‰§è¡Œåçš„æ–‡æœ¬
 	 */
 	public String getTextAfterAction() {
 		return textAfterAction;
 	}
 
 	/**
-	 * ÉèÖÃÃüÁîÖ´ĞĞºóµÄÎÄ±¾
+	 * è®¾ç½®å‘½ä»¤æ‰§è¡Œåçš„æ–‡æœ¬
 	 */
 	protected void setTextAfterAction(String textAfterAction) {
 		this.textAfterAction = textAfterAction;

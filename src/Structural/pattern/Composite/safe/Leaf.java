@@ -4,13 +4,13 @@
 package pattern.Composite.safe;
 
 /**
- * ��Ҷ����(Leaf)��ɫ
+ * 树叶构件(Leaf)角色
  * <p>
- * ��Ҷ������û���¼��Ӷ���Ķ��󣬶�����μ���ϵ�ԭʼ�������Ϊ��
+ * 树叶对象是没有下级子对象的对象，定义出参加组合的原始对象的行为。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-4-11
+ * 创建日期：2010-4-11
  */
 public class Leaf implements Component {
 

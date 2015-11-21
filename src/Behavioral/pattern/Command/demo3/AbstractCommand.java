@@ -4,24 +4,24 @@
 package pattern.Command.demo3;
 
 /**
- * ³éÏóÃüÁî»ùÀà
+ * æŠ½è±¡å‘½ä»¤åŸºç±»
  * <p>
- * ×÷ÎªÂ¼Òô»úÃüÁîµÄ»ùÀà£¬³éÏóÁËËüÃÇ¹²ÓĞµÄÒ»Ğ©ÌØÕ÷¡£
+ * ä½œä¸ºå½•éŸ³æœºå‘½ä»¤çš„åŸºç±»ï¼ŒæŠ½è±¡äº†å®ƒä»¬å…±æœ‰çš„ä¸€äº›ç‰¹å¾ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public abstract class AbstractCommand implements Command {
 
-	private AudioPlayer player;// Â¼Òô»ú
+	private AudioPlayer player;// å½•éŸ³æœº
 
 	public AbstractCommand(AudioPlayer player) {
 		this.player = player;
 	}
 
 	/**
-	 * ·µ»ØÂ¼Òô»ú
+	 * è¿”å›å½•éŸ³æœº
 	 */
 	protected AudioPlayer getPlayer() {
 		return player;

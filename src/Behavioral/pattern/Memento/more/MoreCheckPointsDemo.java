@@ -7,11 +7,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ¶à¼ì²éµãÑİÊ¾
+ * å¤šæ£€æŸ¥ç‚¹æ¼”ç¤º
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-16
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-16
  */
 public class MoreCheckPointsDemo {
 
@@ -23,29 +23,29 @@ public class MoreCheckPointsDemo {
 		Caretaker caretaker = new Caretaker(originator);
 		originator.setState1("1");
 		originator.setState2("a");
-		caretaker.createCheckPoint("1st");// µÚ1¸ö¼ì²éµã
+		caretaker.createCheckPoint("1st");// ç¬¬1ä¸ªæ£€æŸ¥ç‚¹
 		originator.setState1("2");
 		originator.setState2("b");
-		caretaker.createCheckPoint("2nd");// µÚ2¸ö¼ì²éµã
+		caretaker.createCheckPoint("2nd");// ç¬¬2ä¸ªæ£€æŸ¥ç‚¹
 		originator.setState1("3");
 		originator.setState2("c");
-		caretaker.createCheckPoint("3rd");// µÚ3¸ö¼ì²éµã
+		caretaker.createCheckPoint("3rd");// ç¬¬3ä¸ªæ£€æŸ¥ç‚¹
 		originator.setState1("4");
 		originator.setState2("d");
-		caretaker.createCheckPoint("4th");// µÚ4¸ö¼ì²éµã
-		caretaker.restoreCheckPoint("1st");// »Ö¸´µ½µÚ1¸ö¼ì²éµãµÄ×´Ì¬
+		caretaker.createCheckPoint("4th");// ç¬¬4ä¸ªæ£€æŸ¥ç‚¹
+		caretaker.restoreCheckPoint("1st");// æ¢å¤åˆ°ç¬¬1ä¸ªæ£€æŸ¥ç‚¹çš„çŠ¶æ€
 	}
 }
 
 /**
- * ÔöÇ¿¸ºÔğÈË½ÇÉ«
+ * å¢å¼ºè´Ÿè´£äººè§’è‰²
  * <p>
- * ³£¼ûµÄÈí¼şÏµÍ³ÍùÍùĞèÒª´æ´¢²»Ö¹Ò»¸öÊ±¿ÌµÄ×´Ì¬£¬¶øÊÇĞèÒª´æ´¢¶à¸öÊ±¿ÌµÄ×´Ì¬£¬»òÕß½Ğ×ö¶à¸ö¼ì²éµã¡£
- * ÕâÑù·¢ÆğÈË¾Í¿ÉÒÔ½«×Ô¼º»Ö¸´µ½ÈÎºÎÒ»¸öÊ±¿ÌµÄ×´Ì¬£¬ÓĞĞ©ÊµÏÖÔÚÀíÂÛÉÏÔÊĞí´æ´¢ÎŞÏŞ¸ö×´Ì¬£¬ÓĞĞ©Ö»ÔÊĞí´æ´¢ÓĞÏŞ¸ö×´Ì¬¡£
+ * å¸¸è§çš„è½¯ä»¶ç³»ç»Ÿå¾€å¾€éœ€è¦å­˜å‚¨ä¸æ­¢ä¸€ä¸ªæ—¶åˆ»çš„çŠ¶æ€ï¼Œè€Œæ˜¯éœ€è¦å­˜å‚¨å¤šä¸ªæ—¶åˆ»çš„çŠ¶æ€ï¼Œæˆ–è€…å«åšå¤šä¸ªæ£€æŸ¥ç‚¹ã€‚
+ * è¿™æ ·å‘èµ·äººå°±å¯ä»¥å°†è‡ªå·±æ¢å¤åˆ°ä»»ä½•ä¸€ä¸ªæ—¶åˆ»çš„çŠ¶æ€ï¼Œæœ‰äº›å®ç°åœ¨ç†è®ºä¸Šå…è®¸å­˜å‚¨æ— é™ä¸ªçŠ¶æ€ï¼Œæœ‰äº›åªå…è®¸å­˜å‚¨æœ‰é™ä¸ªçŠ¶æ€ã€‚
  */
 class Caretaker {
 
-	// Ê¹ÓÃÒ»¸öMapÀ´´æ´¢²»Í¬Ê±¿ÌµÄ±¸ÍüÂ¼£¬ÀíÂÛÉÏÊÇÎŞÏŞ¸ö
+	// ä½¿ç”¨ä¸€ä¸ªMapæ¥å­˜å‚¨ä¸åŒæ—¶åˆ»çš„å¤‡å¿˜å½•ï¼Œç†è®ºä¸Šæ˜¯æ— é™ä¸ª
 	private Map<String, Memento> checkpoint_memento_map;
 
 	private Originator originator;
@@ -55,21 +55,21 @@ class Caretaker {
 	}
 
 	/**
-	 * ÓÃÖ¸¶¨¹Ø¼ü×ÖµÄ´´½¨Ò»¸ö¼ì²éµã
+	 * ç”¨æŒ‡å®šå…³é”®å­—çš„åˆ›å»ºä¸€ä¸ªæ£€æŸ¥ç‚¹
 	 */
 	public void createCheckPoint(String key) {
 		getMap().put(key, originator.createMemento());
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨¹Ø¼ü×Ö¶ÔÓ¦µÄ¼ì²éµã
+	 * åˆ é™¤æŒ‡å®šå…³é”®å­—å¯¹åº”çš„æ£€æŸ¥ç‚¹
 	 */
 	public void removeCheckPoint(String key) {
 		getMap().remove(key);
 	}
 
 	/**
-	 * »Ö¸´·¢ÆğÈËµ½Ö¸¶¨¹Ø¼ü×Ö¶ÔÓ¦µÄ¼ì²éµãµÄ×´Ì¬
+	 * æ¢å¤å‘èµ·äººåˆ°æŒ‡å®šå…³é”®å­—å¯¹åº”çš„æ£€æŸ¥ç‚¹çš„çŠ¶æ€
 	 */
 	public void restoreCheckPoint(String key) {
 		originator.restoreMemento(getMap().get(key));
@@ -85,7 +85,7 @@ class Caretaker {
 
 class Originator {
 
-	// Á½¸ö×´Ì¬
+	// ä¸¤ä¸ªçŠ¶æ€
 	private String state1;
 	private String state2;
 

@@ -4,13 +4,13 @@
 package pattern.Proxy.more;
 
 /**
- * ·ÃÎÊ±£»¤(Protection Access)´úÀíÑİÊ¾
+ * è®¿é—®ä¿æŠ¤(Protection Access)ä»£ç†æ¼”ç¤º
  * <p>
- * ¿ØÖÆ¶ÔÒ»¸ö¶ÔÏóµÄ·ÃÎÊ£¬Èç¹ûĞèÒª£¬¿ÉÒÔ¸ø²»Í¬µÄÓÃ»§Ìá¹©²»Í¬¼¶±ğµÄÊ¹ÓÃÈ¨ÏŞ¡£
+ * æ§åˆ¶å¯¹ä¸€ä¸ªå¯¹è±¡çš„è®¿é—®ï¼Œå¦‚æœéœ€è¦ï¼Œå¯ä»¥ç»™ä¸åŒçš„ç”¨æˆ·æä¾›ä¸åŒçº§åˆ«çš„ä½¿ç”¨æƒé™ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-22
  */
 public class ProtectionAccessProxyDemo {
 
@@ -32,23 +32,23 @@ public class ProtectionAccessProxyDemo {
 }
 
 /**
- * ÎÄ¼ş¹ÜÀíÆ÷½Ó¿Ú
+ * æ–‡ä»¶ç®¡ç†å™¨æ¥å£
  */
 interface IFileManager {
 
 	/**
-	 * É¾³ıÖ¸¶¨µÄÎÄ¼ş
+	 * åˆ é™¤æŒ‡å®šçš„æ–‡ä»¶
 	 */
 	public void delete(String filePath);
 
 	/**
-	 * É¾³ıËùÓĞµÄÎÄ¼ş
+	 * åˆ é™¤æ‰€æœ‰çš„æ–‡ä»¶
 	 */
 	public void deleteAll() throws Exception;
 }
 
 /**
- * ÎÄ¼ş¹ÜÀíÆ÷
+ * æ–‡ä»¶ç®¡ç†å™¨
  */
 class FileManager implements IFileManager {
 
@@ -64,13 +64,13 @@ class FileManager implements IFileManager {
 }
 
 /**
- * ÎÄ¼ş¹ÜÀíÆ÷±£»¤´úÀíÀà
+ * æ–‡ä»¶ç®¡ç†å™¨ä¿æŠ¤ä»£ç†ç±»
  * <p>
- * ¸ù¾İÈ¨ÏŞPermission¿ØÖÆ¶ÔÕæÕıÎÄ¼ş¹ÜÀíÆ÷µÄ·ÃÎÊ
+ * æ ¹æ®æƒé™Permissionæ§åˆ¶å¯¹çœŸæ­£æ–‡ä»¶ç®¡ç†å™¨çš„è®¿é—®
  */
 class FileManagerProtectionAccessProxy implements IFileManager {
 
-	private FileManager fileManager;// ÕæÕıµÄÎÄ¼ş¹ÜÀíÆ÷
+	private FileManager fileManager;// çœŸæ­£çš„æ–‡ä»¶ç®¡ç†å™¨
 
 	private Permission permission;
 
@@ -80,7 +80,7 @@ class FileManagerProtectionAccessProxy implements IFileManager {
 	}
 
 	/**
-	 * ÈÎºÎÈ¨ÏŞ¶¼¿ÉÒÔÉ¾³ıÖ¸¶¨µÄÎÄ¼ş
+	 * ä»»ä½•æƒé™éƒ½å¯ä»¥åˆ é™¤æŒ‡å®šçš„æ–‡ä»¶
 	 */
 	@Override
 	public void delete(String filePath) {
@@ -88,7 +88,7 @@ class FileManagerProtectionAccessProxy implements IFileManager {
 	}
 
 	/**
-	 * Ö»ÓĞ¹ÜÀíÔ±È¨ÏŞ²ÅÄÜÉ¾³ıËùÓĞµÄÎÄ¼ş
+	 * åªæœ‰ç®¡ç†å‘˜æƒé™æ‰èƒ½åˆ é™¤æ‰€æœ‰çš„æ–‡ä»¶
 	 */
 	@Override
 	public void deleteAll() throws Exception {
@@ -101,15 +101,15 @@ class FileManagerProtectionAccessProxy implements IFileManager {
 }
 
 /**
- * È¨ÏŞÃ¶¾Ù
+ * æƒé™æšä¸¾
  */
 enum Permission {
 
-	ADMIN/** ¹ÜÀíÔ± */, USER/** ÓÃ»§ */
+	ADMIN/** ç®¡ç†å‘˜ */, USER/** ç”¨æˆ· */
 }
 
 /**
- * Î´ÊÚÈ¨Òì³£
+ * æœªæˆæƒå¼‚å¸¸
  */
 class UnauthorizationException extends Exception {
 
@@ -117,6 +117,6 @@ class UnauthorizationException extends Exception {
 
 	@Override
 	public String getMessage() {
-		return "ÓÃ»§Î´±»ÊÚÈ¨.";
+		return "ç”¨æˆ·æœªè¢«æˆæƒ.";
 	}
 }

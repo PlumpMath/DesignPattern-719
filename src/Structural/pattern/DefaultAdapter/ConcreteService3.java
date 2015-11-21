@@ -4,16 +4,16 @@
 package pattern.DefaultAdapter;
 
 /**
- * ¾ßÌåÊµÏÖÀà3
+ * å…·ä½“å®ç°ç±»3
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-5
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-5
  */
 public class ConcreteService3 extends ServiceAdapter {
 
 	/**
-	 * ±¾ÀàÖ»¶Ô¸Ã·½·¨¸ĞĞËÈ¤£¬ËùÒÔÖ»ÊµÏÖ¸Ã·½·¨
+	 * æœ¬ç±»åªå¯¹è¯¥æ–¹æ³•æ„Ÿå…´è¶£ï¼Œæ‰€ä»¥åªå®ç°è¯¥æ–¹æ³•
 	 */
 	public void operation3() {
 		System.out.println("ConcreteService3");

@@ -8,15 +8,15 @@ import pattern.Builder.Director;
 import pattern.Builder.Product;
 
 /**
- * ¿ÕÊµÏÖµÄÁã¼ş½¨Ôì·½·¨
+ * ç©ºå®ç°çš„é›¶ä»¶å»ºé€ æ–¹æ³•
  * <p>
- * ³éÏó½¨ÔìÕß½ÇÉ«¹æ¶¨ÁË²úÆ·Àà±ØĞëÓĞÍ¬ÑùÊıÄ¿µÄÁã¼ş£¬ÒÔ¼°¾ßÌåÓĞ¼¸¸öÁã¼ş¡£
- * Èç¹ûÓĞÒ»Ğ©²úÆ·ÓĞ½Ï¶àµÄÁã¼ş£¬¶øÓĞĞ©²úÆ·ÓĞ½ÏÉÙµÄÁã¼ş£¬ÄÇ¸ÃÔõÃ´°ì£¿
- * ½¨ÔìÄ£Ê½²¢²»ÒªÇóÕâĞ©²úÆ·Ò»¶¨ÒªÓĞÏàÍ¬ÊıÄ¿µÄÁã¼ş¡£Èç¹ûÒ»¸ö²úÆ·ÓĞ½ÏÉÙµÄÁã¼ş£¬¿ÉÒÔÊ¹ÓÃ¿ÕµÄÁã¼ş½¨Ôì·½·¨ºöÂÔ²»ĞèÒªµÄÁã¼ş¡£
+ * æŠ½è±¡å»ºé€ è€…è§’è‰²è§„å®šäº†äº§å“ç±»å¿…é¡»æœ‰åŒæ ·æ•°ç›®çš„é›¶ä»¶ï¼Œä»¥åŠå…·ä½“æœ‰å‡ ä¸ªé›¶ä»¶ã€‚
+ * å¦‚æœæœ‰ä¸€äº›äº§å“æœ‰è¾ƒå¤šçš„é›¶ä»¶ï¼Œè€Œæœ‰äº›äº§å“æœ‰è¾ƒå°‘çš„é›¶ä»¶ï¼Œé‚£è¯¥æ€ä¹ˆåŠï¼Ÿ
+ * å»ºé€ æ¨¡å¼å¹¶ä¸è¦æ±‚è¿™äº›äº§å“ä¸€å®šè¦æœ‰ç›¸åŒæ•°ç›®çš„é›¶ä»¶ã€‚å¦‚æœä¸€ä¸ªäº§å“æœ‰è¾ƒå°‘çš„é›¶ä»¶ï¼Œå¯ä»¥ä½¿ç”¨ç©ºçš„é›¶ä»¶å»ºé€ æ–¹æ³•å¿½ç•¥ä¸éœ€è¦çš„é›¶ä»¶ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-21
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-21
  */
 public class EmptyBuildMethod {
 	
@@ -37,7 +37,7 @@ class OnePartProductBuilder implements Builder {
 	private OnePartProduct product = new OnePartProduct();
 
 	/**
-	 * ½¨ÔìÁã¼ş1
+	 * å»ºé€ é›¶ä»¶1
 	 */
 	public void buildPart1() {
 		product.setPart1((int) (Math.random() * 100));
@@ -51,7 +51,7 @@ class OnePartProductBuilder implements Builder {
 	}
 
 	/**
-	 * È¡»Ø×é×°ºÃµÄProduct¶ÔÏó
+	 * å–å›ç»„è£…å¥½çš„Productå¯¹è±¡
 	 */
 	public Product retrieve() {
 		return product;
@@ -60,7 +60,7 @@ class OnePartProductBuilder implements Builder {
 
 class OnePartProduct implements Product {
 
-	private int part1;// Áã¼ş1
+	private int part1;// é›¶ä»¶1
 	
 	OnePartProduct() {
 		// do nothing

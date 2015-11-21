@@ -4,11 +4,11 @@
 package pattern.Composite.demo1;
 
 /**
- * ¾ØĞÎÀà
+ * çŸ©å½¢ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Rectangle implements Graphics {
 

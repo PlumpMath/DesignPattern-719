@@ -4,58 +4,58 @@
 package pattern.Strategy.demo2;
 
 /**
- * ÉÌÆ·Àà
+ * å•†å“ç±»
  * <p>
- * »·¾³½ÇÉ«
+ * ç¯å¢ƒè§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class Goods {
 
-	private double price;// µ¥¼Û
-	private int amount;// ÊıÁ¿
+	private double price;// å•ä»·
+	private int amount;// æ•°é‡
 	
-	private DiscountStrategy strategy;// ÕÛ¿Û²ßÂÔ
+	private DiscountStrategy strategy;// æŠ˜æ‰£ç­–ç•¥
 	
 	/**
 	 * @param price
-	 *            µ¥¼Û
+	 *            å•ä»·
 	 * @param amount
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public Goods(double price, int amount) {
 		this.price = price;
 		this.amount = amount;
-		this.strategy = new NoDiscountStrategy();// Ä¬ÈÏÎŞÕÛ¿Û
+		this.strategy = new NoDiscountStrategy();// é»˜è®¤æ— æŠ˜æ‰£
 	}
 
 	/**
-	 * ÉèÖÃÕÛ¿Û²ßÂÔ
+	 * è®¾ç½®æŠ˜æ‰£ç­–ç•¥
 	 * 
 	 * @param strategy
-	 *            ÕÛ¿Û²ßÂÔ
+	 *            æŠ˜æ‰£ç­–ç•¥
 	 */
 	public void setStrategy(DiscountStrategy strategy) {
 		this.strategy = strategy;
 	}
 	
 	/**
-	 * ÉÌÆ·Ô­¼Û
+	 * å•†å“åŸä»·
 	 */
 	public double price() {
 		return price * amount;
 	}
 
 	/**
-	 * ÉÌÆ·´òÍêÕÛÖ®ºóµÄ¼Û¸ñ
+	 * å•†å“æ‰“å®ŒæŠ˜ä¹‹åçš„ä»·æ ¼
 	 */
 	public double priceDiscounted() {
 		return price() - strategy.discount(price, amount);
 	}
 	
 	public String toString() {
-		return "Ô­¼Û£º" + price() + "  ´òÍêÕÛºóµÄ¼Û¸ñ£º" + priceDiscounted();
+		return "åŸä»·ï¼š" + price() + "  æ‰“å®ŒæŠ˜åçš„ä»·æ ¼ï¼š" + priceDiscounted();
 	}
 }

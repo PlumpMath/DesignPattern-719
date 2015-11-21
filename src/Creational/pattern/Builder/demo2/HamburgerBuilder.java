@@ -4,36 +4,36 @@
 package pattern.Builder.demo2;
 
 /**
- * ºº±¤°ü½¨ÔìÆ÷½Ó¿Ú
+ * æ±‰å ¡åŒ…å»ºé€ å™¨æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public interface HamburgerBuilder {
 
 	/**
-	 * ´´½¨ĞÂºº±¤
+	 * åˆ›å»ºæ–°æ±‰å ¡
 	 */
 	public void createHamburger();
 	
 	/**
-	 * Ìí¼ÓÃæ°ü
+	 * æ·»åŠ é¢åŒ…
 	 */
 	public void addBread();
 	
 	/**
-	 * Ìí¼ÓÈâ
+	 * æ·»åŠ è‚‰
 	 */
 	public void addMeat();
 	
 	/**
-	 * Ìí¼ÓÊß²Ë
+	 * æ·»åŠ è”¬èœ
 	 */
 	public void addVegetable();
 	
 	/**
-	 * ·µ»ØÖÆ×÷ºÃµÄºº±¤
+	 * è¿”å›åˆ¶ä½œå¥½çš„æ±‰å ¡
 	 */
 	public IHamburger getHamburger();
 }

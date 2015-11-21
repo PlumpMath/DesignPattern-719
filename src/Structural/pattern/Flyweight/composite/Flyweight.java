@@ -4,16 +4,16 @@
 package pattern.Flyweight.composite;
 
 /**
- * ³éÏóÏíÔª(Flyweight)½ÇÉ«
+ * æŠ½è±¡äº«å…ƒ(Flyweight)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-2
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-2
  */
 public abstract class Flyweight {
 
 	/**
-	 * Ò»¸öÊ¾ÒâĞÔµÄ·½·¨£¬²ÎÊıstateÊÇÍâÔÌ×´Ì¬
+	 * ä¸€ä¸ªç¤ºæ„æ€§çš„æ–¹æ³•ï¼Œå‚æ•°stateæ˜¯å¤–è•´çŠ¶æ€
 	 */
 	public abstract void operation(String state);
 }

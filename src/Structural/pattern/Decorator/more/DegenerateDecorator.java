@@ -8,11 +8,11 @@ import pattern.Decorator.ConcreteComponent;
 import pattern.Decorator.Decorator;
 
 /**
- * ÍË»¯µÄ×°ÊÎÄ£Ê½
+ * é€€åŒ–çš„è£…é¥°æ¨¡å¼
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-13
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-13
  */
 public class DegenerateDecorator {
 
@@ -20,22 +20,22 @@ public class DegenerateDecorator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¿Í»§¶Ë¿ÉÒÔÉùÃ÷ConcreteDecorator2ÀàĞÍµÄ±äÁ¿£¬
+		// å®¢æˆ·ç«¯å¯ä»¥å£°æ˜ConcreteDecorator2ç±»å‹çš„å˜é‡ï¼Œ
 		ConcreteDecorator2 decorator2 = new ConcreteDecorator2(
 				new ConcreteComponent());
-		// ´Ó¶øµ÷ÓÃConcreteDecorator2ÀàÖĞ²ÅÓĞµÄ·½·¨
+		// ä»è€Œè°ƒç”¨ConcreteDecorator2ç±»ä¸­æ‰æœ‰çš„æ–¹æ³•
 		decorator2.newOperation();
-		// Ö»Òª¿Í»§¶Ë²»ĞèÒªµ÷ÓÃÕâĞ©ÊôÓÚ×°ÊÎµÄ·½·¨£¬¶øÖ»µ÷ÓÃ
-		// ÊôÓÚComponentµÄ·½·¨£¬ÄÇÃ´×°ÊÎÄ£Ê½¾ÍÈÔÈ»µÈÍ¬ÓÚÍ¸Ã÷µÄ
+		// åªè¦å®¢æˆ·ç«¯ä¸éœ€è¦è°ƒç”¨è¿™äº›å±äºè£…é¥°çš„æ–¹æ³•ï¼Œè€Œåªè°ƒç”¨
+		// å±äºComponentçš„æ–¹æ³•ï¼Œé‚£ä¹ˆè£…é¥°æ¨¡å¼å°±ä»ç„¶ç­‰åŒäºé€æ˜çš„
 		decorator2.operation();
 	}
 
 	/**
-	 * ×°ÊÎÄ£Ê½µÄÓÃÒâÊÇÔÚ²»¸Ä±ä½Ó¿ÚµÄÇ°ÌáÏÂ£¬ÔöÇ¿Ëù¿¼ÂÇµÄÀàµÄĞÔÄÜ¡£
-     * ÔÚÔöÇ¿ĞÔÄÜµÄÊ±ºò£¬ÍùÍùĞèÒª½¨Á¢ĞÂµÄ¹«¿ªµÄ·½·¨¡£
-     * Õâ¾Íµ¼ÖÂÁË´ó¶àÊıµÄ×°ÊÎÄ£Ê½µÄÊµÏÖÊÇ"°ëÍ¸Ã÷µÄ"£¬¶ø²»ÊÇÍêÈ«"Í¸Ã÷"µÄ¡£
-     * »»ÑÔÖ®£¬ÔÊĞí×°ÊÎÄ£Ê½¸Ä±ä½Ó¿Ú£¬Ôö¼ÓĞÂµÄ·½·¨¡£
-     * JDKÖĞµÄBufferedReader¾ÍÊÇÒ»¸öÊµ¼ÊµÄÀı×Ó£¬ËüÀïÃæµÄreadLine()·½·¨¾ÍÊÇÌØÓĞµÄ
+	 * è£…é¥°æ¨¡å¼çš„ç”¨æ„æ˜¯åœ¨ä¸æ”¹å˜æ¥å£çš„å‰æä¸‹ï¼Œå¢å¼ºæ‰€è€ƒè™‘çš„ç±»çš„æ€§èƒ½ã€‚
+     * åœ¨å¢å¼ºæ€§èƒ½çš„æ—¶å€™ï¼Œå¾€å¾€éœ€è¦å»ºç«‹æ–°çš„å…¬å¼€çš„æ–¹æ³•ã€‚
+     * è¿™å°±å¯¼è‡´äº†å¤§å¤šæ•°çš„è£…é¥°æ¨¡å¼çš„å®ç°æ˜¯"åŠé€æ˜çš„"ï¼Œè€Œä¸æ˜¯å®Œå…¨"é€æ˜"çš„ã€‚
+     * æ¢è¨€ä¹‹ï¼Œå…è®¸è£…é¥°æ¨¡å¼æ”¹å˜æ¥å£ï¼Œå¢åŠ æ–°çš„æ–¹æ³•ã€‚
+     * JDKä¸­çš„BufferedReaderå°±æ˜¯ä¸€ä¸ªå®é™…çš„ä¾‹å­ï¼Œå®ƒé‡Œé¢çš„readLine()æ–¹æ³•å°±æ˜¯ç‰¹æœ‰çš„
 	 */
 	static class ConcreteDecorator2 extends Decorator {
 
@@ -50,7 +50,7 @@ public class DegenerateDecorator {
 		}
 
 		/**
-		 * ÕâÊÇConcreteDecorator2ÌØÓĞµÄĞÂ·½·¨
+		 * è¿™æ˜¯ConcreteDecorator2ç‰¹æœ‰çš„æ–°æ–¹æ³•
 		 */
 		public void newOperation() {
 			System.out.println("newOperation in ConcreteDecorator2.");

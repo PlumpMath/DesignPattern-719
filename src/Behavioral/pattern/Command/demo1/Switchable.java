@@ -4,23 +4,23 @@
 package pattern.Command.demo1;
 
 /**
- * ¿É¿ª¹ØµÄ½Ó¿Ú
+ * å¯å¼€å…³çš„æ¥å£
  * <p>
- * (³éÏó)½ÓÊÕÕß(Receiver)½ÇÉ«
+ * (æŠ½è±¡)æ¥æ”¶è€…(Receiver)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public interface Switchable {
 
 	/**
-	 * ´ò¿ª
+	 * æ‰“å¼€
 	 */
 	public void turnOn();
 	
 	/**
-	 * ¹Ø±Õ
+	 * å…³é—­
 	 */
 	public void turnOff();
 }

@@ -4,11 +4,11 @@
 package pattern.State.demo1;
 
 /**
- * Ê¹ÓÃStateÄ£Ê½ÊµÏÖ´ø×´Ì¬µÄÃÅµÄÀ©Õ¹ÑİÊ¾
+ * ä½¿ç”¨Stateæ¨¡å¼å®ç°å¸¦çŠ¶æ€çš„é—¨çš„æ‰©å±•æ¼”ç¤º
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-25
  */
 public class DoorUsingStateEx {
 
@@ -31,14 +31,14 @@ public class DoorUsingStateEx {
 	}
 	
 	/**
-	 * ÃÅ
+	 * é—¨
 	 * <p>
-	 * ÏÖÔÚ³ıÁËÓĞÁ½¸ö×´Ì¬Ö®ÍâÓÖÓĞÁËµÚÈı¸ö×´Ì¬£º¹ÊÕÏ¡£
-	 * Ê¹ÓÃStateÄ£Ê½½øĞĞÕâÑùµÄÀ©Õ¹²»ĞèÒªĞŞ¸ÄDoorÀàÔ´Âë£¬×ñÑ­OCPÔ­Ôò
+	 * ç°åœ¨é™¤äº†æœ‰ä¸¤ä¸ªçŠ¶æ€ä¹‹å¤–åˆæœ‰äº†ç¬¬ä¸‰ä¸ªçŠ¶æ€ï¼šæ•…éšœã€‚
+	 * ä½¿ç”¨Stateæ¨¡å¼è¿›è¡Œè¿™æ ·çš„æ‰©å±•ä¸éœ€è¦ä¿®æ”¹Doorç±»æºç ï¼Œéµå¾ªOCPåŸåˆ™
 	 */
 	private static class Door {
 
-		private DoorState state;// ÃÅµÄ×´Ì¬
+		private DoorState state;// é—¨çš„çŠ¶æ€
 
 		public Door() {
 			this.state = new OpenState();
@@ -49,28 +49,28 @@ public class DoorUsingStateEx {
 		}
 
 		/**
-		 * ÉèÖÃÃÅµÄ×´Ì¬
+		 * è®¾ç½®é—¨çš„çŠ¶æ€
 		 */
 		public void setState(DoorState state) {
 			this.state = state;
 		}
 
 		/**
-		 * ÃÅ·¢Éú¹ÊÕÏ
+		 * é—¨å‘ç”Ÿæ•…éšœ
 		 */
 		public void failed(){
 			this.setState(new FailureState());
 		}
 		
 		/**
-		 * ¿ªÃÅ
+		 * å¼€é—¨
 		 */
 		public void open() {
 			getState().openTheDoor(this);
 		}
 
 		/**
-		 * ¹ØÃÅ
+		 * å…³é—¨
 		 */
 		public void close() {
 			getState().closeTheDoor(this);
@@ -78,36 +78,36 @@ public class DoorUsingStateEx {
 	}
 
 	/**
-	 * ÃÅ×´Ì¬½Ó¿Ú
+	 * é—¨çŠ¶æ€æ¥å£
 	 */
 	private static interface DoorState {
 
 		/**
-		 * ¿ªÃÅ
+		 * å¼€é—¨
 		 * 
 		 * @param door
-		 *            ÃÅ¶ÔÏó
+		 *            é—¨å¯¹è±¡
 		 */
 		public void openTheDoor(Door door);
 
 		/**
-		 * ¹ØÃÅ
+		 * å…³é—¨
 		 * 
 		 * @param door
-		 *            ÃÅ¶ÔÏó
+		 *            é—¨å¯¹è±¡
 		 */
 		public void closeTheDoor(Door door);
 	}
 
 	/**
-	 * ¿ªÃÅ×´Ì¬
+	 * å¼€é—¨çŠ¶æ€
 	 */
 	private static class OpenState implements DoorState {
 
 		@Override
 		public void closeTheDoor(Door door) {
 			System.out.println("now close the door.");
-			// ½«ÃÅÉèÎª¹Ø±Õ×´Ì¬
+			// å°†é—¨è®¾ä¸ºå…³é—­çŠ¶æ€
 			door.setState(new ClosedState());
 		}
 
@@ -118,7 +118,7 @@ public class DoorUsingStateEx {
 	}
 
 	/**
-	 * ¹ØÃÅ×´Ì¬
+	 * å…³é—¨çŠ¶æ€
 	 */
 	private static class ClosedState implements DoorState {
 
@@ -130,13 +130,13 @@ public class DoorUsingStateEx {
 		@Override
 		public void openTheDoor(Door door) {
 			System.out.println("now open the door.");
-			// ½«ÃÅÉèÎª´ò¿ª×´Ì¬
+			// å°†é—¨è®¾ä¸ºæ‰“å¼€çŠ¶æ€
 			door.setState(new OpenState());
 		}
 	}
 	
 	/**
-	 * ¹ÊÕÏ×´Ì¬
+	 * æ•…éšœçŠ¶æ€
 	 */
 	private static class FailureState implements DoorState {
 

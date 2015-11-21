@@ -4,66 +4,66 @@
 package pattern.Mediator.demo2.after;
 
 /**
- * ¿â´æ×é
+ * åº“å­˜ç»„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Stock extends AbstractColleague {
 
-	// Ô­Ê¼¿â´æ
+	// åŸå§‹åº“å­˜
 	private int computerNumber = 100;
 
 	public Stock(Mediator mediator) {
 		super(mediator);
-		// ½«Stock¶ÔÏó×¢²áµ½Mediator
+		// å°†Stockå¯¹è±¡æ³¨å†Œåˆ°Mediator
 		mediator.setStock(this);
 	}
 
 	/**
-	 * Ôö¼Ó¿â´æµçÄÔ
+	 * å¢åŠ åº“å­˜ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void increase(int number) {
-		// Ö»Éæ¼°µ½×ÔÉí¶ÔÏóµÄ²Ù×÷¿ÉÒÔ²»Í¨¹ıMediatorÍê³É
+		// åªæ¶‰åŠåˆ°è‡ªèº«å¯¹è±¡çš„æ“ä½œå¯ä»¥ä¸é€šè¿‡Mediatorå®Œæˆ
 		computerNumber += number;
-		log("¿â´æÊıÁ¿Îª " + computerNumber);
+		log("åº“å­˜æ•°é‡ä¸º " + computerNumber);
 	}
 
 	/**
-	 * ¼õÉÙ¿â´æµçÄÔ
+	 * å‡å°‘åº“å­˜ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void decrease(int number) {
-		// Ö»Éæ¼°µ½×ÔÉí¶ÔÏóµÄ²Ù×÷¿ÉÒÔ²»Í¨¹ıMediatorÍê³É
+		// åªæ¶‰åŠåˆ°è‡ªèº«å¯¹è±¡çš„æ“ä½œå¯ä»¥ä¸é€šè¿‡Mediatorå®Œæˆ
 		computerNumber -= number;
-		log("¿â´æÊıÁ¿Îª " + computerNumber);
+		log("åº“å­˜æ•°é‡ä¸º " + computerNumber);
 	}
 
 	/**
-	 * ·µ»Ø¿â´æµçÄÔÊıÁ¿
+	 * è¿”å›åº“å­˜ç”µè„‘æ•°é‡
 	 */
 	public int getStockNumber() {
 		return computerNumber;
 	}
 
 	/**
-	 * ÇåÀí¿â´æ
+	 * æ¸…ç†åº“å­˜
 	 */
 	public void clearStock() {
-		// Éæ¼°ºÍÆäËû¶ÔÏóÍ¨ĞÅµÄ²Ù×÷¶¼½»¸øMediatorÍê³É
+		// æ¶‰åŠå’Œå…¶ä»–å¯¹è±¡é€šä¿¡çš„æ“ä½œéƒ½äº¤ç»™Mediatorå®Œæˆ
 		getMediator().clearStock();
 	}
 
 	/**
-	 * ´òÓ¡ÈÕÖ¾ĞÅÏ¢
+	 * æ‰“å°æ—¥å¿—ä¿¡æ¯
 	 */
 	public void log(String message) {
-		System.out.println("¡¾¿â´æ×é¡¿" + message);
+		System.out.println("ã€åº“å­˜ç»„ã€‘" + message);
 	}
 }

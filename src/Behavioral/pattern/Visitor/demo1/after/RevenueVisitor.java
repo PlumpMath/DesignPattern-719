@@ -4,46 +4,46 @@
 package pattern.Visitor.demo1.after;
 
 /**
- * Ë°Îñ¾Ö¹Û²ìÕß
+ * ç¨åŠ¡å±€è§‚å¯Ÿè€…
  * <p>
- * Ë°Îñ¾ÖÖ»ÄÜ¹»¿´µ½ËùÓĞÔ±¹¤µÄ±¨Ë°ÊÕÈë
+ * ç¨åŠ¡å±€åªèƒ½å¤Ÿçœ‹åˆ°æ‰€æœ‰å‘˜å·¥çš„æŠ¥ç¨æ”¶å…¥
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class RevenueVisitor implements IncomeVisitor {
 
-	// ¹«Ë¾Ğ½½ğ×Ü¶î
+	// å…¬å¸è–ªé‡‘æ€»é¢
 	private double total = 0;
 
 	@Override
 	public void visit(CEO ceo) {
-		double income = ceo.getSalary() + ceo.getDecemberBonus();// ÎªÁË±ÜË°£¬²»¼ÆËãCEOÌØ±ğ½±½ğ
+		double income = ceo.getSalary() + ceo.getDecemberBonus();// ä¸ºäº†é¿ç¨ï¼Œä¸è®¡ç®—CEOç‰¹åˆ«å¥–é‡‘
 		this.total += income;
-		System.out.println("CEO  " + ceo.getName() + "  ×ÜÊÕÈë  " + income);
+		System.out.println("CEO  " + ceo.getName() + "  æ€»æ”¶å…¥  " + income);
 	}
 
 	@Override
 	public void visit(GeneralManager gm) {
 		double income = gm.getSalary() + gm.getAttendanceBonus()
-				+ gm.getDecemberBonus() * 0.5;// ÎªÁË±ÜË°£¬ÄêÖÕ½±Ö»¼ÆËã50%
+				+ gm.getDecemberBonus() * 0.5;// ä¸ºäº†é¿ç¨ï¼Œå¹´ç»ˆå¥–åªè®¡ç®—50%
 		this.total += income;
-		System.out.println("×Ü¾­Àí  " + gm.getName() + "  ×ÜÊÕÈë  " + income);
+		System.out.println("æ€»ç»ç†  " + gm.getName() + "  æ€»æ”¶å…¥  " + income);
 	}
 
 	@Override
 	public void visit(DeptManager dm) {
-		double income = dm.getSalary() + dm.getAttendanceBonus() * 0.8;// ÎªÁË±ÜË°£¬ÄêÖÕ½±Ö»¼ÆËã80%
+		double income = dm.getSalary() + dm.getAttendanceBonus() * 0.8;// ä¸ºäº†é¿ç¨ï¼Œå¹´ç»ˆå¥–åªè®¡ç®—80%
 		this.total += income;
-		System.out.println("²¿ÃÅ¾­Àí  " + dm.getName() + "  ×ÜÊÕÈë  " + income);
+		System.out.println("éƒ¨é—¨ç»ç†  " + dm.getName() + "  æ€»æ”¶å…¥  " + income);
 	}
 
 	@Override
 	public void visit(Employee em) {
 		double income = em.getSalary();
 		this.total += income;
-		System.out.println("ÆÕÍ¨Ô±¹¤  " + em.getName() + "  ×ÜÊÕÈë  " + income);
+		System.out.println("æ™®é€šå‘˜å·¥  " + em.getName() + "  æ€»æ”¶å…¥  " + income);
 	}
 
 	public double getTotal() {

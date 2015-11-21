@@ -4,13 +4,13 @@
 package pattern.SimpleFactory;
 
 /**
- * �����Ʒ��(�ӿ�)
+ * 抽象产品类(接口)
  * <p>
- * ���������ɫ�������ɹ�������ģʽ�������Ķ���ĸ��࣬�����ǹ�ͬӵ�еĽӿڡ�
+ * 担任这个角色的类是由工厂方法模式所创建的对象的父类，或它们共同拥有的接口。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-2-3
+ * 创建日期：2010-2-3
  */
 public interface Product {
 

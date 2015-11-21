@@ -7,17 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ������Ԫ(UnsharableFlyweight)��ɫ
+ * 复合享元(UnsharableFlyweight)角色
  * <p>
- * ������Ԫ��ɫ�������Ķ����ǲ����Թ����ģ�����һ��������Ԫ������Էֽ��Ϊ��������ǵ�����Ԫ�������ϡ�
+ * 复合享元角色所代表的对象是不可以共享的，但是一个复合享元对象可以分解成为多个本身是单纯享元对象的组合。
  * <p>
- * ������Ԫ�������ɵ�������Ԫ����ͨ�����϶��ɣ�������ṩ��add()�����ľۼ�����������
- * ����һ��������Ԫ������в�ͬ�ľۼ�Ԫ�أ���Щ�ۼ�Ԫ���ڸ�����Ԫ���󱻴���֮����룬
- * �Ȿ������ζ�Ÿ�����Ԫ�����״̬�ǻ�ı�ģ���˸�����Ԫ�����ǲ��ܹ����ġ�
+ * 复合享元对象是由单纯的享元对象通过复合而成，因此它提供了add()这样的聚集管理方法。
+ * 由于一个复合享元对象具有不同的聚集元素，这些聚集元素在复合享元对象被创建之后加入，
+ * 这本身就意味着复合享元对象的状态是会改变的，因此复合享元对象是不能共享的。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-8-2
+ * 创建日期：2010-8-2
  */
 public class CompositeFlyweight extends Flyweight {
 
@@ -28,7 +28,7 @@ public class CompositeFlyweight extends Flyweight {
 	}
 
 	/**
-	 * ����һ����Ԫ����
+	 * 添加一个享元对象
 	 * 
 	 * @param flyweight
 	 */
@@ -37,7 +37,7 @@ public class CompositeFlyweight extends Flyweight {
 	}
 
 	/**
-	 * �������еĵ�����Ԫ���󣬽�����״̬����ȥ
+	 * 遍历所有的单纯享元对象，将外蕴状态传进去
 	 *
 	 * @see pattern.Flyweight.composite.Flyweight#operation(java.lang.String)
 	 */

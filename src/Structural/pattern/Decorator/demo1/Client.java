@@ -4,11 +4,11 @@
 package pattern.Decorator.demo1;
 
 /**
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public class Client {
 

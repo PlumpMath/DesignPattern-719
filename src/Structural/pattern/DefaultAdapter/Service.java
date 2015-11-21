@@ -4,11 +4,11 @@
 package pattern.DefaultAdapter;
 
 /**
- * Ä¿±ê½Ó¿Ú
+ * ç›®æ ‡æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-5
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-5
  */
 public interface Service {
 

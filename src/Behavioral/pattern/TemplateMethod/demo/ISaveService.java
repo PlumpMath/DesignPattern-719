@@ -4,16 +4,16 @@
 package pattern.TemplateMethod.demo;
 
 /**
- * ±£´æ·şÎñ½Ó¿Ú
+ * ä¿å­˜æœåŠ¡æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-7
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-7
  */
 public interface ISaveService {
 
 	/**
-	 * ±£´æÊı¾İ
+	 * ä¿å­˜æ•°æ®
 	 */
 	public void saveData();
 }

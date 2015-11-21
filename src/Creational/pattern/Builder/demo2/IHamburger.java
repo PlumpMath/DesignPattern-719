@@ -4,26 +4,26 @@
 package pattern.Builder.demo2;
 
 /**
- * Hamburger½Ó¿Ú
+ * Hamburgeræ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public interface IHamburger {
 
 	/**
-	 * ·µ»ØÃæ°ü
+	 * è¿”å›é¢åŒ…
 	 */
 	public String getBread();
 	
 	/**
-	 * ·µ»ØÈâ
+	 * è¿”å›è‚‰
 	 */
 	public String getMeat();
 	
 	/**
-	 * ·µ»ØÊß²Ë
+	 * è¿”å›è”¬èœ
 	 */
 	public String getVegetable();
 }

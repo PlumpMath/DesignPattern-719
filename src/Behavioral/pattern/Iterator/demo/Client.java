@@ -4,11 +4,11 @@
 package pattern.Iterator.demo;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-14
  */
 public class Client {
 
@@ -23,14 +23,14 @@ public class Client {
 		queue.add("3");
 		queue.add("4");
 		queue.add("5");
-		// ÕıÏò±éÀú
+		// æ­£å‘éå†
 		BackwardIterator<String> it = queue.backwardIterator();
 		while (it.hasNext()) {
 			System.out.print(it.next());
 			System.out.print(",");
 		}
 		System.out.println();
-		// ÄæÏò±éÀú
+		// é€†å‘éå†
 		ForwardIterator<String> it2 = queue.forwardIterator();
 		while (it2.hasPrevious()) {
 			System.out.print(it2.previous());

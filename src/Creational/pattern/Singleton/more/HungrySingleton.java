@@ -4,11 +4,11 @@
 package pattern.Singleton.more;
 
 /**
- * 1£¬¶öººÊ½µ¥Àı
+ * 1ï¼Œé¥¿æ±‰å¼å•ä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014-6-6
+ * åˆ›å»ºæ—¥æœŸï¼š2014-6-6
  */
 public final class HungrySingleton {
 

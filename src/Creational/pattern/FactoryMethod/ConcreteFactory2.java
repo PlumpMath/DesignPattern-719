@@ -4,18 +4,18 @@
 package pattern.FactoryMethod;
 
 /**
- * ¾ßÌå¹¤³§Àà2
+ * å…·ä½“å·¥åŽ‚ç±»2
  * <p>
- * ×¨ÃÅÓÃÓÚ´´½¨ConcreteProduct2ÊµÀý
+ * ä¸“é—¨ç”¨äºŽåˆ›å»ºConcreteProduct2å®žä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class ConcreteFactory2 implements Factory {
 
 	/**
-	 * ´´½¨ProductµÄÊµÀý
+	 * åˆ›å»ºProductçš„å®žä¾‹
 	 */
 	public Product create() {
 		return new ConcreteProduct2();

@@ -4,11 +4,11 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class Client {
 
@@ -16,18 +16,18 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¿Í»§¶Ë¶¨ÒåÒ»ÌõÔğÈÎÁ´£¬¿ÉÒÔÁé»îÉè¶¨HandlerË³Ğò
+		// å®¢æˆ·ç«¯å®šä¹‰ä¸€æ¡è´£ä»»é“¾ï¼Œå¯ä»¥çµæ´»è®¾å®šHandleré¡ºåº
 		Handler chain = new DeptManager(new GeneralManager(new CEO(new Chairman())));
-		// Ô±¹¤ÏòÁìµ¼·¢ËÍÇëÇó
+		// å‘˜å·¥å‘é¢†å¯¼å‘é€è¯·æ±‚
 		Employee tom = new Employee("tom");
 		tom.request(chain, Request.LEAVE);
-		// Ô±¹¤ÏòÁìµ¼·¢ËÍÇëÇó
+		// å‘˜å·¥å‘é¢†å¯¼å‘é€è¯·æ±‚
 		Employee peter = new Employee("peter");
 		peter.request(chain, Request.RAISES);
-		// Ô±¹¤ÏòÁìµ¼·¢ËÍÇëÇó
+		// å‘˜å·¥å‘é¢†å¯¼å‘é€è¯·æ±‚
 		Employee bob = new Employee("bob");
 		bob.request(chain, Request.PROMOTION);
-		// Ô±¹¤ÏòÁìµ¼·¢ËÍÇëÇó
+		// å‘˜å·¥å‘é¢†å¯¼å‘é€è¯·æ±‚
 		Employee ann = new Employee("ann");
 		ann.request(chain, Request.OTHER);
 	}

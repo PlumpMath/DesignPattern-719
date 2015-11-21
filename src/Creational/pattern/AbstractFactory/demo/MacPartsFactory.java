@@ -4,11 +4,11 @@
 package pattern.AbstractFactory.demo;
 
 /**
- * MacµçÄÔÁã¼ş¹¤³§
+ * Macç”µè„‘é›¶ä»¶å·¥å‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class MacPartsFactory implements ComputerPartsFactory {
 

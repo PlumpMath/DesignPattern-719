@@ -4,21 +4,21 @@
 package pattern.AbstractFactory.demo;
 
 /**
- * µçÄÔÁã¼þ¹¤³§
+ * ç”µè„‘é›¶ä»¶å·¥åŽ‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public interface ComputerPartsFactory {
 
 	/**
-	 * ´´½¨CPUµÄÊµÀý
+	 * åˆ›å»ºCPUçš„å®žä¾‹
 	 */
 	public CPU produceCPU();
 	
 	/**
-	 * ´´½¨RAMµÄÊµÀý
+	 * åˆ›å»ºRAMçš„å®žä¾‹
 	 */
 	public RAM produceRAM();
 }

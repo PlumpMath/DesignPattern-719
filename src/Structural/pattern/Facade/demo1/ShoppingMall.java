@@ -8,13 +8,13 @@ import pattern.Facade.demo1.ShirtFactory.Shirt;
 import pattern.Facade.demo1.ShoeFactory.Shoe;
 
 /**
- * ��������
+ * 购物中心
  * <p>
- * ��������Factory������Facade�࣬�Թ˿��ṩͳһ�ӿ�
+ * 各个厂家Factory的门面Facade类，对顾客提供统一接口
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-4-26
+ * 创建日期：2010-4-26
  */
 public class ShoppingMall {
 
@@ -34,5 +34,5 @@ public class ShoppingMall {
 		return ShoeFactory.create();
 	}
 	
-	// �Ժ���������µ���Ʒ������������ʱ��ֻҪ�ṩ�µĽӿڼ���
+	// 以后会有其他新的商品会加入进来，到时候只要提供新的接口即可
 }

@@ -4,11 +4,11 @@
 package pattern.Facade.demo1;
 
 /**
- * Shirt¹¤³§
+ * Shirtå·¥åŽ‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-26
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-26
  */
 public class ShirtFactory {
 

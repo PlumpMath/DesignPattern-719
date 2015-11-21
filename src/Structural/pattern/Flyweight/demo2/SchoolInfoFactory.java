@@ -4,16 +4,16 @@
 package pattern.Flyweight.demo2;
 
 /**
- * Ñ§Ğ£ĞÅÏ¢¹¤³§
+ * å­¦æ ¡ä¿¡æ¯å·¥å‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-3
  */
 public class SchoolInfoFactory {
 
 	/**
-	 * Ã¿´Î¶¼´´½¨Ò»¸öĞÂµÄSchoolInfo¶ÔÏó
+	 * æ¯æ¬¡éƒ½åˆ›å»ºä¸€ä¸ªæ–°çš„SchoolInfoå¯¹è±¡
 	 */
 	public static SchoolInfo create(String name, int grade) {
 		return new SchoolInfo(name, grade);

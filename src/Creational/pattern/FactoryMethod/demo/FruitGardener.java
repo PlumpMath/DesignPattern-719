@@ -4,19 +4,19 @@
 package pattern.FactoryMethod.demo;
 
 /**
- * ³éÏóÔ°¶¡½Ó¿Ú
+ * æŠ½è±¡å›­ä¸æŽ¥å£
  * <p>
- * ËüÊÇ¹¤³§·½·¨Ä£Ê½µÄºËÐÄ£¬µ«ÊÇËü²¢²»ÕÆÎÕË®¹ûÀàµÄÉúÉ±´óÈ¨
- * Ïà·´µÄÕâÏîÈ¨Á¦±»½»¸øËüµÄ×ÓÀà£¬ËüÊµ¼ÊÉÏÊÇËùÓÐ¾ßÌåÔ°¶¡(¹¤³§)½ÇÉ«µÄ³¬Àà
+ * å®ƒæ˜¯å·¥åŽ‚æ–¹æ³•æ¨¡å¼çš„æ ¸å¿ƒï¼Œä½†æ˜¯å®ƒå¹¶ä¸æŽŒæ¡æ°´æžœç±»çš„ç”Ÿæ€å¤§æƒ
+ * ç›¸åçš„è¿™é¡¹æƒåŠ›è¢«äº¤ç»™å®ƒçš„å­ç±»ï¼Œå®ƒå®žé™…ä¸Šæ˜¯æ‰€æœ‰å…·ä½“å›­ä¸(å·¥åŽ‚)è§’è‰²çš„è¶…ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public interface FruitGardener {
 
 	/**
-	 * Éú²úË®¹û
+	 * ç”Ÿäº§æ°´æžœ
 	 */
 	public Fruit factory();
 }

@@ -4,21 +4,21 @@
 package pattern.Observer.demo2;
 
 /**
- * ½»¾¯Àà
+ * äº¤è­¦ç±»
  * <p>
- * ¾ßÌå¹Û²ìÕß½ÇÉ«
+ * å…·ä½“è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-11
  */
 public class TrafficPolice implements Listener {
 	
 	@Override
 	public void doAction(Event event) {
-		// Ö»¹ØĞÄºìÂÌµÆÔËĞĞ¹ÊÕÏÊÂ¼ş£¬Eventº¬ÓĞ×ã¹»µÄĞÅÏ¢¹©Ê¹ÓÃ
+		// åªå…³å¿ƒçº¢ç»¿ç¯è¿è¡Œæ•…éšœäº‹ä»¶ï¼ŒEventå«æœ‰è¶³å¤Ÿçš„ä¿¡æ¯ä¾›ä½¿ç”¨
 		if (event.getEventType() == EventType.LIGHT_FAILURE) {
-			System.out.println("TrafficPolice£ºOK,I know.");
+			System.out.println("TrafficPoliceï¼šOK,I know.");
 		}
 	}
 }

@@ -4,11 +4,11 @@
 package pattern.State.demo2;
 
 /**
- * Ê¹ÓÃStateÄ£Ê½ÊµÏÖµÄÖ¸Õë
+ * ä½¿ç”¨Stateæ¨¡å¼å®ç°çš„æŒ‡é’ˆ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-26
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-26
  */
 public class PointerUsingState {
 
@@ -25,13 +25,13 @@ public class PointerUsingState {
 	}
 
 	/**
-	 * Ö¸ÕëÀà
+	 * æŒ‡é’ˆç±»
 	 * <p>
-	 * Ö¸ÕëÔÚÄ³¸öÊ±¿Ì±Ø¶¨Ö¸Ïò¶«Î÷ÄÏ±±ËÄ¸ö·½ÏòÖĞµÄÒ»¸ö¡£
+	 * æŒ‡é’ˆåœ¨æŸä¸ªæ—¶åˆ»å¿…å®šæŒ‡å‘ä¸œè¥¿å—åŒ—å››ä¸ªæ–¹å‘ä¸­çš„ä¸€ä¸ªã€‚
 	 */
 	private static class Pointer {
 
-		private Direction direction;// µ±Ç°·½Ïò
+		private Direction direction;// å½“å‰æ–¹å‘
 
 		public Pointer() {
 			this.direction = new East();
@@ -42,51 +42,51 @@ public class PointerUsingState {
 		}
 
 		/**
-		 * ÄæÊ±Õë×ªÒ»ÏÂ
+		 * é€†æ—¶é’ˆè½¬ä¸€ä¸‹
 		 */
 		public void turnAntiClockwise() {
-			System.out.println("turnAntiClockwiseÇ°Ö¸Ïò£º" + direction.getName());
+			System.out.println("turnAntiClockwiseå‰æŒ‡å‘ï¼š" + direction.getName());
 			direction.antiClockwise(this);
-			System.out.println("turnAntiClockwiseºóÖ¸Ïò£º" + direction.getName());
+			System.out.println("turnAntiClockwiseåæŒ‡å‘ï¼š" + direction.getName());
 		}
 
 		/**
-		 * Ë³Ê±Õë×ªÒ»ÏÂ
+		 * é¡ºæ—¶é’ˆè½¬ä¸€ä¸‹
 		 */
 		public void turnClockwise() {
-			System.out.println("turnClockwiseÇ°Ö¸Ïò£º" + direction.getName());
+			System.out.println("turnClockwiseå‰æŒ‡å‘ï¼š" + direction.getName());
 			direction.clockwise(this);
-			System.out.println("turnClockwiseºóÖ¸Ïò£º" + direction.getName());
+			System.out.println("turnClockwiseåæŒ‡å‘ï¼š" + direction.getName());
 		}
 	}
 
 	/**
-	 * ·½Ïò×´Ì¬½Ó¿Ú
+	 * æ–¹å‘çŠ¶æ€æ¥å£
 	 */
 	private static interface Direction {
 
 		/**
-		 * ÄæÊ±Õë×ª
+		 * é€†æ—¶é’ˆè½¬
 		 */
 		public void antiClockwise(Pointer pointer);
 
 		/**
-		 * Ë³Ê±Õë×ª
+		 * é¡ºæ—¶é’ˆè½¬
 		 */
 		public void clockwise(Pointer pointer);
 
 		/**
-		 * ·½Ïò×´Ì¬Ãû³Æ
+		 * æ–¹å‘çŠ¶æ€åç§°
 		 */
 		public String getName();
 	}
 
 	/**
-	 * ¶«
+	 * ä¸œ
 	 */
 	private static class East implements Direction {
 
-		/** µ¥Àı */
+		/** å•ä¾‹ */
 		private static final Direction INSTANCE = new East();
 
 		private East() {
@@ -114,11 +114,11 @@ public class PointerUsingState {
 	}
 
 	/**
-	 * Î÷
+	 * è¥¿
 	 */
 	private static class West implements Direction {
 
-		/** µ¥Àı */
+		/** å•ä¾‹ */
 		private static final Direction INSTANCE = new West();
 
 		private West() {
@@ -146,11 +146,11 @@ public class PointerUsingState {
 	}
 
 	/**
-	 * ÄÏ
+	 * å—
 	 */
 	private static class South implements Direction {
 
-		/** µ¥Àı */
+		/** å•ä¾‹ */
 		private static final Direction INSTANCE = new South();
 
 		private South() {
@@ -178,11 +178,11 @@ public class PointerUsingState {
 	}
 
 	/**
-	 * ±±
+	 * åŒ—
 	 */
 	private static class North implements Direction {
 
-		/** µ¥Àı */
+		/** å•ä¾‹ */
 		private static final Direction INSTANCE = new North();
 
 		private North() {

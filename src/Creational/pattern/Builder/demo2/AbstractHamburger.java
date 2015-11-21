@@ -4,17 +4,17 @@
 package pattern.Builder.demo2;
 
 /**
- * ³éÏóºº±¤°ü»ùÀà
+ * æŠ½è±¡æ±‰å ¡åŒ…åŸºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public abstract class AbstractHamburger implements IHamburger {
 
-	private String bread;// Ãæ°ü
-	private String meat;// Èâ
-	private String vegetable;// Êß²Ë
+	private String bread;// é¢åŒ…
+	private String meat;// è‚‰
+	private String vegetable;// è”¬èœ
 
 	public String getBread() {
 		return bread;

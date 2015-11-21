@@ -4,13 +4,13 @@
 package pattern.Facade.demo2;
 
 /**
- * ¼ÆËã»ú
+ * è®¡ç®—æœº
  * <p>
- * ÃÅÃæFacade½ÇÉ«£¬Ö±½ÓºÍÓÃ»§´ò½»µÀ
+ * é—¨é¢Facadeè§’è‰²ï¼Œç›´æ¥å’Œç”¨æˆ·æ‰“äº¤é“
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-25
  */
 public class Computer {
 
@@ -25,7 +25,7 @@ public class Computer {
 	}
 
 	/**
-	 * Æô¶¯¼ÆËã»ú
+	 * å¯åŠ¨è®¡ç®—æœº
 	 */
 	public void start() {
 		cpu.freeze();

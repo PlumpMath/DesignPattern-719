@@ -4,26 +4,26 @@
 package pattern.Prototype.demo;
 
 /**
- * ÒÂ·ş½Ó¿Ú
+ * è¡£æœæ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public interface Clothes extends Cloneable {
 
 	/**
-	 * ÑÕÉ«
+	 * é¢œè‰²
 	 */
 	public String getColor();
 	
 	/**
-	 * ³ß´ç
+	 * å°ºå¯¸
 	 */
 	public int getSize();
 	
 	/**
-	 * ¿ËÂ¡
+	 * å…‹éš†
 	 */
 	public Clothes clone();
 }

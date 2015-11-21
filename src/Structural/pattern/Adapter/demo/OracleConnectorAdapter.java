@@ -4,13 +4,13 @@
 package pattern.Adapter.demo;
 
 /**
- * OracleÁ¬½ÓÆ÷ÊÊÅäÆ÷
+ * Oracleè¿æ¥å™¨é€‚é…å™¨
  * <p>
- * ²ÉÓÃÊÊÅäÆ÷Ä£Ê½Ê¹µÃDBManagerÄÜ¹»Ê¹ÓÃOracleConnector
+ * é‡‡ç”¨é€‚é…å™¨æ¨¡å¼ä½¿å¾—DBManagerèƒ½å¤Ÿä½¿ç”¨OracleConnector
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-4
  */
 public class OracleConnectorAdapter implements DBConnector {
 

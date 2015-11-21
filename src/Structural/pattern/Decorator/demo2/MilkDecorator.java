@@ -4,11 +4,11 @@
 package pattern.Decorator.demo2;
 
 /**
- * Å£ÄÌ×°ÊÎÆ÷
+ * ç‰›å¥¶è£…é¥°å™¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public class MilkDecorator extends CoffeeDecorator {
 
@@ -18,7 +18,7 @@ public class MilkDecorator extends CoffeeDecorator {
 
 	@Override
 	public String getName() {
-		return coffee.getName() + " ¼ÓÅ£ÄÌ";
+		return coffee.getName() + " åŠ ç‰›å¥¶";
 	}
 
 	@Override

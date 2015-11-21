@@ -4,11 +4,11 @@
 package pattern.Prototype.demo;
 
 /**
- * ¼Ð¿ËÀà
+ * å¤¹å…‹ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public class Jacket implements Clothes {
 

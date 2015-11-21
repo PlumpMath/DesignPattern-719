@@ -4,16 +4,16 @@
 package pattern.Composite.demo2;
 
 /**
- * ÎÄ¼ş½Ó¿Ú
+ * æ–‡ä»¶æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public interface IFile {
 	
 	/**
-	 * ´òÓ¡ÎÄ¼şĞÅÏ¢
+	 * æ‰“å°æ–‡ä»¶ä¿¡æ¯
 	 */
 	public void info();
 }

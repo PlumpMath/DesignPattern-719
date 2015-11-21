@@ -4,23 +4,23 @@
 package pattern.Command.demo2;
 
 /**
- * ÃüÁî½Ó¿Ú
+ * å‘½ä»¤æ¥å£
  * <p>
- * ÃüÁî(Command)½ÇÉ«£¬ÒªÇóÊµÏÖdoºÍundo¹¦ÄÜ¡£
+ * å‘½ä»¤(Command)è§’è‰²ï¼Œè¦æ±‚å®ç°doå’ŒundoåŠŸèƒ½ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public interface Command {
 
 	/**
-	 * Ö´ĞĞÃüÁî
+	 * æ‰§è¡Œå‘½ä»¤
 	 */
 	public void doAction();
 	
 	/**
-	 * ³·ÏúÖ´ĞĞ
+	 * æ’¤é”€æ‰§è¡Œ
 	 */
 	public void undo();
 }

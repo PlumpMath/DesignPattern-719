@@ -4,23 +4,23 @@
 package pattern.Observer.demo2;
 
 /**
- * ÊÂ¼þ
+ * äº‹ä»¶
  * <p>
- * Õâ¸ö½Ó¿ÚÊÇ×÷ÎªÔ´ºÍ¼àÌýÆ÷½øÐÐÍ¨ÐÅµÄÐÅÊ¹¶ÔÏó£¬Ëü°üº¬ÁË¼àÌýÆ÷¸ÐÐËÈ¤µÄËùÓÐÐÅÏ¢£¬ÓÉÔ´´´½¨²¢´«µÝ¸ø¼àÌýÆ÷
+ * è¿™ä¸ªæŽ¥å£æ˜¯ä½œä¸ºæºå’Œç›‘å¬å™¨è¿›è¡Œé€šä¿¡çš„ä¿¡ä½¿å¯¹è±¡ï¼Œå®ƒåŒ…å«äº†ç›‘å¬å™¨æ„Ÿå…´è¶£çš„æ‰€æœ‰ä¿¡æ¯ï¼Œç”±æºåˆ›å»ºå¹¶ä¼ é€’ç»™ç›‘å¬å™¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-11
  */
 public interface Event {
 
 	/**
-	 * ·µ»ØÊÂ¼þÀàÐÍ
+	 * è¿”å›žäº‹ä»¶ç±»åž‹
 	 */
 	public EventType getEventType();
 
 	/**
-	 * ·µ»ØÔ´¶ÔÏó
+	 * è¿”å›žæºå¯¹è±¡
 	 */
 	public Source getSource();
 }

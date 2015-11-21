@@ -4,66 +4,66 @@
 package pattern.Observer.demo2;
 
 /**
- * ºìÂÌµÆ
+ * çº¢ç»¿ç¯
  * <p>
- * ¾ßÌå±»¹Û²ìÕß½ÇÉ«
+ * å…·ä½“è¢«è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class TrafficLight extends AbstractSource {
 
 	/**
-	 * ºìÂÌµÆÑÕÉ«Ã¶¾Ù
+	 * çº¢ç»¿ç¯é¢œè‰²æšä¸¾
 	 */
 	public enum TrafficLightColor {
-		/** ºì */
+		/** çº¢ */
 		RED, 
-		/** ÂÌ */
+		/** ç»¿ */
 		GREEN
 	}
 	
-	private TrafficLightColor color = TrafficLightColor.RED;// µ±Ç°ÑÕÉ«
-	private boolean isRunning = true;// ÊÇ·ñÕı³£ÔËĞĞ
+	private TrafficLightColor color = TrafficLightColor.RED;// å½“å‰é¢œè‰²
+	private boolean isRunning = true;// æ˜¯å¦æ­£å¸¸è¿è¡Œ
 
 	/**
-	 * ·µ»Øµ±Ç°ÑÕÉ«
+	 * è¿”å›å½“å‰é¢œè‰²
 	 */
 	public TrafficLightColor getColor() {
 		return color;
 	}
 
 	/**
-	 * ¸Ä±äµ±Ç°ÑÕÉ«
+	 * æ”¹å˜å½“å‰é¢œè‰²
 	 */
 	public void setColor(TrafficLightColor color) {
 		if (isRunning) {
 			if (!color.equals(getColor())) {
 				this.color = color;
 				System.out.println("\nNow light is " + color.name().toLowerCase());
-				// ·¢Ò»¸öºìÂÌµÆÑÕÉ«¸Ä±äÊÂ¼ş
+				// å‘ä¸€ä¸ªçº¢ç»¿ç¯é¢œè‰²æ”¹å˜äº‹ä»¶
 				fireEvent(new TrafficLightEvent(EventType.COLOR_CHANGED, this));
 			}
 		}
 	}
 
 	/**
-	 * ÊÇ·ñÕı³£ÔËĞĞ
+	 * æ˜¯å¦æ­£å¸¸è¿è¡Œ
 	 */
 	public boolean isRunning() {
 		return isRunning;
 	}
 
 	/**
-	 * ÉèÖÃÔËĞĞ×´Ì¬
+	 * è®¾ç½®è¿è¡ŒçŠ¶æ€
 	 */
 	public void setRunning(boolean isRunning) {
 		if (this.isRunning != isRunning) {
 			this.isRunning = isRunning;
 			System.out.println("\nNow light is "
 					+ (isRunning ? "running" : "failure"));
-			// ·¢Ò»¸öºìÂÌµÆÔËĞĞ¹ÊÕÏÊÂ¼ş
+			// å‘ä¸€ä¸ªçº¢ç»¿ç¯è¿è¡Œæ•…éšœäº‹ä»¶
 			fireEvent(new TrafficLightEvent(EventType.LIGHT_FAILURE, this));
 		}
 	}

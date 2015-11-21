@@ -4,15 +4,15 @@
 package pattern.TemplateMethod.demo;
 
 /**
- * ÎÄ¼ş±£´æ·şÎñ
+ * æ–‡ä»¶ä¿å­˜æœåŠ¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-7
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-7
  */
 public class FileSaveService extends SaveService {
 
-	private String filePath;// ÎÄ¼şÂ·¾¶
+	private String filePath;// æ–‡ä»¶è·¯å¾„
 
 	public FileSaveService(String filePath, Object data) {
 		super(data);
@@ -20,7 +20,7 @@ public class FileSaveService extends SaveService {
 	}
 
 	/**
-	 * Ñ¡ÔñÊµÏÖÁËÕâ¸ö¹³×Ó·½·¨
+	 * é€‰æ‹©å®ç°äº†è¿™ä¸ªé’©å­æ–¹æ³•
 	 *
 	 * @see pattern.TemplateMethod.demo.SaveService#doAfterSave()
 	 */
@@ -39,7 +39,7 @@ public class FileSaveService extends SaveService {
 	}
 
 	/**
-	 * ±ØĞëÒªÊµÏÖµÄÊÇ³éÏó·½·¨
+	 * å¿…é¡»è¦å®ç°çš„æ˜¯æŠ½è±¡æ–¹æ³•
 	 *
 	 * @see pattern.TemplateMethod.demo.SaveService#save()
 	 */
@@ -48,7 +48,7 @@ public class FileSaveService extends SaveService {
 	}
 
 	/**
-	 * Ñ¡ÔñÊµÏÖÁËÕâ¸ö¹³×Ó·½·¨
+	 * é€‰æ‹©å®ç°äº†è¿™ä¸ªé’©å­æ–¹æ³•
 	 *
 	 * @see pattern.TemplateMethod.demo.SaveService#doAfterSave()
 	 */

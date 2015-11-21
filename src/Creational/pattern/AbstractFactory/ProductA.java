@@ -4,15 +4,15 @@
 package pattern.AbstractFactory;
 
 /**
- * �����Ʒ��ProductA(�ӿ�)
+ * 抽象产品类ProductA(接口)
  * <p>
- * �ýӿں��������������γ���ProductA�ȼ��ṹ
+ * 该接口和它的所有子类形成了ProductA等级结构
  * <p>
- * ������ǹ�������ģʽ�������Ķ���Ļ��࣬�����ǹ�ͬӵ�еĽӿ�
+ * 这个类是工厂方法模式所创建的对象的基类，或它们共同拥有的接口
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-2-3
+ * 创建日期：2010-2-3
  */
 public interface ProductA {
 

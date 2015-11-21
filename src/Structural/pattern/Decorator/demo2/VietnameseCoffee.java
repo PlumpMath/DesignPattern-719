@@ -4,17 +4,17 @@
 package pattern.Decorator.demo2;
 
 /**
- * Ô½ÄÏ¿§·È
+ * è¶Šå—å’–å•¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public class VietnameseCoffee implements Coffee {
 
 	@Override
 	public String getName() {
-		return "Ô½ÄÏ¿§·È";
+		return "è¶Šå—å’–å•¡";
 	}
 
 	@Override

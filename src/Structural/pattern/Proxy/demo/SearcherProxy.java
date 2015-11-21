@@ -4,13 +4,13 @@
 package pattern.Proxy.demo;
 
 /**
- * ËÑË÷Æ÷´úÀí
+ * æœç´¢å™¨ä»£ç†
  * <p>
- * ÎªËÑË÷Æ÷Ôö¼ÓÁËÈ¨ÏŞÑéÖ¤(±£»¤·ÃÎÊ´úÀíµÄÓ¦ÓÃ)ºÍÈÕÖ¾¼ÇÂ¼¹¦ÄÜ(ÖÇÄÜÒıÓÃ´úÀíµÄÓ¦ÓÃ)¡£
+ * ä¸ºæœç´¢å™¨å¢åŠ äº†æƒé™éªŒè¯(ä¿æŠ¤è®¿é—®ä»£ç†çš„åº”ç”¨)å’Œæ—¥å¿—è®°å½•åŠŸèƒ½(æ™ºèƒ½å¼•ç”¨ä»£ç†çš„åº”ç”¨)ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-23
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-23
  */
 public class SearcherProxy implements Searcher {
 
@@ -22,10 +22,10 @@ public class SearcherProxy implements Searcher {
 
 	@Override
 	public String doSearch(String userid, String keyword) throws Exception {
-		// Ğ£ÑéÈ¨ÏŞ
+		// æ ¡éªŒæƒé™
 		if (checkAccess(userid)) {
 			String result = getRealSearcher().doSearch(userid, keyword);
-			logUsage(userid);// ¼ÇÂ¼ÈÕÖ¾
+			logUsage(userid);// è®°å½•æ—¥å¿—
 			return result;
 		}
 		throw new UnauthorizationException(userid);

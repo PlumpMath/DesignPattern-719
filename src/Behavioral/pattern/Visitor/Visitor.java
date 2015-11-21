@@ -4,25 +4,25 @@
 package pattern.Visitor;
 
 /**
- * ³éÏó·ÃÎÊÕß(Visitor)½ÇÉ«
+ * æŠ½è±¡è®¿é—®è€…(Visitor)è§’è‰²
  * <p>
- * ÉùÃ÷ÁËÒ»¸ö»òÕß¶à¸ö·ÃÎÊ²Ù×÷£¬ÐÎ³ÉËùÓÐµÄ¾ßÌå·ÃÎÊÕß½ÇÉ«±ØÐëÊµÏÖµÄ½Ó¿Ú¡£
+ * å£°æ˜Žäº†ä¸€ä¸ªæˆ–è€…å¤šä¸ªè®¿é—®æ“ä½œï¼Œå½¢æˆæ‰€æœ‰çš„å…·ä½“è®¿é—®è€…è§’è‰²å¿…é¡»å®žçŽ°çš„æŽ¥å£ã€‚
  * <p>
- * ±¾ÀýÖÐ³éÏó·ÃÎÊÕß½ÇÉ«ÎªÃ¿Ò»¸ö¾ßÌå½Úµã¶¼×¼±¸ÁËÒ»¸ö·ÃÎÊ²Ù×÷£¬½ÓÊÕÏàÓ¦µÄ½Úµã¶ÔÏó×÷Îª²ÎÁ¿¡£
+ * æœ¬ä¾‹ä¸­æŠ½è±¡è®¿é—®è€…è§’è‰²ä¸ºæ¯ä¸€ä¸ªå…·ä½“èŠ‚ç‚¹éƒ½å‡†å¤‡äº†ä¸€ä¸ªè®¿é—®æ“ä½œï¼ŒæŽ¥æ”¶ç›¸åº”çš„èŠ‚ç‚¹å¯¹è±¡ä½œä¸ºå‚é‡ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-17
  */
 public interface Visitor {
 
 	/**
-	 * ·ÃÎÊNodeA¶ÔÏó
+	 * è®¿é—®NodeAå¯¹è±¡
 	 */
 	public void visit(NodeA nodeA);
 
 	/**
-	 * ·ÃÎÊNodeB¶ÔÏó
+	 * è®¿é—®NodeBå¯¹è±¡
 	 */
 	public void visit(NodeB nodeB);
 }

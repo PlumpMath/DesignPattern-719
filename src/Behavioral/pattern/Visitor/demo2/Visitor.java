@@ -4,41 +4,41 @@
 package pattern.Visitor.demo2;
 
 /**
- * ·ÃÎÊÆ÷½Ó¿Ú
+ * è®¿é—®å™¨æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public interface Visitor {
 
 	/**
-	 * ·ÃÎÊ»úÏä
+	 * è®¿é—®æœºç®±
 	 */
 	public void visitCase(Case e);
 
 	/**
-	 * ·ÃÎÊCPU
+	 * è®¿é—®CPU
 	 */
 	public void visitCPU(CPU cpu);
 
 	/**
-	 * ·ÃÎÊÖ÷°å
+	 * è®¿é—®ä¸»æ¿
 	 */
 	public void visitMainboard(Mainboard mainboard);
 
 	/**
-	 * ·ÃÎÊÓ²ÅÌ
+	 * è®¿é—®ç¡¬ç›˜
 	 */
 	public void visitHardDisk(HardDisk hardDisk);
 
 	/**
-	 * ·ÃÎÊ¼¯³ÉÖ÷°å
+	 * è®¿é—®é›†æˆä¸»æ¿
 	 */
 	public void visitIntegratedBoard(IntegratedBoard integratedboard);
 
 	/**
-	 * ·ÃÎÊPC
+	 * è®¿é—®PC
 	 */
 	public void visitPC(PC pc);
 }

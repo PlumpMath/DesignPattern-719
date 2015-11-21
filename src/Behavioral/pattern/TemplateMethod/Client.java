@@ -4,11 +4,11 @@
 package pattern.TemplateMethod;
 
 /**
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-7
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-7
  */
 public class Client {
 

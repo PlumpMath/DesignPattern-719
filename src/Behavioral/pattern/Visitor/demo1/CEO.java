@@ -6,14 +6,14 @@ package pattern.Visitor.demo1;
 /**
  * CEO
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class CEO extends AbstractEmployee {
 
-	private double ceoSpecialBonus;// ceoÌØ±ð½±½ð
-	private double decemberBonus;// ÄêÖÕ½±
+	private double ceoSpecialBonus;// ceoç‰¹åˆ«å¥–é‡‘
+	private double decemberBonus;// å¹´ç»ˆå¥–
 
 	public CEO(String name, double salary) {
 		super(name, salary);

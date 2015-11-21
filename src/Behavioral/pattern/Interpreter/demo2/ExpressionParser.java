@@ -7,18 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ±í´ïÊ½½âÎöÆ÷
+ * è¡¨è¾¾å¼è§£æå™¨
  * <p>
- * ÓÃÓÚ½«String½âÎö³É¶ÔÓ¦µÄExpression¶ÔÏó
+ * ç”¨äºå°†Stringè§£ææˆå¯¹åº”çš„Expressionå¯¹è±¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-20
  */
 public class ExpressionParser {
 
 	/**
-	 * ½«String½âÎö³É¶ÔÓ¦µÄExpression¶ÔÏó
+	 * å°†Stringè§£ææˆå¯¹åº”çš„Expressionå¯¹è±¡
 	 */
 	public Expression parse(String expression) {
 		char[] chars = expression.toCharArray();

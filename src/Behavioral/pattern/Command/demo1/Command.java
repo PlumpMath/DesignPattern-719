@@ -4,18 +4,18 @@
 package pattern.Command.demo1;
 
 /**
- * ÃüÁî½Ó¿Ú
+ * å‘½ä»¤æ¥å£
  * <p>
- * ÃüÁî(Command)½ÇÉ«
+ * å‘½ä»¤(Command)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-3
  */
 public interface Command {
 
 	/**
-	 * Ö´ĞĞÃüÁî
+	 * æ‰§è¡Œå‘½ä»¤
 	 */
 	public void execute();
 }

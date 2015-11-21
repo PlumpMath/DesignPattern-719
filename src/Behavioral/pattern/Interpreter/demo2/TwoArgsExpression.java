@@ -4,18 +4,18 @@
 package pattern.Interpreter.demo2;
 
 /**
- * Ë«²ÎÊı±í´ïÊ½»ùÀà
+ * åŒå‚æ•°è¡¨è¾¾å¼åŸºç±»
  * <p>
- * ·ÇÖÕ½á±í´ïÊ½½ÇÉ«
+ * éç»ˆç»“è¡¨è¾¾å¼è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public abstract class TwoArgsExpression implements Expression {
 
-	private Expression left;// ×ó²à±í´ïÊ½
-	private Expression right;// ÓÒ²à±í´ïÊ½
+	private Expression left;// å·¦ä¾§è¡¨è¾¾å¼
+	private Expression right;// å³ä¾§è¡¨è¾¾å¼
 
 	public TwoArgsExpression(Expression left, Expression right) {
 		this.left = left;
@@ -23,7 +23,7 @@ public abstract class TwoArgsExpression implements Expression {
 	}
 
 	/**
-	 * ·µ»ØÔËËã·ûÃ¶¾Ù¶ÔÏó
+	 * è¿”å›è¿ç®—ç¬¦æšä¸¾å¯¹è±¡
 	 */
 	protected abstract Operator getOperator();
 

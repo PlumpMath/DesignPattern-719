@@ -1,11 +1,11 @@
 package pattern.Strategy.demo2;
 
 /**
- * Í³Ò»ÕÛ¿Û½ğ¶î²ßÂÔ
+ * ç»Ÿä¸€æŠ˜æ‰£é‡‘é¢ç­–ç•¥
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class FlatRateStrategy implements DiscountStrategy {
 
@@ -13,14 +13,14 @@ public class FlatRateStrategy implements DiscountStrategy {
 	
 	/**
 	 * @param discount
-	 *            Ã¿¸öÉÌÆ·µÄÍ³Ò»ÕÛ¿Û½ğ¶î
+	 *            æ¯ä¸ªå•†å“çš„ç»Ÿä¸€æŠ˜æ‰£é‡‘é¢
 	 */
 	public FlatRateStrategy(double discount) {
 		this.discount = discount;
 	}
 
 	/**
-	 * Ã¿¸öÉÌÆ·¶¼»áÓĞÍ³Ò»½ğ¶îµÄÕÛ¿Û
+	 * æ¯ä¸ªå•†å“éƒ½ä¼šæœ‰ç»Ÿä¸€é‡‘é¢çš„æŠ˜æ‰£
 	 * 
 	 * @see pattern.Strategy.demo2.DiscountStrategy#discount(double, int)
 	 */

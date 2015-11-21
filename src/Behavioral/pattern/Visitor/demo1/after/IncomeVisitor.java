@@ -4,36 +4,36 @@
 package pattern.Visitor.demo1.after;
 
 /**
- * ÊÕÈë·ÃÎÊÕß½Ó¿Ú
+ * æ”¶å…¥è®¿é—®è€…æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public interface IncomeVisitor {
 
 	/**
-	 * ·ÃÎÊCEO
+	 * è®¿é—®CEO
 	 */
 	public void visit(CEO ceo);
 
 	/**
-	 * ·ÃÎÊ×Ü¾­Àí
+	 * è®¿é—®æ€»ç»ç†
 	 */
 	public void visit(GeneralManager gm);
 
 	/**
-	 * ·ÃÎÊ²¿ÃÅ¾­Àí
+	 * è®¿é—®éƒ¨é—¨ç»ç†
 	 */
 	public void visit(DeptManager dm);
 
 	/**
-	 * ·ÃÎÊÆÕÍ¨¹ÍÔ±
+	 * è®¿é—®æ™®é€šé›‡å‘˜
 	 */
 	public void visit(Employee em);
 
 	/**
-	 * ·µ»Ø×Ü¶î
+	 * è¿”å›æ€»é¢
 	 */
 	public double getTotal();
 }

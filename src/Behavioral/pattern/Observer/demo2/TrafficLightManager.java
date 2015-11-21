@@ -6,13 +6,13 @@ package pattern.Observer.demo2;
 import pattern.Observer.demo2.TrafficLight.TrafficLightColor;
 
 /**
- * ºìÂÌµÆ¹ÜÀíÆ÷
+ * çº¢ç»¿ç¯ç®¡ç†å™¨
  * <p>
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class TrafficLightManager {
 

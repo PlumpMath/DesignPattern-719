@@ -4,13 +4,13 @@
 package pattern.Memento.boxblack;
 
 /**
- * ����¼�ӿ�
+ * 备忘录接口
  * <p>
- * �Ը����˺ͳ��˷�����֮��Ķ����ṩһ��խ�ӿ�
+ * 对负责人和除了发起人之外的对象提供一个窄接口
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-7-14
+ * 创建日期：2010-7-14
  */
 public interface IMemento {
 	

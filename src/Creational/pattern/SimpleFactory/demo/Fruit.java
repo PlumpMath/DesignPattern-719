@@ -4,26 +4,26 @@
 package pattern.SimpleFactory.demo;
 
 /**
- * Ë®¹û½Ó¿Ú
+ * æ°´æœæ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public interface Fruit {
 
 	/**
-	 * ÖÖÖ² 
+	 * ç§æ¤ 
 	 */
 	public void plant();
 	
 	/**
-	 * Éú³¤
+	 * ç”Ÿé•¿
 	 */
 	public void grow();
 	
 	/**
-	 * ÊÕ»ñ
+	 * æ”¶è·
 	 */
 	public void harvest();
 }

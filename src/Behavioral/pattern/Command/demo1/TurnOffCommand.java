@@ -4,13 +4,13 @@
 package pattern.Command.demo1;
 
 /**
- * ¹Ø±ÕÃüÁî
+ * å…³é—­å‘½ä»¤
  * <p>
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-3
  */
 public class TurnOffCommand implements Command {
 
@@ -21,7 +21,7 @@ public class TurnOffCommand implements Command {
 	}
 
 	/**
-	 * Ö´ĞĞÃüÁî
+	 * æ‰§è¡Œå‘½ä»¤
 	 *
 	 * @see pattern.Command.demo1.Command#execute()
 	 */

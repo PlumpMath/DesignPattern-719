@@ -4,11 +4,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * InputStreamReaderÑİÊ¾Àà
+ * InputStreamReaderæ¼”ç¤ºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-17
  */
 public class EchoDemo {
 
@@ -18,11 +18,11 @@ public class EchoDemo {
 	public static void main(String[] args) {
 		try {
 			System.out.println("Enter data and push enter:");
-			// InputStreamReader½ÓÊÕÒ»¸öInputStreamÀàĞÍµÄ¶ÔÏó£¬½«Ö®ÊÊÅä³ÉÎªReaderÀàĞÍ
+			// InputStreamReaderæ¥æ”¶ä¸€ä¸ªInputStreamç±»å‹çš„å¯¹è±¡ï¼Œå°†ä¹‹é€‚é…æˆä¸ºReaderç±»å‹
 			InputStreamReader input = new InputStreamReader(System.in);
-			// Ê¹ÓÃBufferedReaderÀà×°ÊÎËü£¬½«»º³å¹¦ÄÜ¼ÓÉÏÈ¥
+			// ä½¿ç”¨BufferedReaderç±»è£…é¥°å®ƒï¼Œå°†ç¼“å†²åŠŸèƒ½åŠ ä¸Šå»
 			BufferedReader reader = new BufferedReader(input);
-			// ×°ÊÎÄ£Ê½ÔÚÕâÀïÍË»¯ÁË£¬¿Í»§¶Ë³ÌĞòµ÷ÓÃÁË×°ÊÎÀàÌØÓĞµÄ·½·¨
+			// è£…é¥°æ¨¡å¼åœ¨è¿™é‡Œé€€åŒ–äº†ï¼Œå®¢æˆ·ç«¯ç¨‹åºè°ƒç”¨äº†è£…é¥°ç±»ç‰¹æœ‰çš„æ–¹æ³•
 			String echo = reader.readLine();
 			System.out.println("Data entered:\n" + echo);
 		} catch (Exception e) {

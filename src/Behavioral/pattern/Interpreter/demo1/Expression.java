@@ -4,24 +4,24 @@
 package pattern.Interpreter.demo1;
 
 /**
- * ²¼¶û±í´ïÊ½³éÏó»ùÀà
+ * å¸ƒå°”è¡¨è¾¾å¼æŠ½è±¡åŸºç±»
  * <p>
- * ³éÏó±í´ïÊ½(Expression)½ÇÉ«
+ * æŠ½è±¡è¡¨è¾¾å¼(Expression)è§’è‰²
  * <p>
- * ÉùÃ÷Ò»¸öËùÓÐµÄ¾ßÌå±í´ïÊ½½ÇÉ«¶¼ÐèÒªÊµÏÖµÄ³éÏó½Ó¿Ú£¬Ö÷ÒªÊÇÒ»¸öinterpret()·½·¨£¬³Æ×÷½âÊÍ²Ù×÷¡£
- * Õâ¸ö³éÏóÀà´ú±íÖÕ½áÀàºÍ·ÇÖÕ½áÀàµÄ³éÏó»¯¡£
+ * å£°æ˜Žä¸€ä¸ªæ‰€æœ‰çš„å…·ä½“è¡¨è¾¾å¼è§’è‰²éƒ½éœ€è¦å®žçŽ°çš„æŠ½è±¡æŽ¥å£ï¼Œä¸»è¦æ˜¯ä¸€ä¸ªinterpret()æ–¹æ³•ï¼Œç§°ä½œè§£é‡Šæ“ä½œã€‚
+ * è¿™ä¸ªæŠ½è±¡ç±»ä»£è¡¨ç»ˆç»“ç±»å’Œéžç»ˆç»“ç±»çš„æŠ½è±¡åŒ–ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-20
  */
 public abstract class Expression {
 
 	/**
-	 * ÒÔ»·¾³ÀàÎªÒÀ¾Ý½âÊÍ±í´ïÊ½
+	 * ä»¥çŽ¯å¢ƒç±»ä¸ºä¾æ®è§£é‡Šè¡¨è¾¾å¼
 	 * 
 	 * @param context
-	 *            »·¾³Àà
+	 *            çŽ¯å¢ƒç±»
 	 */
 	public abstract boolean interpret(Context context);
 

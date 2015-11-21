@@ -4,29 +4,29 @@
 package pattern.Observer;
 
 /**
- * ¾ßÌåÖ÷Ìâ(ConcreteSubject)½ÇÉ«
+ * å…·ä½“ä¸»é¢˜(ConcreteSubject)è§’è‰²
  * <p>
- * ½«Ïà¹Ø×´Ì¬´æÈë¾ßÌåÖ÷Ìâ¶ÔÏó£¬ÔÚ¾ßÌåÖ÷ÌâµÄÄÚ²¿×´Ì¬¸Ä±äÊ±£¬¸øËùÓĞµÇ¼Ç¹ıµÄ¹Û²ìÕß·¢³öÍ¨Öª¡£
- * ¾ßÌåÖ÷Ìâ½ÇÉ«ÓÖ½Ğ×ö¾ßÌå±»¹Û²ìÕß½ÇÉ«(Concrete Observable)¡£
+ * å°†ç›¸å…³çŠ¶æ€å­˜å…¥å…·ä½“ä¸»é¢˜å¯¹è±¡ï¼Œåœ¨å…·ä½“ä¸»é¢˜çš„å†…éƒ¨çŠ¶æ€æ”¹å˜æ—¶ï¼Œç»™æ‰€æœ‰ç™»è®°è¿‡çš„è§‚å¯Ÿè€…å‘å‡ºé€šçŸ¥ã€‚
+ * å…·ä½“ä¸»é¢˜è§’è‰²åˆå«åšå…·ä½“è¢«è§‚å¯Ÿè€…è§’è‰²(Concrete Observable)ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class ConcreteSubject extends Subject {
 
-	private String state;// ÄÚ²¿×´Ì¬
+	private String state;// å†…éƒ¨çŠ¶æ€
 	
 	public String getState() {
 		return state;
 	}
 
 	/**
-	 * ĞŞ¸Ä×´Ì¬
+	 * ä¿®æ”¹çŠ¶æ€
 	 */
 	public void setState(String state) {
 		this.state = state;
-		// ×´Ì¬±ä»¯ÁË£¬Í¨ÖªËùÓĞµÄ¹Û²ìÕß
+		// çŠ¶æ€å˜åŒ–äº†ï¼Œé€šçŸ¥æ‰€æœ‰çš„è§‚å¯Ÿè€…
 		notifyObservers();
 	}
 }

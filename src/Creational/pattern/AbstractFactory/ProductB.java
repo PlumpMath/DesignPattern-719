@@ -4,13 +4,13 @@
 package pattern.AbstractFactory;
 
 /**
- * ³éÏó²úÆ·ÀàProductB(½Ó¿Ú)
+ * æŠ½è±¡äº§å“ç±»ProductB(æŽ¥å£)
  * <p>
- * ¸Ã½Ó¿ÚºÍËüµÄËùÓÐ×ÓÀàÐÎ³ÉÁËProductBµÈ¼¶½á¹¹
+ * è¯¥æŽ¥å£å’Œå®ƒçš„æ‰€æœ‰å­ç±»å½¢æˆäº†ProductBç­‰çº§ç»“æž„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public interface ProductB {
 

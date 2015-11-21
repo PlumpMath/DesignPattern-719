@@ -4,19 +4,19 @@
 package pattern.Decorator;
 
 /**
- * ×°ÊÎ½ÇÉ«
+ * è£…é¥°è§’è‰²
  * <p>
- * ³ÖÓĞÒ»¸ö¹¹¼ş(Component)¶ÔÏóµÄÊµÀı£¬²¢¶¨ÒåÒ»¸öÓë³éÏó¹¹¼ş½Ó¿ÚÒ»ÖÂµÄ½Ó¿Ú¡£
+ * æŒæœ‰ä¸€ä¸ªæ„ä»¶(Component)å¯¹è±¡çš„å®ä¾‹ï¼Œå¹¶å®šä¹‰ä¸€ä¸ªä¸æŠ½è±¡æ„ä»¶æ¥å£ä¸€è‡´çš„æ¥å£ã€‚
  * <p>
- * ×¢£ºÒ»¸ö×°ÊÎÀàµÄ½Ó¿Ú±ØĞëÓë±»×°ÊÎÀàµÄ½Ó¿ÚÏàÈİ
+ * æ³¨ï¼šä¸€ä¸ªè£…é¥°ç±»çš„æ¥å£å¿…é¡»ä¸è¢«è£…é¥°ç±»çš„æ¥å£ç›¸å®¹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-13
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-13
  */
-public abstract class Decorator implements Component {// 1£¬ĞèÒªÊµÏÖ¹¹¼ş(Component)½Ó¿Ú
+public abstract class Decorator implements Component {// 1ï¼Œéœ€è¦å®ç°æ„ä»¶(Component)æ¥å£
 
-	// 2£¬³ÖÓĞÒ»¸öÊôĞÔ£¬ÆäÀàĞÍÊÇ¹¹¼ş(Component)
+	// 2ï¼ŒæŒæœ‰ä¸€ä¸ªå±æ€§ï¼Œå…¶ç±»å‹æ˜¯æ„ä»¶(Component)
 	private Component component;
 
 	public Decorator(Component component) {

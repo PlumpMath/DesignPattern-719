@@ -4,16 +4,16 @@
 package pattern.Composite.demo3;
 
 /**
- * ³éÏóÔËËã·ûÀà
+ * æŠ½è±¡è¿ç®—ç¬¦ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public abstract class AbstractOperator implements Expression {
 
-	private Expression left;// ×ó²à±í´ïÊ½
-	private Expression right;// ÓÒ²à±í´ïÊ½
+	private Expression left;// å·¦ä¾§è¡¨è¾¾å¼
+	private Expression right;// å³ä¾§è¡¨è¾¾å¼
 
 	public AbstractOperator(Expression left, Expression right) {
 		this.left = left;
@@ -21,7 +21,7 @@ public abstract class AbstractOperator implements Expression {
 	}
 
 	/**
-	 * ·µ»ØÔËËã·ûString±íÊ¾
+	 * è¿”å›è¿ç®—ç¬¦Stringè¡¨ç¤º
 	 */
 	protected abstract String getOperator();
 

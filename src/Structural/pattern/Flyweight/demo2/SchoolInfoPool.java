@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Ñ§Ğ£ĞÅÏ¢¶ÔÏó³Ø
+ * å­¦æ ¡ä¿¡æ¯å¯¹è±¡æ± 
  * <p>
- * ÏíÔª¹¤³§½ÇÉ«
+ * äº«å…ƒå·¥å‚è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-3
  */
 public class SchoolInfoPool {
 
@@ -26,7 +26,7 @@ public class SchoolInfoPool {
 	}
 
 	/**
-	 * Èç¹û´æÔÚ·ûºÏÒªÇóµÄ¶ÔÏóÔòÖ±½Ó·µ»Ø£¬·ñÔò´´½¨Ò»¸öĞÂ¶ÒÏÖ²¢¼ÓÈë¶ÔÏó³Ø
+	 * å¦‚æœå­˜åœ¨ç¬¦åˆè¦æ±‚çš„å¯¹è±¡åˆ™ç›´æ¥è¿”å›ï¼Œå¦åˆ™åˆ›å»ºä¸€ä¸ªæ–°å…‘ç°å¹¶åŠ å…¥å¯¹è±¡æ± 
 	 */
 	public synchronized SchoolInfo create(String name, int grade) {
 		String key = name + grade;

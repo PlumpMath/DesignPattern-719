@@ -4,21 +4,21 @@
 package pattern.Observer.demo2;
 
 /**
- * ¼àÌıÆ÷
+ * ç›‘å¬å™¨
  * <p>
- * ¹Û²ìÕß½ÇÉ«
+ * è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public interface Listener {
 
 	/**
-	 * ½ÓÊÕµ½ÊÂ¼şºóµÄ¶¯×÷
+	 * æ¥æ”¶åˆ°äº‹ä»¶åçš„åŠ¨ä½œ
 	 * 
 	 * @param event
-	 *            ÊÂ¼ş
+	 *            äº‹ä»¶
 	 */
 	public void doAction(Event event);
 }

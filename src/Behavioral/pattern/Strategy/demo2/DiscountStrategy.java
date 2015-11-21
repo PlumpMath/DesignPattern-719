@@ -1,23 +1,23 @@
 package pattern.Strategy.demo2;
 
 /**
- * ÕÛ¿Û²ßÂÔ½Ó¿Ú
+ * æŠ˜æ‰£ç­–ç•¥æ¥å£
  * <p>
- * ³éÏó²ßÂÔ½ÇÉ«
+ * æŠ½è±¡ç­–ç•¥è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public interface DiscountStrategy {
 	
 	/**
-	 * ¼ÆËãÕÛ¿Û
+	 * è®¡ç®—æŠ˜æ‰£
 	 * 
 	 * @param price
-	 *            µ¥¼Û
+	 *            å•ä»·
 	 * @param amount
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public double discount(double price, int amount);
 }

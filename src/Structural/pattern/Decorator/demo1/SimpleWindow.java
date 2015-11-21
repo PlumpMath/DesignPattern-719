@@ -4,11 +4,11 @@
 package pattern.Decorator.demo1;
 
 /**
- * ¼òµ¥´°¿Ú
+ * ç®€å•çª—å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public class SimpleWindow implements Window {
 	

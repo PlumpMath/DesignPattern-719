@@ -4,11 +4,11 @@
 package pattern.Bridge.demo1;
 
 /**
- * Ó¦ÓÃ³ÌĞò
+ * åº”ç”¨ç¨‹åº
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public class Client {
 

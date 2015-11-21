@@ -4,11 +4,11 @@
 package pattern.FactoryMethod.demo;
 
 /**
- * Ïû·ÑË®¹ûµÄ¿Í»§¶ËÀà
+ * æ¶ˆè´¹æ°´æžœçš„å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class FruitClient {
 

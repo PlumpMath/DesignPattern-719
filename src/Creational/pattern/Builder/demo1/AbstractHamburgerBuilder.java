@@ -4,11 +4,11 @@
 package pattern.Builder.demo1;
 
 /**
- * ³éÏóºº±¤°ü½¨ÔìÆ÷»ùÀà
+ * æŠ½è±¡æ±‰å ¡åŒ…å»ºé€ å™¨åŸºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public abstract class AbstractHamburgerBuilder implements HamburgerBuilder {
 

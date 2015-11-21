@@ -4,11 +4,11 @@
 package pattern.Proxy.demo;
 
 /**
- * ÕæÕıµÄËÑË÷Æ÷
+ * çœŸæ­£çš„æœç´¢å™¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-23
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-23
  */
 public class RealSearcher implements Searcher {
 

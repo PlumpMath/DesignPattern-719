@@ -4,34 +4,34 @@
 package pattern.Command.demo3;
 
 /**
- * Â¼Òô»úÉÏµÄ¼üÅÌ
+ * å½•éŸ³æœºä¸Šçš„é”®ç›˜
  * <p>
- * ÇëÇóÕß(Invoker)½ÇÉ«
+ * è¯·æ±‚è€…(Invoker)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class Keypad {
 
-	private Command playCommand;// ²¥·ÅÃüÁî
+	private Command playCommand;// æ’­æ”¾å‘½ä»¤
 	
-	private Command stopCommand;// Í£Ö¹ÃüÁî
+	private Command stopCommand;// åœæ­¢å‘½ä»¤
 	
-	private Command rewindCommand;// µ¹´øÃüÁî
+	private Command rewindCommand;// å€’å¸¦å‘½ä»¤
 	
-	// Ô­±¾Ã»ÓĞºêÃüÁîµÄ¹¦ÄÜ£¬ºóÀ´½øĞĞ¹¦ÄÜÀ©Õ¹Ê±£¬ÓĞÁË´Ë¹¦ÄÜ
-	// ¶ÔÓÚÃüÁîÄ£Ê½¶øÑÔ£¬³ıÁËÒªÔö¼ÓÒ»¸ö¾ßÌåµÄMacroCommand×ÓÀàÖ®Íâ
-	// Ö»ĞèÒªÔÚ±¾Àà(Invoker)ÖĞÔö¼ÓÒ»¸öĞÂµÄ·½·¨¼´¿É£¬²»ÓÃĞŞ¸ÄÆäËûÀà
-	private Command macroCommand;// ºêÃüÁî
+	// åŸæœ¬æ²¡æœ‰å®å‘½ä»¤çš„åŠŸèƒ½ï¼Œåæ¥è¿›è¡ŒåŠŸèƒ½æ‰©å±•æ—¶ï¼Œæœ‰äº†æ­¤åŠŸèƒ½
+	// å¯¹äºå‘½ä»¤æ¨¡å¼è€Œè¨€ï¼Œé™¤äº†è¦å¢åŠ ä¸€ä¸ªå…·ä½“çš„MacroCommandå­ç±»ä¹‹å¤–
+	// åªéœ€è¦åœ¨æœ¬ç±»(Invoker)ä¸­å¢åŠ ä¸€ä¸ªæ–°çš„æ–¹æ³•å³å¯ï¼Œä¸ç”¨ä¿®æ”¹å…¶ä»–ç±»
+	private Command macroCommand;// å®å‘½ä»¤
 
 	/**
 	 * @param playCommand
-	 *            ²¥·ÅÃüÁî
+	 *            æ’­æ”¾å‘½ä»¤
 	 * @param stopCommand
-	 *            Í£Ö¹ÃüÁî
+	 *            åœæ­¢å‘½ä»¤
 	 * @param rewindCommand
-	 *            µ¹´øÃüÁî
+	 *            å€’å¸¦å‘½ä»¤
 	 */
 	public Keypad(Command playCommand, Command stopCommand,
 			Command rewindCommand) {
@@ -41,38 +41,38 @@ public class Keypad {
 	}
 
 	/**
-	 * ÉèÖÃºêÃüÁî
+	 * è®¾ç½®å®å‘½ä»¤
 	 * 
 	 * @param macroCommand
-	 *            ºêÃüÁî
+	 *            å®å‘½ä»¤
 	 */
 	public void setMacroCommand(Command macroCommand) {
 		this.macroCommand = macroCommand;
 	}
 
 	/**
-	 * ²¥·Å
+	 * æ’­æ”¾
 	 */
 	public void play() {
 		playCommand.execute();
 	}
 
 	/**
-	 * Í£Ö¹
+	 * åœæ­¢
 	 */
 	public void stop() {
 		stopCommand.execute();
 	}
 
 	/**
-	 * µ¹´ø
+	 * å€’å¸¦
 	 */
 	public void rewind() {
 		rewindCommand.execute();
 	}
 
 	/**
-	 * ²¥·ÅºêÃüÁî
+	 * æ’­æ”¾å®å‘½ä»¤
 	 */
 	public void macro() {
 		macroCommand.execute();

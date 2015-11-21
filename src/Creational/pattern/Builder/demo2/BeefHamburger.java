@@ -4,11 +4,11 @@
 package pattern.Builder.demo2;
 
 /**
- * Å£Èâºº±¤°ü
+ * ç‰›è‚‰æ±‰å ¡åŒ…
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public class BeefHamburger extends AbstractHamburger {
 

@@ -4,13 +4,13 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * ¶­ÊÂ³¤
+ * è‘£äº‹é•¿
  * <p>
- * ¾ßÌå´¦ÀíÕß½ÇÉ«
+ * å…·ä½“å¤„ç†è€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class Chairman extends Handler {
 
@@ -19,12 +19,12 @@ public class Chairman extends Handler {
 	}
 
 	/**
-	 * ¶­ÊÂ³¤ÄÜ´¦ÀíËùÓĞÊÂÎñ
+	 * è‘£äº‹é•¿èƒ½å¤„ç†æ‰€æœ‰äº‹åŠ¡
 	 * 
 	 * @see pattern.ChainOfResponsibility.demo.Handler#handleRequest(pattern.ChainOfResponsibility.demo.Request)
 	 */
 	@Override
 	public void handleRequest(Request request) {
-		System.out.println("¶­ÊÂ³¤ Åú×¼ " + request.getDescription());
+		System.out.println("è‘£äº‹é•¿ æ‰¹å‡† " + request.getDescription());
 	}
 }

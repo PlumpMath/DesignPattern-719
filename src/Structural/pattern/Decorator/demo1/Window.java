@@ -4,21 +4,21 @@
 package pattern.Decorator.demo1;
 
 /**
- * ´°¿Ú
+ * çª—å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public interface Window {
 
 	/**
-	 * »æÖÆ´°¿Ú
+	 * ç»˜åˆ¶çª—å£
 	 */
 	public void draw();
 
 	/**
-	 * ´°¿ÚÃèÊö
+	 * çª—å£æè¿°
 	 */
 	public String getDescription(); 
 }

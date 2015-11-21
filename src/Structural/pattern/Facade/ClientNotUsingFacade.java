@@ -4,11 +4,11 @@
 package pattern.Facade;
 
 /**
- * Ã»ÓĞÊ¹ÓÃÃÅÃæÄ£Ê½Ê±µÄ¿Í»§¶Ë
+ * æ²¡æœ‰ä½¿ç”¨é—¨é¢æ¨¡å¼æ—¶çš„å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-25
  */
 public class ClientNotUsingFacade {
 
@@ -16,7 +16,7 @@ public class ClientNotUsingFacade {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// Íê³ÉÒ»¸ö¹¦ÄÜĞèÒªºÍ¶à¸ö×ÓÏµÍ³¶ÔÏó´ò½»µÀ
+		// å®Œæˆä¸€ä¸ªåŠŸèƒ½éœ€è¦å’Œå¤šä¸ªå­ç³»ç»Ÿå¯¹è±¡æ‰“äº¤é“
 		SubSystem1 subsystem1 = new SubSystem1();
 		subsystem1.operation1();
 		SubSystem2 subsystem2 = new SubSystem2();

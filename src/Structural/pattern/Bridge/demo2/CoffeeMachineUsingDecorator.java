@@ -4,21 +4,21 @@
 package pattern.Bridge.demo2;
 
 /**
- * Ê¹ÓÃ×°ÊÎÄ£Ê½ÊµÏÖµÄ¿§·È»ú
+ * ä½¿ç”¨è£…é¥°æ¨¡å¼å®ç°çš„å’–å•¡æœº
  * <p>
- * ÕâÖÖÊµÏÖ·½Ê½¿Ë·şÁËÊ¹ÓÃ¼Ì³Ğ¹ØÏµµÄÒ»Ğ©È±µã£º<br>
- * 1£¬¼õÉÙÁË×ÓÀàÊıÁ¿(¿Í»§¶ËĞèÒªÖªµÀµÄĞÅÏ¢¼õÉÙÁË)<p>
- * ¿Í»§¶ËÖ®ĞèÒª¼Ç×¡CoffeeÖÖÀàºÍ¸÷ÖÖ×°ÊÎÆ÷¼´¿É×ÔÓÉ×é×°²»Í¬·çÎ¶µÄ¿§·È<br>
- * 2£¬½ÏÒ×À©Õ¹<p>
- * ±ÈÈçÏëÒªÒ»¸ö¼ÓÌÇÓÖ¼ÓÄÌµÄÔ½ÄÏ¿§·È£¬Ö»ĞèÒªÊ¹ÓÃÁ½¸ö×°ÊÎÆ÷×°ÊÎ¼´¿É£»ÏëÒªÔö¼ÓÒ»¸ö¼ÓÌÇÓÖ¼ÓÇÉ¿ËÁ¦µÄÔ½ÄÏ¿§·È£¬Ö»ĞèÒªĞÂ´´½¨Ò»¸öÇÉ¿ËÁ¦×°ÊÎÆ÷¼´¿É¡£<br>
+ * è¿™ç§å®ç°æ–¹å¼å…‹æœäº†ä½¿ç”¨ç»§æ‰¿å…³ç³»çš„ä¸€äº›ç¼ºç‚¹ï¼š<br>
+ * 1ï¼Œå‡å°‘äº†å­ç±»æ•°é‡(å®¢æˆ·ç«¯éœ€è¦çŸ¥é“çš„ä¿¡æ¯å‡å°‘äº†)<p>
+ * å®¢æˆ·ç«¯ä¹‹éœ€è¦è®°ä½Coffeeç§ç±»å’Œå„ç§è£…é¥°å™¨å³å¯è‡ªç”±ç»„è£…ä¸åŒé£å‘³çš„å’–å•¡<br>
+ * 2ï¼Œè¾ƒæ˜“æ‰©å±•<p>
+ * æ¯”å¦‚æƒ³è¦ä¸€ä¸ªåŠ ç³–åˆåŠ å¥¶çš„è¶Šå—å’–å•¡ï¼Œåªéœ€è¦ä½¿ç”¨ä¸¤ä¸ªè£…é¥°å™¨è£…é¥°å³å¯ï¼›æƒ³è¦å¢åŠ ä¸€ä¸ªåŠ ç³–åˆåŠ å·§å…‹åŠ›çš„è¶Šå—å’–å•¡ï¼Œåªéœ€è¦æ–°åˆ›å»ºä¸€ä¸ªå·§å…‹åŠ›è£…é¥°å™¨å³å¯ã€‚<br>
  * <p>
- * ËüÈÔÈ»´æÔÚµÄÈ±µãÊÇ£º<br>
- * 3£¬²»Ò×ĞŞ¸ÄºÍÎ¬»¤<p>
- * ±ÈÈçCoffee½Ó¿ÚÖĞÒªÔö¼ÓÒ»¸öĞÂµÄ·½·¨£¬¾Í»áµ¼ÖÂÖÚ¶à×ÓÀà¶¼±ØĞë½øĞĞĞŞ¸Ä¡£<br>
+ * å®ƒä»ç„¶å­˜åœ¨çš„ç¼ºç‚¹æ˜¯ï¼š<br>
+ * 3ï¼Œä¸æ˜“ä¿®æ”¹å’Œç»´æŠ¤<p>
+ * æ¯”å¦‚Coffeeæ¥å£ä¸­è¦å¢åŠ ä¸€ä¸ªæ–°çš„æ–¹æ³•ï¼Œå°±ä¼šå¯¼è‡´ä¼—å¤šå­ç±»éƒ½å¿…é¡»è¿›è¡Œä¿®æ”¹ã€‚<br>
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public class CoffeeMachineUsingDecorator {
 
@@ -26,7 +26,7 @@ public class CoffeeMachineUsingDecorator {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¹Ë¿Í¶¨ÖÆ¸÷ÖÖ¸÷ÑùµÄ¿§·È£¬Ö»ĞèÒª¼Ç×¡¼¸¸öÖÖÀà¼´¿ÉÒÔ×ÔÓÉ×é×°
+		// é¡¾å®¢å®šåˆ¶å„ç§å„æ ·çš„å’–å•¡ï¼Œåªéœ€è¦è®°ä½å‡ ä¸ªç§ç±»å³å¯ä»¥è‡ªç”±ç»„è£…
 		printOrder(new MexicanCoffee());
 		printOrder(new VietnameseCoffee());
 		printOrder(new MilkDecorator(new MexicanCoffee()));
@@ -36,19 +36,19 @@ public class CoffeeMachineUsingDecorator {
 	}
 
 	private static void printOrder(Coffee coffee) {
-		System.out.println("Ãû³Æ£º" + coffee.getName());
-		System.out.println("¼Û¸ñ£º" + coffee.getPrice());
+		System.out.println("åç§°ï¼š" + coffee.getName());
+		System.out.println("ä»·æ ¼ï¼š" + coffee.getPrice());
 	}
 	
 	static interface Coffee {
 
 		/**
-		 * Ãû³Æ
+		 * åç§°
 		 */
 		public String getName();
 
 		/**
-		 * ¼Û¸ñ
+		 * ä»·æ ¼
 		 */
 		public double getPrice();
 	}
@@ -57,7 +57,7 @@ public class CoffeeMachineUsingDecorator {
 
 		@Override
 		public String getName() {
-			return "Ä«Î÷¸ç¿§·È";
+			return "å¢¨è¥¿å“¥å’–å•¡";
 		}
 
 		@Override
@@ -70,7 +70,7 @@ public class CoffeeMachineUsingDecorator {
 
 		@Override
 		public String getName() {
-			return "Ô½ÄÏ¿§·È";
+			return "è¶Šå—å’–å•¡";
 		}
 
 		@Override
@@ -81,7 +81,7 @@ public class CoffeeMachineUsingDecorator {
 
 	static abstract class CoffeeDecorator implements Coffee {
 
-		// ±»×°ÊÎµÄ¿§·È
+		// è¢«è£…é¥°çš„å’–å•¡
 		protected Coffee coffee;
 		
 		public CoffeeDecorator(Coffee coffee) {
@@ -97,7 +97,7 @@ public class CoffeeMachineUsingDecorator {
 
 		@Override
 		public String getName() {
-			return coffee.getName() + " ¼ÓÅ£ÄÌ";
+			return coffee.getName() + " åŠ ç‰›å¥¶";
 		}
 
 		@Override
@@ -114,7 +114,7 @@ public class CoffeeMachineUsingDecorator {
 
 		@Override
 		public String getName() {
-			return coffee.getName() + " ¼ÓÌÇ";
+			return coffee.getName() + " åŠ ç³–";
 		}
 
 		@Override

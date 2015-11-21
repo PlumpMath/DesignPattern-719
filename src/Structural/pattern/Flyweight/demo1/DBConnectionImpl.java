@@ -4,19 +4,19 @@
 package pattern.Flyweight.demo1;
 
 /**
- * Êı¾İ¿âÁ¬½ÓÊµÏÖÀà
+ * æ•°æ®åº“è¿æ¥å®ç°ç±»
  * <p>
- * ¾ßÌåÏíÔª¶ÔÏó
+ * å…·ä½“äº«å…ƒå¯¹è±¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-3
  */
 public class DBConnectionImpl implements DBConnection {
 
-	private int no;// ±àºÅ
+	private int no;// ç¼–å·
 
-	private boolean isInUse;// ÊÇ·ñÕı±»Ê¹ÓÃ
+	private boolean isInUse;// æ˜¯å¦æ­£è¢«ä½¿ç”¨
 
 	DBConnectionImpl(int no) {
 		this.no = no;

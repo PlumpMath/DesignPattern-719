@@ -4,13 +4,13 @@
 package pattern.Command.demo1;
 
 /**
- * µçÊÓ
+ * ç”µè§†
  * <p>
- * (¾ßÌå)½ÓÊÕÕß(Receiver)½ÇÉ«
+ * (å…·ä½“)æ¥æ”¶è€…(Receiver)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-3
  */
 public class Television implements Switchable {
 

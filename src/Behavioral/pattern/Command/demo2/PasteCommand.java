@@ -4,13 +4,13 @@
 package pattern.Command.demo2;
 
 /**
- * PasteÕ³ÌùÃüÁî
+ * Pasteç²˜è´´å‘½ä»¤
  * <p>
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class PasteCommand extends AbstractCommand {
 
@@ -18,9 +18,9 @@ public class PasteCommand extends AbstractCommand {
 
 	/**
 	 * @param editor
-	 *            ÎÄ±¾±à¼­Æ÷
+	 *            æ–‡æœ¬ç¼–è¾‘å™¨
 	 * @param clipboard
-	 *            Õ³ÌùµÄÎÄ±¾
+	 *            ç²˜è´´çš„æ–‡æœ¬
 	 */
 	public PasteCommand(TextEditor editor, String clipboard) {
 		super(editor);
@@ -28,7 +28,7 @@ public class PasteCommand extends AbstractCommand {
 	}
 
 	/**
-	 * ½«Õ³Ìù°åÉÏµÄÎÄ±¾Õ³Ìùµ½µ±Ç°ÎÄ±¾µÄºóÃæ
+	 * å°†ç²˜è´´æ¿ä¸Šçš„æ–‡æœ¬ç²˜è´´åˆ°å½“å‰æ–‡æœ¬çš„åé¢
 	 * 
 	 * @see pattern.Command.demo2.Command#doAction()
 	 */
@@ -40,7 +40,7 @@ public class PasteCommand extends AbstractCommand {
 	}
 
 	/**
-	 * ³·ÏúÕ³Ìù
+	 * æ’¤é”€ç²˜è´´
 	 *
 	 * @see pattern.Command.demo2.Command#undo()
 	 */

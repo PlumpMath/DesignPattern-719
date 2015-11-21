@@ -4,11 +4,11 @@
 package pattern.Builder.demo2;
 
 /**
- * ¼¦Èâºº±¤°ü½¨ÔìÆ÷
+ * é¸¡è‚‰æ±‰å ¡åŒ…å»ºé€ å™¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-17
  */
 public class ChickenHamburgerBuilder implements HamburgerBuilder {
 

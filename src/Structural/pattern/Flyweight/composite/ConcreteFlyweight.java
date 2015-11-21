@@ -4,11 +4,11 @@
 package pattern.Flyweight.composite;
 
 /**
- * ¾ßÌåÏíÔª(ConcreteFlyweight)½ÇÉ«
+ * å…·ä½“äº«å…ƒ(ConcreteFlyweight)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-2
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-2
  */
 public class ConcreteFlyweight extends Flyweight {
 

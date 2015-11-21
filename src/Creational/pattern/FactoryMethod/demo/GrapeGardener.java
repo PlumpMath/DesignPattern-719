@@ -4,16 +4,16 @@
 package pattern.FactoryMethod.demo;
 
 /**
- * ÆÏÌÑÔ°¶¡Àà
+ * è‘¡è„å›­ä¸ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class GrapeGardener implements FruitGardener {
 
 	/**
-	 * Éú²úÆÏÌÑ
+	 * ç”Ÿäº§è‘¡è„
 	 */
 	public Fruit factory() {
 		return new Grape();

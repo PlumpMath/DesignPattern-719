@@ -4,29 +4,29 @@
 package pattern.Proxy;
 
 /**
- * ´úÀíÖ÷Ìâ(Proxy)½ÇÉ«
+ * ä»£ç†ä¸»é¢˜(Proxy)è§’è‰²
  * <p>
- * <li>1.ÄÚ²¿º¬ÓÐ¶ÔÕæÊµÖ÷ÌâµÄÒýÓÃ£¬´Ó¶ø¿ÉÒÔÔÚÈÎºÎÊ±ºò²Ù×÷ÕæÊµÖ÷Ìâ¶ÔÏó£»
- * <li>2.´úÀíÖ÷Ìâ½ÇÉ«Ìá¹©Ò»¸öÓëÕæÊµÖ÷Ìâ½ÇÉ«ÏàÍ¬µÄ½Ó¿Ú£¬ÒÔ±ã¿ÉÒÔÔÚÈÎºÎÊ±ºò¶¼¿ÉÒÔÌæ´úÕæÊµÖ÷Ìâ£»
- * <li>3.¿ØÖÆ¶ÔÕæÊµÖ÷ÌâµÄÒýÓÃ£¬¸ºÔðÔÚÐèÒªµÄÊ±ºò´´½¨ÕæÊµÖ÷Ìâ¶ÔÏó(ºÍÉ¾³ýÕæÊµÖ÷Ìâ¶ÔÏó)£»
- * <li>4.´úÀí½ÇÉ«Í¨³£ÔÚ½«¿Í»§¶Ëµ÷ÓÃ´«µÝ¸øÕæÊµµÄÖ÷ÌâÖ®Ç°»òÕßÖ®ºó£¬ ¶¼ÒªÖ´ÐÐÄ³¸ö²Ù×÷£¬¶ø²»ÊÇµ¥´¿µØ½«µ÷ÓÃ´«µÝ¸øÕæÊµÖ÷Ìâ¶ÔÏó¡£
+ * <li>1.å†…éƒ¨å«æœ‰å¯¹çœŸå®žä¸»é¢˜çš„å¼•ç”¨ï¼Œä»Žè€Œå¯ä»¥åœ¨ä»»ä½•æ—¶å€™æ“ä½œçœŸå®žä¸»é¢˜å¯¹è±¡ï¼›
+ * <li>2.ä»£ç†ä¸»é¢˜è§’è‰²æä¾›ä¸€ä¸ªä¸ŽçœŸå®žä¸»é¢˜è§’è‰²ç›¸åŒçš„æŽ¥å£ï¼Œä»¥ä¾¿å¯ä»¥åœ¨ä»»ä½•æ—¶å€™éƒ½å¯ä»¥æ›¿ä»£çœŸå®žä¸»é¢˜ï¼›
+ * <li>3.æŽ§åˆ¶å¯¹çœŸå®žä¸»é¢˜çš„å¼•ç”¨ï¼Œè´Ÿè´£åœ¨éœ€è¦çš„æ—¶å€™åˆ›å»ºçœŸå®žä¸»é¢˜å¯¹è±¡(å’Œåˆ é™¤çœŸå®žä¸»é¢˜å¯¹è±¡)ï¼›
+ * <li>4.ä»£ç†è§’è‰²é€šå¸¸åœ¨å°†å®¢æˆ·ç«¯è°ƒç”¨ä¼ é€’ç»™çœŸå®žçš„ä¸»é¢˜ä¹‹å‰æˆ–è€…ä¹‹åŽï¼Œ éƒ½è¦æ‰§è¡ŒæŸä¸ªæ“ä½œï¼Œè€Œä¸æ˜¯å•çº¯åœ°å°†è°ƒç”¨ä¼ é€’ç»™çœŸå®žä¸»é¢˜å¯¹è±¡ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-20
  */
-public class ProxySubject implements Subject {// 2 µÄÌåÏÖ 
+public class ProxySubject implements Subject {// 2 çš„ä½“çŽ° 
 
-	private Subject realSubject;// 1 µÄÌåÏÖ
+	private Subject realSubject;// 1 çš„ä½“çŽ°
 
 	public ProxySubject() {
 		// do nothing
 	}
 	
 	/**
-	 * ´úÀíÄ£Ê½¿ÉÄÜ²¢²»ÖªµÀÕæÕýµÄ±»´úÀí¶ÔÏó£¬¶ø½ö½ö³ÖÓÐÒ»¸ö±»´úÀí¶ÔÏóµÄ½Ó¿Ú¡£
-	 * ÕâÊ±ºò´úÀí¶ÔÏó²»ÄÜ¹»´´½¨±»´úÀí¶ÔÏó£¬±»´úÀí¶ÔÏó±ØÐëÓÉÏµÍ³µÄÆäËû½ÇÉ«´úÎª´´½¨²¢ÇÒ´«Èë¡£
-	 * Êµ¼ÊÉÏÕâÖÖ×ö·¨¿ÉÒÔÌá¹©¸ü´óµÄÁé»îÐÔ¡£
+	 * ä»£ç†æ¨¡å¼å¯èƒ½å¹¶ä¸çŸ¥é“çœŸæ­£çš„è¢«ä»£ç†å¯¹è±¡ï¼Œè€Œä»…ä»…æŒæœ‰ä¸€ä¸ªè¢«ä»£ç†å¯¹è±¡çš„æŽ¥å£ã€‚
+	 * è¿™æ—¶å€™ä»£ç†å¯¹è±¡ä¸èƒ½å¤Ÿåˆ›å»ºè¢«ä»£ç†å¯¹è±¡ï¼Œè¢«ä»£ç†å¯¹è±¡å¿…é¡»ç”±ç³»ç»Ÿçš„å…¶ä»–è§’è‰²ä»£ä¸ºåˆ›å»ºå¹¶ä¸”ä¼ å…¥ã€‚
+	 * å®žé™…ä¸Šè¿™ç§åšæ³•å¯ä»¥æä¾›æ›´å¤§çš„çµæ´»æ€§ã€‚
 	 */
 	public ProxySubject(Subject realSubject) {
 		this.realSubject = realSubject;
@@ -34,12 +34,12 @@ public class ProxySubject implements Subject {// 2 µÄÌåÏÖ
 
 	@Override
 	public void request() {
-		preRequest();// 4 µÄÌåÏÖ
+		preRequest();// 4 çš„ä½“çŽ°
 		getRealSubject().request();
-		postRequest();// 4 µÄÌåÏÖ
+		postRequest();// 4 çš„ä½“çŽ°
 	}
 
-	private Subject getRealSubject() {// 3 µÄÌåÏÖ
+	private Subject getRealSubject() {// 3 çš„ä½“çŽ°
 		if (realSubject == null) {
 			realSubject = new RealSubject();
 		}

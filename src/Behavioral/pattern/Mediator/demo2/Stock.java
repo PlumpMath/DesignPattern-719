@@ -4,19 +4,19 @@
 package pattern.Mediator.demo2;
 
 /**
- * ¿â´æ×é
+ * åº“å­˜ç»„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Stock {
 
-	// Ô­Ê¼¿â´æ
+	// åŸå§‹åº“å­˜
 	private int computerNumber = 100;
 
-	private Purchase purchase;// ²É¹º×é
-	private Sale sale;// ÏúÊÛ×é
+	private Purchase purchase;// é‡‡è´­ç»„
+	private Sale sale;// é”€å”®ç»„
 
 	public void setPurchase(Purchase purchase) {
 		this.purchase = purchase;
@@ -27,47 +27,47 @@ public class Stock {
 	}
 	
 	/**
-	 * Ôö¼Ó¿â´æµçÄÔ
+	 * å¢åŠ åº“å­˜ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void increase(int number) {
 		computerNumber += number;
-		log("¿â´æÊıÁ¿Îª " + computerNumber);
+		log("åº“å­˜æ•°é‡ä¸º " + computerNumber);
 	}
 	
 	/**
-	 * ¼õÉÙ¿â´æµçÄÔ
+	 * å‡å°‘åº“å­˜ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void decrease(int number) {
 		computerNumber -= number;
-		log("¿â´æÊıÁ¿Îª " + computerNumber);
+		log("åº“å­˜æ•°é‡ä¸º " + computerNumber);
 	}
 
 	/**
-	 * ·µ»Ø¿â´æµçÄÔÊıÁ¿
+	 * è¿”å›åº“å­˜ç”µè„‘æ•°é‡
 	 */
 	public int getStockNumber() {
 		return computerNumber;
 	}
 
 	/**
-	 * ÇåÀí¿â´æ
+	 * æ¸…ç†åº“å­˜
 	 * <p>
-	 * <li>²É¹ºÈËÔ±²»ÔÙ²É¹º
-	 * <li>ÏúÊÛÈËÔ±Òª¾¡¿ìÏúÊÛ
+	 * <li>é‡‡è´­äººå‘˜ä¸å†é‡‡è´­
+	 * <li>é”€å”®äººå‘˜è¦å°½å¿«é”€å”®
 	 */
 	public void clearStock() {
-		log("ÇåÀí¿â´æÊıÁ¿Îª " + computerNumber);
-		sale.offSale();// ÕÛ¼ÛÏúÊÛ
-		purchase.refuse2BuyComputer();// ²»ÔÙ²É¹º
+		log("æ¸…ç†åº“å­˜æ•°é‡ä¸º " + computerNumber);
+		sale.offSale();// æŠ˜ä»·é”€å”®
+		purchase.refuse2BuyComputer();// ä¸å†é‡‡è´­
 	}
 	
 	private static void log(String message) {
-		System.out.println("¡¾¿â´æ×é¡¿" + message);
+		System.out.println("ã€åº“å­˜ç»„ã€‘" + message);
 	}
 }

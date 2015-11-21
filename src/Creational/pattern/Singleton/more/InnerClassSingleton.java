@@ -4,13 +4,13 @@
 package pattern.Singleton.more;
 
 /**
- * 5£¬ÄÚ²¿ÀàÀÁººÊ½µ¥Àý
+ * 5ï¼Œå†…éƒ¨ç±»æ‡’æ±‰å¼å•ä¾‹
  * <p>
- * ¼ÓÔØÊ±²»»á³õÊ¼»¯¾²Ì¬±äÁ¿INSTANCE£¬ÒòÎªÃ»ÓÐÖ÷¶¯Ê¹ÓÃ£¬´ïµ½ÀÁ¼ÓÔØ¡£
+ * åŠ è½½æ—¶ä¸ä¼šåˆå§‹åŒ–é™æ€å˜é‡INSTANCEï¼Œå› ä¸ºæ²¡æœ‰ä¸»åŠ¨ä½¿ç”¨ï¼Œè¾¾åˆ°æ‡’åŠ è½½ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014-6-6
+ * åˆ›å»ºæ—¥æœŸï¼š2014-6-6
  */
 public final class InnerClassSingleton {
 

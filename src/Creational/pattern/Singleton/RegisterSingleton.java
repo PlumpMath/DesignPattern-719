@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * �Ǽ�ʽ������
+ * 登记式单例类
  * <p>
- * �Ǽ�ʽ��������Ϊ�˿˷�����ʽ������ʽ�����಻�ɼ̳е�ȱ�����Ƶ�
+ * 登记式单例类是为了克服饿汉式和懒汉式单例类不可继承的缺点而设计的
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-3-9
+ * 创建日期：2010-3-9
  */
 public class RegisterSingleton {
 
@@ -33,13 +33,13 @@ public class RegisterSingleton {
 
 abstract class DBManager {
 
-	// ʹ��һ��Map����ŵǼǺ��DBManagerʵ��
+	// 使用一个Map来存放登记后的DBManager实例
 	private static Map<String, DBManager> instanceMap = new HashMap<String, DBManager>();
 
 	/**
-	 * ����Ĺ��췽�������ǹ����ģ�Ҳ����������Ե��õġ�
-	 * ����һ���������˿���ֱ��ʹ�����๹�췽������ʵ�������ڸ���ĵǼ��С�
-	 * ���ڸ����ʵ��������ڲſ����������ʵ����������Щ�������һ���˷ѡ�
+	 * 父类的构造方法必须是公开的，也就是子类可以调用的。
+	 * 这样一来就允许了可以直接使用子类构造方法创建实例而不在父类的登记中。
+	 * 由于父类的实例必须存在才可能有子类的实例，这在有些情况下是一个浪费。
 	 */
 	protected DBManager() {
 	}

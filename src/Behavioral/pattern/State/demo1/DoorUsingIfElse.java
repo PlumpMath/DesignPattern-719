@@ -4,11 +4,11 @@
 package pattern.State.demo1;
 
 /**
- * Ê¹ÓÃif-elseÓï¾äÊµÏÖ´ø×´Ì¬µÄÃÅ
+ * ä½¿ç”¨if-elseè¯­å¥å®ç°å¸¦çŠ¶æ€çš„é—¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-25
  */
 public class DoorUsingIfElse {
 
@@ -26,25 +26,25 @@ public class DoorUsingIfElse {
 	}
 	
 	/**
-	 * ÃÅ
+	 * é—¨
 	 * <p>
-	 * ÃÅÓĞÁ½¸ö×´Ì¬£º¿ª×ÅºÍ¹Ø×Å¡£ÕâÀïÊ¹ÓÃ´«Í³µÄif-elseÓï¾äÊµÏÖÕâ¸ö¹¦ÄÜ¡£
+	 * é—¨æœ‰ä¸¤ä¸ªçŠ¶æ€ï¼šå¼€ç€å’Œå…³ç€ã€‚è¿™é‡Œä½¿ç”¨ä¼ ç»Ÿçš„if-elseè¯­å¥å®ç°è¿™ä¸ªåŠŸèƒ½ã€‚
 	 */
 	private static class Door {
 		
-		/** ¿ª×Å */
+		/** å¼€ç€ */
 		private static final int OPEN = 0;
-		/** ¹Ø×Å */
+		/** å…³ç€ */
 		private static final int CLOSED = 1;
 
-		private int state;// µ±Ç°×´Ì¬
+		private int state;// å½“å‰çŠ¶æ€
 
 		public Door() {
 			this.state = OPEN;
 		}
 
 		/**
-		 * ¿ªÃÅ
+		 * å¼€é—¨
 		 */
 		public void open() {
 			if (state == OPEN) {
@@ -56,7 +56,7 @@ public class DoorUsingIfElse {
 		}
 
 		/**
-		 * ¹ØÃÅ
+		 * å…³é—¨
 		 */
 		public void close() {
 			if (state == CLOSED) {

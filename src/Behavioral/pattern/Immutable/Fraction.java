@@ -4,60 +4,60 @@
 package pattern.Immutable;
 
 /**
- * ·ÖÊıÀà
+ * åˆ†æ•°ç±»
  * <p>
- * Ç¿²»±äÄ£Ê½
+ * å¼ºä¸å˜æ¨¡å¼
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-29
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-29
  */
 public final class Fraction implements Cloneable {
 
 	private static final String LINE = "/";
 
-	private int numerator;// ·Ö×Ó
-	private int denominator;// ·ÖÄ¸
+	private int numerator;// åˆ†å­
+	private int denominator;// åˆ†æ¯
 
 	/**
-	 * ´´½¨·ÖÊı
+	 * åˆ›å»ºåˆ†æ•°
 	 * 
 	 * @param numerator
-	 *            ·Ö×Ó
+	 *            åˆ†å­
 	 * @param denominator
-	 *            ·ÖÄ¸
+	 *            åˆ†æ¯
 	 */
 	public Fraction(int numerator, int denominator) {
 		if (denominator == 0) {
-			throw new IllegalArgumentException("·ÖÄ¸²»ÄÜÎª0.");
+			throw new IllegalArgumentException("åˆ†æ¯ä¸èƒ½ä¸º0.");
 		}
 		this.numerator = numerator;
 		this.denominator = denominator;
 	}
 
 	/**
-	 * ·Ö×Ó
+	 * åˆ†å­
 	 */
 	public int getNumerator() {
 		return numerator;
 	}
 
 	/**
-	 * ·ÖÄ¸
+	 * åˆ†æ¯
 	 */
 	public int getDenominator() {
 		return denominator;
 	}
 
 	/**
-	 * ·ÖÊıµÄĞ¡ÊıÖµ
+	 * åˆ†æ•°çš„å°æ•°å€¼
 	 */
 	public double doubleValue() {
 		return numerator / (double) denominator;
 	}
 
 	/**
-	 * ¼Ó·¨
+	 * åŠ æ³•
 	 */
 	public Fraction add(Fraction f) {
 		int newNumerator = numerator * f.getDenominator() + f.getNumerator() * denominator;
@@ -66,7 +66,7 @@ public final class Fraction implements Cloneable {
 	}
 
 	/**
-	 * ¼õ·¨
+	 * å‡æ³•
 	 */
 	public Fraction sub(Fraction f) {
 		int newNumerator = numerator * f.getDenominator() - f.getNumerator() * denominator;
@@ -75,7 +75,7 @@ public final class Fraction implements Cloneable {
 	}
 
 	/**
-	 * ³Ë·¨
+	 * ä¹˜æ³•
 	 */
 	public Fraction mul(Fraction f) {
 		int newNumerator = f.getNumerator() * numerator;
@@ -84,14 +84,14 @@ public final class Fraction implements Cloneable {
 	}
 
 	/**
-	 * ³ı·¨
+	 * é™¤æ³•
 	 */
 	public Fraction div(Fraction f) {
-		return this.mul(f.reciprocal());// ³ËÒÔµ¹Êı
+		return this.mul(f.reciprocal());// ä¹˜ä»¥å€’æ•°
 	}
 
 	/**
-	 * µ¹Êı
+	 * å€’æ•°
 	 */
 	public Fraction reciprocal() {
 		if (numerator == 0) {
@@ -101,7 +101,7 @@ public final class Fraction implements Cloneable {
 	}
 
 	/**
-	 * Ô¼·Ö
+	 * çº¦åˆ†
 	 */
 	public Fraction division() {
 		int gcd = findGreatestCommonDivisor();
@@ -109,22 +109,22 @@ public final class Fraction implements Cloneable {
 	}
 
 	/**
-	 * ²éÕÒ·Ö×Ó·ÖÄ¸µÄ×î´ó¹«Ô¼Êı
+	 * æŸ¥æ‰¾åˆ†å­åˆ†æ¯çš„æœ€å¤§å…¬çº¦æ•°
 	 */
 	private int findGreatestCommonDivisor() {
 		return greatestCommonDivisor(Math.abs(numerator), Math.abs(denominator));
 	}
 
 	/**
-	 * ·µ»ØÕıÕûÊıa¡¢bµÄ×î´ó¹«Ô¼Êı
+	 * è¿”å›æ­£æ•´æ•°aã€bçš„æœ€å¤§å…¬çº¦æ•°
 	 * <p>
-	 * »ùÓÚÅ·¼¸ÀïµÃ¶¨Àí: gcd(a,b) = gcd(b,a-b) ÆäÖĞ a > b 
-	 * µİ¹éÊµÏÖ
+	 * åŸºäºæ¬§å‡ é‡Œå¾—å®šç†: gcd(a,b) = gcd(b,a-b) å…¶ä¸­ a > b 
+	 * é€’å½’å®ç°
 	 * 
 	 * @param a
-	 *            ÕıÕûÊı
+	 *            æ­£æ•´æ•°
 	 * @param b
-	 *            ÕıÕûÊı
+	 *            æ­£æ•´æ•°
 	 */
 	private static int greatestCommonDivisor(int a, int b) {
 		if (a == b) return a;

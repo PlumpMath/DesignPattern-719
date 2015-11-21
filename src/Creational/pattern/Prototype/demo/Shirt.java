@@ -4,11 +4,11 @@
 package pattern.Prototype.demo;
 
 /**
- * ³ÄÉÀÀà
+ * è¡¬è¡«ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public class Shirt implements Clothes {
 

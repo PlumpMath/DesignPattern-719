@@ -4,38 +4,38 @@
 package pattern.Iterator.demo;
 
 /**
- * ¶ÓÁĞ½Ó¿Ú
+ * é˜Ÿåˆ—æ¥å£
  * <p>
- * ³éÏó¾Û¼¯½ÇÉ«
+ * æŠ½è±¡èšé›†è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-14
  */
 public interface IQueue<T> {
 
 	/**
-	 * Ôö¼ÓÒ»¸öÔªËØ
+	 * å¢åŠ ä¸€ä¸ªå…ƒç´ 
 	 */
 	public void add(T t);
 
 	/**
-	 * É¾³ıÒ»¸öÔªËØ
+	 * åˆ é™¤ä¸€ä¸ªå…ƒç´ 
 	 */
 	public void remove(T t);
 
 	/**
-	 * ·µ»ØÔªËØÊı
+	 * è¿”å›å…ƒç´ æ•°
 	 */
 	public int size();
 
 	/**
-	 * ·µ»ØÒ»¸öÏòÇ°±éÀúµÄµü´ú×Ó
+	 * è¿”å›ä¸€ä¸ªå‘å‰éå†çš„è¿­ä»£å­
 	 */
 	public ForwardIterator<T> forwardIterator();
 
 	/**
-	 * ·µ»ØÒ»¸öÏòºó±éÀúµÄµü´ú×Ó
+	 * è¿”å›ä¸€ä¸ªå‘åéå†çš„è¿­ä»£å­
 	 */
 	public BackwardIterator<T> backwardIterator();
 }

@@ -4,13 +4,13 @@
 package pattern.Proxy;
 
 /**
- * ÕæÊµÖ÷Ìâ½ÇÉ«
+ * çœŸå®ä¸»é¢˜è§’è‰²
  * <p>
- * ¶¨ÒåÁË´úÀíÖ÷Ìâ½ÇÉ«Ëù´ú±íµÄÕæÊµ¶ÔÏó
+ * å®šä¹‰äº†ä»£ç†ä¸»é¢˜è§’è‰²æ‰€ä»£è¡¨çš„çœŸå®å¯¹è±¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-20
  */
 public class RealSubject implements Subject {
 
@@ -19,7 +19,7 @@ public class RealSubject implements Subject {
 	}
 	
 	/**
-	 * ÕæÊµÖ÷ÌâÖĞµÄrequest()·½·¨
+	 * çœŸå®ä¸»é¢˜ä¸­çš„request()æ–¹æ³•
 	 */
 	@Override
 	public void request() {

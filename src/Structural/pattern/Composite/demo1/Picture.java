@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * PictureÀà
+ * Pictureç±»
  * <p>
- * ÊÇÖ±Ïß¡¢Ô²¡¢¾ØĞÎµÈÍ¼ĞÎµÄ×éºÏÀà
+ * æ˜¯ç›´çº¿ã€åœ†ã€çŸ©å½¢ç­‰å›¾å½¢çš„ç»„åˆç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Picture implements Graphics {
 
@@ -27,21 +27,21 @@ public class Picture implements Graphics {
 	}
 
 	/**
-	 * Ôö¼ÓÒ»¸öĞÂÍ¼ĞÎ
+	 * å¢åŠ ä¸€ä¸ªæ–°å›¾å½¢
 	 */
 	public void add(Graphics graphics) {
 		getGraphics().add(graphics);
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨Í¼ĞÎ
+	 * åˆ é™¤æŒ‡å®šå›¾å½¢
 	 */
 	public void remove(Graphics graphics) {
 		getGraphics().remove(graphics);
 	}
 
 	/**
-	 * ·µ»ØÖ¸¶¨Ë÷ÒıÍ¼ĞÎ
+	 * è¿”å›æŒ‡å®šç´¢å¼•å›¾å½¢
 	 */
 	public Graphics getChild(int index) {
 		return getGraphics().get(index);

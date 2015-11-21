@@ -4,17 +4,17 @@
 package pattern.Decorator.more;
 
 /**
- * ʡ�Գ���װ�ν�ɫ
+ * 省略抽象装饰角色
  * <p>
- * ���ֻ��һ��ConcreteDecorator�࣬��û�б�Ҫ����һ��������
- * ����Decorator���ˣ����԰ѳ���װ�ν�ɫ�;���װ�ν�ɫ�����κϲ���һ����
- * ������ֻ����������װ������ڵ�����£���������������
- * �����������װ�������Ŀ�������Ļ���ʹ��һ�������ĳ���װ�ν�ɫ
- * Decorator�������ֳ���;�������ξ��Ǳ�Ҫ���ˡ�
+ * 如果只有一个ConcreteDecorator类，就没有必要建立一个单独的
+ * 抽象Decorator类了，可以把抽象装饰角色和具体装饰角色的责任合并成一个类
+ * 甚至在只有两个具体装饰类存在的情况下，都可以这样做。
+ * 但是如果具体装饰类的数目大于三的话，使用一个单独的抽象装饰角色
+ * Decorator类来区分抽象和具体的责任就是必要的了。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-4-13
+ * 创建日期：2010-4-13
  */
 public class AbsDecoratorOmitted {
 
@@ -29,7 +29,7 @@ public class AbsDecoratorOmitted {
 	static interface Component {
 
 		/**
-		 * ҵ�񷽷�
+		 * 业务方法
 		 */
 		public void operation();
 	}
@@ -50,7 +50,7 @@ public class AbsDecoratorOmitted {
 		}
 
 		/**
-		 * װ�����д˷����������˶���Ĺ���
+		 * 装饰类中此方法被添加了额外的功能
 		 * 
 		 * @see pattern.Decorator.more.ConcreteComponent#operation()
 		 */

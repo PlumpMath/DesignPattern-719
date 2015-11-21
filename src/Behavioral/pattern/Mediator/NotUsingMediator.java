@@ -4,13 +4,13 @@
 package pattern.Mediator;
 
 /**
- * ²»Ê¹ÓÃMediatorÄ£Ê½µÄÊ¾Àı
+ * ä¸ä½¿ç”¨Mediatoræ¨¡å¼çš„ç¤ºä¾‹
  * <p>
- * Colleague1ºÍColleague2Ïà»¥¹ØÁª£¬Ïà»¥³ÖÓĞ¶Ô·½µÄÒıÓÃ£¬ĞÎ³É»·ĞÎÒÀÀµ¡£
+ * Colleague1å’ŒColleague2ç›¸äº’å…³è”ï¼Œç›¸äº’æŒæœ‰å¯¹æ–¹çš„å¼•ç”¨ï¼Œå½¢æˆç¯å½¢ä¾èµ–ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class NotUsingMediator {
 
@@ -27,11 +27,11 @@ public class NotUsingMediator {
 	}
 
 	/**
-	 * Í¬ÊÂÀà1
+	 * åŒäº‹ç±»1
 	 */
 	private static class Colleague1 {
 
-		private Colleague2 colleague2;// ¹ØÁªÍ¬ÊÂÀà2
+		private Colleague2 colleague2;// å…³è”åŒäº‹ç±»2
 
 		private Colleague2 getColleague2() {
 			return colleague2;
@@ -42,14 +42,14 @@ public class NotUsingMediator {
 		}
 
 		/**
-		 * Ö»ºÍ×Ô¼ºÓĞ¹ØµÄ¶¯×÷
+		 * åªå’Œè‡ªå·±æœ‰å…³çš„åŠ¨ä½œ
 		 */
 		public void action() {
 			System.out.println("action in ConcreteColleague1.");
 		}
 
 		/**
-		 * »áºÍÆäËû¶ÔÏóÍ¨ĞÅµÄ¶¯×÷
+		 * ä¼šå’Œå…¶ä»–å¯¹è±¡é€šä¿¡çš„åŠ¨ä½œ
 		 */
 		public void change() {
 			System.out.println("colleague1 invokes colleague2.action()");
@@ -58,11 +58,11 @@ public class NotUsingMediator {
 	}
 
 	/**
-	 * Í¬ÊÂÀà2
+	 * åŒäº‹ç±»2
 	 */
 	private static class Colleague2 {
 
-		private Colleague1 colleague1;// ¹ØÁªÍ¬ÊÂÀà1
+		private Colleague1 colleague1;// å…³è”åŒäº‹ç±»1
 
 		private Colleague1 getColleague1() {
 			return colleague1;
@@ -73,14 +73,14 @@ public class NotUsingMediator {
 		}
 
 		/**
-		 * Ö»ºÍ×Ô¼ºÓĞ¹ØµÄ¶¯×÷
+		 * åªå’Œè‡ªå·±æœ‰å…³çš„åŠ¨ä½œ
 		 */
 		public void action() {
 			System.out.println("action in ConcreteColleague2.");
 		}
 
 		/**
-		 * »áºÍÆäËû¶ÔÏóÍ¨ĞÅµÄ¶¯×÷
+		 * ä¼šå’Œå…¶ä»–å¯¹è±¡é€šä¿¡çš„åŠ¨ä½œ
 		 */
 		public void change() {
 			System.out.println("colleague2 invokes colleague1.action()");

@@ -4,21 +4,21 @@
 package pattern.SimpleFactory.more;
 
 /**
- * 2.¶à¸ö¹¤³§·½·¨
+ * 2.å¤šä¸ªå·¥å‚æ–¹æ³•
  * <p>
- * ¹¤³§Àà¿ÉÒÔÓĞ¶àÓÚÒ»¸öµÄ¹¤³§·½·¨£¬·Ö±ğ¸ºÔğ´´½¨²»Í¬µÄ²úÆ·¶ÔÏó¡£
- * JDKÖĞµÄjava.text.DateFormatÀà¾ÍÊÇÕâÑùµÄÀı×Ó¡£
+ * å·¥å‚ç±»å¯ä»¥æœ‰å¤šäºä¸€ä¸ªçš„å·¥å‚æ–¹æ³•ï¼Œåˆ†åˆ«è´Ÿè´£åˆ›å»ºä¸åŒçš„äº§å“å¯¹è±¡ã€‚
+ * JDKä¸­çš„java.text.DateFormatç±»å°±æ˜¯è¿™æ ·çš„ä¾‹å­ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-4
  */
 public class MultiFactoryMethod {
 
 }
 
 /**
- * Ê¹ÓÃClothesµÄ¿Í»§¶ËÀà
+ * ä½¿ç”¨Clothesçš„å®¢æˆ·ç«¯ç±»
  */
 class ClothesClient {
 
@@ -33,7 +33,7 @@ class ClothesClient {
 class ClothesFactory {
 
 	/**
-	 * ´´½¨Ö¸¶¨Æ·ÖÖµÄÒÂ·ş
+	 * åˆ›å»ºæŒ‡å®šå“ç§çš„è¡£æœ
 	 */
 	static Clothes create(String which) {
 		if (which.equalsIgnoreCase("Shirt")) {
@@ -45,7 +45,7 @@ class ClothesFactory {
 	}
 
 	/**
-	 * ´´½¨Ö¸¶¨Æ·ÖÖºÍÑÕÉ«µÄÒÂ·ş
+	 * åˆ›å»ºæŒ‡å®šå“ç§å’Œé¢œè‰²çš„è¡£æœ
 	 */
 	static Clothes create(String which, String color) {
 		if (which.equalsIgnoreCase("Shirt")) {
@@ -58,14 +58,14 @@ class ClothesFactory {
 }
 
 /**
- * ÒÂ·ş»ùÀà
+ * è¡£æœåŸºç±»
  */
 abstract class Clothes {
 
-	private String color;// ÑÕÉ«
+	private String color;// é¢œè‰²
 
 	public Clothes() {
-		this.color = "black";// Ä¬ÈÏºÚÉ«
+		this.color = "black";// é»˜è®¤é»‘è‰²
 	}
 
 	public Clothes(String color) {
@@ -82,7 +82,7 @@ abstract class Clothes {
 }
 
 /**
- * ³ÄÉÀÀà
+ * è¡¬è¡«ç±»
  */
 class Shirt extends Clothes {
 
@@ -96,7 +96,7 @@ class Shirt extends Clothes {
 }
 
 /**
- * ¼Ğ¿ËÀà
+ * å¤¹å…‹ç±»
  */
 class Jacket extends Clothes {
 

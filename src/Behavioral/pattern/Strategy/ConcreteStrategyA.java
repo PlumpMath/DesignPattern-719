@@ -4,13 +4,13 @@
 package pattern.Strategy;
 
 /**
- * ¾ßÌå²ßÂÔA
+ * å…·ä½“ç­–ç•¥A
  * <p>
- * °ü×°ÁËÏà¹ØµÄ¾ßÌåËã·¨»òĞĞÎª
+ * åŒ…è£…äº†ç›¸å…³çš„å…·ä½“ç®—æ³•æˆ–è¡Œä¸º
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class ConcreteStrategyA implements Strategy {
 

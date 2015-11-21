@@ -4,11 +4,11 @@
 package pattern.Strategy.demo1;
 
 /**
- * Ñ¡ÔñÅÅĞò²ßÂÔ
+ * é€‰æ‹©æ’åºç­–ç•¥
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class SelectionSortStrategy extends AbstractSortStrategy {
 
@@ -18,12 +18,12 @@ public class SelectionSortStrategy extends AbstractSortStrategy {
 	}
 
 	/**
-	 * Ñ¡ÔñÅÅĞò
+	 * é€‰æ‹©æ’åº
 	 * <p>
-	 * Ëã·¨ÃèÊö£º 
-	 * Ê×ÏÈÕÒ³ö×î´óÔªËØ£¬°ÑËüÒÆ¶¯µ½a[n-1] 
-	 * È»ºóÔÚÓàÏÂµÄn-1¸öÔªËØÖĞÑ°ÕÒ×î´óµÄÔªËØ°ÑËüÒÆ¶¯µ½a[n-2] 
-	 * Èç´Ë½øĞĞÏÂÈ¥... ...
+	 * ç®—æ³•æè¿°ï¼š 
+	 * é¦–å…ˆæ‰¾å‡ºæœ€å¤§å…ƒç´ ï¼ŒæŠŠå®ƒç§»åŠ¨åˆ°a[n-1] 
+	 * ç„¶ååœ¨ä½™ä¸‹çš„n-1ä¸ªå…ƒç´ ä¸­å¯»æ‰¾æœ€å¤§çš„å…ƒç´ æŠŠå®ƒç§»åŠ¨åˆ°a[n-2] 
+	 * å¦‚æ­¤è¿›è¡Œä¸‹å»... ...
 	 */
 	private void selectionSort(int[] array) {
 		for (int i = array.length - 1; i > 0; i--) {

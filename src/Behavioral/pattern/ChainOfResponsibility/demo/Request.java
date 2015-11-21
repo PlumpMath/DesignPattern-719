@@ -4,17 +4,17 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * ÇëÇóÃ¶¾Ù
+ * è¯·æ±‚æšä¸¾
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public enum Request {
 
-	LEAVE("Çë¼Ù"), RAISES("¼ÓĞ½"), PROMOTION("½úÉı"), OTHER("ÆäËû´óÊÂ");
+	LEAVE("è¯·å‡"), RAISES("åŠ è–ª"), PROMOTION("æ™‹å‡"), OTHER("å…¶ä»–å¤§äº‹");
 
-	private String description;// ÇëÇóÃèÊö
+	private String description;// è¯·æ±‚æè¿°
 
 	private Request(String description) {
 		this.description = description;

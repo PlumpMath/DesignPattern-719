@@ -4,17 +4,17 @@
 package pattern.Bridge.demo1;
 
 /**
- * Ó¦ÓÃ³ÌĞòÊ¹ÓÃµÄÊı¾İ¿âAPI³éÏó»ùÀà
+ * åº”ç”¨ç¨‹åºä½¿ç”¨çš„æ•°æ®åº“APIæŠ½è±¡åŸºç±»
  * <p>
- * Abstraction½ÇÉ«
+ * Abstractionè§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public abstract class AbstractJdbcAPI implements JdbcAPI {
 
-	private DatabaseDriver driver;// Êı¾İ¿âÇı¶¯
+	private DatabaseDriver driver;// æ•°æ®åº“é©±åŠ¨
 
 	public AbstractJdbcAPI(DatabaseDriver driver) {
 		this.driver = driver;

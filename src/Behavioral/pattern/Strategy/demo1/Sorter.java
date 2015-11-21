@@ -4,17 +4,17 @@
 package pattern.Strategy.demo1;
 
 /**
- * ÅÅĞòÆ÷
+ * æ’åºå™¨
  * <p>
- * »·¾³½ÇÉ«£¬Ö»ÊÊºÏÓÚÕûÊıÊı×éµÄÅÅĞò¡£
+ * ç¯å¢ƒè§’è‰²ï¼Œåªé€‚åˆäºæ•´æ•°æ•°ç»„çš„æ’åºã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class Sorter {
 
-	// ÅÅĞò²ßÂÔ
+	// æ’åºç­–ç•¥
 	private SortStrategy strategy;
 
 	public Sorter() {
@@ -30,17 +30,17 @@ public class Sorter {
 	}
 
 	/**
-	 * ÉèÖÃÅÅĞò²ßÂÔ
+	 * è®¾ç½®æ’åºç­–ç•¥
 	 */
 	public void setStrategy(SortStrategy strategy) {
 		this.strategy = strategy;
 	}
 
 	/**
-	 * ¶ÔÕûÊıÊı×é½øĞĞÅÅĞò
+	 * å¯¹æ•´æ•°æ•°ç»„è¿›è¡Œæ’åº
 	 * 
 	 * @param array
-	 *            ÕûÊıÊı×é
+	 *            æ•´æ•°æ•°ç»„
 	 */
 	public void sort(int[] array) {
 		getStrategy().sort(array);

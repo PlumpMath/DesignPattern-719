@@ -4,19 +4,19 @@
 package pattern.FactoryMethod;
 
 /**
- * ���󹤳��ӿ�
+ * 抽象工厂接口
  * <p>
- * ������ǹ�������ģʽ�ĺ��ģ�������Ӧ�ó����޹ص�
- * �κ���ģʽ�д�������Ĺ��������ʵ������ӿ�
+ * 这个类是工厂方法模式的核心，它是与应用程序无关的
+ * 任何在模式中创建对象的工厂类必须实现这个接口
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-2-3
+ * 创建日期：2010-2-3
  */
 public interface Factory {
 
 	/**
-	 * ����Product��ʵ��
+	 * 创建Product的实例
 	 */
 	public Product create();
 }

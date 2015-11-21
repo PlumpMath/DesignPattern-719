@@ -4,11 +4,11 @@
 package pattern.Composite.demo3;
 
 /**
- * ÊýÖµÀà
+ * æ•°å€¼ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Number implements Expression {
 

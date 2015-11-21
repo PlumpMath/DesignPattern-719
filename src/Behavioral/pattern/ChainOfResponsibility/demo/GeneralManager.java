@@ -4,13 +4,13 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * ×Ü¾­Àí
+ * æ€»ç»ç†
  * <p>
- * ¾ßÌå´¦ÀíÕß½ÇÉ«
+ * å…·ä½“å¤„ç†è€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class GeneralManager extends Handler {
 
@@ -19,14 +19,14 @@ public class GeneralManager extends Handler {
 	}
 
 	/**
-	 * ×Ü¾­ÀíÖ»ÄÜ´¦Àí¼ÓĞ½ÊÂÎñ£¬ÆäËûµÄÊÂÎñ½»¸øÏÂ¼Ò(ÉÏ¼¶Áìµ¼)´¦Àí
+	 * æ€»ç»ç†åªèƒ½å¤„ç†åŠ è–ªäº‹åŠ¡ï¼Œå…¶ä»–çš„äº‹åŠ¡äº¤ç»™ä¸‹å®¶(ä¸Šçº§é¢†å¯¼)å¤„ç†
 	 * 
 	 * @see pattern.ChainOfResponsibility.demo.Handler#handleRequest(pattern.ChainOfResponsibility.demo.Request)
 	 */
 	@Override
 	public void handleRequest(Request request) {
 		if (request == Request.RAISES) {
-			System.out.println("×Ü¾­Àí Åú×¼ " + request.getDescription());
+			System.out.println("æ€»ç»ç† æ‰¹å‡† " + request.getDescription());
 		} else {
 			getNextHandler().handleRequest(request);
 		}

@@ -6,16 +6,16 @@ package pattern.Mediator.demo2;
 import java.util.Random;
 
 /**
- * ÏúÊÛ×é
+ * é”€å”®ç»„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Sale {
 
-	private Stock stock;// ¿â´æ×é
-	private Purchase purchase;// ²É¹º×é
+	private Stock stock;// åº“å­˜ç»„
+	private Purchase purchase;// é‡‡è´­ç»„
 
 	public void setStock(Stock stock) {
 		this.stock = stock;
@@ -26,37 +26,37 @@ public class Sale {
 	}
 
 	/**
-	 * ÏúÊÛÖ¸¶¨ÊıÁ¿µÄµçÄÔ
+	 * é”€å”®æŒ‡å®šæ•°é‡çš„ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void sellComputer(int number) {
-		// ¿â´æÊıÁ¿²»¹»ÏúÊÛÔòÈÃ²É¹º×éÈ¥²É¹º
+		// åº“å­˜æ•°é‡ä¸å¤Ÿé”€å”®åˆ™è®©é‡‡è´­ç»„å»é‡‡è´­
 		if (stock.getStockNumber() < number) { 
 			purchase.buyComputer(number);
 		}
-		log("ÏúÊÛµçÄÔ " + number + " Ì¨");
+		log("é”€å”®ç”µè„‘ " + number + " å°");
 		stock.decrease(number);
 	}
 
 	/**
-	 * ÏúÊÛ×´¿ö£º0¡ª100Ö®¼ä±ä»¯£¬0´ú±í¸ù±¾¾ÍÃ»ÈËÂô£¬100´ú±í·Ç³£³©Ïú
+	 * é”€å”®çŠ¶å†µï¼š0â€”100ä¹‹é—´å˜åŒ–ï¼Œ0ä»£è¡¨æ ¹æœ¬å°±æ²¡äººå–ï¼Œ100ä»£è¡¨éå¸¸ç•…é”€
 	 */
 	public int getSaleStatus() {
 		int saleStatus = new Random().nextInt(100);
-		log("µçÄÔÏúÊÛÇé¿öÎª " + saleStatus);
+		log("ç”µè„‘é”€å”®æƒ…å†µä¸º " + saleStatus);
 		return saleStatus;
 	}
 
 	/**
-	 * ÕÛ¼ÛÏúÊÛ
+	 * æŠ˜ä»·é”€å”®
 	 */
 	public void offSale() {
-		log("¿ªÊ¼ÕÛ¼ÛÏúÊÛµçÄÔ " + stock.getStockNumber() + " Ì¨");
+		log("å¼€å§‹æŠ˜ä»·é”€å”®ç”µè„‘ " + stock.getStockNumber() + " å°");
 	}
 	
 	private static void log(String message) {
-		System.out.println("¡¾ÏúÊÛ×é¡¿" + message);
+		System.out.println("ã€é”€å”®ç»„ã€‘" + message);
 	}
 }

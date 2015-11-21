@@ -6,14 +6,14 @@ package pattern.Builder.more;
 import java.util.Date;
 
 /**
- * Ê¡ÂÔ³éÏó½¨ÔìÕß½ÇÉ«
+ * çœç•¥æŠ½è±¡å»ºé€ è€…è§’è‰²
  * <p>
- * Èç¹ûÉè¼ÆÊ¦·Ç³£¿Ï¶¨ÏµÍ³Ö»ĞèÒªÒ»¸ö¾ßÌå½¨ÔìÕß½ÇÉ«µÄ»°£¬¿ÉÒÔÊ¡ÂÔµô³éÏó½¨ÔìÕß½ÇÉ«¡£
- * ³éÏó½¨ÔìÕß½ÇÉ«´æÔÚµÄÄ¿µÄÊÇ¹æ·¶¾ßÌå½¨ÔìÕß½ÇÉ«µÄĞĞÎª£¬¶øÏµÍ³Èç¹ûÖ»ÓĞÒ»¸ö¾ßÌå½¨ÔìÕß£¬ÄÇÃ´Õâ¸ö¹æ·¶Õß½ÇÉ«Ò²¾Í²»ĞèÒªÁË¡£
+ * å¦‚æœè®¾è®¡å¸ˆéå¸¸è‚¯å®šç³»ç»Ÿåªéœ€è¦ä¸€ä¸ªå…·ä½“å»ºé€ è€…è§’è‰²çš„è¯ï¼Œå¯ä»¥çœç•¥æ‰æŠ½è±¡å»ºé€ è€…è§’è‰²ã€‚
+ * æŠ½è±¡å»ºé€ è€…è§’è‰²å­˜åœ¨çš„ç›®çš„æ˜¯è§„èŒƒå…·ä½“å»ºé€ è€…è§’è‰²çš„è¡Œä¸ºï¼Œè€Œç³»ç»Ÿå¦‚æœåªæœ‰ä¸€ä¸ªå…·ä½“å»ºé€ è€…ï¼Œé‚£ä¹ˆè¿™ä¸ªè§„èŒƒè€…è§’è‰²ä¹Ÿå°±ä¸éœ€è¦äº†ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-21
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-21
  */
 public class AbsBuilderOmitted {
 
@@ -31,14 +31,14 @@ public class AbsBuilderOmitted {
 
 class Director {
 
-	private Builder builder;// ½¨ÔìÆ÷
+	private Builder builder;// å»ºé€ å™¨
 
 	public Director(Builder builder) {
 		this.builder = builder;
 	}
 
 	/**
-	 * ½¨Ôì¶ÔÏó
+	 * å»ºé€ å¯¹è±¡
 	 */
 	public void construct() {
 		builder.buildPart1();
@@ -51,21 +51,21 @@ class Builder {
 	private Product product = new Product();
 
 	/**
-	 * ½¨ÔìÁã¼ş1
+	 * å»ºé€ é›¶ä»¶1
 	 */
 	public void buildPart1() {
 		product.setPart1((int) (Math.random() * 100));
 	}
 
 	/**
-	 * ½¨ÔìÁã¼ş2
+	 * å»ºé€ é›¶ä»¶2
 	 */
 	public void buildPart2() {
 		product.setPart2(new Date().toString());
 	}
 
 	/**
-	 * È¡»Ø×é×°ºÃµÄProduct¶ÔÏó
+	 * å–å›ç»„è£…å¥½çš„Productå¯¹è±¡
 	 */
 	public Product retrieve() {
 		return product;
@@ -74,8 +74,8 @@ class Builder {
 
 class Product {
 
-	private int part1;// Áã¼ş1
-	private String part2;// Áã¼ş2
+	private int part1;// é›¶ä»¶1
+	private String part2;// é›¶ä»¶2
 
 	Product() {
 		// do nothing

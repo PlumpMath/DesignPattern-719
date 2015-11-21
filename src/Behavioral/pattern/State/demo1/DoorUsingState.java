@@ -4,11 +4,11 @@
 package pattern.State.demo1;
 
 /**
- * Ê¹ÓÃStateÄ£Ê½ÊµÏÖ´ø×´Ì¬µÄÃÅ
+ * ä½¿ç”¨Stateæ¨¡å¼å®ç°å¸¦çŠ¶æ€çš„é—¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-25
  */
 public class DoorUsingState {
 
@@ -26,13 +26,13 @@ public class DoorUsingState {
 	}
 	
 	/**
-	 * ÃÅ
+	 * é—¨
 	 * <p>
-	 * ÃÅÓĞÁ½¸ö×´Ì¬£º¿ª×ÅºÍ¹Ø×Å¡£ ÕâÀïÊ¹ÓÃStateÄ£Ê½ÊµÏÖÕâ¸ö¹¦ÄÜ¡£
+	 * é—¨æœ‰ä¸¤ä¸ªçŠ¶æ€ï¼šå¼€ç€å’Œå…³ç€ã€‚ è¿™é‡Œä½¿ç”¨Stateæ¨¡å¼å®ç°è¿™ä¸ªåŠŸèƒ½ã€‚
 	 */
 	private static class Door {
 
-		private DoorState state;// ÃÅµÄ×´Ì¬
+		private DoorState state;// é—¨çš„çŠ¶æ€
 
 		public Door() {
 			this.state = new OpenState();
@@ -43,21 +43,21 @@ public class DoorUsingState {
 		}
 
 		/**
-		 * ÉèÖÃÃÅµÄ×´Ì¬
+		 * è®¾ç½®é—¨çš„çŠ¶æ€
 		 */
 		public void setState(DoorState state) {
 			this.state = state;
 		}
 
 		/**
-		 * ¿ªÃÅ
+		 * å¼€é—¨
 		 */
 		public void open() {
 			getState().openTheDoor(this);
 		}
 
 		/**
-		 * ¹ØÃÅ
+		 * å…³é—¨
 		 */
 		public void close() {
 			getState().closeTheDoor(this);
@@ -65,30 +65,30 @@ public class DoorUsingState {
 	}
 
 	/**
-	 * ÃÅ×´Ì¬½Ó¿Ú
+	 * é—¨çŠ¶æ€æ¥å£
 	 */
 	private static interface DoorState {
 
 		/**
-		 * ¿ªÃÅ
+		 * å¼€é—¨
 		 */
 		public void openTheDoor(Door door);
 
 		/**
-		 * ¹ØÃÅ
+		 * å…³é—¨
 		 */
 		public void closeTheDoor(Door door);
 	}
 
 	/**
-	 * ¿ªÃÅ×´Ì¬
+	 * å¼€é—¨çŠ¶æ€
 	 */
 	private static class OpenState implements DoorState {
 
 		@Override
 		public void closeTheDoor(Door door) {
 			System.out.println("now close the door.");
-			// ½«ÃÅÉèÎª¹Ø±Õ×´Ì¬
+			// å°†é—¨è®¾ä¸ºå…³é—­çŠ¶æ€
 			door.setState(new ClosedState());
 		}
 
@@ -99,7 +99,7 @@ public class DoorUsingState {
 	}
 
 	/**
-	 * ¹ØÃÅ×´Ì¬
+	 * å…³é—¨çŠ¶æ€
 	 */
 	private static class ClosedState implements DoorState {
 
@@ -111,7 +111,7 @@ public class DoorUsingState {
 		@Override
 		public void openTheDoor(Door door) {
 			System.out.println("now open the door.");
-			// ½«ÃÅÉèÎª´ò¿ª×´Ì¬
+			// å°†é—¨è®¾ä¸ºæ‰“å¼€çŠ¶æ€
 			door.setState(new OpenState());
 		}
 	}

@@ -4,11 +4,11 @@
 package pattern.AbstractFactory.demo;
 
 /**
- * IBMµçÄÔÁã¼ş¹¤³§
+ * IBMç”µè„‘é›¶ä»¶å·¥å‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class IBMPartsFactory implements ComputerPartsFactory {
 

@@ -4,11 +4,11 @@
 package pattern.SimpleFactory.demo;
 
 /**
- * ²İİ®
+ * è‰è“
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class Strawberry implements Fruit {
 

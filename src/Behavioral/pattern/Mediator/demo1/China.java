@@ -4,27 +4,27 @@
 package pattern.Mediator.demo1;
 
 /**
- * ÖĞ¹ú
+ * ä¸­å›½
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class China {
 
-	private double importAmount = 0;// ½ø¿Ú×Ü¶î
-	private double exportAmount = 0;// ³ö¿Ú×Ü¶î
+	private double importAmount = 0;// è¿›å£æ€»é¢
+	private double exportAmount = 0;// å‡ºå£æ€»é¢
 
-	private USA usa;// Ã³Ò×»ï°é ÃÀ¹ú
+	private USA usa;// è´¸æ˜“ä¼™ä¼´ ç¾å›½
 
 	/**
-	 * ´ÓÃÀ¹ú½ø¿ÚÖ¸¶¨½ğ¶îµÄ»õÎï
+	 * ä»ç¾å›½è¿›å£æŒ‡å®šé‡‘é¢çš„è´§ç‰©
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void importsFromUSA(double amount) {
-		log("ÏòÃÀ¹ú½ø¿Ú " + amount + " ÃÀÔªµÄ»õÎï.");
+		log("å‘ç¾å›½è¿›å£ " + amount + " ç¾å…ƒçš„è´§ç‰©.");
 		if (getUSA().acceptExports(amount)) {
 			increaseImportAmount(amount);
 			getUSA().increaseExports(amount);
@@ -33,13 +33,13 @@ public class China {
 	}
 
 	/**
-	 * ÏòÃÀ¹ú³ö¿ÚÖ¸¶¨½ğ¶îµÄ»õÎï
+	 * å‘ç¾å›½å‡ºå£æŒ‡å®šé‡‘é¢çš„è´§ç‰©
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void exports2USA(double amount) {
-		log("ÏòÃÀ¹ú³ö¿Ú " + amount + " ÃÀÔªµÄ»õÎï.");
+		log("å‘ç¾å›½å‡ºå£ " + amount + " ç¾å…ƒçš„è´§ç‰©.");
 		if (getUSA().acceptImports(amount)) {
 			increaseExportAmount(amount);
 			getUSA().increaseImports(amount);
@@ -48,20 +48,20 @@ public class China {
 	}
 
 	/**
-	 * Ôö¼Ó½ø¿Ú×Ü¶î
+	 * å¢åŠ è¿›å£æ€»é¢
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void increaseImportAmount(double amount) {
 		importAmount += amount;
 	}
 
 	/**
-	 * Ôö¼Ó³ö¿Ú×Ü¶î
+	 * å¢åŠ å‡ºå£æ€»é¢
 	 * 
 	 * @param amount
-	 *            ½ğ¶î
+	 *            é‡‘é¢
 	 */
 	public void increaseExportAmount(double amount) {
 		exportAmount += amount;
@@ -76,14 +76,14 @@ public class China {
 	}
 
 	private static void log(String message) {
-		System.out.println("¡¾ÖĞ¹ú¡¿" + message);
+		System.out.println("ã€ä¸­å›½ã€‘" + message);
 	}
 
 	/**
-	 * ´òÓ¡Í³¼ÆĞÅÏ¢
+	 * æ‰“å°ç»Ÿè®¡ä¿¡æ¯
 	 */
 	public void statistics() {
-		log("³ö¿Ú×Ü¼Æ " + exportAmount + " ÃÀÔª");
-		log("½ø¿Ú×Ü¼Æ " + importAmount + " ÃÀÔª");
+		log("å‡ºå£æ€»è®¡ " + exportAmount + " ç¾å…ƒ");
+		log("è¿›å£æ€»è®¡ " + importAmount + " ç¾å…ƒ");
 	}
 }

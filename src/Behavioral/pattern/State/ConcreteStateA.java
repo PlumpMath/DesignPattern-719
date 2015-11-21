@@ -4,17 +4,17 @@
 package pattern.State;
 
 /**
- * ¾ßÌå×´Ì¬(ConcreteState)½ÇÉ«
+ * å…·ä½“çŠ¶æ€(ConcreteState)è§’è‰²
  * <p>
- * Ã¿Ò»¸ö¾ßÌå×´Ì¬Àà¶¼ÊµÏÖÁË»·¾³(Context)µÄÒ»¸ö×´Ì¬Ëù¶ÔÓ¦µÄĞĞÎª¡£
+ * æ¯ä¸€ä¸ªå…·ä½“çŠ¶æ€ç±»éƒ½å®ç°äº†ç¯å¢ƒ(Context)çš„ä¸€ä¸ªçŠ¶æ€æ‰€å¯¹åº”çš„è¡Œä¸ºã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-24
  */
 public class ConcreteStateA implements State {
 
-	// Èç¹ûĞèÒª¿ÉÒÔ³ÖÓĞ»·¾³¶ÔÏóµÄÒıÓÃ
+	// å¦‚æœéœ€è¦å¯ä»¥æŒæœ‰ç¯å¢ƒå¯¹è±¡çš„å¼•ç”¨
 	private Context context;
 
 	public ConcreteStateA(Context context) {
@@ -24,7 +24,7 @@ public class ConcreteStateA implements State {
 	@Override
 	public void stateOperation() {
 		System.out.println("ConcreteStateA.stateOperation():set Comtext state=ConcreteStateB");
-		// ÖØĞÂÉèÖÃ»·¾³¶ÔÏóµÄ×´Ì¬
+		// é‡æ–°è®¾ç½®ç¯å¢ƒå¯¹è±¡çš„çŠ¶æ€
 		context.setState(new ConcreteStateB(context));
 	}
 }

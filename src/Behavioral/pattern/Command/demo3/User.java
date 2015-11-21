@@ -4,13 +4,13 @@
 package pattern.Command.demo3;
 
 /**
- * ÓÃ»§Àà
+ * ç”¨æˆ·ç±»
  * <p>
- * ¿Í»§(Client)½ÇÉ«£¬Ä£ÄâÓÃ»§Ê¹ÓÃÂ¼Òô»úµÄ²Ù×÷
+ * å®¢æˆ·(Client)è§’è‰²ï¼Œæ¨¡æ‹Ÿç”¨æˆ·ä½¿ç”¨å½•éŸ³æœºçš„æ“ä½œ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class User {
 
@@ -18,12 +18,12 @@ public class User {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ²Ù×÷Ò»¸öÂ¼Òô»ú
+		// æ“ä½œä¸€ä¸ªå½•éŸ³æœº
 		AudioPlayer player = new AudioPlayer();
 		Command play = new PlayCommand(player);
 		Command stop = new StopCommand(player);
 		Command rewind = new RewindCommand(player);
-		// Â¼Òô»úµÄ¼üÅÌ
+		// å½•éŸ³æœºçš„é”®ç›˜
 		Keypad keypad = new Keypad(play,stop,rewind);
 		keypad.play();
 		keypad.stop();
@@ -32,7 +32,7 @@ public class User {
 		keypad.play();
 		keypad.rewind();
 		System.out.println("\n************macro command************\n");
-		// ºêÃüÁîµÄ²Ù×÷
+		// å®å‘½ä»¤çš„æ“ä½œ
 		MacroCommand macro = new MacroCommandListImpl();
 		macro.addCommand(play);
 		macro.addCommand(stop);

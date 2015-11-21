@@ -7,13 +7,13 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * ¶©ÔÄÕß
+ * è®¢é˜…è€…
  * <p>
- * Êµ¼ÊÉÏÊÇ¹Û²ìÕß½ÇÉ«
+ * å®é™…ä¸Šæ˜¯è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class Subscriber implements Observer {
 
@@ -24,17 +24,17 @@ public class Subscriber implements Observer {
 	}
 
 	/**
-	 * ¸üĞÂ×Ô¼º
+	 * æ›´æ–°è‡ªå·±
 	 * <p>
-	 * ÕâÀï½«¶©ÔÄÕß½ÓÊÕµ½µÄRSSFeedµÄÄÚÈİ´òÓ¡³öÀ´
+	 * è¿™é‡Œå°†è®¢é˜…è€…æ¥æ”¶åˆ°çš„RSSFeedçš„å†…å®¹æ‰“å°å‡ºæ¥
 	 *
 	 * @see java.util.Observer#update(java.util.Observable, java.lang.Object)
 	 */
 	@Override
 	public void update(Observable o, Object arg) {
-		// »ñÈ¡·¢ËÍÍ¨ÖªµÄ±»¹Û²ìÕß¶ÔÏó£¬ºÃÈÃ¹Û²ìÕßÖªµÀÊÇÄÄ¸ö±»¹Û²ìÕßÍ¨ÖªËü£¨¿¼ÂÇÍ¬Ò»¸ö¹Û²ìÕß¼àÌıÁ½¸ö²»Í¬µÄ±»¹Û²ìÕß£©
+		// è·å–å‘é€é€šçŸ¥çš„è¢«è§‚å¯Ÿè€…å¯¹è±¡ï¼Œå¥½è®©è§‚å¯Ÿè€…çŸ¥é“æ˜¯å“ªä¸ªè¢«è§‚å¯Ÿè€…é€šçŸ¥å®ƒï¼ˆè€ƒè™‘åŒä¸€ä¸ªè§‚å¯Ÿè€…ç›‘å¬ä¸¤ä¸ªä¸åŒçš„è¢«è§‚å¯Ÿè€…ï¼‰
 		RSSFeed feed = (RSSFeed) o;
-		// »ñÈ¡±»¹Û²ìÕß´«ÈëµÄÊı¾İ¶ÔÏó
+		// è·å–è¢«è§‚å¯Ÿè€…ä¼ å…¥çš„æ•°æ®å¯¹è±¡
 		String content = arg.toString();
 		System.out.println("Subscriber " + name
 				+ " receive a new message from " + feed.getName() + "("

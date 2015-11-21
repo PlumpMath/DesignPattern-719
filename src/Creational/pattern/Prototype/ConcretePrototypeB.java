@@ -4,16 +4,16 @@
 package pattern.Prototype;
 
 /**
- * ¾ßÌåÔ­ĞÍ½ÇÉ«
+ * å…·ä½“åŸå‹è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-28
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-28
  */
 public class ConcretePrototypeB implements Prototype {
 
 	/**
-	 * ²ÉÓÃ new Ò»¸öĞÂ¶ÔÏóµÄ·½Ê½ÊµÏÖ¿ËÂ¡
+	 * é‡‡ç”¨ new ä¸€ä¸ªæ–°å¯¹è±¡çš„æ–¹å¼å®ç°å…‹éš†
 	 */
 	public Object clone(){
 		return new ConcretePrototypeB();

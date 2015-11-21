@@ -6,24 +6,24 @@ package pattern.Mediator.demo1.after;
 /**
  * WTO
  * <p>
- * µ÷Í£Õß½ÇÉ«
+ * è°ƒåœè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class WTO {
 
-	private China china;// ÖĞ¹ú
-	private USA usa;// ÃÀ¹ú
+	private China china;// ä¸­å›½
+	private USA usa;// ç¾å›½
 
 	/**
-	 * Í¨¹ıÃüÁî½øĞĞÃ³Ò×»î¶¯(ÊÂ¼ş·½·¨)
+	 * é€šè¿‡å‘½ä»¤è¿›è¡Œè´¸æ˜“æ´»åŠ¨(äº‹ä»¶æ–¹æ³•)
 	 * 
 	 * @param command
-	 *            Ã³Ò×ÃüÁî(ºÍ¾ßÌåÍ¬ÊÂÀàµÄÒ»ÖÖÔ¼¶¨)
+	 *            è´¸æ˜“å‘½ä»¤(å’Œå…·ä½“åŒäº‹ç±»çš„ä¸€ç§çº¦å®š)
 	 * @param amount
-	 *            Ã³Ò×½ğ¶î
+	 *            è´¸æ˜“é‡‘é¢
 	 */
 	public void trade(String command, double amount) {
 		if (command.equals("china.import")) {

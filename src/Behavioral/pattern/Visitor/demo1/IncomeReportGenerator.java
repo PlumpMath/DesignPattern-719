@@ -6,13 +6,13 @@ package pattern.Visitor.demo1;
 import java.util.List;
 
 /**
- * ÊÕÈë±¨±íÉú³ÉÆ÷
+ * æ”¶å…¥æŠ¥è¡¨ç”Ÿæˆå™¨
  * <p>
- * ÓÃÓÚ¸ù¾İ¹«Ë¾Éú³É¸÷ÖÖ±¨±í£¬ÈçÄÚ²¿±¨±í¡¢Ë°Îñ±¨±íµÈ
+ * ç”¨äºæ ¹æ®å…¬å¸ç”Ÿæˆå„ç§æŠ¥è¡¨ï¼Œå¦‚å†…éƒ¨æŠ¥è¡¨ã€ç¨åŠ¡æŠ¥è¡¨ç­‰
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class IncomeReportGenerator {
 
@@ -23,70 +23,70 @@ public class IncomeReportGenerator {
 	}
 
 	/**
-	 * Éú³É¶­ÊÂ³¤¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í
+	 * ç”Ÿæˆè‘£äº‹é•¿çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨
 	 */
 	public void generate4Chairman() {
-		System.out.println("*******¶­ÊÂ³¤¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í*******");
-		double total = 0;// ×ÜÊÕÈë
+		System.out.println("*******è‘£äº‹é•¿çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨*******");
+		double total = 0;// æ€»æ”¶å…¥
 		double income = 0;
 		for (AbstractEmployee emploee : employees) {
-			// ¶ÔÓÚ²»Í¬Ô±¹¤ÒªÊ¹ÓÃinstanceof½øĞĞÅĞ¶Ï£¬È»ºó¼ÆËãÆäÕæÊµÊÕÈë
+			// å¯¹äºä¸åŒå‘˜å·¥è¦ä½¿ç”¨instanceofè¿›è¡Œåˆ¤æ–­ï¼Œç„¶åè®¡ç®—å…¶çœŸå®æ”¶å…¥
 			if (emploee instanceof CEO) {
 				CEO ceo = (CEO) emploee;
 				income = ceo.getSalary() + ceo.getCeoSpecialBonus()
 						+ ceo.getDecemberBonus();
-				System.out.println("CEO  " + ceo.getName() + "  ×ÜÊÕÈë  " + income);
+				System.out.println("CEO  " + ceo.getName() + "  æ€»æ”¶å…¥  " + income);
 			} else if (emploee instanceof GeneralManager) {
 				GeneralManager gm = (GeneralManager) emploee;
 				income = gm.getSalary() + gm.getAttendanceBonus()
 						+ gm.getDecemberBonus();
-				System.out.println("×Ü¾­Àí  " + gm.getName() + "  ×ÜÊÕÈë  " + income);
+				System.out.println("æ€»ç»ç†  " + gm.getName() + "  æ€»æ”¶å…¥  " + income);
 			} else if (emploee instanceof DeptManager) {
 				DeptManager dm = (DeptManager) emploee;
 				income = dm.getSalary() + dm.getAttendanceBonus();
 				System.out
-						.println("²¿ÃÅ¾­Àí  " + dm.getName() + "  ×ÜÊÕÈë  " + income);
+						.println("éƒ¨é—¨ç»ç†  " + dm.getName() + "  æ€»æ”¶å…¥  " + income);
 			} else if (emploee instanceof Employee) {
 				Employee em = (Employee) emploee;
 				income = em.getSalary();
-				System.out.println("ÆÕÍ¨Ô±¹¤  " + em.getName() + "  ×ÜÊÕÈë  " + income);
+				System.out.println("æ™®é€šå‘˜å·¥  " + em.getName() + "  æ€»æ”¶å…¥  " + income);
 			}
 			total += income;
 		}
-		System.out.println("Ğ½×Ê×Ü¶î  " + total);
+		System.out.println("è–ªèµ„æ€»é¢  " + total);
 		System.out.println();
 	}
 
 	/**
-	 * Éú³ÉË°Îñ¾Ö¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í
+	 * ç”Ÿæˆç¨åŠ¡å±€çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨
 	 */
 	public void generate4Revenue() {
-		System.out.println("*******Ë°Îñ¾Ö¿´µ½µÄ¹ÍÔ±Ğ½×Ê±¨±í*******");
-		double total = 0;// ×ÜÊÕÈë
+		System.out.println("*******ç¨åŠ¡å±€çœ‹åˆ°çš„é›‡å‘˜è–ªèµ„æŠ¥è¡¨*******");
+		double total = 0;// æ€»æ”¶å…¥
 		double income = 0;
 		for (AbstractEmployee emploee : employees) {
-			// ¶ÔÓÚ²»Í¬Ô±¹¤ÒªÊ¹ÓÃinstanceof½øĞĞÅĞ¶Ï£¬È»ºó¼ÆËãÆäË°ÎñÊÕÈë
+			// å¯¹äºä¸åŒå‘˜å·¥è¦ä½¿ç”¨instanceofè¿›è¡Œåˆ¤æ–­ï¼Œç„¶åè®¡ç®—å…¶ç¨åŠ¡æ”¶å…¥
 			if (emploee instanceof CEO) {
 				CEO ceo = (CEO) emploee;
-				income = ceo.getSalary() + ceo.getDecemberBonus();// ÎªÁË±ÜË°£¬²»¼ÆËãCEOÌØ±ğ½±½ğ
-				System.out.println("CEO  " + ceo.getName() + "  ×ÜÊÕÈë  " + income);
+				income = ceo.getSalary() + ceo.getDecemberBonus();// ä¸ºäº†é¿ç¨ï¼Œä¸è®¡ç®—CEOç‰¹åˆ«å¥–é‡‘
+				System.out.println("CEO  " + ceo.getName() + "  æ€»æ”¶å…¥  " + income);
 			} else if (emploee instanceof GeneralManager) {
 				GeneralManager gm = (GeneralManager) emploee;
 				income = gm.getSalary() + gm.getAttendanceBonus()
-						+ gm.getDecemberBonus() * 0.5;// ÎªÁË±ÜË°£¬ÄêÖÕ½±Ö»¼ÆËã50%
-				System.out.println("×Ü¾­Àí  " + gm.getName() + "  ×ÜÊÕÈë  " + income);
+						+ gm.getDecemberBonus() * 0.5;// ä¸ºäº†é¿ç¨ï¼Œå¹´ç»ˆå¥–åªè®¡ç®—50%
+				System.out.println("æ€»ç»ç†  " + gm.getName() + "  æ€»æ”¶å…¥  " + income);
 			} else if (emploee instanceof DeptManager) {
 				DeptManager dm = (DeptManager) emploee;
-				income = dm.getSalary() + dm.getAttendanceBonus() * 0.8;// ÎªÁË±ÜË°£¬ÄêÖÕ½±Ö»¼ÆËã80%
-				System.out.println("²¿ÃÅ¾­Àí  " + dm.getName() + "  ×ÜÊÕÈë  " + income);
+				income = dm.getSalary() + dm.getAttendanceBonus() * 0.8;// ä¸ºäº†é¿ç¨ï¼Œå¹´ç»ˆå¥–åªè®¡ç®—80%
+				System.out.println("éƒ¨é—¨ç»ç†  " + dm.getName() + "  æ€»æ”¶å…¥  " + income);
 			} else if (emploee instanceof Employee) {
 				Employee em = (Employee) emploee;
 				income = em.getSalary();
-				System.out.println("ÆÕÍ¨Ô±¹¤  " + em.getName() + "  ×ÜÊÕÈë  " + income);
+				System.out.println("æ™®é€šå‘˜å·¥  " + em.getName() + "  æ€»æ”¶å…¥  " + income);
 			}
 			total += income;
 		}
-		System.out.println("Ğ½×Ê×Ü¶î  " + total);
+		System.out.println("è–ªèµ„æ€»é¢  " + total);
 		System.out.println();
 	}
 }

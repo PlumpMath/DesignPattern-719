@@ -4,16 +4,16 @@
 package pattern.ChainOfResponsibility;
 
 /**
- * ¾ßÌå´¦ÀíÕß(ConcreteHandler)½ÇÉ«
+ * å…·ä½“å¤„ç†è€…(ConcreteHandler)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class ConcreteHandlerB extends Handler {
 
 	/**
-	 * Èç¹ûÓĞÏÂ¼Ò¾Í´«µİ¸øÏÂ¼Ò´¦Àí£¬·ñÔò×Ô¼º´¦Àí
+	 * å¦‚æœæœ‰ä¸‹å®¶å°±ä¼ é€’ç»™ä¸‹å®¶å¤„ç†ï¼Œå¦åˆ™è‡ªå·±å¤„ç†
 	 * 
 	 * @see pattern.ChainOfResponsibility.Handler#handleRequest()
 	 */

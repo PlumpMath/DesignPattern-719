@@ -4,20 +4,20 @@
 package pattern.Flyweight.demo2;
 
 /**
- * Ñ§Ğ£ĞÅÏ¢
+ * å­¦æ ¡ä¿¡æ¯
  * <p>
- * ÏíÔª½ÇÉ«
+ * äº«å…ƒè§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-3
  */
 public class SchoolInfo {
 
 	private String school;
 	private int grade;
 	
-	// Ä£ÄâÕ¼ÓÃÄÚ´æ¶àµÄÊôĞÔ
+	// æ¨¡æ‹Ÿå ç”¨å†…å­˜å¤šçš„å±æ€§
 	private byte[] data = new byte[1000];
 
 	SchoolInfo(String school, int grade) {

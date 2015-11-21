@@ -4,16 +4,16 @@
 package pattern.Visitor.demo1;
 
 /**
- * ³éÏó¹ÍÔ±
+ * æŠ½è±¡é›‡å‘˜
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public abstract class AbstractEmployee {
 
-	private String name;// ĞÕÃû
-	private double salary;// Ğ½Ë®
+	private String name;// å§“å
+	private double salary;// è–ªæ°´
 
 	public AbstractEmployee(String name, double salary) {
 		this.name = name;

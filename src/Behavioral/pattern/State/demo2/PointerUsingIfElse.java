@@ -4,11 +4,11 @@
 package pattern.State.demo2;
 
 /**
- * Ê¹ÓÃif-elseÊµÏÖµÄÖ¸Õë
+ * ä½¿ç”¨if-elseå®ç°çš„æŒ‡é’ˆ
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-26
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-26
  */
 public class PointerUsingIfElse {
 
@@ -25,20 +25,20 @@ public class PointerUsingIfElse {
 	}
 
 	/**
-	 * ·½ÏòÃ¶¾Ù
+	 * æ–¹å‘æšä¸¾
 	 */
 	private static enum Direction {
 		EAST, WEST, SOUTH, NORTH
 	}
 
 	/**
-	 * Ö¸ÕëÀà
+	 * æŒ‡é’ˆç±»
 	 * <p>
-	 * Ö¸ÕëÔÚÄ³¸öÊ±¿Ì±Ø¶¨Ö¸Ïò¶«Î÷ÄÏ±±ËÄ¸ö·½ÏòÖĞµÄÒ»¸ö¡£
+	 * æŒ‡é’ˆåœ¨æŸä¸ªæ—¶åˆ»å¿…å®šæŒ‡å‘ä¸œè¥¿å—åŒ—å››ä¸ªæ–¹å‘ä¸­çš„ä¸€ä¸ªã€‚
 	 */
 	private static class Pointer {
 
-		private Direction direction;// µ±Ç°·½Ïò
+		private Direction direction;// å½“å‰æ–¹å‘
 
 		public Pointer() {
 			this.direction = Direction.EAST;
@@ -49,10 +49,10 @@ public class PointerUsingIfElse {
 		}
 
 		/**
-		 * ÄæÊ±Õë×ªÒ»ÏÂ
+		 * é€†æ—¶é’ˆè½¬ä¸€ä¸‹
 		 */
 		public void turnAntiClockwise() {
-			System.out.println("turnAntiClockwiseÇ°Ö¸Ïò£º" + direction.name());
+			System.out.println("turnAntiClockwiseå‰æŒ‡å‘ï¼š" + direction.name());
 			switch (direction) {
 			case EAST:
 				setDirection(Direction.NORTH);
@@ -67,14 +67,14 @@ public class PointerUsingIfElse {
 				setDirection(Direction.WEST);
 				break;
 			}
-			System.out.println("turnAntiClockwiseºóÖ¸Ïò£º" + direction.name());
+			System.out.println("turnAntiClockwiseåæŒ‡å‘ï¼š" + direction.name());
 		}
 
 		/**
-		 * Ë³Ê±Õë×ªÒ»ÏÂ
+		 * é¡ºæ—¶é’ˆè½¬ä¸€ä¸‹
 		 */
 		public void turnClockwise() {
-			System.out.println("turnClockwiseÇ°Ö¸Ïò£º" + direction.name());
+			System.out.println("turnClockwiseå‰æŒ‡å‘ï¼š" + direction.name());
 			switch (direction) {
 			case EAST:
 				setDirection(Direction.SOUTH);
@@ -89,7 +89,7 @@ public class PointerUsingIfElse {
 				setDirection(Direction.EAST);
 				break;
 			}
-			System.out.println("turnClockwiseºóÖ¸Ïò£º" + direction.name());
+			System.out.println("turnClockwiseåæŒ‡å‘ï¼š" + direction.name());
 		}
 	}
 }

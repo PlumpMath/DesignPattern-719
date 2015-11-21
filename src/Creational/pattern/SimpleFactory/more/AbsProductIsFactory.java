@@ -4,20 +4,20 @@
 package pattern.SimpleFactory.more;
 
 /**
- * 4.³éÏó²úÆ·½ÇÉ«¾ÍÊÇ¹¤³§(¹¤³§½ÇÉ«ºÍ³éÏó²úÆ·½ÇÉ«ºÏ²¢)
+ * 4.æŠ½è±¡äº§å“è§’è‰²å°±æ˜¯å·¥åŽ‚(å·¥åŽ‚è§’è‰²å’ŒæŠ½è±¡äº§å“è§’è‰²åˆå¹¶)
  * <p>
- * ¹¤³§½ÇÉ«¿ÉÒÔÓÉ³éÏó²úÆ·½ÇÉ«°çÑÝ£¬Ò»¸ö³éÏó²úÆ·ÀàÍ¬Ê±ÊÇ×ÓÀàµÄ¹¤³§
+ * å·¥åŽ‚è§’è‰²å¯ä»¥ç”±æŠ½è±¡äº§å“è§’è‰²æ‰®æ¼”ï¼Œä¸€ä¸ªæŠ½è±¡äº§å“ç±»åŒæ—¶æ˜¯å­ç±»çš„å·¥åŽ‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-4
  */
 public class AbsProductIsFactory {
 
 }
 
 /**
- * Ê¹ÓÃSportµÄ¿Í»§¶Ë
+ * ä½¿ç”¨Sportçš„å®¢æˆ·ç«¯
  */
 class SportClient {
 
@@ -28,7 +28,7 @@ class SportClient {
 }
 
 /**
- * ÔË¶¯Àà
+ * è¿åŠ¨ç±»
  */
 abstract class Sport {
 
@@ -43,13 +43,13 @@ abstract class Sport {
 }
 
 /**
- * ×ãÇòÀà
+ * è¶³çƒç±»
  */
 class Football extends Sport {
 }
 
 /**
- * ÀºÇòÀà
+ * ç¯®çƒç±»
  */
 class Basketball extends Sport {
 }

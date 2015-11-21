@@ -4,16 +4,16 @@
 package pattern.Composite.demo1;
 
 /**
- * Í¼ĞÎ½Ó¿Ú
+ * å›¾å½¢æ¥å£
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public interface Graphics {
 
 	/**
-	 * Ãè»æ×Ô¼º
+	 * æç»˜è‡ªå·±
 	 */
 	public void draw();
 }

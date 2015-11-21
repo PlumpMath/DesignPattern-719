@@ -4,17 +4,17 @@
 package pattern.Strategy;
 
 /**
- * »·¾³½ÇÉ«
+ * ç¯å¢ƒè§’è‰²
  * <p>
- * ³ÖÓĞÒ»¸öStrategy¶ÔÏóµÄÒıÓÃ
+ * æŒæœ‰ä¸€ä¸ªStrategyå¯¹è±¡çš„å¼•ç”¨
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class Context {
 
-	private Strategy strategy;// Strategy¶ÔÏó
+	private Strategy strategy;// Strategyå¯¹è±¡
 
 	public Context() {
 	}
@@ -31,14 +31,14 @@ public class Context {
 	}
 
 	/**
-	 * Îª»·¾³ÉèÖÃĞÂµÄ²ßÂÔ
+	 * ä¸ºç¯å¢ƒè®¾ç½®æ–°çš„ç­–ç•¥
 	 */
 	public void setStrategy(Strategy strategy) {
 		this.strategy = strategy;
 	}
 
 	/**
-	 * »·¾³½ÇÉ«¶ÔÍâÌá¹©µÄ²Ù×÷
+	 * ç¯å¢ƒè§’è‰²å¯¹å¤–æä¾›çš„æ“ä½œ
 	 */
 	public void contextOperation() {
 		System.out.println("Context.contextOperation()");
@@ -46,7 +46,7 @@ public class Context {
 	}
 
 	/**
-	 * Ä¬ÈÏ²ßÂÔ
+	 * é»˜è®¤ç­–ç•¥
 	 */
 	private static class DefaultStrategy implements Strategy {
 

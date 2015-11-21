@@ -4,17 +4,17 @@
 package pattern.Mediator.demo2.after;
 
 /**
- * ³éÏóÍ¬ÊÂÀà
+ * æŠ½è±¡åŒäº‹ç±»
  * <p>
- * ³éÏóÍ¬ÊÂÀà½ÇÉ«
+ * æŠ½è±¡åŒäº‹ç±»è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public abstract class AbstractColleague {
 
-	// µ÷Í£Õß
+	// è°ƒåœè€…
 	private IMediator mediator;
 
 	public AbstractColleague(IMediator mediator) {

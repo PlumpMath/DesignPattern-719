@@ -4,22 +4,22 @@
 package pattern.Iterator.extrinsic;
 
 /**
- * ¾ßÌåµü´ú×Ó
+ * å…·ä½“è¿­ä»£å­
  * <p>
- * ¾ßÌåµü´ú×Ó(ConcreteIterator)½ÇÉ«
- * ´Ë½ÇÉ«ÊµÏÖÁËIterator½Ó¿Ú£¬²¢±£³Öµü´ú¹ı³ÌÖĞµÄÓÎ±êÎ»ÖÃ¡£
+ * å…·ä½“è¿­ä»£å­(ConcreteIterator)è§’è‰²
+ * æ­¤è§’è‰²å®ç°äº†Iteratoræ¥å£ï¼Œå¹¶ä¿æŒè¿­ä»£è¿‡ç¨‹ä¸­çš„æ¸¸æ ‡ä½ç½®ã€‚
  * <p>
- * ÕâÊÇÍâÙ÷µü´ú×Ó(Extrinsic Iterator)µÄÊµÏÖ£¬ÒòÎª¸Ãµü´ú×ÓÀàÊÇÔÚ¾Û¼¯µÄ½á¹¹Ö®Íâ¶¨ÒåµÄ¡£
+ * è¿™æ˜¯å¤–ç¦€è¿­ä»£å­(Extrinsic Iterator)çš„å®ç°ï¼Œå› ä¸ºè¯¥è¿­ä»£å­ç±»æ˜¯åœ¨èšé›†çš„ç»“æ„ä¹‹å¤–å®šä¹‰çš„ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-17
  */
 public class ConcreteIterator<E> implements Iterator<E> {
 
-	private ConcreteAggregate<E> aggregate;// ´ı±éÀúµÄ¾Û¼¯
+	private ConcreteAggregate<E> aggregate;// å¾…éå†çš„èšé›†
 
-	private int cursor = 0;// ÓÎ±ê
+	private int cursor = 0;// æ¸¸æ ‡
 
 	public ConcreteIterator(ConcreteAggregate<E> aggregate) {
 		this.aggregate = aggregate;

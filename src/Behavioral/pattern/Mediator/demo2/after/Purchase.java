@@ -4,43 +4,43 @@
 package pattern.Mediator.demo2.after;
 
 /**
- * ²É¹º×é
+ * é‡‡è´­ç»„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Purchase extends AbstractColleague {
 
 	public Purchase(Mediator mediator) {
 		super(mediator);
-		// ½«Purchase¶ÔÏó×¢²áµ½Mediator
+		// å°†Purchaseå¯¹è±¡æ³¨å†Œåˆ°Mediator
 		mediator.setPurchase(this);
 	}
 
 	/**
-	 * ²É¹ºÖ¸¶¨ÊıÁ¿µÄµçÄÔ
+	 * é‡‡è´­æŒ‡å®šæ•°é‡çš„ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void buyComputer(int number) {
-		// Éæ¼°ºÍÆäËû¶ÔÏóÍ¨ĞÅµÄ²Ù×÷¶¼½»¸øMediatorÍê³É
+		// æ¶‰åŠå’Œå…¶ä»–å¯¹è±¡é€šä¿¡çš„æ“ä½œéƒ½äº¤ç»™Mediatorå®Œæˆ
 		getMediator().buyComputer(number);
 	}
 
 	/**
-	 * ¾Ü¾ø²É¹ºµçÄÔ
+	 * æ‹’ç»é‡‡è´­ç”µè„‘
 	 */
 	public void refuse2BuyComputer() {
-		// Ö»Éæ¼°µ½×ÔÉí¶ÔÏóµÄ²Ù×÷¿ÉÒÔ²»Í¨¹ıMediatorÍê³É
-		log("²»ÔÙ²É¹ºµçÄÔ");
+		// åªæ¶‰åŠåˆ°è‡ªèº«å¯¹è±¡çš„æ“ä½œå¯ä»¥ä¸é€šè¿‡Mediatorå®Œæˆ
+		log("ä¸å†é‡‡è´­ç”µè„‘");
 	}
 
 	/**
-	 * ´òÓ¡ÈÕÖ¾ĞÅÏ¢
+	 * æ‰“å°æ—¥å¿—ä¿¡æ¯
 	 */
 	public void log(String message) {
-		System.out.println("¡¾²É¹º×é¡¿" + message);
+		System.out.println("ã€é‡‡è´­ç»„ã€‘" + message);
 	}
 }

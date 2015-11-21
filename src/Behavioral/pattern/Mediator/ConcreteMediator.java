@@ -4,18 +4,18 @@
 package pattern.Mediator;
 
 /**
- * ¾ßÌåµ÷Í£Õß½ÇÉ«
+ * å…·ä½“è°ƒåœè€…è§’è‰²
  * <p>
- * ´Ó³éÏóµ÷Í£Õß¼Ì³Ğ¶øÀ´£¬ÊµÏÖÁË³éÏó³¬ÀàËùÉùÃ÷µÄÊÂ¼ş·½·¨¡£
- * ¾ßÌåµ÷Í£ÕßÀàÖªÏşËùÓĞµÄ¾ßÌåÍ¬ÊÂÀà£¬Ëü´Ó¾ßÌåÍ¬ÊÂ¶ÔÏó½ÓÊÕÏûÏ¢¡¢Ïò¾ßÌåÍ¬ÊÂ¶ÔÏó·¢³öÏûÏ¢¡£
+ * ä»æŠ½è±¡è°ƒåœè€…ç»§æ‰¿è€Œæ¥ï¼Œå®ç°äº†æŠ½è±¡è¶…ç±»æ‰€å£°æ˜çš„äº‹ä»¶æ–¹æ³•ã€‚
+ * å…·ä½“è°ƒåœè€…ç±»çŸ¥æ™“æ‰€æœ‰çš„å…·ä½“åŒäº‹ç±»ï¼Œå®ƒä»å…·ä½“åŒäº‹å¯¹è±¡æ¥æ”¶æ¶ˆæ¯ã€å‘å…·ä½“åŒäº‹å¯¹è±¡å‘å‡ºæ¶ˆæ¯ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class ConcreteMediator implements Mediator {
 
-	// µ÷Í£Õß¸ºÔğĞ­µ÷µÄÁ½¸ö(¿ÉÒÔ¸ü¶à)¾ßÌåÍ¬ÊÂ¶ÔÏó£¬±¾ÀıÖ»¸ºÔğÕâÁ½¸ö¶ÔÏóµÄµ÷Í£
+	// è°ƒåœè€…è´Ÿè´£åè°ƒçš„ä¸¤ä¸ª(å¯ä»¥æ›´å¤š)å…·ä½“åŒäº‹å¯¹è±¡ï¼Œæœ¬ä¾‹åªè´Ÿè´£è¿™ä¸¤ä¸ªå¯¹è±¡çš„è°ƒåœ
 	private ConcreteColleague1 colleague1;
 	private ConcreteColleague2 colleague2;
 
@@ -36,18 +36,18 @@ public class ConcreteMediator implements Mediator {
 	}
 
 	/**
-	 * ÊÂ¼ş·½·¨µÄÊµÏÖ
+	 * äº‹ä»¶æ–¹æ³•çš„å®ç°
 	 *
 	 * @see pattern.Mediator.Mediator#colleagueChanged(java.lang.String)
 	 */
 	@Override
 	public void colleagueChanged(String id) {
-		if ("1".equals(id)) {// colleague1·¢À´µÄÏûÏ¢
+		if ("1".equals(id)) {// colleague1å‘æ¥çš„æ¶ˆæ¯
 			System.out.println("colleague1 invokes colleague2.action()");
-			getColleague2().action();// ºÍcolleague2µÄÍ¨ĞÅ
-		} else if ("2".equals(id)) {// colleague2·¢À´µÄÏûÏ¢
+			getColleague2().action();// å’Œcolleague2çš„é€šä¿¡
+		} else if ("2".equals(id)) {// colleague2å‘æ¥çš„æ¶ˆæ¯
 			System.out.println("colleague2 invokes colleague1.action()");
-			getColleague1().action();// ºÍcolleague1µÄÍ¨ĞÅ
+			getColleague1().action();// å’Œcolleague1çš„é€šä¿¡
 		}
 	}
 }

@@ -4,21 +4,21 @@
 package pattern.Facade.demo2;
 
 /**
- * ÄÚ´æ
+ * å†…å­˜
  * <p>
- * ¼ÆËã»ú×ÓÏµÍ³Ö®Ò»
+ * è®¡ç®—æœºå­ç³»ç»Ÿä¹‹ä¸€
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-25
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-25
  */
 public class Memory {
 
-	// ÄÚ´æÆô¶¯µØÖ·
+	// å†…å­˜å¯åŠ¨åœ°å€
 	public static final long BOOT_ADDRESS = 0;
 	
 	/**
-	 * ÄÚ´æ¼ÓÔØÊı¾İ
+	 * å†…å­˜åŠ è½½æ•°æ®
 	 */
 	public void load(long position, byte[] data) {
 		System.out.println("Memory.load " + position);

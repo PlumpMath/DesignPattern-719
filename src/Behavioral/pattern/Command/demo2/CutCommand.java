@@ -4,13 +4,13 @@
 package pattern.Command.demo2;
 
 /**
- * Cut¼ôÇĞÃüÁî
+ * Cutå‰ªåˆ‡å‘½ä»¤
  * <p>
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class CutCommand extends AbstractCommand {
 
@@ -19,7 +19,7 @@ public class CutCommand extends AbstractCommand {
 	}
 
 	/**
-	 * ¼ôÇĞµÚÒ»¸öµ¥´Ê
+	 * å‰ªåˆ‡ç¬¬ä¸€ä¸ªå•è¯
 	 *
 	 * @see pattern.Command.demo2.Command#doAction()
 	 */
@@ -32,7 +32,7 @@ public class CutCommand extends AbstractCommand {
 	}
 
 	/**
-	 * ³·Ïú¼ôÇĞ
+	 * æ’¤é”€å‰ªåˆ‡
 	 *
 	 * @see pattern.Command.demo2.Command#undo()
 	 */

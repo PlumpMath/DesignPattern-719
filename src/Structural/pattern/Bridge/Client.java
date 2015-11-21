@@ -4,11 +4,11 @@
 package pattern.Bridge;
 
 /**
- * ¿Í»§¶ËÀà
+ * å®¢æˆ·ç«¯ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-26
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-26
  */
 public class Client {
 
@@ -18,7 +18,7 @@ public class Client {
 	public static void main(String[] args) {
 		Abstraction abs = new RefinedAbstraction(new ConcreteImplementorA());
 		abs.operation();
-		// Í¨¹ıÏò²»Í¬µÄÊµÏÖ»¯¶ÔÏóÎ¯ÅÉ£¬À´´ïµ½¶¯Ì¬µØ×ª»»×Ô¼ºµÄ¹¦ÄÜµÄÄ¿µÄ
+		// é€šè¿‡å‘ä¸åŒçš„å®ç°åŒ–å¯¹è±¡å§”æ´¾ï¼Œæ¥è¾¾åˆ°åŠ¨æ€åœ°è½¬æ¢è‡ªå·±çš„åŠŸèƒ½çš„ç›®çš„
 		abs.setImplementor(new ConcreteImplementorB());
 		abs.operation();
 	}

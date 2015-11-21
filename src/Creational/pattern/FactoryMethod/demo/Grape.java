@@ -4,15 +4,15 @@
 package pattern.FactoryMethod.demo;
 
 /**
- * ÆÏÌÑ
+ * è‘¡è„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class Grape implements Fruit {
 
-	private boolean seedless;// ÎŞ×ÑµÄ
+	private boolean seedless;// æ— ç±½çš„
 	
 	@Override
 	public void grow() {
@@ -30,7 +30,7 @@ public class Grape implements Fruit {
 	}
 
 	/**
-	 * ÊÇ·ñÎŞ×Ñ
+	 * æ˜¯å¦æ— ç±½
 	 */
 	public boolean isSeedless() {
 		return seedless;
@@ -38,7 +38,7 @@ public class Grape implements Fruit {
 
 	/**
 	 * @param seedless
-	 *            ÊÇ·ñÎŞ×Ñ
+	 *            æ˜¯å¦æ— ç±½
 	 */
 	public void setSeedless(boolean seedless) {
 		this.seedless = seedless;

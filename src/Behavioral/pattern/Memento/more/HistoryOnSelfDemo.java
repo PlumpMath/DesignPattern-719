@@ -4,11 +4,11 @@
 package pattern.Memento.more;
 
 /**
- * ×ÔÊöÀúÊ·Ä£Ê½ÑİÊ¾
+ * è‡ªè¿°å†å²æ¨¡å¼æ¼”ç¤º
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-16
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-16
  */
 public class HistoryOnSelfDemo {
 
@@ -18,28 +18,28 @@ public class HistoryOnSelfDemo {
 	public static void main(String[] args) {
 		HistoryOnSelfOriginator originator = new HistoryOnSelfOriginator();
 		originator.setState("ON");
-		originator.createMemento();// ´´½¨Ò»·İ±¸ÍüÂ¼
+		originator.createMemento();// åˆ›å»ºä¸€ä»½å¤‡å¿˜å½•
 		originator.setState("OFF");
-		originator.restoreMemento();// ¸ù¾İ±¸ÍüÂ¼»Ö¸´×´Ì¬
+		originator.restoreMemento();// æ ¹æ®å¤‡å¿˜å½•æ¢å¤çŠ¶æ€
 	}
 }
 
 /**
- * ±¸ÍüÂ¼(Õ­)½Ó¿Ú
+ * å¤‡å¿˜å½•(çª„)æ¥å£
  */
 interface IMemento {
 }
 
 /**
- * ×ÔÊöÀúÊ·Ä£Ê½ÖĞ·¢ÆğÈË½ÇÉ«×Ô¼º¼æÈÎ¸ºÔğÈË½ÇÉ«
+ * è‡ªè¿°å†å²æ¨¡å¼ä¸­å‘èµ·äººè§’è‰²è‡ªå·±å…¼ä»»è´Ÿè´£äººè§’è‰²
  * <p>
- * ÓÉÓÚ×ÔÊöÀúÊ·×÷ÎªÒ»¸ö±¸ÍüÂ¼Ä£Ê½µÄÌØÊâÊµÏÖĞÎÊ½·Ç³£¼òµ¥Ò×¶®£¬Ëü¿ÉÄÜÊÇ±¸ÍüÂ¼Ä£Ê½×îÎªÁ÷ĞĞµÄÊµÏÖĞÎÊ½¡£
+ * ç”±äºè‡ªè¿°å†å²ä½œä¸ºä¸€ä¸ªå¤‡å¿˜å½•æ¨¡å¼çš„ç‰¹æ®Šå®ç°å½¢å¼éå¸¸ç®€å•æ˜“æ‡‚ï¼Œå®ƒå¯èƒ½æ˜¯å¤‡å¿˜å½•æ¨¡å¼æœ€ä¸ºæµè¡Œçš„å®ç°å½¢å¼ã€‚
  */
 class HistoryOnSelfOriginator {
 
-	private String state;// ×´Ì¬
+	private String state;// çŠ¶æ€
 	
-	private Memento memento;// ±¸ÍüÂ¼
+	private Memento memento;// å¤‡å¿˜å½•
 
 	public String getState() {
 		return state;
@@ -51,14 +51,14 @@ class HistoryOnSelfOriginator {
 	}
 
 	/**
-	 * ´´½¨µ±Ç°×´Ì¬µÄÒ»¸ö±¸ÍüÂ¼
+	 * åˆ›å»ºå½“å‰çŠ¶æ€çš„ä¸€ä¸ªå¤‡å¿˜å½•
 	 */
 	public void createMemento() {
 		this.memento = new Memento(this.getState());
 	}
 
 	/**
-	 * ¸ù¾İ±¸ÍüÂ¼»Ö¸´Æä×´Ì¬
+	 * æ ¹æ®å¤‡å¿˜å½•æ¢å¤å…¶çŠ¶æ€
 	 */
 	public void restoreMemento() {
 		this.setState(memento.getState());
@@ -66,7 +66,7 @@ class HistoryOnSelfOriginator {
 
 	private static class Memento implements IMemento {
 
-		private String state;// ·¢ÆğÈË×´Ì¬
+		private String state;// å‘èµ·äººçŠ¶æ€
 
 		private Memento(String state) {
 			this.state = state;

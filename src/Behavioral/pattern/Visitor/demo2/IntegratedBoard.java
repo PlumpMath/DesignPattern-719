@@ -4,13 +4,13 @@
 package pattern.Visitor.demo2;
 
 /**
- * ¼¯³ÉÖ÷°å
+ * é›†æˆä¸»æ¿
  * <p>
- * °üÀ¨Ò»¸öCPUºÍÒ»¸öÖ÷°å
+ * åŒ…æ‹¬ä¸€ä¸ªCPUå’Œä¸€ä¸ªä¸»æ¿
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class IntegratedBoard extends CompositeEquipment {
 
@@ -25,9 +25,9 @@ public class IntegratedBoard extends CompositeEquipment {
 	}
 
 	/**
-	 * ½ÓÊÜ·½·¨
+	 * æ¥å—æ–¹æ³•
 	 * <p>
-	 * ÏÈÈÃ·ÃÎÊÆ÷·ÃÎÊ×Ô¼º£¬È»ºóÔÙ·ÃÎÊ×Ô¼º°üº¬µÄÃ¿¸öÉè±¸
+	 * å…ˆè®©è®¿é—®å™¨è®¿é—®è‡ªå·±ï¼Œç„¶åå†è®¿é—®è‡ªå·±åŒ…å«çš„æ¯ä¸ªè®¾å¤‡
 	 *
 	 * @see pattern.Visitor.demo2.CompositeEquipment#accept(pattern.Visitor.demo2.Visitor)
 	 */

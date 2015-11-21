@@ -4,16 +4,16 @@
 package pattern.Proxy.more;
 
 /**
- * ĞéÄâ(Virtual)´úÀíÑİÊ¾
+ * è™šæ‹Ÿ(Virtual)ä»£ç†æ¼”ç¤º
  * <p>
- * ¸ù¾İĞèÒª´´½¨Ò»¸ö×ÊÔ´ÏûºÄ½Ï´óµÄ¶ÔÏó£¬Ê¹µÃ´Ë¶ÔÏóÖ»ÔÚĞèÒªÊ±²Å»á±»ÕæÕı´´½¨¡£
+ * æ ¹æ®éœ€è¦åˆ›å»ºä¸€ä¸ªèµ„æºæ¶ˆè€—è¾ƒå¤§çš„å¯¹è±¡ï¼Œä½¿å¾—æ­¤å¯¹è±¡åªåœ¨éœ€è¦æ—¶æ‰ä¼šè¢«çœŸæ­£åˆ›å»ºã€‚
  * <p>
- * ´úÀí¶ÔÏó¿ÉÒÔÔÚ±ØÒªµÄÊ±ºò²Å½«±»´úÀíµÄ¶ÔÏó¼ÓÔØ£¬¿ÉÒÔ¶Ô¼ÓÔØµÄ¹ı³Ì¼ÓÒÔ±ØÒªµÄÓÅ»¯¡£<br>
- * µ±Ò»¸öÄ£¿éµÄ¼ÓÔØÊ®·ÖºÄ·Ñ×ÊÔ´µÄÊ±ºò£¬ĞéÄâ´úÀíµÄÓÅµã¾Í·Ç³£Ã÷ÏÔ¡£
+ * ä»£ç†å¯¹è±¡å¯ä»¥åœ¨å¿…è¦çš„æ—¶å€™æ‰å°†è¢«ä»£ç†çš„å¯¹è±¡åŠ è½½ï¼Œå¯ä»¥å¯¹åŠ è½½çš„è¿‡ç¨‹åŠ ä»¥å¿…è¦çš„ä¼˜åŒ–ã€‚<br>
+ * å½“ä¸€ä¸ªæ¨¡å—çš„åŠ è½½ååˆ†è€—è´¹èµ„æºçš„æ—¶å€™ï¼Œè™šæ‹Ÿä»£ç†çš„ä¼˜ç‚¹å°±éå¸¸æ˜æ˜¾ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-22
  */
 public class VirtualProxyDemo {
 
@@ -21,7 +21,7 @@ public class VirtualProxyDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¿Í»§¶Ë³ÌĞòÖ±½ÓÊ¹ÓÃPrinterProxy
+		// å®¢æˆ·ç«¯ç¨‹åºç›´æ¥ä½¿ç”¨PrinterProxy
 		IPrinter service = new PrinterProxy();
 		System.out.println("Now printing something by Printer.");
 		service.print("Hello world.");
@@ -29,23 +29,23 @@ public class VirtualProxyDemo {
 }
 
 /**
- * ´òÓ¡»ú½Ó¿Ú
+ * æ‰“å°æœºæ¥å£
  */
 interface IPrinter {
 
 	/**
-	 * ´òÓ¡
+	 * æ‰“å°
 	 */
 	public void print(String s);
 }
 
 /**
- * ÕæÕıµÄ´òÓ¡»ú
+ * çœŸæ­£çš„æ‰“å°æœº
  */
 class Printer implements IPrinter {
 
 	/**
-	 * ´òÓ¡»ú¶ÔÏóµÄ´´½¨¹ı³ÌÊÇºÜ¸´ÔÓ²¢ÇÒºÄÊ±µÄ
+	 * æ‰“å°æœºå¯¹è±¡çš„åˆ›å»ºè¿‡ç¨‹æ˜¯å¾ˆå¤æ‚å¹¶ä¸”è€—æ—¶çš„
 	 */
 	public Printer() {
 		System.out.print("Printer initializing");
@@ -66,7 +66,7 @@ class Printer implements IPrinter {
 }
 
 /**
- * ´òÓ¡»úµÄ´úÀíÀà
+ * æ‰“å°æœºçš„ä»£ç†ç±»
  */
 class PrinterProxy implements IPrinter {
 
@@ -81,7 +81,7 @@ class PrinterProxy implements IPrinter {
 	}
 
 	/**
-	 * ÀÁ¼ÓÔØµÄ·½Ê½´´½¨´òÓ¡»ú¶ÔÏó£¬Ê¹µÃÖ»ÓĞÕæÕıÊ¹ÓÃÆä´òÓ¡Ê±²Å»á´´½¨
+	 * æ‡’åŠ è½½çš„æ–¹å¼åˆ›å»ºæ‰“å°æœºå¯¹è±¡ï¼Œä½¿å¾—åªæœ‰çœŸæ­£ä½¿ç”¨å…¶æ‰“å°æ—¶æ‰ä¼šåˆ›å»º
 	 */
 	private Printer getPrinter() {
 		if(printer == null) {

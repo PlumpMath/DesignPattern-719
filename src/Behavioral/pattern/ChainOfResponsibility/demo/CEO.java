@@ -6,11 +6,11 @@ package pattern.ChainOfResponsibility.demo;
 /**
  * CEO
  * <p>
- * ¾ßÌå´¦ÀíÕß½ÇÉ«
+ * å…·ä½“å¤„ç†è€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public class CEO extends Handler {
 
@@ -19,14 +19,14 @@ public class CEO extends Handler {
 	}
 
 	/**
-	 * CEOÖ»ÄÜ´¦Àí½úÉıÊÂÎñ£¬ÆäËûµÄÊÂÎñ½»¸øÏÂ¼Ò(ÉÏ¼¶Áìµ¼)´¦Àí
+	 * CEOåªèƒ½å¤„ç†æ™‹å‡äº‹åŠ¡ï¼Œå…¶ä»–çš„äº‹åŠ¡äº¤ç»™ä¸‹å®¶(ä¸Šçº§é¢†å¯¼)å¤„ç†
 	 * 
 	 * @see pattern.ChainOfResponsibility.demo.Handler#handleRequest(pattern.ChainOfResponsibility.demo.Request)
 	 */
 	@Override
 	public void handleRequest(Request request) {
 		if (request == Request.PROMOTION) {
-			System.out.println("CEO Åú×¼ " + request.getDescription());
+			System.out.println("CEO æ‰¹å‡† " + request.getDescription());
 		} else {
 			getNextHandler().handleRequest(request);
 		}

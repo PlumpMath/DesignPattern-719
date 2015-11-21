@@ -4,13 +4,13 @@
 package pattern.Flyweight;
 
 /**
- * ¿Í»§¶Ë(Client)½ÇÉ«
+ * å®¢æˆ·ç«¯(Client)è§’è‰²
  * <p>
- * ±¾½ÇÉ«ĞèÒªÎ¬»¤Ò»¸ö¶ÔËùÓĞÏíÔª¶ÔÏóµÄÒıÓÃ¡£±¾½ÇÉ«ĞèÒª×ÔĞĞ´æ´¢ËùÓĞÏíÔª¶ÔÏóµÄÍâÔÌ×´Ì¬¡£
+ * æœ¬è§’è‰²éœ€è¦ç»´æŠ¤ä¸€ä¸ªå¯¹æ‰€æœ‰äº«å…ƒå¯¹è±¡çš„å¼•ç”¨ã€‚æœ¬è§’è‰²éœ€è¦è‡ªè¡Œå­˜å‚¨æ‰€æœ‰äº«å…ƒå¯¹è±¡çš„å¤–è•´çŠ¶æ€ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-2
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-2
  */
 public class Client {
 
@@ -18,10 +18,10 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ¿Í»§¶ËÖ»ÄÜÊ¹ÓÃÏíÔª¹¤³§´´½¨ÏíÔª¶ÔÏó
+		// å®¢æˆ·ç«¯åªèƒ½ä½¿ç”¨äº«å…ƒå·¥å‚åˆ›å»ºäº«å…ƒå¯¹è±¡
 		FlyweightFactory factory = FlyweightFactory.getInstance();
 		Flyweight f1 = factory.create('a');
-		// ÒÔ²ÎÁ¿ĞÎÊ½´«ÈëÒ»¸öÍâÔÌ×´Ì¬
+		// ä»¥å‚é‡å½¢å¼ä¼ å…¥ä¸€ä¸ªå¤–è•´çŠ¶æ€
 		f1.operation("1st");
 		Flyweight f2 = factory.create('b');
 		f2.operation("2nd");

@@ -4,11 +4,11 @@
 package pattern.State;
 
 /**
- * ¾ßÌå×´Ì¬(ConcreteState)½ÇÉ«
+ * å…·ä½“çŠ¶æ€(ConcreteState)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-24
  */
 public class ConcreteStateB implements State {
 

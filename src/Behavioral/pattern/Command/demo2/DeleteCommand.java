@@ -4,13 +4,13 @@
 package pattern.Command.demo2;
 
 /**
- * DeleteÉ¾³ıÃüÁî
+ * Deleteåˆ é™¤å‘½ä»¤
  * <p>
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class DeleteCommand extends AbstractCommand {
 
@@ -19,7 +19,7 @@ public class DeleteCommand extends AbstractCommand {
 	}
 
 	/**
-	 * É¾³ıµÚÒ»¸öµ¥´Ê
+	 * åˆ é™¤ç¬¬ä¸€ä¸ªå•è¯
 	 *
 	 * @see pattern.Command.demo2.Command#doAction()
 	 */
@@ -32,7 +32,7 @@ public class DeleteCommand extends AbstractCommand {
 	}
 
 	/**
-	 * ³·ÏúÉ¾³ı
+	 * æ’¤é”€åˆ é™¤
 	 *
 	 * @see pattern.Command.demo2.Command#doAction()
 	 */

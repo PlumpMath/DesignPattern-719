@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ÎÄ¼ş¼ĞÀà
+ * æ–‡ä»¶å¤¹ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Directory implements IFile {
 
@@ -27,21 +27,21 @@ public class Directory implements IFile {
 	}
 
 	/**
-	 * Ìí¼ÓÒ»¸öÎÄ¼ş
+	 * æ·»åŠ ä¸€ä¸ªæ–‡ä»¶
 	 */
 	public void add(IFile file) {
 		getFiles().add(file);
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨ÎÄ¼ş
+	 * åˆ é™¤æŒ‡å®šæ–‡ä»¶
 	 */
 	public void remove(IFile file) {
 		getFiles().remove(file);
 	}
 
 	/**
-	 * ·µ»ØËùÓĞÎÄ¼ş
+	 * è¿”å›æ‰€æœ‰æ–‡ä»¶
 	 */
 	public List<IFile> getFiles() {
 		if (files == null) {

@@ -4,13 +4,13 @@
 package pattern.Bridge.demo1;
 
 /**
- * Ó¦ÓÃ³ÌĞòÄ¬ÈÏÊ¹ÓÃµÄÊı¾İ¿âAPI
+ * åº”ç”¨ç¨‹åºé»˜è®¤ä½¿ç”¨çš„æ•°æ®åº“API
  * <p>
- * RefinedAbstraction½ÇÉ«
+ * RefinedAbstractionè§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-27
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-27
  */
 public class DefaultJdbcAPI extends AbstractJdbcAPI {
 

@@ -4,28 +4,28 @@
 package pattern.Memento.boxblack;
 
 /**
- * ¸ºÔğÈË(Caretaker)½ÇÉ«
+ * è´Ÿè´£äºº(Caretaker)è§’è‰²
  * <p>
- * 1£¬¸ºÔğ±£´æ±¸ÍüÂ¼¶ÔÏó¡£
- * 2£¬²»¼ì²é±¸ÍüÂ¼¶ÔÏóµÄÄÚÈİ¡£
+ * 1ï¼Œè´Ÿè´£ä¿å­˜å¤‡å¿˜å½•å¯¹è±¡ã€‚
+ * 2ï¼Œä¸æ£€æŸ¥å¤‡å¿˜å½•å¯¹è±¡çš„å†…å®¹ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-14
  */
 public class Caretaker {
 
-	private IMemento memento;// ±¸ÍüÂ¼¶ÔÏó
+	private IMemento memento;// å¤‡å¿˜å½•å¯¹è±¡
 
 	/**
-	 * È¡»Ø±¸ÍüÂ¼
+	 * å–å›å¤‡å¿˜å½•
 	 */
 	public IMemento retrieveMemento() {
 		return memento;
 	}
 
 	/**
-	 * ±£´æ±¸ÍüÂ¼
+	 * ä¿å­˜å¤‡å¿˜å½•
 	 */
 	public void saveMemento(IMemento memento) {
 		this.memento = memento;

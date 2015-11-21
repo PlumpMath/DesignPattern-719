@@ -4,11 +4,11 @@
 package pattern.Visitor;
 
 /**
- * ¾ßÌå·ÃÎÊÕß(ConcreteVisitor)½ÇÉ«
+ * å…·ä½“è®¿é—®è€…(ConcreteVisitor)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-17
  */
 public class ConcreteVisitor2 implements Visitor {
 

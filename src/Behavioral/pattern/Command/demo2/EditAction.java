@@ -6,19 +6,19 @@ package pattern.Command.demo2;
 import java.util.Stack;
 
 /**
- * ±à¼­¶¯×÷
+ * ç¼–è¾‘åŠ¨ä½œ
  * <p>
- * ÇëÇóÕß(Invoker)½ÇÉ«
+ * è¯·æ±‚è€…(Invoker)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class EditAction {
 
-	private Command command;// µ±ÆÚ±à¼­ÃüÁî
+	private Command command;// å½“æœŸç¼–è¾‘å‘½ä»¤
 
-	private Stack<Command> undoCommands;// ´ı³·ÏúµÄÃüÁîÕ»
+	private Stack<Command> undoCommands;// å¾…æ’¤é”€çš„å‘½ä»¤æ ˆ
 
 	public EditAction() {
 		this.command = new NullCommand();
@@ -26,27 +26,27 @@ public class EditAction {
 	}
 
 	/**
-	 * ÉèÖÃµ±Ç°±à¼­ÃüÁî
+	 * è®¾ç½®å½“å‰ç¼–è¾‘å‘½ä»¤
 	 */
 	public void setCommand(Command command) {
 		this.command = command;
 	}
 
 	/**
-	 * Ö´ĞĞµ±Ç°±à¼­ÃüÁî
+	 * æ‰§è¡Œå½“å‰ç¼–è¾‘å‘½ä»¤
 	 */
 	public void executeCommand() {
 		command.doAction();
-		// ½«ÃüÁî¼ÓÈëÕ»
+		// å°†å‘½ä»¤åŠ å…¥æ ˆ
 		undoCommands.push(command);
 	}
 
 	/**
-	 * ³·ÏúÉÏÒ»¸öÃüÁîµÄ²Ù×÷
+	 * æ’¤é”€ä¸Šä¸€ä¸ªå‘½ä»¤çš„æ“ä½œ
 	 */
 	public void rollbackCommand() {
 		if (!undoCommands.empty()) {
-			// ½«´ı³·ÏúÃüÁîµ¯³öÕ»²¢Ö´ĞĞundo²Ù×÷
+			// å°†å¾…æ’¤é”€å‘½ä»¤å¼¹å‡ºæ ˆå¹¶æ‰§è¡Œundoæ“ä½œ
 			undoCommands.pop().undo();
 		}
 	}

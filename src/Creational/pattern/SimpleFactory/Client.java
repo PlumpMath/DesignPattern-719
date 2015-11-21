@@ -4,11 +4,11 @@
 package pattern.SimpleFactory;
 
 /**
- * ¿Í»§¶Ë³ÌĞòÀà
+ * å®¢æˆ·ç«¯ç¨‹åºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class Client {
 

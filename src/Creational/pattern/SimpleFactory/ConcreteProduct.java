@@ -4,14 +4,14 @@
 package pattern.SimpleFactory;
 
 /**
- * ¾ßÌå²úÆ·Àà
+ * å…·ä½“äº§å“ç±»
  * <p>
- * ¹¤³§Ëù´´½¨µÄÈÎºÎ¶ÔÏó¶¼ÊÇÕâ¸ö½ÇÉ«µÄÊµÀý£¬¾ßÌå²úÆ·½ÇÉ«ÓÉÒ»¸ö¾ßÌåJavaÀàÊµÏÖ¡£
- * Ê¾ÀýÖ»ÓÃÁËÒ»¸ö¾ßÌåÀà£¬Êµ¼ÊÇé¿öÖÐÒ»°ã»áÓÐºÜ¶à²úÆ·Àà
+ * å·¥åŽ‚æ‰€åˆ›å»ºçš„ä»»ä½•å¯¹è±¡éƒ½æ˜¯è¿™ä¸ªè§’è‰²çš„å®žä¾‹ï¼Œå…·ä½“äº§å“è§’è‰²ç”±ä¸€ä¸ªå…·ä½“Javaç±»å®žçŽ°ã€‚
+ * ç¤ºä¾‹åªç”¨äº†ä¸€ä¸ªå…·ä½“ç±»ï¼Œå®žé™…æƒ…å†µä¸­ä¸€èˆ¬ä¼šæœ‰å¾ˆå¤šäº§å“ç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class ConcreteProduct implements Product {
 

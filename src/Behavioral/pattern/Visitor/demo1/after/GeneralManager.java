@@ -4,16 +4,16 @@
 package pattern.Visitor.demo1.after;
 
 /**
- * ×Ü¾­Àí
+ * æ€»ç»ç†
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-19
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-19
  */
 public class GeneralManager extends AbstractEmployee {
 
-	private double decemberBonus;// ÄêÖÕ½±
-	private double attendanceBonus;// ¼Ó°à½±½ğ
+	private double decemberBonus;// å¹´ç»ˆå¥–
+	private double attendanceBonus;// åŠ ç­å¥–é‡‘
 
 	public GeneralManager(String name, double salary) {
 		super(name, salary);

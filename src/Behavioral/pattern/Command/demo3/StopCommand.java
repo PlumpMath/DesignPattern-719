@@ -4,13 +4,13 @@
 package pattern.Command.demo3;
 
 /**
- * StopÍ£Ö¹ÃüÁî
+ * Stopåœæ­¢å‘½ä»¤
  * <p>
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class StopCommand extends AbstractCommand {
 

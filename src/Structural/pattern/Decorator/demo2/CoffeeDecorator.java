@@ -4,15 +4,15 @@
 package pattern.Decorator.demo2;
 
 /**
- * ¿§·È×°ÊÎÆ÷»ùÀà
+ * å’–å•¡è£…é¥°å™¨åŸºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-12
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-12
  */
 public abstract class CoffeeDecorator implements Coffee {
 
-	// ±»×°ÊÎµÄ¿§·È
+	// è¢«è£…é¥°çš„å’–å•¡
 	protected Coffee coffee;
 	
 	public CoffeeDecorator(Coffee coffee) {

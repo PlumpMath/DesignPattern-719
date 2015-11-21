@@ -4,19 +4,19 @@
 package pattern.Flyweight;
 
 /**
- * ������Ԫ(Flyweight)��ɫ
+ * 抽象享元(Flyweight)角色
  * <p>
- * �˽�ɫ�����еľ�����Ԫ��ĳ��࣬Ϊ��Щ��涨����Ҫʵ�ֵĹ����ӿڡ�
- * ��Щ��Ҫ����״̬(External State)�Ĳ�������ͨ��������ҵ�����Բ�����ʽ���롣
+ * 此角色是所有的具体享元类的超类，为这些类规定出需要实现的公共接口。
+ * 那些需要外蕴状态(External State)的操作可以通过调用商业方法以参数形式传入。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-8-2
+ * 创建日期：2010-8-2
  */
 public abstract class Flyweight {
 
 	/**
-	 * һ��ʾ���Եķ���������state������״̬
+	 * 一个示意性的方法，参数state是外蕴状态
 	 * 
 	 * @param state
 	 */

@@ -4,24 +4,24 @@
 package pattern.Observer.demo1;
 
 /**
- * ��ͼ�ӿ�
+ * 视图接口
  * <p>
- * �۲��߽�ɫ
+ * 观察者角色
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-5-10
+ * 创建日期：2010-5-10
  */
 public interface View {
 
 	/**
-	 * ����Model�����Լ�
+	 * 根据Model更新自己
 	 * <p>
-	 * ���۲�����֪ͨ�۲��߸����Լ���ʱ�򣬿����Բ����ķ�ʽ
-	 * �����۲��߶��󴫵ݸ��۲��߶���ʹ�����㹻����Ϣ�����²���
+	 * 被观察者在通知观察者更新自己的时候，可以以参数的方式
+	 * 将被观察者对象传递给观察者对象，使其有足够的信息做更新操作
 	 * 
 	 * @param model
-	 *            ������ģ��
+	 *            监听的模型
 	 */
 	public void update(Model model);
 }

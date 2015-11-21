@@ -4,15 +4,15 @@
 package pattern.Memento.boxwhite;
 
 /**
- * ·¢ÆğÈË(Originator)½ÇÉ«
+ * å‘èµ·äºº(Originator)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-14
  */
 public class Originator {
 
-	private String state;// ÄÚ²¿×´Ì¬
+	private String state;// å†…éƒ¨çŠ¶æ€
 
 	public String getState() {
 		return state;
@@ -24,14 +24,14 @@ public class Originator {
 	}
 
 	/**
-	 * ´´½¨µ±Ç°×´Ì¬µÄÒ»¸ö±¸ÍüÂ¼
+	 * åˆ›å»ºå½“å‰çŠ¶æ€çš„ä¸€ä¸ªå¤‡å¿˜å½•
 	 */
 	public Memento createMemento() {
 		return new Memento(this.getState());
 	}
 
 	/**
-	 * ¸ù¾İ±¸ÍüÂ¼»Ö¸´Æä×´Ì¬
+	 * æ ¹æ®å¤‡å¿˜å½•æ¢å¤å…¶çŠ¶æ€
 	 */
 	public void restoreMemento(Memento memento) {
 		this.setState(memento.getState());

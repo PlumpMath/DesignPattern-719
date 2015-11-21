@@ -7,17 +7,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ÏíÔª¹¤³§(FlyweightFactory)½ÇÉ«
+ * äº«å…ƒå·¥å‚(FlyweightFactory)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-8-2
+ * åˆ›å»ºæ—¥æœŸï¼š2010-8-2
  */
 public class FlyweightFactory {
 
 	private Map<Character, Flyweight> map;
 
-	// ÏµÍ³ÍùÍùÖ»ĞèÒªÒ»¸öÏíÔª¹¤³§µÄÊµÀı£¬ËùÒÔ²ÉÓÃµ¥ÀıÄ£Ê½
+	// ç³»ç»Ÿå¾€å¾€åªéœ€è¦ä¸€ä¸ªäº«å…ƒå·¥å‚çš„å®ä¾‹ï¼Œæ‰€ä»¥é‡‡ç”¨å•ä¾‹æ¨¡å¼
 	private static FlyweightFactory singleton = new FlyweightFactory();
 
 	private FlyweightFactory() {
@@ -29,10 +29,10 @@ public class FlyweightFactory {
 	}
 
 	/**
-	 * µ¥´¿ÏíÔª¹¤³§·½·¨£º´´½¨¾ßÓĞÖ¸¶¨ÄÚÔÌ×´Ì¬µÄÏíÔª¶ÔÏó
+	 * å•çº¯äº«å…ƒå·¥å‚æ–¹æ³•ï¼šåˆ›å»ºå…·æœ‰æŒ‡å®šå†…è•´çŠ¶æ€çš„äº«å…ƒå¯¹è±¡
 	 * 
 	 * @param state
-	 *            ÄÚÔÌ×´Ì¬
+	 *            å†…è•´çŠ¶æ€
 	 */
 	public synchronized Flyweight create(Character state) {
 		if (map.get(state) == null) {
@@ -42,10 +42,10 @@ public class FlyweightFactory {
 	}
 
 	/**
-	 * ¸´ºÏÏíÔª¹¤³§·½·¨£º´´½¨¾ßÓĞÖ¸¶¨ÄÚÔÌ×´Ì¬µÄ¸´ºÏÏíÔª¶ÔÏó
+	 * å¤åˆäº«å…ƒå·¥å‚æ–¹æ³•ï¼šåˆ›å»ºå…·æœ‰æŒ‡å®šå†…è•´çŠ¶æ€çš„å¤åˆäº«å…ƒå¯¹è±¡
 	 * 
 	 * @param state
-	 *            ÄÚÔÌ×´Ì¬Êı×é
+	 *            å†…è•´çŠ¶æ€æ•°ç»„
 	 */
 	public synchronized Flyweight create(Character[] states) {
 		CompositeFlyweight flyweight = new CompositeFlyweight();
@@ -56,7 +56,7 @@ public class FlyweightFactory {
 	}
 
 	/**
-	 * ´òÓ¡³öËùÓĞµÄÏíÔª¶ÔÏó£¬ÎªÏµÍ³Ìá¹©¸¨ÖúĞÅÏ¢
+	 * æ‰“å°å‡ºæ‰€æœ‰çš„äº«å…ƒå¯¹è±¡ï¼Œä¸ºç³»ç»Ÿæä¾›è¾…åŠ©ä¿¡æ¯
 	 */
 	public void printAllFlyweights() {
 		System.out.println("******All Flyweights******");

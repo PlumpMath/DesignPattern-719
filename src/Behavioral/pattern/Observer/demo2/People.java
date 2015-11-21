@@ -6,22 +6,22 @@ package pattern.Observer.demo2;
 import pattern.Observer.demo2.TrafficLight.TrafficLightColor;
 
 /**
- * ĞĞÈËÀà
+ * è¡Œäººç±»
  * <p>
- * ¾ßÌå¹Û²ìÕß½ÇÉ«
+ * å…·ä½“è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class People implements Listener {
 	
 	@Override
 	public void doAction(Event event) {
-		// Ö»¹ØĞÄºìÂÌµÆÑÕÉ«¸Ä±äÊÂ¼ş£¬Eventº¬ÓĞ×ã¹»µÄĞÅÏ¢¹©Ê¹ÓÃ
+		// åªå…³å¿ƒçº¢ç»¿ç¯é¢œè‰²æ”¹å˜äº‹ä»¶ï¼ŒEventå«æœ‰è¶³å¤Ÿçš„ä¿¡æ¯ä¾›ä½¿ç”¨
 		if (event.getEventType() == EventType.COLOR_CHANGED) {
 			TrafficLight tlight = (TrafficLight) event.getSource();
-			// ºìµÆĞĞ£¬ÂÌµÆÍ£
+			// çº¢ç¯è¡Œï¼Œç»¿ç¯åœ
 			if (tlight.getColor() == TrafficLightColor.RED) {
 				System.out.println("People can cross.");
 			} else {

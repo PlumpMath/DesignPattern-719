@@ -4,11 +4,11 @@
 package pattern.Proxy.demo;
 
 /**
- * Î´ÊÚÈ¨Òì³£
+ * æœªæˆæƒå¼‚å¸¸
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-23
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-23
  */
 public class UnauthorizationException extends Exception {
 
@@ -22,6 +22,6 @@ public class UnauthorizationException extends Exception {
 
 	@Override
 	public String getMessage() {
-		return "ÓÃ»§ " + userID + " Î´±»ÊÚÈ¨.";
+		return "ç”¨æˆ· " + userID + " æœªè¢«æˆæƒ.";
 	}
 }

@@ -7,13 +7,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ê÷Ö¦¹¹¼ş(Composite)½ÇÉ«
+ * æ ‘ææ„ä»¶(Composite)è§’è‰²
  * <p>
- * ´ú±í²Î¼Ó×éºÏµÄÓĞÏÂ¼¶×Ó¶ÔÏóµÄ¶ÔÏó£¬Ê÷Ö¦Àà¸ø³öËùÓĞ¹ÜÀí×Ó¶ÔÏóµÄ·½·¨¡£
+ * ä»£è¡¨å‚åŠ ç»„åˆçš„æœ‰ä¸‹çº§å­å¯¹è±¡çš„å¯¹è±¡ï¼Œæ ‘æç±»ç»™å‡ºæ‰€æœ‰ç®¡ç†å­å¯¹è±¡çš„æ–¹æ³•ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Composite implements Component {
 
@@ -21,30 +21,30 @@ public class Composite implements Component {
 
 	@Override
 	public void operation() {
-		// ±éÀúËùÓĞµÄ¹¹¼ş£¬¶¼Ö´ĞĞoperation()·½·¨
+		// éå†æ‰€æœ‰çš„æ„ä»¶ï¼Œéƒ½æ‰§è¡Œoperation()æ–¹æ³•
 		for (Component component : getComponents()) {
 			component.operation();
 		}
 	}
 
-	/** ÒÔÏÂÎª¹ÜÀí×Ó¶ÔÏóµÄ·½·¨ */
+	/** ä»¥ä¸‹ä¸ºç®¡ç†å­å¯¹è±¡çš„æ–¹æ³• */
 	
 	/**
-	 * Ôö¼ÓÒ»¸ö¹¹¼ş
+	 * å¢åŠ ä¸€ä¸ªæ„ä»¶
 	 */
 	public void add(Component component) {
 		getComponents().add(component);
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨¹¹¼ş
+	 * åˆ é™¤æŒ‡å®šæ„ä»¶
 	 */
 	public void remove(Component component) {
 		getComponents().remove(component);
 	}
 
 	/**
-	 * ·µ»ØËùÓĞµÄ¹¹¼ş
+	 * è¿”å›æ‰€æœ‰çš„æ„ä»¶
 	 */
 	public List<Component> getComponents() {
 		if (components == null) {

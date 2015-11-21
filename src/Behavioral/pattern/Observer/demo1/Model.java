@@ -7,17 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ä£ĞÍÀà
+ * æ¨¡å‹ç±»
  * <p>
- * ±»¹Û²ìÕß½ÇÉ«
+ * è¢«è§‚å¯Ÿè€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public abstract class Model {
 
-	private List<View> views;// ÊÓÍ¼ÁĞ±í
+	private List<View> views;// è§†å›¾åˆ—è¡¨
 
 	protected List<View> getViews() {
 		if (views == null) {
@@ -27,21 +27,21 @@ public abstract class Model {
 	}
 
 	/**
-	 * Ìí¼ÓÒ»¸öÊÓÍ¼
+	 * æ·»åŠ ä¸€ä¸ªè§†å›¾
 	 */
 	public void addView(View view) {
 		getViews().add(view);
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨ÊÓÍ¼
+	 * åˆ é™¤æŒ‡å®šè§†å›¾
 	 */
 	public void removeView(View view) {
 		getViews().remove(view);
 	}
 
 	/**
-	 * Í¨ÖªËùÓĞÊÓÍ¼¸üĞÂ×Ô¼º
+	 * é€šçŸ¥æ‰€æœ‰è§†å›¾æ›´æ–°è‡ªå·±
 	 */
 	public void notifyViews() {
 		for (View view : getViews()) {

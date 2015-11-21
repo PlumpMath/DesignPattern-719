@@ -4,11 +4,11 @@
 package pattern.Interpreter.demo2;
 
 /**
- * ¼õ·¨±í´ïÊ½
+ * å‡æ³•è¡¨è¾¾å¼
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class SubExpression extends TwoArgsExpression {
 

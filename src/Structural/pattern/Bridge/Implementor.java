@@ -4,19 +4,19 @@
 package pattern.Bridge;
 
 /**
- * ʵ�ֻ���ɫ
+ * 实现化角色
  * <p>
- * �����ɫ������ʵ�ֻ���ɫ�Ľӿڣ��������������ʵ�֡�
- * ����ӿڲ�һ���ͳ��󻯽�ɫ�Ľӿڶ�����ͬ�����ǿ�����ȫ��ͬ��
+ * 这个角色给出了实现化角色的接口，但不给出具体的实现。
+ * 这个接口不一定和抽象化角色的接口定义相同，它们可以完全不同。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2010-4-26
+ * 创建日期：2010-4-26
  */
 public interface Implementor {
 
 	/**
-	 * ĳ��ҵ�񷽷�
+	 * 某个业务方法
 	 */
 	public void operationImpl();
 }

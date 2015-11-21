@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ½á¹¹¶ÔÏó(ObjectStructure)½ÇÉ«
+ * ç»“æž„å¯¹è±¡(ObjectStructure)è§’è‰²
  * <p>
- * ÓÐÈçÏÂµÄÒ»Ð©ÔðÈÎ£¬¿ÉÒÔ±éÀú½á¹¹ÖÐµÄËùÓÐÔªËØ£»
- * Èç¹ûÐèÒª£¬Ìá¹©Ò»¸ö¸ß²ã´ÎµÄ½Ó¿ÚÈÃ·ÃÎÊÕß¶ÔÏó¿ÉÒÔ·ÃÎÊÃ¿Ò»¸öÔªËØ£»
- * Èç¹ûÐèÒª£¬¿ÉÒÔÉè¼Æ³ÉÒ»¸ö¸´ºÏ¶ÔÏó»òÕßÒ»¸ö¾Û¼¯£¬ÈçList»òÕßSet¡£
+ * æœ‰å¦‚ä¸‹çš„ä¸€äº›è´£ä»»ï¼Œå¯ä»¥éåŽ†ç»“æž„ä¸­çš„æ‰€æœ‰å…ƒç´ ï¼›
+ * å¦‚æžœéœ€è¦ï¼Œæä¾›ä¸€ä¸ªé«˜å±‚æ¬¡çš„æŽ¥å£è®©è®¿é—®è€…å¯¹è±¡å¯ä»¥è®¿é—®æ¯ä¸€ä¸ªå…ƒç´ ï¼›
+ * å¦‚æžœéœ€è¦ï¼Œå¯ä»¥è®¾è®¡æˆä¸€ä¸ªå¤åˆå¯¹è±¡æˆ–è€…ä¸€ä¸ªèšé›†ï¼Œå¦‚Listæˆ–è€…Setã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-17
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-17
  */
 public class ObjectStructure {
 
@@ -34,14 +34,14 @@ public class ObjectStructure {
 	}
 
 	/**
-	 * Ö´ÐÐ·ÃÎÊ²Ù×÷
+	 * æ‰§è¡Œè®¿é—®æ“ä½œ
 	 */
 	public void visit(Visitor visitor) {
 		/*
-		 * ÒÔNodeAÎªÀý£¬ËµÃ÷Õû¸öµ÷ÓÃ¹ý³Ì£º
-		 * 1£¬NodeA¶ÔÏóµÄ½ÓÊÜ·½·¨±»µ÷ÓÃ£¬²¢½«Visitor¶ÔÏó±¾Éí´«Èë
-		 * 2£¬NodeA¶ÔÏó·´¹ýÀ´µ÷ÓÃVisitor¶ÔÏóµÄ·ÃÎÊ·½·¨£¬²¢½«NodeA¶ÔÏó±¾Éí´«Èë
-		 * 3£¬Visitor¶ÔÏóµ÷ÓÃNodeA¶ÔÏóµÄÒµÎñÓë·½·¨operation()
+		 * ä»¥NodeAä¸ºä¾‹ï¼Œè¯´æ˜Žæ•´ä¸ªè°ƒç”¨è¿‡ç¨‹ï¼š
+		 * 1ï¼ŒNodeAå¯¹è±¡çš„æŽ¥å—æ–¹æ³•è¢«è°ƒç”¨ï¼Œå¹¶å°†Visitorå¯¹è±¡æœ¬èº«ä¼ å…¥
+		 * 2ï¼ŒNodeAå¯¹è±¡åè¿‡æ¥è°ƒç”¨Visitorå¯¹è±¡çš„è®¿é—®æ–¹æ³•ï¼Œå¹¶å°†NodeAå¯¹è±¡æœ¬èº«ä¼ å…¥
+		 * 3ï¼ŒVisitorå¯¹è±¡è°ƒç”¨NodeAå¯¹è±¡çš„ä¸šåŠ¡ä¸Žæ–¹æ³•operation()
 		 */
 		for (Node node : nodes) {
 			node.accept(visitor);

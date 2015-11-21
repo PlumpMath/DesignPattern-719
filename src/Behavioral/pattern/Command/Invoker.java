@@ -4,13 +4,13 @@
 package pattern.Command;
 
 /**
- * ÇëÇóÕß(Invoker)½ÇÉ«
+ * è¯·æ±‚è€…(Invoker)è§’è‰²
  * <p>
- * ¸ºÔğµ÷ÓÃÃüÁî¶ÔÏóÖ´ĞĞÇëÇó¡£
+ * è´Ÿè´£è°ƒç”¨å‘½ä»¤å¯¹è±¡æ‰§è¡Œè¯·æ±‚ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class Invoker {
 
@@ -29,7 +29,7 @@ public class Invoker {
 	}
 
 	/**
-	 * Ö´ĞĞÃüÁî
+	 * æ‰§è¡Œå‘½ä»¤
 	 */
 	public void executeCommand() {
 		getCommand().execute();

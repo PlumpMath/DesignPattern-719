@@ -4,13 +4,13 @@
 package pattern.AbstractFactory.demo;
 
 /**
- * µçÄÔ¹¤³§
+ * ç”µè„‘å·¥å‚
  * <p>
- * ¼´µçÄÔÁã¼ş¿Í»§¶Ë³ÌĞòÀà
+ * å³ç”µè„‘é›¶ä»¶å®¢æˆ·ç«¯ç¨‹åºç±»
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-24
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-24
  */
 public class ComputerFactory {
 	
@@ -18,14 +18,14 @@ public class ComputerFactory {
 	private static ComputerPartsFactory macPartsFactory = new MacPartsFactory();
 
 	/**
-	 * Éú²úIBMÅÆµçÄÔ
+	 * ç”Ÿäº§IBMç‰Œç”µè„‘
 	 */
 	public static Computer createIBM() {
 		return create(ibmPartsFactory);
 	}
 
 	/**
-	 * Éú²úMacÅÆµçÄÔ
+	 * ç”Ÿäº§Macç‰Œç”µè„‘
 	 */
 	public static Computer createMAC() {
 		return create(macPartsFactory);

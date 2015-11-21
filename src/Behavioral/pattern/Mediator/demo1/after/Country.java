@@ -4,17 +4,17 @@
 package pattern.Mediator.demo1.after;
 
 /**
- * ¹ú¼Ò
+ * å›½å®¶
  * <p>
- * ³éÏóÍ¬ÊÂÀà½ÇÉ«
+ * æŠ½è±¡åŒäº‹ç±»è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public abstract class Country {
 
-	private WTO wto;// µ÷Í£Õß
+	private WTO wto;// è°ƒåœè€…
 
 	public Country(WTO wto) {
 		this.wto = wto;

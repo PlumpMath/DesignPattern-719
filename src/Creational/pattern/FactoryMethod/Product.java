@@ -4,13 +4,13 @@
 package pattern.FactoryMethod;
 
 /**
- * ³éÏó²úÆ·Àà(½Ó¿Ú)
+ * æŠ½è±¡äº§å“ç±»(æŽ¥å£)
  * <p>
- * ¸øËùÓÐµÄ¾ßÌå²úÆ·ÀàÌá¹©Ò»¸ö¹²Í¬µÄÀàÐÍ
+ * ç»™æ‰€æœ‰çš„å…·ä½“äº§å“ç±»æä¾›ä¸€ä¸ªå…±åŒçš„ç±»åž‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public interface Product {
 

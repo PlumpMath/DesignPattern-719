@@ -4,23 +4,23 @@
 package pattern.Command.demo3;
 
 /**
- * ºêÃüÁî½Ó¿Ú
+ * å®å‘½ä»¤æ¥å£
  * <p>
- * ºêÃüÁî¿É½«Ò»×éµ¥Ò»ÃüÁîºÏ²¢³ÉÎªÒ»¸öÃüÁî¼¯
+ * å®å‘½ä»¤å¯å°†ä¸€ç»„å•ä¸€å‘½ä»¤åˆå¹¶æˆä¸ºä¸€ä¸ªå‘½ä»¤é›†
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public interface MacroCommand extends Command {
 
 	/**
-	 * Ôö¼ÓÒ»¸öÃüÁî
+	 * å¢åŠ ä¸€ä¸ªå‘½ä»¤
 	 */
 	public void addCommand(Command command);
 
 	/**
-	 * É¾³ıÖ¸¶¨ÃüÁî
+	 * åˆ é™¤æŒ‡å®šå‘½ä»¤
 	 */
 	public void removeCommand(Command command);
 }

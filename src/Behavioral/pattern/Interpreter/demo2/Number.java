@@ -4,13 +4,13 @@
 package pattern.Interpreter.demo2;
 
 /**
- * ÊıÖµ±í´ïÊ½
+ * æ•°å€¼è¡¨è¾¾å¼
  * <p>
- * ÖÕ½á±í´ïÊ½½ÇÉ«
+ * ç»ˆç»“è¡¨è¾¾å¼è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class Number implements Expression {
 

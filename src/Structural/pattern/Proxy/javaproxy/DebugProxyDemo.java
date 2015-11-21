@@ -7,11 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ¶¯Ì¬´úÀíÊ¹ÓÃÊ¾Àı
+ * åŠ¨æ€ä»£ç†ä½¿ç”¨ç¤ºä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-22
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-22
  */
 public class DebugProxyDemo {
 
@@ -20,9 +20,9 @@ public class DebugProxyDemo {
 	 */
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
-		// ÎªArrayList¶ÔÏó´´½¨Ò»¸ö´úÀí¶ÔÏó
+		// ä¸ºArrayListå¯¹è±¡åˆ›å»ºä¸€ä¸ªä»£ç†å¯¹è±¡
 		List<String> proxy = (List<String>) DebugProxy.newInstance(new ArrayList<String>());
-		// µ±ÏµÍ³ÓĞÁËÒ»¸ö´úÀí¶ÔÏóºó£¬¶Ô´úÀí¶ÔÏóµÄ·½·¨µ÷ÓÃ»áÊ×ÏÈ±»·ÖÅÉ¸øÒ»¸öµ÷ÓÃ´¦ÀíÆ÷(InvocationHandler)
+		// å½“ç³»ç»Ÿæœ‰äº†ä¸€ä¸ªä»£ç†å¯¹è±¡åï¼Œå¯¹ä»£ç†å¯¹è±¡çš„æ–¹æ³•è°ƒç”¨ä¼šé¦–å…ˆè¢«åˆ†æ´¾ç»™ä¸€ä¸ªè°ƒç”¨å¤„ç†å™¨(InvocationHandler)
 		proxy.add("first");
 		proxy.add("second");
 	}

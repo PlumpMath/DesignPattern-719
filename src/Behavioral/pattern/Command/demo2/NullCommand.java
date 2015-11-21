@@ -4,13 +4,13 @@
 package pattern.Command.demo2;
 
 /**
- * ¿ÕÃüÁî
+ * ç©ºå‘½ä»¤
  * <p>
- * ¾ßÌåÃüÁî(ConcreteCommand)½ÇÉ«£¬NullObjectÄ£Ê½µÄÓ¦ÓÃ¡£
+ * å…·ä½“å‘½ä»¤(ConcreteCommand)è§’è‰²ï¼ŒNullObjectæ¨¡å¼çš„åº”ç”¨ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class NullCommand implements Command {
 

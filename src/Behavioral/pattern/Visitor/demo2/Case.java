@@ -4,11 +4,11 @@
 package pattern.Visitor.demo2;
 
 /**
- * »úÏä
+ * æœºç®±
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-20
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-20
  */
 public class Case implements Equipment {
 

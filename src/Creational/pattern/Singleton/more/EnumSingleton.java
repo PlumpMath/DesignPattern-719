@@ -4,14 +4,14 @@
 package pattern.Singleton.more;
 
 /**
- * 4��ö�ٵ���
+ * 4，枚举单例
  * <p>
- * �����ܱ�����߳�ͬ�����⣬���һ��ܷ�ֹ�����л����´����µĶ���
- * ��������ʵ�ַ�ʽ������Java��������ʵ�ֵģ��������ձ��ԡ�
+ * 不仅能避免多线程同步问题，而且还能防止反序列化重新创建新的对象。
+ * 但是这种实现方式是利用Java自身特性实现的，不具有普遍性。
  * 
- * @author ����ΰ
+ * @author 刘晨伟
  * 
- * �������ڣ�2014-6-6
+ * 创建日期：2014-6-6
  */
 public enum EnumSingleton {
 

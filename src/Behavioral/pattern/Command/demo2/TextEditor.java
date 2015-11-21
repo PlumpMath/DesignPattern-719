@@ -4,21 +4,21 @@
 package pattern.Command.demo2;
 
 /**
- * ÎÄ±¾±à¼­Æ÷
+ * æ–‡æœ¬ç¼–è¾‘å™¨
  * <p>
- * ½ÓÊÕÕß(Receiver)½ÇÉ«
+ * æ¥æ”¶è€…(Receiver)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-4
  */
 public class TextEditor {
 
-	// Ô­Ê¼ÄÚÈİ
+	// åŸå§‹å†…å®¹
 	private String content = "this is the text";
 
 	/**
-	 * ·µ»Øµ±Ç°ÄÚÈİ
+	 * è¿”å›å½“å‰å†…å®¹
 	 */
 	public String getContent() {
 		return content;
@@ -29,7 +29,7 @@ public class TextEditor {
 	}
 
 	/**
-	 * ·µ»Øµ±Ç°ÄÚÈİ
+	 * è¿”å›å½“å‰å†…å®¹
 	 *
 	 * @see java.lang.Object#toString()
 	 */

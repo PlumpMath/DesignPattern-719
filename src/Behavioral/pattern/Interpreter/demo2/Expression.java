@@ -4,23 +4,23 @@
 package pattern.Interpreter.demo2;
 
 /**
- * ËãÊõ±í´ïÊ½½Ó¿Ú
+ * ç®—æœ¯è¡¨è¾¾å¼æ¥å£
  * <p>
- * ÕâÊÇ¶ÔËãÊõËÄÔòÔËËãµÄ³éÏó
+ * è¿™æ˜¯å¯¹ç®—æœ¯å››åˆ™è¿ç®—çš„æŠ½è±¡
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public interface Expression {
 
 	/**
-	 * StringĞÎÊ½
+	 * Stringå½¢å¼
 	 */
 	public String toString();
 
 	/**
-	 * ·µ»Ø±í´ïÊ½ÔËËã½á¹û
+	 * è¿”å›è¡¨è¾¾å¼è¿ç®—ç»“æœ
 	 */
 	public double interpret();
 }

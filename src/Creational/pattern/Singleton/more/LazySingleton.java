@@ -4,11 +4,11 @@
 package pattern.Singleton.more;
 
 /**
- * 2£¬´«Í³ÀÁººÊ½µ¥Àı
+ * 2ï¼Œä¼ ç»Ÿæ‡’æ±‰å¼å•ä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014-6-6
+ * åˆ›å»ºæ—¥æœŸï¼š2014-6-6
  */
 public final class LazySingleton {
 
@@ -20,8 +20,8 @@ public final class LazySingleton {
 	}
 
 	/**
-	 * ²»Ê¹ÓÃ synchronized ÔòÎŞ·¨±£Ö¤Î¨Ò»µ¥Àı¡£
-	 * ¶øÊ¹ÓÃ synchronized Ôò»áÓĞĞ§ÂÊÉÏµÄËğÊ§¡£
+	 * ä¸ä½¿ç”¨ synchronized åˆ™æ— æ³•ä¿è¯å”¯ä¸€å•ä¾‹ã€‚
+	 * è€Œä½¿ç”¨ synchronized åˆ™ä¼šæœ‰æ•ˆç‡ä¸Šçš„æŸå¤±ã€‚
 	 */
 	public synchronized static LazySingleton getInstance() {
 		if(instance == null) {

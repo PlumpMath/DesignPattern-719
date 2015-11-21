@@ -6,14 +6,14 @@ package pattern.Observer.java;
 import java.util.Observable;
 
 /**
- * RSSFeedÀà
+ * RSSFeedç±»
  * <p>
- * JavaÌá¹©ÁËÒ»¸öObservableÀàºÍObserver½Ó¿Ú¶Ô¹Û²ìÕßÄ£Ê½½øĞĞÖ§³Ö
- * ±»¹Û²ìÕßÀà¶¼ÊÇObservableÀàµÄ×ÓÀà¡£
+ * Javaæä¾›äº†ä¸€ä¸ªObservableç±»å’ŒObserveræ¥å£å¯¹è§‚å¯Ÿè€…æ¨¡å¼è¿›è¡Œæ”¯æŒ
+ * è¢«è§‚å¯Ÿè€…ç±»éƒ½æ˜¯Observableç±»çš„å­ç±»ã€‚
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-5-10
+ * åˆ›å»ºæ—¥æœŸï¼š2010-5-10
  */
 public class RSSFeed extends Observable {
 
@@ -39,19 +39,19 @@ public class RSSFeed extends Observable {
 	}
 
 	/**
-	 * RSS·¢²¼ÄÚÈİ
+	 * RSSå‘å¸ƒå†…å®¹
 	 */
 	public void publish(String content) {
-		// Ö»ÓĞµ±ÄÚÈİÈ´ÊÇ±ä»¯ÁË²Å½øĞĞ·¢²¼
+		// åªæœ‰å½“å†…å®¹å´æ˜¯å˜åŒ–äº†æ‰è¿›è¡Œå‘å¸ƒ
 		if (!content.equals(this.content)) {
 			this.content = content;
 			/*
-			 * Observable.setChanged()·½·¨±»µ÷ÓÃÖ®ºó»áÉèÖÃÒ»¸öÄÚ²¿±ê¼Ç±äÁ¿´ú±í±»¹Û²ìÕß¶ÔÏóµÄ×´Ì¬·¢ÉúÁË±ä»¯
+			 * Observable.setChanged()æ–¹æ³•è¢«è°ƒç”¨ä¹‹åä¼šè®¾ç½®ä¸€ä¸ªå†…éƒ¨æ ‡è®°å˜é‡ä»£è¡¨è¢«è§‚å¯Ÿè€…å¯¹è±¡çš„çŠ¶æ€å‘ç”Ÿäº†å˜åŒ–
 			 */
 			setChanged();
 			/*
-			 * Observable.notifyObservers()·½·¨»áÍ¨ÖªËùÓĞµÄ¹Û²ìÕß£¬µ÷ÓÃËüÃÇµÄupdate()·½·¨£¬
-			 * Ê¹ËüÃÇ¿ÉÒÔ¸üĞÂ×Ô¼º£¬ËüÄ¬ÈÏ°´ÕÕ¹Û²ìÕß¶ÔÏó±»µÇ¼ÇµÄ´ÎĞòµÄÏà·´´ÎĞòÍ¨ÖªËüÃÇ¡£
+			 * Observable.notifyObservers()æ–¹æ³•ä¼šé€šçŸ¥æ‰€æœ‰çš„è§‚å¯Ÿè€…ï¼Œè°ƒç”¨å®ƒä»¬çš„update()æ–¹æ³•ï¼Œ
+			 * ä½¿å®ƒä»¬å¯ä»¥æ›´æ–°è‡ªå·±ï¼Œå®ƒé»˜è®¤æŒ‰ç…§è§‚å¯Ÿè€…å¯¹è±¡è¢«ç™»è®°çš„æ¬¡åºçš„ç›¸åæ¬¡åºé€šçŸ¥å®ƒä»¬ã€‚
 			 */
 			notifyObservers(content);
 		}

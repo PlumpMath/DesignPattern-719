@@ -4,22 +4,22 @@
 package pattern.ChainOfResponsibility.demo;
 
 /**
- * ´¦ÀíÕß»ùÀà
+ * å¤„ç†è€…åŸºç±»
  * <p>
- * ³éÏó´¦ÀíÕß½ÇÉ«
+ * æŠ½è±¡å¤„ç†è€…è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-1
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-1
  */
 public abstract class Handler {
 
-	// ÏÂÒ»¸ö´¦ÀíÕß
+	// ä¸‹ä¸€ä¸ªå¤„ç†è€…
 	private Handler nextHandler;
 
 	/**
 	 * @param nextHandler
-	 *            ÏÂÒ»¸ö´¦ÀíÕß
+	 *            ä¸‹ä¸€ä¸ªå¤„ç†è€…
 	 */
 	public Handler(Handler nextHandler) {
 		this.nextHandler = nextHandler;
@@ -34,10 +34,10 @@ public abstract class Handler {
 	}
 
 	/**
-	 * ´¦ÀíÇëÇó
+	 * å¤„ç†è¯·æ±‚
 	 * 
 	 * @param request
-	 *            ÇëÇó
+	 *            è¯·æ±‚
 	 */
 	public abstract void handleRequest(Request request);
 }

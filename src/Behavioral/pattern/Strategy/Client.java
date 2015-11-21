@@ -4,11 +4,11 @@
 package pattern.Strategy;
 
 /**
- * ¿Í»§¶Ë
+ * å®¢æˆ·ç«¯
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-30
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-30
  */
 public class Client {
 
@@ -16,13 +16,13 @@ public class Client {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// ÓÉ¿Í»§¶Ë¸ù¾İ×Ô¼ºĞèÒª¾ö¶¨Ê¹ÓÃÄÄ¸ö²ßÂÔ
+		// ç”±å®¢æˆ·ç«¯æ ¹æ®è‡ªå·±éœ€è¦å†³å®šä½¿ç”¨å“ªä¸ªç­–ç•¥
 		Context context = new Context();
 		context.contextOperation();
-		// Ìæ»»Ä¬ÈÏ²ßÂÔ
+		// æ›¿æ¢é»˜è®¤ç­–ç•¥
 		context.setStrategy(new ConcreteStrategyA());
 		context.contextOperation();
-		// Ê¹ÓÃÁíÒ»¸ö²ßÂÔ
+		// ä½¿ç”¨å¦ä¸€ä¸ªç­–ç•¥
 		context.setStrategy(new ConcreteStrategyB());
 		context.contextOperation();
 	}

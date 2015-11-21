@@ -4,11 +4,11 @@
 package pattern.AbstractFactory.demo;
 
 /**
- * MacÖÆÔìµÄRAM
+ * Macåˆ¶é€ çš„RAM
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-2-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-2-3
  */
 public class MacRAM implements RAM {
 

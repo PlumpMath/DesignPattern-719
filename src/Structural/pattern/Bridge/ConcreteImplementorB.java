@@ -4,11 +4,11 @@
 package pattern.Bridge;
 
 /**
- * ¾ßÌåÊµÏÖ»¯½ÇÉ«
+ * å…·ä½“å®ç°åŒ–è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-26
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-26
  */
 public class ConcreteImplementorB implements Implementor {
 

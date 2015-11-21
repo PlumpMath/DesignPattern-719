@@ -4,31 +4,31 @@
 package pattern.Command.demo1;
 
 /**
- * Ò£¿ØÆ÷
+ * é¥æ§å™¨
  * <p>
- * ÇëÇóÕß(Invoker)½ÇÉ«
+ * è¯·æ±‚è€…(Invoker)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-3
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-3
  */
 public class RemoteControlUnit {
 
-	private Command command;// ³ÖÓĞµÄµ±Ç°ÃüÁî
+	private Command command;// æŒæœ‰çš„å½“å‰å‘½ä»¤
 
 	private Command getCommand() {
 		return command;
 	}
 
 	/**
-	 * ÉèÖÃµ±Ç°ÃüÁî
+	 * è®¾ç½®å½“å‰å‘½ä»¤
 	 */
 	public void setCommand(Command command) {
 		this.command = command;
 	}
 
 	/**
-	 * ÇëÇóÖ´ĞĞÃüÁî
+	 * è¯·æ±‚æ‰§è¡Œå‘½ä»¤
 	 */
 	public void executeCommand() {
 		getCommand().execute();

@@ -7,14 +7,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ĞòÁĞ¼üÉú³ÉÆ÷ÑİÊ¾4
+ * åºåˆ—é”®ç”Ÿæˆå™¨æ¼”ç¤º4
  * <p>
- * ËäÈ»KeyGeneratorÊÇµ¥ÀıÀà£¬µ«ÊÇÈÔÈ»¿ÉÒÔÔÚÄÚ²¿Ê¹ÓÃÒ»¸ö¾Û¼¯¹ÜÀí¶à¸ö²úÆ·(±í)µÄ¼üÖµ
- * Ò²¾ÍÊÇ¿ÉÒÔÊ¹ÓÃÒ»¸ö±¾ÉíÊÇµ¥Àı¶ÔÏóµÄ¾Û¼¯¶ÔÏóÅäÉÏºÏÊÊµÄ½Ó¿Ú´ïµ½Ä¿µÄ
+ * è™½ç„¶KeyGeneratoræ˜¯å•ä¾‹ç±»ï¼Œä½†æ˜¯ä»ç„¶å¯ä»¥åœ¨å†…éƒ¨ä½¿ç”¨ä¸€ä¸ªèšé›†ç®¡ç†å¤šä¸ªäº§å“(è¡¨)çš„é”®å€¼
+ * ä¹Ÿå°±æ˜¯å¯ä»¥ä½¿ç”¨ä¸€ä¸ªæœ¬èº«æ˜¯å•ä¾‹å¯¹è±¡çš„èšé›†å¯¹è±¡é…ä¸Šåˆé€‚çš„æ¥å£è¾¾åˆ°ç›®çš„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-3-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-3-14
  */
 public class KeyGeneratorDemo4 {
 
@@ -31,11 +31,11 @@ public class KeyGeneratorDemo4 {
 
 	static class KeyGenerator {
 
-		/** »º´æ³ØÈİÁ¿£¬¼´Ò»´Î²éÑ¯Ô¤¶¨µÄ¼üÖµÊıÄ¿ */
+		/** ç¼“å­˜æ± å®¹é‡ï¼Œå³ä¸€æ¬¡æŸ¥è¯¢é¢„å®šçš„é”®å€¼æ•°ç›® */
 		private static final int POOL_SIZE = 20;
-		// µ¥Àı¶ÔÏó
+		// å•ä¾‹å¯¹è±¡
 		private static KeyGenerator keygen = new KeyGenerator();
-		// ²»Í¬µÄ²úÆ·Ê¹ÓÃ²»Í¬µÄKeyInfo£¬Ê¹ÓÃMap½øĞĞµÇ¼Ç
+		// ä¸åŒçš„äº§å“ä½¿ç”¨ä¸åŒçš„KeyInfoï¼Œä½¿ç”¨Mapè¿›è¡Œç™»è®°
 		private Map<String,KeyInfo> keyInfoMap = new HashMap<String,KeyInfo>();
 		
 		private KeyGenerator() {
@@ -43,14 +43,14 @@ public class KeyGeneratorDemo4 {
 		}
 		
 		/**
-		 * ¾²Ì¬¹¤³§·½·¨£¬·µ»Ø×Ô¼ºµÄÎ©Ò»ÊµÀı
+		 * é™æ€å·¥å‚æ–¹æ³•ï¼Œè¿”å›è‡ªå·±çš„æƒŸä¸€å®ä¾‹
 		 */
 		public static KeyGenerator getInstance() {
 			return keygen;
 		}
 
 		/**
-		 * ÎªÖ¸¶¨²úÆ·(±í)Éú³ÉÏÂÒ»¸öºÏÊÊµÄ¼üÖµ
+		 * ä¸ºæŒ‡å®šäº§å“(è¡¨)ç”Ÿæˆä¸‹ä¸€ä¸ªåˆé€‚çš„é”®å€¼
 		 */
 		public synchronized int getNextKey(String keyName) {
 			KeyInfo keyInfo;
@@ -67,7 +67,7 @@ public class KeyGeneratorDemo4 {
 	}
 	
 	/**
-	 * Õâ¸öÀàÌá¹©ÁËÏòÊı¾İ¿â²éÑ¯µÄ¹¦ÄÜ£¬²¢ÇÒ´æ´¢Ò»¶¨ÊıÄ¿µÄ¼üÖµ
+	 * è¿™ä¸ªç±»æä¾›äº†å‘æ•°æ®åº“æŸ¥è¯¢çš„åŠŸèƒ½ï¼Œå¹¶ä¸”å­˜å‚¨ä¸€å®šæ•°ç›®çš„é”®å€¼
 	 */
 	static class KeyInfo {
 
@@ -75,7 +75,7 @@ public class KeyGeneratorDemo4 {
 		private int nextKey;
 		private int poolSize;
 		
-		private String keyName;// ²úÆ·Ãû
+		private String keyName;// äº§å“å
 
 		public KeyInfo(String keyName ,int poolSize) {
 			this.keyName = keyName;
@@ -91,11 +91,11 @@ public class KeyGeneratorDemo4 {
 		}
 
 		/**
-		 * È¥Êı¾İ¿â½øĞĞ²éÑ¯£¬³õÊ¼»¯Ö¸¶¨²úÆ·(±í)¼üÖµµÄÆğÊ¼ÖµºÍ×î´óÖµ
+		 * å»æ•°æ®åº“è¿›è¡ŒæŸ¥è¯¢ï¼Œåˆå§‹åŒ–æŒ‡å®šäº§å“(è¡¨)é”®å€¼çš„èµ·å§‹å€¼å’Œæœ€å¤§å€¼
 		 */
 		private void retrieveFromDB() {
-			// ÏÂÃæÕâĞ©¶¼ÊÇ¶ÔÊı¾İ¿âµÄSQL²Ù×÷£º
-			// ½«´æ´¢ĞòÁĞ¼üÆğÊ¼ÖµµÄ±íÖĞµÄÆğÊ¼Öµ+poolSize£¬È»ºó·µ»ØÔ­À´µÄÆğÊ¼Öµ
+			// ä¸‹é¢è¿™äº›éƒ½æ˜¯å¯¹æ•°æ®åº“çš„SQLæ“ä½œï¼š
+			// å°†å­˜å‚¨åºåˆ—é”®èµ·å§‹å€¼çš„è¡¨ä¸­çš„èµ·å§‹å€¼+poolSizeï¼Œç„¶åè¿”å›åŸæ¥çš„èµ·å§‹å€¼
 			this.nextKey = 1000;
 			this.keyMax = 1000 + poolSize;
 			System.out.println("retrieve from " + keyName);

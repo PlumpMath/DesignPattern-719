@@ -4,25 +4,25 @@
 package pattern.Adapter.demo;
 
 /**
- * OracleÊı¾İ¿âÁ¬½ÓÆ÷
+ * Oracleæ•°æ®åº“è¿æ¥å™¨
  * <p>
- * Õâ¸öÁ¬½ÓÆ÷Êµ¼ÊÉÏÊÇÓÉOracleÌá¹©µÄ£¬ËùÒÔËüµÄÔ´ÂëÊÇ²»¿ÉÒÔĞŞ¸ÄµÄ
+ * è¿™ä¸ªè¿æ¥å™¨å®é™…ä¸Šæ˜¯ç”±Oracleæä¾›çš„ï¼Œæ‰€ä»¥å®ƒçš„æºç æ˜¯ä¸å¯ä»¥ä¿®æ”¹çš„
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-4
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-4
  */
 public class OracleConnector {
 
 	/**
-	 * ´ò¿ªÊı¾İ¿â
+	 * æ‰“å¼€æ•°æ®åº“
 	 */
 	public void open(){
 		System.out.println("Open Oracle Database...");
 	}
 	
 	/**
-	 * ¹Ø±ÕÊı¾İ¿â
+	 * å…³é—­æ•°æ®åº“
 	 */
 	public void close(){
 		System.out.println("Close Oracle Database...");

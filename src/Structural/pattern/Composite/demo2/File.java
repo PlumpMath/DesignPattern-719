@@ -4,11 +4,11 @@
 package pattern.Composite.demo2;
 
 /**
- * ±ê×¼ÎÄ¼þ
+ * æ ‡å‡†æ–‡ä»¶
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-4-11
+ * åˆ›å»ºæ—¥æœŸï¼š2010-4-11
  */
 public class File implements IFile {
 

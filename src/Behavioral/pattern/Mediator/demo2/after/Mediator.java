@@ -4,17 +4,17 @@
 package pattern.Mediator.demo2.after;
 
 /**
- * µ÷Í£Õß
+ * è°ƒåœè€…
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-6-8
+ * åˆ›å»ºæ—¥æœŸï¼š2010-6-8
  */
 public class Mediator implements IMediator {
 
-	private Purchase purchase;// ²É¹º×é
-	private Sale sale;// ÏúÊÛ×é
-	private Stock stock;// ¿â´æ×é
+	private Purchase purchase;// é‡‡è´­ç»„
+	private Sale sale;// é”€å”®ç»„
+	private Stock stock;// åº“å­˜ç»„
 
 	private Purchase getPurchase() {
 		return purchase;
@@ -41,54 +41,54 @@ public class Mediator implements IMediator {
 	}
 	
 	/**
-	 * ²É¹ºÖ¸¶¨ÊıÁ¿µÄµçÄÔ
+	 * é‡‡è´­æŒ‡å®šæ•°é‡çš„ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void buyComputer(int number) {
-		// »á¸ù¾İÏúÊÛĞÅÏ¢·ÖÎö¾ö¶¨ÕæÕıµÄ²É¹ºÊıÁ¿
-		int saleStatus = getSale().getSaleStatus();// µçÄÔµÄÏúÊÛÇé¿ö
+		// ä¼šæ ¹æ®é”€å”®ä¿¡æ¯åˆ†æå†³å®šçœŸæ­£çš„é‡‡è´­æ•°é‡
+		int saleStatus = getSale().getSaleStatus();// ç”µè„‘çš„é”€å”®æƒ…å†µ
 		if (saleStatus > 80) {
-			getSale().log("ÏúÊÛÇé¿öÁ¼ºÃ£¬²É¹ºµçÄÔ " + number + " Ì¨");
-			getStock().increase(number);// Ôö¼Ó¿â´æ
+			getSale().log("é”€å”®æƒ…å†µè‰¯å¥½ï¼Œé‡‡è´­ç”µè„‘ " + number + " å°");
+			getStock().increase(number);// å¢åŠ åº“å­˜
 		} else {
-			getSale().log("ÏúÊÛÇé¿ö²»ºÃ£¬²É¹ºµçÄÔ(ÕÛ°ë²É¹º) " + number / 2 + " Ì¨");
-			getStock().increase(number / 2);// Ôö¼Ó¿â´æ
+			getSale().log("é”€å”®æƒ…å†µä¸å¥½ï¼Œé‡‡è´­ç”µè„‘(æŠ˜åŠé‡‡è´­) " + number / 2 + " å°");
+			getStock().increase(number / 2);// å¢åŠ åº“å­˜
 		}
 	}
 
 	/**
-	 * ÏúÊÛÖ¸¶¨ÊıÁ¿µÄµçÄÔ
+	 * é”€å”®æŒ‡å®šæ•°é‡çš„ç”µè„‘
 	 * 
 	 * @param number
-	 *            ÊıÁ¿
+	 *            æ•°é‡
 	 */
 	public void sellComputer(int number) {
-		// ¿â´æÊıÁ¿²»¹»ÏúÊÛÔòÈÃ²É¹º×éÈ¥²É¹º
+		// åº“å­˜æ•°é‡ä¸å¤Ÿé”€å”®åˆ™è®©é‡‡è´­ç»„å»é‡‡è´­
 		if (getStock().getStockNumber() < number) {
 			getPurchase().buyComputer(number);
 		}
-		getSale().log("ÏúÊÛµçÄÔ " + number + " Ì¨");
+		getSale().log("é”€å”®ç”µè„‘ " + number + " å°");
 		getStock().decrease(number);
 	}
 
 	/**
-	 * ÕÛ¼ÛÏúÊÛ
+	 * æŠ˜ä»·é”€å”®
 	 */
 	public void offSell() {
-		getSale().log("¿ªÊ¼ÕÛ¼ÛÏúÊÛµçÄÔ " + getStock().getStockNumber() + " Ì¨");
+		getSale().log("å¼€å§‹æŠ˜ä»·é”€å”®ç”µè„‘ " + getStock().getStockNumber() + " å°");
 	}
 
 	/**
-	 * ÇåÀí¿â´æ
+	 * æ¸…ç†åº“å­˜
 	 * <p>
-	 * <li>²É¹ºÈËÔ±²»ÔÙ²É¹º
-	 * <li>ÏúÊÛÈËÔ±Òª¾¡¿ìÏúÊÛ
+	 * <li>é‡‡è´­äººå‘˜ä¸å†é‡‡è´­
+	 * <li>é”€å”®äººå‘˜è¦å°½å¿«é”€å”®
 	 */
 	public void clearStock() {
-		getStock().log("ÇåÀí¿â´æÊıÁ¿Îª " + getStock().getStockNumber());
-		getSale().offSale();// ÕÛ¼ÛÏúÊÛ
-		getPurchase().refuse2BuyComputer();// ²»ÔÙ²É¹º
+		getStock().log("æ¸…ç†åº“å­˜æ•°é‡ä¸º " + getStock().getStockNumber());
+		getSale().offSale();// æŠ˜ä»·é”€å”®
+		getPurchase().refuse2BuyComputer();// ä¸å†é‡‡è´­
 	}
 }

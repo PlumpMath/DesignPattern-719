@@ -4,25 +4,25 @@
 package pattern.Memento.boxwhite;
 
 /**
- * ¸ºÔğÈË(Caretaker)½ÇÉ«
+ * è´Ÿè´£äºº(Caretaker)è§’è‰²
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2010-7-14
+ * åˆ›å»ºæ—¥æœŸï¼š2010-7-14
  */
 public class Caretaker {
 
-	private Memento memento;// ±¸ÍüÂ¼¶ÔÏó
+	private Memento memento;// å¤‡å¿˜å½•å¯¹è±¡
 
 	/**
-	 * È¡»Ø±¸ÍüÂ¼
+	 * å–å›å¤‡å¿˜å½•
 	 */
 	public Memento retrieveMemento() {
 		return memento;
 	}
 
 	/**
-	 * ±£´æ±¸ÍüÂ¼
+	 * ä¿å­˜å¤‡å¿˜å½•
 	 */
 	public void saveMemento(Memento memento) {
 		this.memento = memento;
